@@ -1,0 +1,102 @@
+---
+title: "News"
+---
+
+## 2026
+
+### Dr Inkuk Kim Takes Up Postdoctoral Fellowship at GSU
+
+**March 2026 | Georgia State University**
+
+It is with mixed feelings that we say goodbye to Dr Inkuk Kim, who has taken up a postdoctoral fellowship with [Professor Don E. Davis](https://news.gsu.edu/coronavirus-expert/don-davis-jr/) at the HAPPI Lab at Georgia State University.
+
+Inkuk remains a Fellow of OTTO Lab and is working on a number of projects related to environmental psychology, trust in science, and character formation over the adult lifespan.
+
+---
+
+### Places Map Is Live
+
+**20 February 2026 | Victoria University of Wellington**
+
+The Places Map project is now live at [placesmap.org](https://www.placesmap.org/). Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.
+
+Project code and workflows are available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
+
+---
+
+### Two New PhD Students Join OTTO Lab
+
+**January 2026 | Victoria University of Wellington**
+
+We are delighted to welcome two new PhD students to OTTO Lab: Mekonnen Tsehay and Mohammad Islam.
+
+Mekonnen joins the lab from Ethiopia. He is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand.
+
+Mohammad joins the lab from Bangladesh. He is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice.
+
+A warm welcome to Mekonnen and Mohammad.
+
+---
+
+## 2025
+
+### SASP 2025 Pre-Conference Workshop in Melbourne
+
+**19 November 2025 | University of Melbourne | 23 participants**
+
+The lab travelled to Melbourne for the Society of Australasian Social Psychologists (SASP) 2025 conference, where Joseph Bulbulia led a full-day pre-conference workshop: *Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology*.
+
+Two OTTO Lab students presented their research applying causal inference methods:
+
+- **Zahle Wiseley**: *Does Employer Gratitude Improve Employee Well-being?* — Using NZAVS data to examine causal effects of workplace appreciation on employee outcomes. [Slides (PDF)](https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0)
+
+- **Hannah Robinson**: *Religion and Personality* — Investigating causal relationships between religious service attendance and personality traits. [Slides (PDF)](https://www.dropbox.com/scl/fi/awse06fy0gh3vw208qo2b/Melbourne-Presentation-Religion-and-Personality-Hannah-Robinson.pdf?rlkey=no9p11rxzr79f049zeqwo8p1l&dl=0)
+
+We were also joined by collaborator **Dr Usman Afzali** (University of Otago, Muslim Flourishing Study), who presented on Muslim community-making and resilience in New Zealand.
+
+::: {layout-ncol=2}
+![Joseph Bulbulia presenting on causal inference](images/news/2025-sasp-melbourne/joseph-presenting.png){group="sasp2025"}
+
+![Workshop participants](images/news/2025-sasp-melbourne/workshop-audience.png){group="sasp2025"}
+
+![Zahle Wiseley presenting her research](images/news/2025-sasp-melbourne/zahle-presenting.png){group="sasp2025"}
+
+![Hannah Robinson presenting her research](images/news/2025-sasp-melbourne/hannah-presenting.png){group="sasp2025"}
+:::
+
+![Dr Usman Afzali presenting on Muslim community-making and resilience](images/news/2025-sasp-melbourne/usman-presenting.png){width=60% fig-align="center"}
+
+**Resources:**
+
+- Workshop website: [go-bayes.github.io/2025-workshop-ci-sasp](https://go-bayes.github.io/2025-workshop-ci-sasp/)
+- Workshop materials: [github.com/go-bayes/2025-workshop-ci-sasp](https://github.com/go-bayes/2025-workshop-ci-sasp)
+- Teaching software: [causalworkshop package](https://github.com/go-bayes/causalworkshop)
+
+---
+
+
+## Past Events
+
+- **[2025 August 10-13]:** Workshop on Causal Inferece at the University of San Diego [link](https://go-bayes.github.io/sparcc-day-2/)
+
+
+
+
+### August 2025: William Bier Interdisciplinary Award Lecture
+
+**8 August 2025 | Denver, Colorado**
+
+Joseph Bulbulia delivered the William Bier Interdisciplinary Award lecture: *Who Benefits from Religious Attendance? Heterogeneous Causal Effects on Well-being and Cooperation in New Zealand*. The William Bier Interdisciplinary Award is presented by the **American Psychological Association Division 36 (Psychology of Religion and Spirituality)**.
+
+![Joseph Bulbulia delivering the William Bier Interdisciplinary Award lecture](images/news/2025-bier-award/IMG_0869.jpeg){width=60% fig-align="center"}
+
+[View presentation slides](presentations.qmd#apa-bier-2025)
+
+---
+
+
+## 2024
+
+*News archive coming soon...*
+
+---

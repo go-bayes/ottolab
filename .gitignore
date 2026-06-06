@@ -1,0 +1,60 @@
+# Generated files
+.quarto/
+_site/
+
+# This repo publishes a website. The global ~/.gitignore ignores *.png and *.html,
+# which would silently drop site images and the rendered docs/ output. Re-include the
+# published output and source assets so GitHub Pages (main -> /docs) gets a complete
+# site. In-tree negations override the global excludes; the later .DS_Store/Thumbs.db
+# rules below still keep OS cruft out of the re-included directories.
+!docs/**
+!images/**
+!fonts/**
+# still ignore stray HTML/PDF rendered at the repo root
+/*.html
+/*.pdf
+*.pptx
+*.zip
+*.tar.gz
+
+# R/RStudio files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+.last-update
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node
+node_modules/
+package-lock.json
+/.quarto/
+
+**/*.quarto_ipynb

@@ -1,0 +1,55 @@
+---
+title: "Reports"
+---
+
+## Research Reports & Working Papers
+
+::: {.callout-note}
+### General Research Reports  (Previous Reports Page)
+**[Browse General Reports →](https://go-bayes.github.io/reports/)**
+
+Our main repository of research reports covering:
+- Muslim acceptance and prejudice studies
+- COVID-19 pandemic impacts
+- Climate science trust
+- Environmental attitudes and religion
+- Health and well-being analyses
+- Methodological papers
+:::
+
+::: {.callout-note}
+### B-Causal: Causal Inference Resources (Previous Lab)
+**[Browse B-Causal Reports →](https://go-bayes.github.io/b-causal/)**
+
+Specialised resources for causal inference including:
+- Causal inference tutorials
+- Methodological guides
+- Applied examples
+- Code demonstrations
+:::
+
+---
+
+
+#### Recent Highlights
+
+- **Muslim Acceptance Study** - How the Christchurch attacks affected attitudes toward Muslims in New Zealand
+- **COVID-19 Analysis** - Pandemic impacts on well-being and social cohesion
+- **Climate Science Trust** - Causal relationships between trust in science and environmental attitudes
+- **Religious Simpson's Paradox** - Uncovering complex patterns in religious data
+
+---
+
+### Access Information
+
+All reports are freely available through our GitHub Pages repositories. For specific reports, datasets, or questions, please contact:
+
+📧 **joseph.bulbulia@vuw.ac.nz**
+
+---
+
+### Citation Guidelines
+
+When citing our reports, please use the following format:
+
+> Author(s). (Year). *Report Title*. OTTO Lab Reports, Te Herenga Waka - Victoria University of Wellington. URL

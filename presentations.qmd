@@ -1,0 +1,312 @@
+---
+title: "Presentations"
+---
+
+## 2025 Presentations
+
+### SASP 2025 Pre-Conference Workshop {#sasp-workshop-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Title:** Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology  
+**Presenter:** Joseph Bulbulia  
+**Event:** SASP 2025 Pre-Conference Workshop  
+**Date:** 19 November 2025  
+**Location:** University of Melbourne  
+:::
+
+::: {.presentation-meta}
+Workshop Website | Format: Quarto site + GitHub materials
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>Workshop Materials</h3>
+    <p>The workshop site includes logistics, notes, setup instructions, and hand-outs.</p>
+    <a href="https://go-bayes.github.io/2025-workshop-ci-sasp/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+        Open Workshop Site
+    </a>
+    <a href="https://github.com/go-bayes/2025-workshop-ci-sasp" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #4c4f69; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+        Workshop Repository
+    </a>
+</div>
+```
+:::
+
+**Abstract:** This full-day workshop introduced causal inference for observational social psychology, with an emphasis on clearly formulated causal questions, identification assumptions, doubly robust estimation, and heterogeneous treatment effects. The workshop site includes lecture notes, exercises, and setup instructions for the `causalworkshop` package.
+
+**Keywords:** causal inference, observational social psychology, workshop, heterogeneous treatment effects, teaching, R
+:::
+
+#### Student Presentations {#sasp-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Event:** SASP 2025 Pre-Conference Workshop — Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology
+**Date:** 19 November 2025
+**Location:** University of Melbourne
+:::
+
+#### Zahle Wiseley: Does Employer Gratitude Improve Employee Well-being?
+
+::: {.presentation-meta}
+Student Presentation | Format: PDF Slides
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>📖 View Presentation</h3>
+    <p>The PDF presentation is hosted on Dropbox.</p>
+    <a href="https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+        📖 Open Presentation
+    </a>
+</div>
+```
+:::
+
+**Abstract:** Using longitudinal data from Wave 20 of the New Zealand Attitudes and Values Study (NZAVS), this presentation examines the causal effects of perceived employer gratitude on employee well-being outcomes across multiple domains including health, psychological, present-focused, life-reflective, and social well-being.
+
+**Keywords:** employer gratitude, employee well-being, causal inference, NZAVS, workplace appreciation
+
+---
+
+#### Hannah Robinson: Religion and Personality
+
+::: {.presentation-meta}
+Student Presentation | Format: PDF Slides
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>📖 View Presentation</h3>
+    <p>The PDF presentation is hosted on Dropbox.</p>
+    <a href="https://www.dropbox.com/scl/fi/awse06fy0gh3vw208qo2b/Melbourne-Presentation-Religion-and-Personality-Hannah-Robinson.pdf?rlkey=no9p11rxzr79f049zeqwo8p1l&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+        📖 Open Presentation
+    </a>
+</div>
+```
+:::
+
+**Abstract:** This presentation investigates the causal relationship between religious service attendance and personality traits, moving beyond correlational findings to examine whether religious participation causally influences personality development.
+
+**Keywords:** religion, personality, religious service attendance, causal inference, NZAVS
+:::
+
+---
+
+### William Bier Interdisciplinary Award Lecture {#apa-bier-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Title:** Who Benefits from Religious Attendance? Heterogeneous Causal Effects on Well-being and Cooperation in New Zealand  
+**Presenter:** Joseph Bulbulia  
+**Event:** William Bier Interdisciplinary Award, APA Division 36 Psychology of Religion  
+**Date:** 2025  
+**Time:** 11:30-12:30  
+**Location:** Convention Centre Street Level 208  
+:::
+
+::: {.presentation-meta}
+Conference Presentation | Duration: ~50 minutes | Format: HTML Slides
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>🎯 View Presentation</h3>
+    <p>The presentation is hosted on Dropbox. It will not render on a cellphone</p>
+    <a href="https://www.dropbox.com/scl/fi/ggs8mcnhdrzt67wlcoy99/index.html?rlkey=wuf0j6vp1jvzv0nodgvxx4m62&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+        Open Presentation
+    </a>
+</div>
+```
+:::
+
+::: {.callout-note}
+## Alternative Viewing Options
+- **Download:** Use the download button in Dropbox to save a local copy. Renders best in Google Chrome.
+:::
+
+::: {.callout-tip}
+## Viewing Tips
+- Open in full screen mode
+- Use arrow keys to navigate between slides
+- Press 'S' for speaker notes.
+:::
+
+**Abstract:**  We examine how the causal effects of religious participation on well-being and cooperation vary across different population subgroups. The study links two literatures on religious attendance that have developed independently: health and cooperation.
+
+**Keywords:** causal inference, heterogeneous effects, religion, well-being, cooperation, longitudinal, panel, New Zealand
+
+### Venue Location
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| column: body-outset
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addMarkers(lng=-104.9956, lat=39.7431, 
+             popup="Colorado Convention Center<br>Street Level 208<br><a href='https://denverconvention.com/attend-an-event/venue-directory' target='_blank'>Venue Directory</a>")
+```
+:::
+
+### SPARCC Day 2 Workshop {#sparcc-day-2-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Title:** Beyond Averages: Heterogeneous Treatment Effects  
+**Presenter:** Joseph Bulbulia  
+**Event:** SPARCC Day 2 Causal Inference Workshop  
+**Date:** 12 August 2025  
+**Location:** Seventh College, UC San Diego  
+:::
+
+::: {.presentation-meta}
+Workshop Website | Format: Quarto site + GitHub materials
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>Workshop Materials</h3>
+    <p>The workshop site includes setup, agenda, notes, case studies, and downloadable materials.</p>
+    <a href="https://go-bayes.github.io/sparcc-day-2/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+        Open Workshop Site
+    </a>
+    <a href="https://github.com/go-bayes/sparcc-day-2" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #4c4f69; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+        Workshop Repository
+    </a>
+</div>
+```
+:::
+
+**Abstract:** This workshop provides a practice-oriented introduction to advanced causal inference for observational social research. The materials cover average and heterogeneous treatment effects, time-resolved confounding, measurement error, and reproducible R workflows using the `causalworkshop` package.
+
+**Keywords:** causal inference, workshop, heterogeneous treatment effects, observational data, measurement error, R
+:::
+
+#### SPARCC Day 2: Average Treatment Effects {#sparcc-day-2-ate-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Title:** Average Treatment Effects: Church Attendance and Cooperation  
+**Presenter:** Joseph Bulbulia  
+**Event:** SPARCC Day 2 Causal Inference Workshop  
+**Date:** 12 August 2025  
+**Location:** Seventh College, UC San Diego  
+:::
+
+::: {.presentation-meta}
+Workshop Presentation | Duration: ~60 minutes | Format: PDF Slides
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>📖 View Presentation</h3>
+    <p>The PDF presentation is hosted on Dropbox.</p>
+    <a href="https://www.dropbox.com/scl/fo/7r6651nqozmdo8f1smqj5/AM7_oWlk9p11BGEvypojG10?rlkey=7onptof2aak3pagnzx9m0sk3a&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+        📖 Open Presentation
+    </a>
+</div>
+```
+:::
+
+::: {.callout-note}
+## Alternative Viewing Options
+- **Download:** Use the download button in Dropbox to save a local copy
+- **Full Screen:** Open in new tab and use browser's full screen mode
+:::
+
+::: {.callout-tip}
+## Viewing Tips
+- Use browser zoom controls to adjust text size
+- Navigate with page up/down keys or scroll wheel
+- Compatible with all modern browsers
+:::
+
+**Abstract:** This workshop presentation focuses on average treatment effects in causal inference, specifically examining the relationship between church attendance and cooperation behaviours. Using panel data from New Zealand, we demonstrate methods for identifying and estimating causal effects while addressing common challenges in observational studies including confounding, selection bias, and temporal ordering.
+
+**Keywords:** causal inference, average treatment effects, church attendance, cooperation, panel data, confounding, observational studies, New Zealand
+:::
+
+#### SPARCC Day 2: Heterogeneous Treatment Effects {#sparcc-day-2-hte-2025}
+
+::: {.presentation-container}
+::: {.presentation-header}
+**Title:** Heterogeneous Treatment Effects: Who Benefits from Church Attendance?  
+**Presenter:** Joseph Bulbulia  
+**Event:** SPARCC Day 2 Causal Inference Workshop  
+**Date:** 12 August 2025  
+**Location:** Seventh College, UC San Diego  
+:::
+
+::: {.presentation-meta}
+Workshop Presentation | Duration: ~60 minutes | Format: PDF Slides
+:::
+
+::: {.presentation-embed}
+```{=html}
+<div style="text-align: center; padding: 2rem; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;">
+    <h3>📖 View Presentation</h3>
+    <p>This PDF presentation is hosted on Dropbox.</p>
+    <a href="https://www.dropbox.com/scl/fi/op60chx25eypm36u30zo8/presentation.pdf?rlkey=ya244bljbj7y953p37sejgq0w&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+        📖 Open Presentation
+    </a>
+</div>
+```
+:::
+
+::: {.callout-note}
+## Alternative Viewing Options
+- **Download:** Use the download button in Dropbox to save a local copy
+- **Full Screen:** Open in new tab and use browser's full screen mode
+:::
+
+::: {.callout-tip}
+## Viewing Tips
+- Use browser zoom controls to adjust text size
+- Navigate with page up/down keys or scroll wheel
+- Compatible with all modern browsers
+:::
+
+**Abstract:** This workshop presentation explores heterogeneous treatment effects in the context of religious attendance and well-being outcomes. Moving beyond average effects, we examine how the causal impact of church attendance varies across different population subgroups, using machine learning methods to identify systematic patterns of treatment effect heterogeneity. The presentation demonstrates methods for discovering who benefits most from religious participation.
+
+**Keywords:** heterogeneous treatment effects, causal inference, church attendance, well-being, cooperation, machine learning, subgroup analysis, personalised treatment effects, New Zealand
+
+#### Workshop Context
+
+These presentations were delivered as part of SPARCC Day 2, a methods workshop focusing on advanced statistical techniques for studying religion, spirituality, and social behaviour. The sessions covered practical applications of causal inference methods using real-world longitudinal data, progressing from average treatment effects to more sophisticated heterogeneous effect estimation.
+
+#### Workshop Materials
+
+::: {.callout-note}
+## Workshop Materials
+
+- Workshop website: [go-bayes.github.io/sparcc-day-2](https://go-bayes.github.io/sparcc-day-2/)
+- Workshop repository: [github.com/go-bayes/sparcc-day-2](https://github.com/go-bayes/sparcc-day-2)
+- Teaching software: [causalworkshop package](https://github.com/go-bayes/causalworkshop)
+:::
+:::
+
+---
+
+## Archive of Presentations
+
+*Coming soon...*
+
+---
+
+
+
+<!-- ::: {.callout-note} -->
+<!-- ## Note on Large Files -->
+<!-- To keep our website fast and efficient, presentations are hosted externally on Dropbox. This allows us to share high-quality slides with embedded media while maintaining quick page load times. -->
+<!-- ::: -->

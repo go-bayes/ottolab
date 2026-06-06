@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "A four-part tutorial series published in Evolutionary Human Sciences that provides a systematic introduction to causal inference methods.\n\n\nBeginner level covering essential concepts, DAGs, and confounding bias.\n\n\n\nIntermediate level covering effect modification and complex causal structures.\n\n\n\nIntermediate level focusing on measurement and cross-cultural validity.\n\n\n\nAdvanced level covering experimental design considerations.\n\n\n\n\n\n\nTipGetting Started with R and Causal Tools\n\n\n\nFor an interactive introduction to directed acyclic graphs, see Introduction to Directed Acyclic Graphs. For a visual guide to common bias structures, see Common Structures of Bias. For propensity score weighting, start with the WeightIt documentation."
+  },
+  {
+    "objectID": "resources.html#learning-pathways",
+    "href": "resources.html#learning-pathways",
+    "title": "Resources",
+    "section": "",
+    "text": "A four-part tutorial series published in Evolutionary Human Sciences that provides a systematic introduction to causal inference methods.\n\n\nBeginner level covering essential concepts, DAGs, and confounding bias.\n\n\n\nIntermediate level covering effect modification and complex causal structures.\n\n\n\nIntermediate level focusing on measurement and cross-cultural validity.\n\n\n\nAdvanced level covering experimental design considerations.\n\n\n\n\n\n\nTipGetting Started with R and Causal Tools\n\n\n\nFor an interactive introduction to directed acyclic graphs, see Introduction to Directed Acyclic Graphs. For a visual guide to common bias structures, see Common Structures of Bias. For propensity score weighting, start with the WeightIt documentation."
+  },
+  {
+    "objectID": "resources.html#software-and-tools",
+    "href": "resources.html#software-and-tools",
+    "title": "Resources",
+    "section": "Software and Tools",
+    "text": "Software and Tools\n\nR Packages\n\nCausal InferenceResearch Tools\n\n\nmargot A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at go-bayes.github.io/margot, and the source code is at github.com/go-bayes/margot. Install with devtools::install_github(\"go-bayes/margot\").\nggdag Create directed acyclic graphs for causal inference. Documentation is at r-causal.github.io/ggdag, and the CRAN page is cran.r-project.org/package=ggdag. Install with install.packages(\"ggdag\").\nWeightIt Weighting for covariate balance in observational studies. Documentation is at ngreifer.github.io/WeightIt, and the CRAN page is cran.r-project.org/package=WeightIt. Install with install.packages(\"WeightIt\").\n\n\nboilerplate Tools for generating standardised boilerplate text and documentation for reproducible research. Documentation is at go-bayes.github.io/boilerplate, and the CRAN page is cran.r-project.org/package=boilerplate. Install with install.packages(\"boilerplate\")."
+  },
+  {
+    "objectID": "resources.html#essential-readings",
+    "href": "resources.html#essential-readings",
+    "title": "Resources",
+    "section": "Essential Readings",
+    "text": "Essential Readings\n\nCausal Diagrams and DAGsEffect Modification and InteractionMeasurement and Cross-Cultural ValiditySelection Bias and Experimental DesignPractical WorkflowsHeterogeneous Treatment Effects\n\n\nCore Readings Barrett, M. (2023). ggdag: Analyze and Create Elegant Directed Acyclic Graphs.\nSuzuki, E. et al. (2020). Causal Diagrams: Pitfalls and Tips. Intermediate level.\nNeal, B. (2020). Introduction to Causal Inference, Chapter 3. Beginner level.\nOn the Importance of Timing in Data Hernan, M.A. and Robins, J.M. (2024). Causal Inference: What If, Chapter 6. Advanced level.\n\n\nTutorial VanderWeele, T.J. and Knol, M.J. (2014). A tutorial on interaction.\nFoundational Papers VanderWeele, T.J. (2007). Four Types of Effect Modification. Intermediate level.\nVanderWeele, T.J. (2009). On the Distinction Between Interaction and Effect Modification. Intermediate level.\nApplied Methods Hernan, M.A. and Robins, J.M. (2024). Causal Inference: What If, Chapters 4-5. Intermediate level.\n\n\nMeasurement Theory VanderWeele, T.J. (2022). Constructed Measures and Causal Inference. Advanced level.\nFischer, R. and Karl, J.A. (2019). A Primer to (Cross-Cultural) Multi-Group Invariance Testing. Intermediate level.\nCross-Cultural Methods He, J. and Van de Vijver, F.J.R. (2012). Bias and Equivalence in Cross-Cultural Research. Intermediate level.\nHarkness, J.A. (2003). Questionnaire Translation. Beginner level.\n\n\nSelection Bias Hernan, M.A. et al. (2004). A Structural Approach to Selection Bias. Advanced level.\nHernan, M.A. (2017). Selection Without Colliders. Advanced level.\nMeasurement Error Hernan, M.A. and Cole, S.R. (2009). Causal Diagrams for Measurement Error. Intermediate level.\n\n\nImplementation Guides Bulbulia, J.A. (2024). A Practical Guide to Causal Inference. Beginner level.\nHoffman, K.M. et al. (2023). Comparison Groups in Propensity Score Analysis. Intermediate level.\nOutcome-Wide Approaches VanderWeele, T.J. et al. (2020). Outcome-Wide Longitudinal Designs. Intermediate level.\n\n\nKey Papers Athey, S. and Wager, S. (2019). Estimating Treatment Effects with Causal Forests: An Application. Intermediate level.\nWager, S. and Athey, S. (2018). Estimation and Inference of Heterogeneous Treatment Effects using Random Forests. Advanced level.\nKunzel, S.R. et al. (2019). Metalearners for Estimating Heterogeneous Treatment Effects using Machine Learning. Intermediate level.\nPractical Applications Davis, J. and Heller, S.B. (2017). Using Causal Forests to Predict Treatment Heterogeneity. Beginner level.\nAthey, S. and Imbens, G.W. (2016). Recursive Partitioning for Heterogeneous Causal Effects. Intermediate level."
+  },
+  {
+    "objectID": "resources.html#video-library",
+    "href": "resources.html#video-library",
+    "title": "Resources",
+    "section": "Video Library",
+    "text": "Video Library\n\nHow Do We Learn What Works?\nMiguel Hernan\n\n\n\n\n\nMeasurement Constructs\nTyler VanderWeele\n\n\n\n\n\nEffect Modification and Heterogeneity\nStijn Vansteelandt and Betsy Ogburn\n\n\n\n\nIntroduction to Causal Forests\nSusan Athey and Stefan Wager\n\n\n\n\n\nTechnical Deep Dive: Causal Forests\nStefan Wager\n\n\n\n\n\n\nHow Traditional Statistical Mediation Analysis Fails\nStijn Vansteelandt\n\n\n\n\n\nDesign\n\nSynthetic Control Methods\nAlberto Abadie\n\n\n\n\n\nDifference-in-Differences\nPaul Goldsmith-Pinkham\n\n\n\n\n\nInstrumental Variables\nBrady Neal\n\n\n\n\n\nIntroduction to Causal Inference\nRichard McElreath\n\n\n\n\n\nCausal Inference in Industry\nSean Taylor"
+  },
+  {
+    "objectID": "resources.html#educational-materials",
+    "href": "resources.html#educational-materials",
+    "title": "Resources",
+    "section": "Educational Materials",
+    "text": "Educational Materials\n\nWorkshop Materials\nThe SPARCC Causal Inference Workshop offers a concise, practical entry point. For a full course sequence, see PSYC 434: Conducting Research Across Cultures."
+  },
+  {
+    "objectID": "resources.html#reference-texts",
+    "href": "resources.html#reference-texts",
+    "title": "Resources",
+    "section": "Reference Texts",
+    "text": "Reference Texts\n\nCore Textbooks\n\n\nCausal Inference: What If Miguel A. Hernan and James M. Robins Free Book and Resources. The definitive text on causal inference methods with code examples.\n\nExplanation in Causal Inference Tyler VanderWeele Link to OUP page. A strong account of causal mediation analysis and interaction. The hardback is expensive, so a library copy is often the easiest option.\n\n\n\n\nThe Effect Nick Huntington-Klein Free Online. A practical guide with clear visualisations.\n\n\n\n\nAdditional Resources\nStatistical Rethinking by Richard McElreath provides a Bayesian approach to causal inference. Counterfactuals and Causal Inference by Morgan and Winship focuses on social science applications. Targeted Learning by van der Laan and Rose offers a machine learning perspective on causal inference."
+  },
+  {
+    "objectID": "resources.html#quick-reference",
+    "href": "resources.html#quick-reference",
+    "title": "Resources",
+    "section": "Quick Reference",
+    "text": "Quick Reference\n\n\n\n\n\n\nNoteWhere to Start\n\n\n\nIf you are new to causal inference, begin with our four-part tutorial series. If you need DAGs, the ggdag tutorials are a good first step. If you are ready to analyse data, install margot and follow the practical guide. For cross-cultural research, start with Part 3 of the series.\n\n\n\n\n\n\n\n\nTipContributing\n\n\n\nHave a resource to suggest or a broken link to fix? Please contact us or submit an issue on our GitHub repository."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About OTTO Lab",
+    "section": "",
+    "text": "OTTO Lab (Observational Target Trial Outcomes) uses causal inference to address long-standing debates and real-world problems. Rigorous causal workflows clarify what works, for whom, when, and in which context - questions that matter for science, policy, and understanding cultural diversity.\nWe are based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington, and is affiliated with the Centre for Applied Cross-Cultural Research (CACR).\nWe also maintain Places Map, an open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at github.com/go-bayes/places-of-worship."
+  },
+  {
+    "objectID": "about.html#approach",
+    "href": "about.html#approach",
+    "title": "About OTTO Lab",
+    "section": "Approach",
+    "text": "Approach\nWe combine causal inference workflows with domain expertise to:\n\nIdentify and state clearly defined causal questions\nDesign studies that answer these questions\nClearly communicate findings"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About OTTO Lab",
+    "section": "Contact",
+    "text": "Contact\nEmail: joseph.bulbulia@vuw.ac.nz\nSchool: School of Psychological Sciences\nCentre affiliation: Centre for Applied Cross-Cultural Research (CACR)\nInstitution: Te Herenga Waka - Victoria University of Wellington, New Zealand\nLocation: Easterfield Building, Room EA 324, Kelburn Campus\nX (Twitter): @prof_joe_\n\nLocation"
+  },
+  {
+    "objectID": "about.html#funding",
+    "href": "about.html#funding",
+    "title": "About OTTO Lab",
+    "section": "Funding",
+    "text": "Funding\nThe OTTO Lab group gratefully acknowledges support from:\nTempleton Religion Trust\n\nTRT0418: “New Zealand Attitudes and Values Study Matching Grant”\n\nJoseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton\n\nTRT-2022-30666: “Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities”\n\nJoseph Bulbulia (Contact PI) and Joseph Watts\n\n\n\n\n\n\n\nVictoria University of Wellington\n\n\n\n\n\n\n\n\n\nTempleton Religion Trust"
+  },
+  {
+    "objectID": "reports.html",
+    "href": "reports.html",
+    "title": "Reports",
+    "section": "",
+    "text": "NoteGeneral Research Reports (Previous Reports Page)\n\n\n\nBrowse General Reports →\nOur main repository of research reports covering: - Muslim acceptance and prejudice studies - COVID-19 pandemic impacts - Climate science trust - Environmental attitudes and religion - Health and well-being analyses - Methodological papers\n\n\n\n\n\n\n\n\nNoteB-Causal: Causal Inference Resources (Previous Lab)\n\n\n\nBrowse B-Causal Reports →\nSpecialised resources for causal inference including: - Causal inference tutorials - Methodological guides - Applied examples - Code demonstrations\n\n\n\n\n\n\nMuslim Acceptance Study - How the Christchurch attacks affected attitudes toward Muslims in New Zealand\nCOVID-19 Analysis - Pandemic impacts on well-being and social cohesion\nClimate Science Trust - Causal relationships between trust in science and environmental attitudes\nReligious Simpson’s Paradox - Uncovering complex patterns in religious data\n\n\n\n\n\nAll reports are freely available through our GitHub Pages repositories. For specific reports, datasets, or questions, please contact:\n📧 joseph.bulbulia@vuw.ac.nz\n\n\n\n\nWhen citing our reports, please use the following format:\n\nAuthor(s). (Year). Report Title. OTTO Lab Reports, Te Herenga Waka - Victoria University of Wellington. URL"
+  },
+  {
+    "objectID": "reports.html#research-reports-working-papers",
+    "href": "reports.html#research-reports-working-papers",
+    "title": "Reports",
+    "section": "",
+    "text": "NoteGeneral Research Reports (Previous Reports Page)\n\n\n\nBrowse General Reports →\nOur main repository of research reports covering: - Muslim acceptance and prejudice studies - COVID-19 pandemic impacts - Climate science trust - Environmental attitudes and religion - Health and well-being analyses - Methodological papers\n\n\n\n\n\n\n\n\nNoteB-Causal: Causal Inference Resources (Previous Lab)\n\n\n\nBrowse B-Causal Reports →\nSpecialised resources for causal inference including: - Causal inference tutorials - Methodological guides - Applied examples - Code demonstrations\n\n\n\n\n\n\nMuslim Acceptance Study - How the Christchurch attacks affected attitudes toward Muslims in New Zealand\nCOVID-19 Analysis - Pandemic impacts on well-being and social cohesion\nClimate Science Trust - Causal relationships between trust in science and environmental attitudes\nReligious Simpson’s Paradox - Uncovering complex patterns in religious data\n\n\n\n\n\nAll reports are freely available through our GitHub Pages repositories. For specific reports, datasets, or questions, please contact:\n📧 joseph.bulbulia@vuw.ac.nz\n\n\n\n\nWhen citing our reports, please use the following format:\n\nAuthor(s). (Year). Report Title. OTTO Lab Reports, Te Herenga Waka - Victoria University of Wellington. URL"
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "People",
+    "section": "",
+    "text": "Joseph Bulbulia\n\n\n\nDirector, OTTO Lab: 📧 joseph.bulbulia@vuw.ac.nz\n🔗 University Profile Full CV\nAboutOTTO Lab is based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington.Joseph Bulbulia (Joe) teaches and researches in the School of Psychological Sciences at Victoria University of Wellington. His research investigates the complex drivers of human cooperation, conflict, and well-being, with a focus on the role of religion and values. Joseph specialises in methodologies for inferring causality from observational data. He also directs the Centre for Applied Cross-Cultural Research (CACR).Research Projects Joe contributes to two major longitudinal projects:\nNew Zealand Attitudes and Values Study (NZAVS): Joe serves as a principal investigator on major NZAVS projects. He uses 15 years of repeated-measures longitudinal data from more than 76,000 New Zealanders to investigate religion, social cohesion, and trust.\nPulotu Database of Pacific Religions: As a founding co-investigator, Joe uses this database of 116 Austronesian cultures to test theories about the evolution of religious beliefs and their effects on social behaviour.\n\n\nJoe supervises students in a broad range of areas, including:\n\nPersonality and individual differences\nPolitical psychology\nWell-being/Flourishing\nReligion (his primary interest)"
+  },
+  {
+    "objectID": "team.html#director",
+    "href": "team.html#director",
+    "title": "People",
+    "section": "",
+    "text": "Joseph Bulbulia\n\n\n\nDirector, OTTO Lab: 📧 joseph.bulbulia@vuw.ac.nz\n🔗 University Profile Full CV\nAboutOTTO Lab is based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington.Joseph Bulbulia (Joe) teaches and researches in the School of Psychological Sciences at Victoria University of Wellington. His research investigates the complex drivers of human cooperation, conflict, and well-being, with a focus on the role of religion and values. Joseph specialises in methodologies for inferring causality from observational data. He also directs the Centre for Applied Cross-Cultural Research (CACR).Research Projects Joe contributes to two major longitudinal projects:\nNew Zealand Attitudes and Values Study (NZAVS): Joe serves as a principal investigator on major NZAVS projects. He uses 15 years of repeated-measures longitudinal data from more than 76,000 New Zealanders to investigate religion, social cohesion, and trust.\nPulotu Database of Pacific Religions: As a founding co-investigator, Joe uses this database of 116 Austronesian cultures to test theories about the evolution of religious beliefs and their effects on social behaviour.\n\n\nJoe supervises students in a broad range of areas, including:\n\nPersonality and individual differences\nPolitical psychology\nWell-being/Flourishing\nReligion (his primary interest)"
+  },
+  {
+    "objectID": "team.html#phd-students",
+    "href": "team.html#phd-students",
+    "title": "People",
+    "section": "PhD Students",
+    "text": "PhD Students\n\nJessie Auckram\n\n\n\n\n\nJessie Auckram\n\n\n\nJessie is investigating individual differences in personal resilience related to deprivation.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning\n\n\n\n\n\nJake Ireland\n\n\n\n\n\nJake Ireland\n\n\n\nJake graduated with a Bachelor of Science in Psychology and Mathematics from Victoria University of Wellington in 2020. During his studies, he contributed to research on cross-cultural psychology, drug abuse, and face perception. Since graduating, he has worked in cyber security and, since 2022, has been researching cultural evolution with the Causal Lab at Victoria University. He completed his Honours in 2024 and began his PhD in 2025. Jake is investigating the co-evolution of religious and political culture in the Pacific.\n\nProject: Pulotu\nMethods: Causal Machine Learning\nORCID Profile\n\n\n\n\n\nMohammad Islam\n\n\n\n\n\nMohammad Islam\n\n\n\nMohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice. He joins the lab from Bangladesh.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning\n\n\n\n\n\nMekonnen Tsehay\n\n\n\n\n\nMekonnen Tsehay\n\n\n\nMekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. He joins the lab from Ethiopia.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning"
+  },
+  {
+    "objectID": "team.html#masters-students",
+    "href": "team.html#masters-students",
+    "title": "People",
+    "section": "Master’s Students",
+    "text": "Master’s Students\n\nBoyang Cao\n\n\n\n\n\nBoyang Cao\n\n\n\nBoyang is researching the causal effects of prejudice on personality.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning\n\n\n\n\n\nHannah Robinson\n\n\n\n\n\nHannah Robinson\n\n\n\nHannah is researching the causal effects of religious service attendance on personality.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning\n\n\n\n\n\nZahle Wisely\n\n\n\n\n\nZahle Wisely\n\n\n\nZahle is investigating the causal effects of employer gratitude on multi-dimensional well-being.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning"
+  },
+  {
+    "objectID": "team.html#research-assistants",
+    "href": "team.html#research-assistants",
+    "title": "People",
+    "section": "Research Assistants",
+    "text": "Research Assistants\n\nMillie Rea\n\n\n\n\n\nMillie Rea\n\n\n\nMillie is investigating extensions of OTTO Lab workflows to policy settings, focusing on IDI (Integrated Data Infrastructure) data.\n\nMethods: Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning"
+  },
+  {
+    "objectID": "team.html#alumni",
+    "href": "team.html#alumni",
+    "title": "People",
+    "section": "Alumni",
+    "text": "Alumni\n\nDr. Inkuk Kim\n\n\n\n\n\nDr. Inkuk Kim\n\n\n\nDr. Inkuk Kim worked with OTTO Lab as a Research Fellow at the Centre for Applied Cross-cultural Research and the School of Psychological Sciences at Victoria University of Wellington. He has moved to take up a postdoctoral fellowship at the HAPPI Lab at Georgia State University (GSU), working with Don E. Davis. Inkuk remains a Fellow of OTTO Lab and is working on projects related to environmental psychology, trust in science, and character formation over the adult lifespan.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Longitudinal Modified Treatment Policies; Causal Machine Learning\nORCID Profile\nUniversity Profile\nGitHub\n\n\n\n\n\nDr. John Mark Kempthorne\n\n\n\n\n\nDr. JohnMark Kempthorne\n\n\n\nJohn Mark received his PhD from the School of Psychology at Victoria University of Wellington in 2025. His disseration investigated application of causal methods to NZAVS time-series data. He is currently working as a Post-doctoral Fellow at the Shaver Lab\n\nORCID Profile\n\n\n\n\n\nBella Chong\n\n\n\n\n\nBella Chong\n\n\n\nBella received her Master’s degree from Victoria University of Wellington in 2023. Her research investigated the causal effects of work hours on multi-dimensional well-being.\n\nProject: New Zealand Attitudes and Values Study (NZAVS)\nMethods: Longitudinal Modified Treatment Policies\nORCID Profile"
+  },
+  {
+    "objectID": "team.html#join-the-lab",
+    "href": "team.html#join-the-lab",
+    "title": "People",
+    "section": "Join the lab",
+    "text": "Join the lab\nIf you’re interested in joining the lab, please contact:\n📧 joseph.bulbulia@vuw.ac.nz"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Places Map is a core OTTO Lab research infrastructure project. It supports mapping, curation, and analysis of places of worship and related cultural data for open science and policy targeting. Project code and workflows are available at github.com/go-bayes/places-of-worship."
+  },
+  {
+    "objectID": "research.html#featured-infrastructure",
+    "href": "research.html#featured-infrastructure",
+    "title": "Research",
+    "section": "",
+    "text": "Places Map is a core OTTO Lab research infrastructure project. It supports mapping, curation, and analysis of places of worship and related cultural data for open science and policy targeting. Project code and workflows are available at github.com/go-bayes/places-of-worship."
+  },
+  {
+    "objectID": "research.html#complete-publication-list",
+    "href": "research.html#complete-publication-list",
+    "title": "Research",
+    "section": "Complete Publication List",
+    "text": "Complete Publication List\nFor a comprehensive and up-to-date list of publications, please visit:\n\nORCID Profile"
+  },
+  {
+    "objectID": "research.html#selected-recent-publications",
+    "href": "research.html#selected-recent-publications",
+    "title": "Research",
+    "section": "Selected Recent Publications",
+    "text": "Selected Recent Publications\n\n2026\n\nTarget trial emulation shows that supported causal effects of religious attendance on well-being are selective Bulbulia, J. A., Davis, D. E., Park, C. L., Rice, K. G., Troughton, G., Van Tongeren, D. R., & Sibley, C. G. Evolutionary Human Sciences, 8 Full Text\n\n\n\n2025 Preprints\n\nAn Invitation to Causal Inference in Environmental Psychology\nOSF Preprint\nBeyond Deficit Narratives: Religious Prejudice, Meaning, and Resilience in a National Sample of New Zealand Muslims\nOSF Preprint\n\n\n\n2024\n\nCausal effects of religious service attendance on charity and volunteering using novel measures from a national longitudinal panel\nBulbulia, J. A., Davis, D. E., Rice, K., Sibley, C. G., & Troughton, G.\nArchive for the Psychology of Religion 46(3), 244-267\nFull Text\nMethods in Causal Inference Series\n\nPart 1: Causal Diagrams and Confounding\nPart 2: Interaction, Mediation, and Time-Varying Treatments\n\nPart 3: Measurement Error and External Validity Threats\nPart 4: Confounding in Experiments\nEvolutionary Human Sciences, 6\n\nThe anatomy of prejudice during pandemic lockdowns: Evidence from a national panel study\nKempthorne, J., Yogeeswaran, K., Sibley, C. G., & Bulbulia, J. A.\nPLOS ONE, 19(5), 1–14\nFull Text\n\n\n\n2023\n\nA workflow for causal inference in cross-cultural psychology\nBulbulia, J. A.\nReligion, Brain & Behavior, 13(3), 291-306\nFull Text\nLong-term causal effects of far-right terrorism in New Zealand\nBulbulia, J. A., Afzali, M. U., Yogeeswaran, K., & Sibley, C. G.\nPNAS Nexus, 2(8), pgad242\nFull Text"
+  },
+  {
+    "objectID": "research.html#software",
+    "href": "research.html#software",
+    "title": "Research",
+    "section": "Software",
+    "text": "Software\n\nboilerplate: A lightweight and flexible toolkit for reporting workflows and measures, for reproducible research\nJ. A. Bulbulia\nR package version 1.3.0, License: MIT, 2024\nPackage Website | CRAN | DOI\nmargot: MARGinal Observational Treatment-effects\nJ. A. Bulbulia\nR package version 0.2.3, License: CC BY 4.0, 2024\nPackage Website | DOI"
+  },
+  {
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
+    "section": "Working Papers",
+    "text": "Working Papers\nVisit our GitHub for preprints and working papers.\n\n\n\n\n\n\n\nTipCitation Formats\n\n\n\nAll publications include DOI links when available. Click on any publication for full citation details and export options."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "March 2026 | Georgia State University\nIt is with mixed feelings that we say goodbye to Dr Inkuk Kim, who has taken up a postdoctoral fellowship with Professor Don E. Davis at the HAPPI Lab at Georgia State University.\nInkuk remains a Fellow of OTTO Lab and is working on a number of projects related to environmental psychology, trust in science, and character formation over the adult lifespan.\n\n\n\n\n20 February 2026 | Victoria University of Wellington\nThe Places Map project is now live at placesmap.org. Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.\nProject code and workflows are available at github.com/go-bayes/places-of-worship.\n\n\n\n\nJanuary 2026 | Victoria University of Wellington\nWe are delighted to welcome two new PhD students to OTTO Lab: Mekonnen Tsehay and Mohammad Islam.\nMekonnen joins the lab from Ethiopia. He is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand.\nMohammad joins the lab from Bangladesh. He is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice.\nA warm welcome to Mekonnen and Mohammad."
+  },
+  {
+    "objectID": "news.html#section",
+    "href": "news.html#section",
+    "title": "News",
+    "section": "",
+    "text": "March 2026 | Georgia State University\nIt is with mixed feelings that we say goodbye to Dr Inkuk Kim, who has taken up a postdoctoral fellowship with Professor Don E. Davis at the HAPPI Lab at Georgia State University.\nInkuk remains a Fellow of OTTO Lab and is working on a number of projects related to environmental psychology, trust in science, and character formation over the adult lifespan.\n\n\n\n\n20 February 2026 | Victoria University of Wellington\nThe Places Map project is now live at placesmap.org. Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.\nProject code and workflows are available at github.com/go-bayes/places-of-worship.\n\n\n\n\nJanuary 2026 | Victoria University of Wellington\nWe are delighted to welcome two new PhD students to OTTO Lab: Mekonnen Tsehay and Mohammad Islam.\nMekonnen joins the lab from Ethiopia. He is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand.\nMohammad joins the lab from Bangladesh. He is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice.\nA warm welcome to Mekonnen and Mohammad."
+  },
+  {
+    "objectID": "news.html#section-1",
+    "href": "news.html#section-1",
+    "title": "News",
+    "section": "2025",
+    "text": "2025\n\nSASP 2025 Pre-Conference Workshop in Melbourne\n19 November 2025 | University of Melbourne | 23 participants\nThe lab travelled to Melbourne for the Society of Australasian Social Psychologists (SASP) 2025 conference, where Joseph Bulbulia led a full-day pre-conference workshop: Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology.\nTwo OTTO Lab students presented their research applying causal inference methods:\n\nZahle Wiseley: Does Employer Gratitude Improve Employee Well-being? — Using NZAVS data to examine causal effects of workplace appreciation on employee outcomes. Slides (PDF)\nHannah Robinson: Religion and Personality — Investigating causal relationships between religious service attendance and personality traits. Slides (PDF)\n\nWe were also joined by collaborator Dr Usman Afzali (University of Otago, Muslim Flourishing Study), who presented on Muslim community-making and resilience in New Zealand.\n\n\n\n\n\n\nJoseph Bulbulia presenting on causal inference\n\n\n\n\n\n\n\nWorkshop participants\n\n\n\n\n\n\n\n\n\nZahle Wiseley presenting her research\n\n\n\n\n\n\n\nHannah Robinson presenting her research\n\n\n\n\n\n\n\n\nDr Usman Afzali presenting on Muslim community-making and resilience\n\n\nResources:\n\nWorkshop website: go-bayes.github.io/2025-workshop-ci-sasp\nWorkshop materials: github.com/go-bayes/2025-workshop-ci-sasp\nTeaching software: causalworkshop package"
+  },
+  {
+    "objectID": "news.html#past-events",
+    "href": "news.html#past-events",
+    "title": "News",
+    "section": "Past Events",
+    "text": "Past Events\n\n[2025 August 10-13]: Workshop on Causal Inferece at the University of San Diego link\n\n\nAugust 2025: William Bier Interdisciplinary Award Lecture\n8 August 2025 | Denver, Colorado\nJoseph Bulbulia delivered the William Bier Interdisciplinary Award lecture: Who Benefits from Religious Attendance? Heterogeneous Causal Effects on Well-being and Cooperation in New Zealand. The William Bier Interdisciplinary Award is presented by the American Psychological Association Division 36 (Psychology of Religion and Spirituality).\n\n\n\nJoseph Bulbulia delivering the William Bier Interdisciplinary Award lecture\n\n\nView presentation slides"
+  },
+  {
+    "objectID": "news.html#section-2",
+    "href": "news.html#section-2",
+    "title": "News",
+    "section": "2024",
+    "text": "2024\nNews archive coming soon…"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OTTO Lab",
+    "section": "",
+    "text": "School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington\n\n\n\nObservational Target Trial Outcomes\n\n\nObservational causal inference for psychological science. Association does not imply causation. However, many of the really big questions can’t be addressed with experiments. Recent innovations in computer science, economics, and epidemiology reveal that under certain conditions, observational associations can support causal inferences. These methods are not widely employed in psychological science. We develop and apply causal inference methods to questions in psychological science. We also build research tools, teach these methods, and collaborate with investigators from around New Zealand and the World.\n\n\nResearch Methods & resources joseph.bulbulia@vuw.ac.nz"
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "OTTO Lab",
+    "section": "Selected work",
+    "text": "Selected work\nTarget trial emulation shows that supported causal effects of religious attendance on well-being are selective Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). Evolutionary Human Sciences, 8. DOI\nLong-term causal effects of far-right terrorism in New Zealand Bulbulia, Afzali, Yogeeswaran & Sibley (2023). PNAS Nexus\nLife loses some meaning after leaving religion Van Tongeren, Davis, Sibley & Bulbulia (2025). Psychology of Religion and Spirituality\nThe causal effects of religious service attendance on prosocial behaviours in New Zealand Bulbulia, Davis, Rice, Sibley & Troughton (2024). Archive for the Psychology of Religion\nMethods in causal inference: a four-part tutorial series Bulbulia (2024). Evolutionary Human Sciences\nCausal effect of psychopathy on partner well-being Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). Journal of Personality\nAll publications"
+  },
+  {
+    "objectID": "index.html#places-map",
+    "href": "index.html#places-map",
+    "title": "OTTO Lab",
+    "section": "Places Map",
+    "text": "Places Map\nPlaces Map maps places of worship worldwide for reproducible spatial and cultural analysis.\nVisit Places Map · Code"
+  },
+  {
+    "objectID": "index.html#collaboration-and-teaching",
+    "href": "index.html#collaboration-and-teaching",
+    "title": "OTTO Lab",
+    "section": "Collaboration and teaching",
+    "text": "Collaboration and teaching\nThe lab supports graduate supervision, methods teaching in causal inference, and applied collaboration. We welcome enquiries.\n\nMeet the lab · Presentations · News · Reports\n\n\nAffiliated with the Centre for Applied Cross-Cultural Research · School of Psychological Sciences · GitHub"
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Title: Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology\nPresenter: Joseph Bulbulia\nEvent: SASP 2025 Pre-Conference Workshop\nDate: 19 November 2025\nLocation: University of Melbourne\n\n\nWorkshop Website | Format: Quarto site + GitHub materials\n\n\n\n    \n    The workshop site includes logistics, notes, setup instructions, and hand-outs.\n    \n        Open Workshop Site\n    \n    \n        Workshop Repository\n    \n\n\nAbstract: This full-day workshop introduced causal inference for observational social psychology, with an emphasis on clearly formulated causal questions, identification assumptions, doubly robust estimation, and heterogeneous treatment effects. The workshop site includes lecture notes, exercises, and setup instructions for the causalworkshop package.\nKeywords: causal inference, observational social psychology, workshop, heterogeneous treatment effects, teaching, R\n\n\n\n\n\nEvent: SASP 2025 Pre-Conference Workshop — Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology Date: 19 November 2025 Location: University of Melbourne\n\n\n\n\nStudent Presentation | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\nAbstract: Using longitudinal data from Wave 20 of the New Zealand Attitudes and Values Study (NZAVS), this presentation examines the causal effects of perceived employer gratitude on employee well-being outcomes across multiple domains including health, psychological, present-focused, life-reflective, and social well-being.\nKeywords: employer gratitude, employee well-being, causal inference, NZAVS, workplace appreciation\n\n\n\n\n\nStudent Presentation | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\nAbstract: This presentation investigates the causal relationship between religious service attendance and personality traits, moving beyond correlational findings to examine whether religious participation causally influences personality development.\nKeywords: religion, personality, religious service attendance, causal inference, NZAVS\n\n\n\n\n\n\n\n\n\nTitle: Who Benefits from Religious Attendance? Heterogeneous Causal Effects on Well-being and Cooperation in New Zealand\nPresenter: Joseph Bulbulia\nEvent: William Bier Interdisciplinary Award, APA Division 36 Psychology of Religion\nDate: 2025\nTime: 11:30-12:30\nLocation: Convention Centre Street Level 208\n\n\nConference Presentation | Duration: ~50 minutes | Format: HTML Slides\n\n\n\n    \n    The presentation is hosted on Dropbox. It will not render on a cellphone\n    \n        Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy. Renders best in Google Chrome.\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nOpen in full screen mode\nUse arrow keys to navigate between slides\nPress ‘S’ for speaker notes.\n\n\n\nAbstract: We examine how the causal effects of religious participation on well-being and cooperation vary across different population subgroups. The study links two literatures on religious attendance that have developed independently: health and cooperation.\nKeywords: causal inference, heterogeneous effects, religion, well-being, cooperation, longitudinal, panel, New Zealand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle: Beyond Averages: Heterogeneous Treatment Effects\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Website | Format: Quarto site + GitHub materials\n\n\n\n    \n    The workshop site includes setup, agenda, notes, case studies, and downloadable materials.\n    \n        Open Workshop Site\n    \n    \n        Workshop Repository\n    \n\n\nAbstract: This workshop provides a practice-oriented introduction to advanced causal inference for observational social research. The materials cover average and heterogeneous treatment effects, time-resolved confounding, measurement error, and reproducible R workflows using the causalworkshop package.\nKeywords: causal inference, workshop, heterogeneous treatment effects, observational data, measurement error, R\n\n\n\n\n\nTitle: Average Treatment Effects: Church Attendance and Cooperation\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Presentation | Duration: ~60 minutes | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy\nFull Screen: Open in new tab and use browser’s full screen mode\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nUse browser zoom controls to adjust text size\nNavigate with page up/down keys or scroll wheel\nCompatible with all modern browsers\n\n\n\nAbstract: This workshop presentation focuses on average treatment effects in causal inference, specifically examining the relationship between church attendance and cooperation behaviours. Using panel data from New Zealand, we demonstrate methods for identifying and estimating causal effects while addressing common challenges in observational studies including confounding, selection bias, and temporal ordering.\nKeywords: causal inference, average treatment effects, church attendance, cooperation, panel data, confounding, observational studies, New Zealand\n\n\n\n\n\n\nTitle: Heterogeneous Treatment Effects: Who Benefits from Church Attendance?\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Presentation | Duration: ~60 minutes | Format: PDF Slides\n\n\n\n    \n    This PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy\nFull Screen: Open in new tab and use browser’s full screen mode\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nUse browser zoom controls to adjust text size\nNavigate with page up/down keys or scroll wheel\nCompatible with all modern browsers\n\n\n\nAbstract: This workshop presentation explores heterogeneous treatment effects in the context of religious attendance and well-being outcomes. Moving beyond average effects, we examine how the causal impact of church attendance varies across different population subgroups, using machine learning methods to identify systematic patterns of treatment effect heterogeneity. The presentation demonstrates methods for discovering who benefits most from religious participation.\nKeywords: heterogeneous treatment effects, causal inference, church attendance, well-being, cooperation, machine learning, subgroup analysis, personalised treatment effects, New Zealand\n\n\nThese presentations were delivered as part of SPARCC Day 2, a methods workshop focusing on advanced statistical techniques for studying religion, spirituality, and social behaviour. The sessions covered practical applications of causal inference methods using real-world longitudinal data, progressing from average treatment effects to more sophisticated heterogeneous effect estimation.\n\n\n\n\n\n\n\n\n\nNoteWorkshop Materials\n\n\n\n\nWorkshop website: go-bayes.github.io/sparcc-day-2\nWorkshop repository: github.com/go-bayes/sparcc-day-2\nTeaching software: causalworkshop package"
+  },
+  {
+    "objectID": "presentations.html#presentations",
+    "href": "presentations.html#presentations",
+    "title": "Presentations",
+    "section": "",
+    "text": "Title: Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology\nPresenter: Joseph Bulbulia\nEvent: SASP 2025 Pre-Conference Workshop\nDate: 19 November 2025\nLocation: University of Melbourne\n\n\nWorkshop Website | Format: Quarto site + GitHub materials\n\n\n\n    \n    The workshop site includes logistics, notes, setup instructions, and hand-outs.\n    \n        Open Workshop Site\n    \n    \n        Workshop Repository\n    \n\n\nAbstract: This full-day workshop introduced causal inference for observational social psychology, with an emphasis on clearly formulated causal questions, identification assumptions, doubly robust estimation, and heterogeneous treatment effects. The workshop site includes lecture notes, exercises, and setup instructions for the causalworkshop package.\nKeywords: causal inference, observational social psychology, workshop, heterogeneous treatment effects, teaching, R\n\n\n\n\n\nEvent: SASP 2025 Pre-Conference Workshop — Beyond Correlation: A Practical Introduction to Causal Inference in Observational Social Psychology Date: 19 November 2025 Location: University of Melbourne\n\n\n\n\nStudent Presentation | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\nAbstract: Using longitudinal data from Wave 20 of the New Zealand Attitudes and Values Study (NZAVS), this presentation examines the causal effects of perceived employer gratitude on employee well-being outcomes across multiple domains including health, psychological, present-focused, life-reflective, and social well-being.\nKeywords: employer gratitude, employee well-being, causal inference, NZAVS, workplace appreciation\n\n\n\n\n\nStudent Presentation | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\nAbstract: This presentation investigates the causal relationship between religious service attendance and personality traits, moving beyond correlational findings to examine whether religious participation causally influences personality development.\nKeywords: religion, personality, religious service attendance, causal inference, NZAVS\n\n\n\n\n\n\n\n\n\nTitle: Who Benefits from Religious Attendance? Heterogeneous Causal Effects on Well-being and Cooperation in New Zealand\nPresenter: Joseph Bulbulia\nEvent: William Bier Interdisciplinary Award, APA Division 36 Psychology of Religion\nDate: 2025\nTime: 11:30-12:30\nLocation: Convention Centre Street Level 208\n\n\nConference Presentation | Duration: ~50 minutes | Format: HTML Slides\n\n\n\n    \n    The presentation is hosted on Dropbox. It will not render on a cellphone\n    \n        Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy. Renders best in Google Chrome.\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nOpen in full screen mode\nUse arrow keys to navigate between slides\nPress ‘S’ for speaker notes.\n\n\n\nAbstract: We examine how the causal effects of religious participation on well-being and cooperation vary across different population subgroups. The study links two literatures on religious attendance that have developed independently: health and cooperation.\nKeywords: causal inference, heterogeneous effects, religion, well-being, cooperation, longitudinal, panel, New Zealand\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTitle: Beyond Averages: Heterogeneous Treatment Effects\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Website | Format: Quarto site + GitHub materials\n\n\n\n    \n    The workshop site includes setup, agenda, notes, case studies, and downloadable materials.\n    \n        Open Workshop Site\n    \n    \n        Workshop Repository\n    \n\n\nAbstract: This workshop provides a practice-oriented introduction to advanced causal inference for observational social research. The materials cover average and heterogeneous treatment effects, time-resolved confounding, measurement error, and reproducible R workflows using the causalworkshop package.\nKeywords: causal inference, workshop, heterogeneous treatment effects, observational data, measurement error, R\n\n\n\n\n\nTitle: Average Treatment Effects: Church Attendance and Cooperation\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Presentation | Duration: ~60 minutes | Format: PDF Slides\n\n\n\n    \n    The PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy\nFull Screen: Open in new tab and use browser’s full screen mode\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nUse browser zoom controls to adjust text size\nNavigate with page up/down keys or scroll wheel\nCompatible with all modern browsers\n\n\n\nAbstract: This workshop presentation focuses on average treatment effects in causal inference, specifically examining the relationship between church attendance and cooperation behaviours. Using panel data from New Zealand, we demonstrate methods for identifying and estimating causal effects while addressing common challenges in observational studies including confounding, selection bias, and temporal ordering.\nKeywords: causal inference, average treatment effects, church attendance, cooperation, panel data, confounding, observational studies, New Zealand\n\n\n\n\n\n\nTitle: Heterogeneous Treatment Effects: Who Benefits from Church Attendance?\nPresenter: Joseph Bulbulia\nEvent: SPARCC Day 2 Causal Inference Workshop\nDate: 12 August 2025\nLocation: Seventh College, UC San Diego\n\n\nWorkshop Presentation | Duration: ~60 minutes | Format: PDF Slides\n\n\n\n    \n    This PDF presentation is hosted on Dropbox.\n    \n        📖 Open Presentation\n    \n\n\n\n\n\n\n\n\nNoteAlternative Viewing Options\n\n\n\n\nDownload: Use the download button in Dropbox to save a local copy\nFull Screen: Open in new tab and use browser’s full screen mode\n\n\n\n\n\n\n\n\n\nTipViewing Tips\n\n\n\n\nUse browser zoom controls to adjust text size\nNavigate with page up/down keys or scroll wheel\nCompatible with all modern browsers\n\n\n\nAbstract: This workshop presentation explores heterogeneous treatment effects in the context of religious attendance and well-being outcomes. Moving beyond average effects, we examine how the causal impact of church attendance varies across different population subgroups, using machine learning methods to identify systematic patterns of treatment effect heterogeneity. The presentation demonstrates methods for discovering who benefits most from religious participation.\nKeywords: heterogeneous treatment effects, causal inference, church attendance, well-being, cooperation, machine learning, subgroup analysis, personalised treatment effects, New Zealand\n\n\nThese presentations were delivered as part of SPARCC Day 2, a methods workshop focusing on advanced statistical techniques for studying religion, spirituality, and social behaviour. The sessions covered practical applications of causal inference methods using real-world longitudinal data, progressing from average treatment effects to more sophisticated heterogeneous effect estimation.\n\n\n\n\n\n\n\n\n\nNoteWorkshop Materials\n\n\n\n\nWorkshop website: go-bayes.github.io/sparcc-day-2\nWorkshop repository: github.com/go-bayes/sparcc-day-2\nTeaching software: causalworkshop package"
+  },
+  {
+    "objectID": "presentations.html#archive-of-presentations",
+    "href": "presentations.html#archive-of-presentations",
+    "title": "Presentations",
+    "section": "Archive of Presentations",
+    "text": "Archive of Presentations\nComing soon…"
+  }
+]

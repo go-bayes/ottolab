@@ -1,0 +1,57 @@
+---
+title: "OTTO Lab"
+body-classes: home
+toc: false
+---
+
+::: {.hero}
+<p class="hero-affiliation">School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington</p>
+<h1 class="hero-title">OTTO Lab</h1>
+<p class="hero-descriptor">Observational Target Trial Outcomes</p>
+<p class="hero-lede">Observational causal inference for psychological science. Association does not imply causation. However, many of the really big questions can't be addressed with experiments. Recent innovations in computer science, economics, and epidemiology reveal that under certain conditions, observational associations can support causal inferences. These methods are not widely employed in psychological science. We develop and apply causal inference methods to questions in psychological science. We also build research tools, teach these methods, and collaborate with investigators from around New Zealand and the World.</p>
+<div class="hero-actions">
+<a href="research.qmd" class="btn btn-primary">Research</a>
+<a href="resources.qmd" class="btn btn-secondary">Methods & resources</a>
+<span class="btn btn-secondary">joseph.bulbulia@vuw.ac.nz</span>
+</div>
+:::
+
+## Selected work
+
+[Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)
+Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043)
+
+[Long-term causal effects of far-right terrorism in New Zealand](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)
+Bulbulia, Afzali, Yogeeswaran & Sibley (2023). *PNAS Nexus*
+
+[Life loses some meaning after leaving religion](https://psycnet.apa.org/record/2026-71076-001)
+Van Tongeren, Davis, Sibley & Bulbulia (2025). *Psychology of Religion and Spirituality*
+
+[The causal effects of religious service attendance on prosocial behaviours in New Zealand](https://openaccess.wgtn.ac.nz/articles/journal_contribution/The_causal_effects_of_religious_service_attendance_on_prosocial_behaviours_in_New_Zealand_A_national_longitudinal_study/28386350)
+Bulbulia, Davis, Rice, Sibley & Troughton (2024). *Archive for the Psychology of Religion*
+
+[Methods in causal inference: a four-part tutorial series](resources.qmd#start-here-methods-in-causal-inference-series)
+Bulbulia (2024). *Evolutionary Human Sciences*
+
+[Causal effect of psychopathy on partner well-being](https://doi.org/10.1111/jopy.70042)
+Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). *Journal of Personality*
+
+[All publications](research.qmd)
+
+## Places Map
+
+[Places Map](https://www.placesmap.org/) maps places of worship worldwide for reproducible spatial and cultural analysis.
+
+[Visit Places Map](https://www.placesmap.org/) · [Code](https://github.com/go-bayes/places-of-worship)
+
+## Collaboration and teaching
+
+The lab supports graduate supervision, methods teaching in causal inference, and applied collaboration. We welcome enquiries.
+
+::: {.home-links}
+[Meet the lab](team.qmd) · [Presentations](presentations.qmd) · [News](news.qmd) · [Reports](reports.qmd)
+:::
+
+::: {.home-affiliation-line}
+Affiliated with the [Centre for Applied Cross-Cultural Research](https://www.wgtn.ac.nz/cacr) · [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) · [GitHub](https://github.com/go-bayes)
+:::
