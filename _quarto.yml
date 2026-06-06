@@ -9,7 +9,7 @@ website:
   title: "OTTO Lab"
   site-url: https://go-bayes.github.io/ottolab/
   repo-url: https://github.com/go-bayes/ottolab
-  description: "Observational Target Trial Outcomes (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington"
+  description: "Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington"
   open-graph:
     locale: en_US
     site-name: OTTO Lab

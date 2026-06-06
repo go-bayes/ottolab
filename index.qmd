@@ -7,7 +7,7 @@ toc: false
 ::: {.hero}
 <p class="hero-affiliation">School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington</p>
 <h1 class="hero-title">OTTO Lab</h1>
-<p class="hero-descriptor">Observational Target Trial Outcomes</p>
+<p class="hero-descriptor">Observational Target Trial Operations</p>
 <p class="hero-lede">Observational causal inference for psychological science. Association does not imply causation. However, many of the really big questions can't be addressed with experiments. Recent innovations in computer science, economics, and epidemiology reveal that under certain conditions, observational associations can support causal inferences. These methods are not widely employed in psychological science. We develop and apply causal inference methods to questions in psychological science. We also build research tools, teach these methods, and collaborate with investigators from around New Zealand and the World.</p>
 <div class="hero-actions">
 <a href="research.qmd" class="btn btn-primary">Research</a>

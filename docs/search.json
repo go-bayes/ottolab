@@ -60,7 +60,7 @@
     "href": "about.html",
     "title": "About OTTO Lab",
     "section": "",
-    "text": "OTTO Lab (Observational Target Trial Outcomes) uses causal inference to address long-standing debates and real-world problems. Rigorous causal workflows clarify what works, for whom, when, and in which context - questions that matter for science, policy, and understanding cultural diversity.\nWe are based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington, and is affiliated with the Centre for Applied Cross-Cultural Research (CACR).\nWe also maintain Places Map, an open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at github.com/go-bayes/places-of-worship."
+    "text": "OTTO Lab (Observational Target Trial Operations) uses causal inference to address long-standing debates and real-world problems. Rigorous causal workflows clarify what works, for whom, when, and in which context - questions that matter for science, policy, and understanding cultural diversity.\nWe are based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington, and is affiliated with the Centre for Applied Cross-Cultural Research (CACR).\nWe also maintain Places Map, an open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at github.com/go-bayes/places-of-worship."
   },
   {
     "objectID": "about.html#approach",
@@ -228,7 +228,7 @@
     "href": "index.html",
     "title": "OTTO Lab",
     "section": "",
-    "text": "School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington\n\n\n\nObservational Target Trial Outcomes\n\n\nObservational causal inference for psychological science. Association does not imply causation. However, many of the really big questions can’t be addressed with experiments. Recent innovations in computer science, economics, and epidemiology reveal that under certain conditions, observational associations can support causal inferences. These methods are not widely employed in psychological science. We develop and apply causal inference methods to questions in psychological science. We also build research tools, teach these methods, and collaborate with investigators from around New Zealand and the World.\n\n\nResearch Methods & resources joseph.bulbulia@vuw.ac.nz"
+    "text": "School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington\n\n\n\nObservational Target Trial Operations\n\n\nObservational causal inference for psychological science. Association does not imply causation. However, many of the really big questions can’t be addressed with experiments. Recent innovations in computer science, economics, and epidemiology reveal that under certain conditions, observational associations can support causal inferences. These methods are not widely employed in psychological science. We develop and apply causal inference methods to questions in psychological science. We also build research tools, teach these methods, and collaborate with investigators from around New Zealand and the World.\n\n\nResearch Methods & resources joseph.bulbulia@vuw.ac.nz"
   },
   {
     "objectID": "index.html#selected-work",
