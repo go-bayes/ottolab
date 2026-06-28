@@ -18,6 +18,16 @@ For a comprehensive and up-to-date list of publications, please visit:
 
 ### 2026
 
+- **Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims**  
+  Bulbulia, J. A., Afzali, M. U., Rasheed, A. A., Troughton, G., Yogeeswaran, K., & Sibley, C. G.  
+  *Religion, Brain & Behavior*, in press  
+  [Full Text](https://doi.org/10.1080/2153599X.2026.2645568)
+
+- **Religion, cooperation, and prosocial behavior: Methods and evidence for causality**  
+  McCullough, M. E., Davis, D. E., & Bulbulia, J. A.  
+  *Religion, Brain & Behavior*, in press  
+  [Full Text](https://doi.org/10.1080/2153599X.2026.2695639)
+
 - **Target trial emulation shows that supported causal effects of religious attendance on well-being are selective**
   Bulbulia, J. A., Davis, D. E., Park, C. L., Rice, K. G., Troughton, G., Van Tongeren, D. R., & Sibley, C. G.
   *Evolutionary Human Sciences*, 8
@@ -27,9 +37,6 @@ For a comprehensive and up-to-date list of publications, please visit:
 
 - **An Invitation to Causal Inference in Environmental Psychology**  
   [OSF Preprint](https://osf.io/preprints/psyarxiv/tbjx8_v1)
-
-- **Beyond Deficit Narratives: Religious Prejudice, Meaning, and Resilience in a National Sample of New Zealand Muslims**  
-  [OSF Preprint](https://osf.io/preprints/osf/m5aqu_v1)
 
 ### 2024
 

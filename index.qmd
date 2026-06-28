@@ -21,6 +21,12 @@ toc: false
 [Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)
 Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043)
 
+[Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims](https://doi.org/10.1080/2153599X.2026.2645568)
+Bulbulia, Afzali, Rasheed, Troughton, Yogeeswaran & Sibley (2026). *Religion, Brain & Behavior*, in press. [DOI](https://doi.org/10.1080/2153599X.2026.2645568)
+
+[Religion, cooperation, and prosocial behavior: Methods and evidence for causality](https://doi.org/10.1080/2153599X.2026.2695639)
+McCullough, Davis & Bulbulia (2026). *Religion, Brain & Behavior*, in press. [DOI](https://doi.org/10.1080/2153599X.2026.2695639)
+
 [Long-term causal effects of far-right terrorism in New Zealand](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)
 Bulbulia, Afzali, Yogeeswaran & Sibley (2023). *PNAS Nexus*
 
