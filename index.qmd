@@ -18,8 +18,8 @@ toc: false
 
 ## Selected work
 
-[Australia and New Zealand: The psychology of religion up to 2020](research.qmd)
-Counted, Miner & Bulbulia (2026). In *The Cambridge Handbook of the International Psychology of Religion*, pp. 27-49. Cambridge University Press.
+[Australia and New Zealand: The psychology of religion up to 2020](https://doi.org/10.1017/9781108771122.003)
+Counted, Miner & Bulbulia (2026). In *The Cambridge Handbook of the International Psychology of Religion*, pp. 27-49. Cambridge University Press. [DOI](https://doi.org/10.1017/9781108771122.003)
 
 [Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)
 Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043)
