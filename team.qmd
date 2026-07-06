@@ -120,22 +120,6 @@ Mekonnen is estimating the causal effects of religious ritual behaviours on heal
 
 ## Master's Students
 
-### Boyang Cao
-
-:::: {.columns}
-
-::: {.column width="25%"}
-![Boyang Cao](images/team/boyang-cao.jpg){.team-photo}
-:::
-
-::: {.column width="75%"}
-Boyang is researching the causal effects of prejudice on personality.
-
-- **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
-:::
-::::
-
 ### Hannah Robinson
 
 :::: {.columns}
@@ -153,26 +137,49 @@ Hannah is researching the causal effects of religious service attendance on pers
 
 ::::
 
-### Zahle Wisely
+### Purti Pristine
 
 :::: {.columns}
 
 ::: {.column width="25%"}
-![Zahle Wisely](images/team/zahle-wisely.jpg){.team-photo}
+<!-- TODO: add photo, then uncomment -->
+<!-- ![Purti Pristine](images/team/purti-pristine.jpg){.team-photo} -->
 :::
 
 ::: {.column width="75%"}
-Zahle is investigating the causal effects of employer gratitude on multi-dimensional well-being.
+Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional wellbeing, asking whether joint belief yields synergistic benefits. She joins the lab from Indonesia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
+- **Methods:** Target Trial Emulation; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
 
 ---
 
-## Research Assistants
+## Honours Students
+
+### Christina Cartwright
+
+:::: {.columns}
+
+::: {.column width="25%"}
+<!-- TODO: add photo, then uncomment -->
+<!-- ![Christina Cartwright](images/team/christina-cartwright.jpg){.team-photo} -->
+:::
+
+::: {.column width="75%"}
+Christina is estimating heterogeneous effects of volunteering on multidimensional wellbeing using causal forests and policy trees. Originally from Austria, she brings extensive experience in government to the lab.
+
+- **Project:** New Zealand Attitudes and Values Study (NZAVS)
+- **Methods:** Heterogeneous Treatment Effects; Causal Machine Learning
+:::
+
+::::
+
+---
+
+## Alumni
 
 ### Millie Rea
 
@@ -183,15 +190,44 @@ Zahle is investigating the causal effects of employer gratitude on multi-dimensi
 :::
 
 ::: {.column width="75%"}
-Millie is investigating extensions of OTTO Lab workflows to policy settings, focusing on IDI (Integrated Data Infrastructure) data.
+Millie worked with OTTO Lab as a research assistant, investigating extensions of lab workflows to policy settings with IDI (Integrated Data Infrastructure) data.
 
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 ::::
 
----
+### Boyang Cao
 
-## Alumni
+:::: {.columns}
+
+::: {.column width="25%"}
+![Boyang Cao](images/team/boyang-cao.jpg){.team-photo}
+:::
+
+::: {.column width="75%"}
+Boyang completed his Honours research with the lab, investigating the causal effects of prejudice on personality.
+
+- **Project:** New Zealand Attitudes and Values Study (NZAVS)
+- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
+:::
+::::
+
+### Zahle Wisely
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![Zahle Wisely](images/team/zahle-wisely.jpg){.team-photo}
+:::
+
+::: {.column width="75%"}
+Zahle received her Master of Science from Victoria University of Wellington in June 2026. Her thesis estimated the causal effects of perceived employer gratitude on multi-dimensional well-being, and she presented her findings at the 2025 Society of Australasian Social Psychologists conference in Melbourne. Congratulations, Zahle!
+
+- **Project:** New Zealand Attitudes and Values Study (NZAVS)
+- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
+:::
+
+::::
 
 ### Dr. Inkuk Kim
 
