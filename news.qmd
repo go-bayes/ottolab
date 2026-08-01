@@ -4,6 +4,16 @@ title: "News"
 
 ## 2026
 
+### `boilerplate` 1.4.0 Published on CRAN
+
+**12 July 2026 | Comprehensive R Archive Network**
+
+Version 1.4.0 of the [`boilerplate` R package](https://cran.r-project.org/package=boilerplate) was published on the Comprehensive R Archive Network (CRAN). The package supports reproducible management of standardised methods, results, measures, and report templates.
+
+Version 1.4.0 makes JSON the default database format and removes RDS writing from package APIs. Existing trusted RDS databases remain readable and can be converted with `boilerplate_migrate_to_json()`.
+
+---
+
 ### New Master's and Honours Students Join OTTO Lab
 
 **July 2026 | Victoria University of Wellington**
