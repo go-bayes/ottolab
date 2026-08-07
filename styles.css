@@ -176,6 +176,9 @@ h2 {
   margin-top: 3rem;
   padding-top: 1.6rem;
   border-top: 1px solid var(--border);
+  /* quarto's bootstrap themes add a bottom border; the section rule belongs above only */
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 h3 {
