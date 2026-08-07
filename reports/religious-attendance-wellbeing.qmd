@@ -46,7 +46,7 @@ page-layout: full
 <div class="numbered">
   <div class="item">
     <span class="num">01</span><h3>The positivity problem</h3>
-    <p>Because so few non-attenders ever initiate attendance, "make everyone attend" is an intervention the data cannot support. The stochastic shift asks a question the data can answer: what would happen if the odds of attending increased fivefold?</p>
+    <p>Because so few non-attenders ever initiate attendance, "make everyone attend" is an intervention the data cannot support. The stochastic shift asks a question the data can answer: what would happen if a non-attender's chance of taking up monthly attendance increased fivefold?</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3>Estimation</h3>
