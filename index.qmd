@@ -12,7 +12,7 @@ toc: false
 <div class="hero-actions">
 <a href="research.qmd" class="btn btn-primary">Research</a>
 <a href="resources.qmd" class="btn btn-secondary">Methods & resources</a>
-<span class="btn btn-secondary">joseph.bulbulia@vuw.ac.nz</span>
+<a href="mailto:joseph.bulbulia@vuw.ac.nz" class="btn btn-secondary">joseph.bulbulia@vuw.ac.nz</a>
 </div>
 :::
 
