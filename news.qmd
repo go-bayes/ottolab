@@ -64,7 +64,7 @@ Inkuk remains a Fellow of OTTO Lab and is working on a number of projects relate
 
 **20 February 2026 | Victoria University of Wellington**
 
-The Places Map project is now live at [placesmap.org](https://www.placesmap.org/). Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.
+The Places Map project is now live at [religionmap.org](https://religionmap.org/). Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.
 
 Project code and workflows are available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 

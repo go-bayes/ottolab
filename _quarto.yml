@@ -26,7 +26,7 @@ website:
       - text: "Research"
         href: research.qmd
       - text: "Places Map"
-        href: https://www.placesmap.org/
+        href: https://religionmap.org/
       - text: "Resources"
         href: resources.qmd
       - text: "News"
