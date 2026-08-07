@@ -1,0 +1,73 @@
+---
+pagetitle: "Selective, Not Sweeping — religious attendance and well-being | OTTO Lab"
+body-classes: report
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="report-wrap">
+
+<p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2018–2023 &nbsp;·&nbsp; Lab report</p>
+<h1 class="report-title">Selective, Not <em>Sweeping</em></h1>
+<p class="report-subtitle">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</p>
+<p class="byline"><span class="names">Joseph A. Bulbulia · Don E. Davis · Crystal Park · Kenneth G. Rice · Geoffrey Troughton · Daryl R. Van Tongeren · Chris G. Sibley</span><span class="venue">Evolutionary Human Sciences · 2026</span></p>
+
+<p class="report-lede">Religious service attendance is associated with better well-being, but observational associations do not establish causation. Across six annual waves of a national panel, we estimate the causal effects of monthly attendance on 24 well-being indicators — and the supported effects concentrate in <span class="hl">meaning, forgiveness, and intimate life</span>, with <span class="hl-gold">little movement</span> in somatic health, psychological distress, or social support.</p>
+
+<div class="stat-row" style="margin-top:2.5rem">
+  <div class="stat"><span class="n">46,377</span><span class="lbl">participants at baseline, NZAVS</span></div>
+  <div class="stat"><span class="n">6</span><span class="lbl">annual waves, 2018–2023</span></div>
+  <div class="stat"><span class="n">24</span><span class="lbl">well-being indicators</span></div>
+  <div class="stat"><span class="n">2–3%</span><span class="lbl">of non-attenders initiate attendance per year</span></div>
+</div>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The central result</p>
+<h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; distress and somatic health barely move.</h2>
+<p>A deterministic "make everyone attend" contrast fails positivity: only 2–3% of non-attenders initiate monthly attendance in a given year, so the data cannot identify that intervention. We instead estimate supported stochastic interventions (δ = 5) among 38,477 baseline non-attenders, using a sequentially doubly robust estimator with cross-validated machine learning.</p>
+
+<div class="duo">
+  <div class="panel">
+    <p class="chip">Supported · where attendance acts</p>
+    <h3>Meaning, forgiveness, intimacy</h3>
+    <p>Meaning and purpose rises by 0.085 standard deviations (E-value 1.25), sexual satisfaction by 0.086 (1.25), and forgiveness by 0.075 (1.21). Smaller supported gains appear for meaning and sense (0.071), short-form health (0.061), and body satisfaction (0.058).</p>
+  </div>
+  <div class="panel">
+    <p class="chip gold">Null · where it does not</p>
+    <h3>Distress and the body barely move</h3>
+    <p>Body mass index, sleep, and alcohol use, and the distress indicators — anxiety, depression, fatigue, rumination — show point estimates near zero with confidence intervals spanning the null. Social belonging and perceived social support do not meet the E-value reliability threshold.</p>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">Inference &amp; robustness</p>
+<div class="numbered">
+  <div class="item">
+    <span class="num">01</span><h3>The positivity problem</h3>
+    <p>Because so few non-attenders ever initiate attendance, "make everyone attend" is an intervention the data cannot support. The stochastic shift asks a question the data can answer: what would happen if the odds of attending increased fivefold?</p>
+  </div>
+  <div class="item">
+    <span class="num">02</span><h3>Estimation</h3>
+    <p>A sequentially doubly robust estimator with cross-validated machine learning adjusts for 62 baseline covariates and 32 time-varying confounders, with inverse-probability-of-censoring weights for dropout.</p>
+  </div>
+  <div class="item">
+    <span class="num">03</span><h3>Sensitivity</h3>
+    <p>Each supported effect clears the study's E-value reliability threshold (E-values 1.16–1.25). Effects are small, and measurement error in self-reported attendance would pull estimates towards zero, so actual effects may be larger than we report.</p>
+  </div>
+  <div class="item">
+    <span class="num">04</span><h3>Scope</h3>
+    <p>We estimate total effects of specified changes in attendance, not mediated pathways, and population averages rather than subgroup effects. Effects probably vary by tradition, belief strength, upbringing, and relationship status; childhood religious socialisation lies outside what adult panel data can identify.</p>
+  </div>
+</div>
+</section>
+
+<div class="report-note">
+  <p class="kicker">Citation</p>
+  <p>Bulbulia, J. A., Davis, D. E., Park, C., Rice, K. G., Troughton, G., Van Tongeren, D. R., &amp; Sibley, C. G. (2026). Target trial emulation shows that supported causal effects of religious attendance on well-being are selective. <i>Evolutionary Human Sciences</i>, 8, e16. <a href="https://doi.org/10.1017/ehs.2026.10043">doi:10.1017/ehs.2026.10043</a></p>
+  <p>Data: the New Zealand Attitudes and Values Study. Estimation: supported stochastic interventions with a sequentially doubly robust estimator.</p>
+</div>
+
+</div>
+```

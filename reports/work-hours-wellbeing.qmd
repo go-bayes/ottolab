@@ -1,0 +1,73 @@
+---
+pagetitle: "The Body, Not the Mind — work hours and well-being | OTTO Lab"
+body-classes: report
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="report-wrap">
+
+<p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2020–2023 &nbsp;·&nbsp; Lab report</p>
+<h1 class="report-title">The Body, Not the <em>Mind</em></h1>
+<p class="report-subtitle">How work hours affect well-being: a target trial emulation in a national New Zealand cohort</p>
+<p class="byline"><span class="names">Ballerina X. S. Chong · Chris G. Sibley · Joseph A. Bulbulia</span><span class="venue">PLOS One · 2026</span></p>
+
+<p class="report-lede">Longer work hours travel with poorer well-being, but an association cannot say what would happen if hours changed. We emulate the experiment we would like to run: among 24,579 pre-retirement New Zealanders, we estimate how 28 well-being outcomes would differ if the same cohort worked <span class="hl">ten more</span> or <span class="hl-gold">ten fewer</span> hours each week than observed.</p>
+
+<div class="stat-row" style="margin-top:2.5rem">
+  <div class="stat"><span class="n">24,579</span><span class="lbl">pre-retirement adults, NZAVS</span></div>
+  <div class="stat"><span class="n">3</span><span class="lbl">annual waves, 2020–2023</span></div>
+  <div class="stat"><span class="n">28</span><span class="lbl">well-being outcomes</span></div>
+  <div class="stat"><span class="n">±10</span><span class="lbl">hours per week, the two policies</span></div>
+</div>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The central result</p>
+<h2 class="claim" style="margin-top:1rem">Shifting work hours moves recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
+<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also shift adversely, though these estimates are more sensitive to residual confounding. Under the downward shift, fatigue falls most clearly. Most of the 28 outcomes show little movement under either policy, and the data better support the downward shift.</p>
+
+<div class="duo">
+  <div class="panel">
+    <p class="chip">+10 hours · the cost</p>
+    <h3>Recovery erodes</h3>
+    <p>Fatigue rises by 0.08 standard deviations and nightly sleep falls by roughly 3.4 minutes. Body mass index increases by roughly 0.19 kg/m² and perceived physical health declines by roughly 0.13 points, though both estimates are more sensitive to residual confounding. Perceived support rises slightly and carries the same caution.</p>
+  </div>
+  <div class="panel">
+    <p class="chip gold">−10 hours · the relief</p>
+    <h3>Fatigue lifts first</h3>
+    <p>Fatigue falls by 0.04 standard deviations — the clearest movement under the downward policy. Body mass index (−0.13 kg/m²) and perceived physical health (+0.07 points) also shift favourably, and both remain sensitive to residual confounding.</p>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">Inference &amp; robustness</p>
+<div class="numbered">
+  <div class="item">
+    <span class="num">01</span><h3>The emulated trial</h3>
+    <p>We specify the experiment we would like to run — eligibility, the two shift policies, follow-up — and approximate it with observational data, comparing each policy with the hours the cohort actually worked.</p>
+  </div>
+  <div class="item">
+    <span class="num">02</span><h3>Adjustment</h3>
+    <p>Modified treatment policy estimators, implemented in the <code>lmtp</code> R package, adjust for baseline differences and for dropout using machine learning.</p>
+  </div>
+  <div class="item">
+    <span class="num">03</span><h3>Uncertainty, stated plainly</h3>
+    <p>Uncertainty remains substantial. Many point estimates attenuate towards zero after confounding control and censoring adjustment, and many Bonferroni-corrected intervals include zero.</p>
+  </div>
+  <div class="item">
+    <span class="num">04</span><h3>Scope</h3>
+    <p>Estimates are defined for these shift policies in this population, and people gain and lose hours for many reasons. Both hours and outcomes are self-reported; random measurement error would likely attenuate true effects.</p>
+  </div>
+</div>
+</section>
+
+<div class="report-note">
+  <p class="kicker">Citation</p>
+  <p>Chong, B. X. S., Sibley, C. G., &amp; Bulbulia, J. A. (2026). How work hours affect well-being: A target trial emulation. <i>PLOS One</i>. <a href="https://doi.org/10.1371/journal.pone.0350816">doi:10.1371/journal.pone.0350816</a></p>
+  <p>Data: the New Zealand Attitudes and Values Study. Estimation: modified treatment policies with the <code>lmtp</code> R package.</p>
+</div>
+
+</div>
+```
