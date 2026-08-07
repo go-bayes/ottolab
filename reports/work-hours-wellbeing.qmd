@@ -23,6 +23,31 @@ page-layout: full
 </div>
 
 <section class="report-section">
+<p class="kicker kicker-dash">The emulated trial</p>
+<div class="trial-grid">
+  <div class="cell">
+    <p class="chip soft">What is our question?</p>
+    <p>For pre-retirement New Zealand adults, how would 28 well-being outcomes differ one year later if weekly work hours shifted ten hours up, or ten hours down, from what would otherwise occur?</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What is our population?</p>
+    <p>24,579 NZAVS participants of working age at baseline (2020/2021), followed across three annual waves to 2022/2023, with censoring adjustment carrying inference to the baseline cohort.</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What interventions do we compare?</p>
+    <div class="arm">
+      <span class="chip">Shift up · +10 hours</span>
+      <p>Weekly hours shifted ten upward, versus the natural course — the censoring-adjusted hours actually worked.</p>
+    </div>
+    <div class="arm">
+      <span class="chip gold">Shift down · −10 hours</span>
+      <p>Weekly hours shifted ten downward, versus the same natural course.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim" style="margin-top:1rem">Shifting work hours moves recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
 <p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also shift adversely, though these estimates are more sensitive to residual confounding. Under the downward shift, fatigue falls most clearly. Most of the 28 outcomes show little movement under either policy, and the data better support the downward shift.</p>
@@ -45,8 +70,8 @@ page-layout: full
 <p class="kicker kicker-dash">Inference &amp; robustness</p>
 <div class="numbered">
   <div class="item">
-    <span class="num">01</span><h3>The emulated trial</h3>
-    <p>We specify the experiment we would like to run — eligibility, the two shift policies, follow-up — and approximate it with observational data, comparing each policy with the hours the cohort actually worked.</p>
+    <span class="num">01</span><h3>The natural course comparator</h3>
+    <p>Each policy is compared with the censoring-adjusted hours the cohort actually worked — not with a hypothetical zero-hours world, and not with each other.</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3>Adjustment</h3>

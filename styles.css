@@ -1072,6 +1072,38 @@ body.report .quarto-title-block {
   color: var(--ink-soft);
 }
 
+.trial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem 2.5rem;
+  margin: 2rem 0 0;
+}
+
+.trial-grid .cell p {
+  margin: 0.45rem 0 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.trial-grid .arm {
+  margin-top: 0.9rem;
+}
+
+.trial-grid .arm .chip {
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.trial-grid .arm p {
+  margin: 0.15rem 0 0;
+}
+
+@media (max-width: 768px) {
+  .trial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .report-note {
   background: var(--green);
   color: #eef0e6;

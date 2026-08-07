@@ -23,9 +23,34 @@ page-layout: full
 </div>
 
 <section class="report-section">
+<p class="kicker kicker-dash">The emulated trial</p>
+<div class="trial-grid">
+  <div class="cell">
+    <p class="chip soft">What is our question?</p>
+    <p>For New Zealand adults, what are the causal effects of monthly religious service attendance on 24 well-being indicators, measured across somatic, psychological, existential, social, and relational domains?</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What is our population?</p>
+    <p>46,377 NZAVS participants at baseline, followed across six annual waves, 2018–2023. The primary contrast concerns the 38,477 who were not attending at baseline, with censoring adjustment carrying inference to that cohort.</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What interventions do we compare?</p>
+    <div class="arm">
+      <span class="chip gold">Fails positivity</span>
+      <p>Make everyone attend monthly, versus none. Only 2–3% of non-attenders initiate attendance in a given year; the data cannot identify a policy this far from what occurs.</p>
+    </div>
+    <div class="arm">
+      <span class="chip">Adopted · δ = 5</span>
+      <p>Multiply each non-attender's chance of taking up monthly attendance fivefold, versus the natural course — the censoring-adjusted course actually observed.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; distress and somatic health barely move.</h2>
-<p>A deterministic "make everyone attend" contrast fails positivity: only 2–3% of non-attenders initiate monthly attendance in a given year, so the data cannot identify that intervention. We instead estimate supported stochastic interventions (δ = 5) among 38,477 baseline non-attenders, using a sequentially doubly robust estimator with cross-validated machine learning.</p>
+<p>Estimates come from the supported stochastic contrast above, fitted with a sequentially doubly robust estimator and cross-validated machine learning among baseline non-attenders.</p>
 
 <div class="duo">
   <div class="panel">
@@ -45,16 +70,16 @@ page-layout: full
 <p class="kicker kicker-dash">Inference &amp; robustness</p>
 <div class="numbered">
   <div class="item">
-    <span class="num">01</span><h3>The positivity problem</h3>
-    <p>Because so few non-attenders ever initiate attendance, "make everyone attend" is an intervention the data cannot support. The stochastic shift asks a question the data can answer: what would happen if a non-attender's chance of taking up monthly attendance increased fivefold?</p>
-  </div>
-  <div class="item">
-    <span class="num">02</span><h3>Estimation</h3>
+    <span class="num">01</span><h3>Estimation</h3>
     <p>A sequentially doubly robust estimator with cross-validated machine learning adjusts for 62 baseline covariates and 32 time-varying confounders, with inverse-probability-of-censoring weights for dropout.</p>
   </div>
   <div class="item">
-    <span class="num">03</span><h3>Sensitivity</h3>
-    <p>Each supported effect clears the study's E-value reliability threshold (E-values 1.16–1.25). Effects are small, and measurement error in self-reported attendance would pull estimates towards zero, so actual effects may be larger than we report.</p>
+    <span class="num">02</span><h3>Sensitivity</h3>
+    <p>Each supported effect clears the study's E-value reliability threshold (E-values 1.16–1.25); an unmeasured confounder would need associations of that strength with both attendance and outcome to explain the effect away.</p>
+  </div>
+  <div class="item">
+    <span class="num">03</span><h3>Measurement</h3>
+    <p>Attendance is self-reported, and measurement error in self-reports would pull estimates towards zero — actual effects may be larger than we report.</p>
   </div>
   <div class="item">
     <span class="num">04</span><h3>Scope</h3>
