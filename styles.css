@@ -35,29 +35,30 @@
 }
 
 /* ========== COLOUR PALETTE ========== */
-/* light theme (catppuccin latte inspired) */
+/* light theme (te herenga waka deep green; greens sampled from wgtn.ac.nz) */
 :root {
-  /* greys */
-  --header-dark: #4c4f69;
-  --header-border: #e4e4ec;
-  --text-dark: #1a1a2e;
-  --text-body: #2c2c3a;
-  --text-light: #6b6b80;
-  --bg-light: #ffffff;
+  /* green-biased greys */
+  --header-dark: #0d4c38;
+  --header-border: #d3ded6;
+  --text-dark: #1d2624;
+  --text-body: #2c3733;
+  --text-light: #52615a;
+  --bg-light: #f4f7f4;
   --bg-white: #ffffff;
-  --border: #e4e4ec;
+  --border: #d3ded6;
+  --mono-bg: #eaf0eb;
 
   /* accent colours */
-  --accent-primary: #5872f5;
-  --accent-hover: #4660d9;
-  --accent-presentations: #209fb5;
-  --success: #40a02b;
-  --warning: #fe640b;
+  --accent-primary: #0d4c38;
+  --accent-hover: #0a3f2e;
+  --accent-presentations: #fce500;
+  --success: #2f7d4f;
+  --warning: #a06d1c;
 
   /* callouts */
-  --callout-note-bg: #f0f4ff;
-  --callout-tip-bg: #f0fff4;
-  --callout-warning-bg: #fffaf0;
+  --callout-note-bg: #e2ece6;
+  --callout-tip-bg: #eef5ee;
+  --callout-warning-bg: #f7f0dd;
 
   /* spacing */
   --content-max-width: 820px;
@@ -69,26 +70,27 @@
   --radius-pill: 999px;
 }
 
-/* dark theme (catppuccin mocha inspired) */
+/* dark theme (green-black ground; accent lightened for contrast) */
 body.quarto-dark {
-  --header-dark: #11111b;
-  --header-border: #2e2e48;
-  --text-dark: #e8e8f0;
-  --text-body: #d4d4e0;
-  --text-light: #9898ac;
-  --bg-light: #1a1a2e;
-  --bg-white: #222240;
-  --border: #2e2e48;
+  --header-dark: #0e1511;
+  --header-border: #2f3e34;
+  --text-dark: #e2e9e4;
+  --text-body: #d3ddd6;
+  --text-light: #9cab9f;
+  --bg-light: #121a15;
+  --bg-white: #1a241d;
+  --border: #2f3e34;
+  --mono-bg: #223028;
 
-  --accent-primary: #93bbfc;
-  --accent-hover: #aeccfd;
-  --accent-presentations: #94e2d5;
-  --success: #a6e3a1;
-  --warning: #fab387;
+  --accent-primary: #7fbc9c;
+  --accent-hover: #97ccae;
+  --accent-presentations: #fce500;
+  --success: #8fd0a5;
+  --warning: #cfae5a;
 
-  --callout-note-bg: #313244;
-  --callout-tip-bg: #45475a;
-  --callout-warning-bg: #313244;
+  --callout-note-bg: #1e332a;
+  --callout-tip-bg: #263a2c;
+  --callout-warning-bg: #33301f;
 }
 
 /* ========== GLOBAL STYLES ========== */
@@ -129,23 +131,24 @@ pre, code, kbd, samp {
 .navbar-brand,
 .navbar-nav .nav-link,
 .navbar-nav .dropdown-toggle {
-  color: #f7fafc !important;
+  color: #f2f7f4 !important;
   font-family: "IBM Plex Serif", Georgia, serif;
   font-size: 0.8125rem;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .dropdown-toggle:hover {
-  color: #cbd5e0 !important;
+  color: #c4d6cc !important;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 4px;
   transition: all 0.2s ease;
 }
 
 /* prominent presentations button */
+/* the single reserved use of te herenga waka yellow */
 #nav-menu-presentations {
   background-color: var(--accent-presentations) !important;
-  color: white !important;
+  color: #1d2624 !important;
   font-weight: 600;
   padding: 6px 18px;
   border-radius: 20px;
@@ -154,7 +157,7 @@ pre, code, kbd, samp {
 }
 
 #nav-menu-presentations:hover {
-  background-color: #1a5ad7 !important;
+  background-color: #e3cf00 !important;
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
@@ -316,7 +319,7 @@ pre {
 }
 
 code:not(pre code) {
-  background-color: var(--bg-light);
+  background-color: var(--mono-bg);
   padding: 0.125rem 0.375rem;
   border-radius: 3px;
   font-size: 0.875em;
@@ -483,7 +486,13 @@ tr:hover {
 .btn-primary {
   background-color: var(--accent-primary);
   color: white;
-  border: 1px solid rgba(88, 114, 245, 0.55);
+  border: 1px solid rgba(13, 76, 56, 0.55);
+}
+
+/* the lightened dark-theme accent needs dark button text for contrast */
+body.quarto-dark .btn-primary,
+body.quarto-dark .btn-secondary:hover {
+  color: #10160f;
 }
 
 .btn-secondary {
