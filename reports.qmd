@@ -9,13 +9,13 @@ One-page editorial reports on recent lab publications.
 ::: {.card}
 <p class="chip">PLOS One · 2026</p>
 ### [Work Hours: The Body, Not the Mind](reports/work-hours-wellbeing.qmd)
-Shifting work hours moves recovery — fatigue, sleep, body mass — more clearly than well-being as a whole. A target trial emulation among 24,579 pre-retirement New Zealanders.
+Shifting work hours affects recovery — fatigue, sleep, body mass — more clearly than well-being as a whole. A target trial emulation among 24,579 pre-retirement New Zealanders.
 :::
 
 ::: {.card}
 <p class="chip">Evolutionary Human Sciences · 2026</p>
 ### [Religious Attendance: Selective, Not Sweeping](reports/religious-attendance-wellbeing.qmd)
-Supported causal effects of religious attendance concentrate in meaning, forgiveness, and intimate life, with little movement in somatic health or psychological distress.
+Supported causal effects of religious attendance concentrate in meaning, forgiveness, and intimate life, with little change in somatic health or psychological distress.
 :::
 
 ## Research Reports & Working Papers

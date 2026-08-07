@@ -49,8 +49,8 @@ page-layout: full
 
 <section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
-<h2 class="claim" style="margin-top:1rem">Shifting work hours moves recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
-<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also shift adversely, though these estimates are more sensitive to residual confounding. Under the downward shift, fatigue falls most clearly. Most of the 28 outcomes show little movement under either policy, and the data better support the downward shift.</p>
+<h2 class="claim" style="margin-top:1rem">Shifting work hours affects recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
+<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also worsen, though these estimates are more sensitive to residual confounding. Under the downward shift, the clearest fall is in fatigue. Most of the 28 outcomes change little under either policy, and the data better support the downward shift.</p>
 
 <div class="duo">
   <div class="panel">
@@ -61,7 +61,7 @@ page-layout: full
   <div class="panel">
     <p class="chip gold">−10 hours · the relief</p>
     <h3>Fatigue lifts first</h3>
-    <p>Fatigue falls by 0.04 standard deviations — the clearest movement under the downward policy. Body mass index (−0.13 kg/m²) and perceived physical health (+0.07 points) also shift favourably, and both remain sensitive to residual confounding.</p>
+    <p>Fatigue falls by 0.04 standard deviations — the clearest change under the downward policy. Body mass index (−0.13 kg/m²) and perceived physical health (+0.07 points) also improve, and both estimates remain sensitive to residual confounding.</p>
   </div>
 </div>
 </section>
