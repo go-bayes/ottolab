@@ -1,5 +1,5 @@
 ---
-pagetitle: "Selective, Not Sweeping — religious attendance and well-being | OTTO Lab"
+pagetitle: "Religious Attendance: Selective, Not Sweeping | OTTO Lab"
 body-classes: report
 toc: false
 page-layout: full
@@ -9,7 +9,7 @@ page-layout: full
 <div class="report-wrap">
 
 <p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2018–2023 &nbsp;·&nbsp; Lab report</p>
-<h1 class="report-title">Selective, Not <em>Sweeping</em></h1>
+<h1 class="report-title">Religious Attendance: Selective, Not <em>Sweeping</em></h1>
 <p class="report-subtitle">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</p>
 <p class="byline"><span class="names">Joseph A. Bulbulia · Don E. Davis · Crystal Park · Kenneth G. Rice · Geoffrey Troughton · Daryl R. Van Tongeren · Chris G. Sibley</span><span class="venue">Evolutionary Human Sciences · 2026</span></p>
 

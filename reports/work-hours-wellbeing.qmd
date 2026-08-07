@@ -1,5 +1,5 @@
 ---
-pagetitle: "The Body, Not the Mind — work hours and well-being | OTTO Lab"
+pagetitle: "Work Hours: The Body, Not the Mind | OTTO Lab"
 body-classes: report
 toc: false
 page-layout: full
@@ -9,7 +9,7 @@ page-layout: full
 <div class="report-wrap">
 
 <p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2020–2023 &nbsp;·&nbsp; Lab report</p>
-<h1 class="report-title">The Body, Not the <em>Mind</em></h1>
+<h1 class="report-title">Work Hours: The Body, Not the <em>Mind</em></h1>
 <p class="report-subtitle">How work hours affect well-being: a target trial emulation in a national New Zealand cohort</p>
 <p class="byline"><span class="names">Ballerina X. S. Chong · Chris G. Sibley · Joseph A. Bulbulia</span><span class="venue">PLOS One · 2026</span></p>
 
