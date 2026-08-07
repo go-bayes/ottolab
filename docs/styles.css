@@ -1116,6 +1116,29 @@ body.report .quarto-title-block {
   }
 }
 
+.figure-panel {
+  background: var(--card);
+  border: 1px solid var(--hair-soft);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem 1.75rem 1.25rem;
+  margin: 2.25rem 0 0;
+  overflow-x: auto;
+}
+
+.figure-panel svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 620px;
+}
+
+.fig-caption {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  max-width: 44rem;
+  margin: 1rem 0 0;
+}
+
 .report-note {
   background: var(--green);
   color: #eef0e6;

@@ -50,7 +50,7 @@ page-layout: full
 <section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim" style="margin-top:1rem">Shifting work hours affects recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
-<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also worsen, though these estimates are more sensitive to residual confounding. Under the downward shift, the clearest fall is in fatigue. Most of the 28 outcomes change little under either policy, and the data better support the downward shift.</p>
+<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also worsen, though these estimates are more sensitive to residual confounding. Under the downward shift, the clearest fall is in fatigue. Most of the 28 outcomes change little under either policy, and the data better support the downward shift. Naive baseline associations are broader, larger, and sometimes reversed in sign; the causal shifts that survive adjustment concentrate in recovery and embodied health.</p>
 
 <div class="duo">
   <div class="panel">
@@ -64,6 +64,69 @@ page-layout: full
     <p>Fatigue falls by 0.04 standard deviations — the clearest change under the downward policy. Body mass index (−0.13 kg/m²) and perceived physical health (+0.07 points) also improve, and both estimates remain sensitive to residual confounding.</p>
   </div>
 </div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The estimates</p>
+<div class="figure-panel">
+<svg viewBox="0 0 780 350" xmlns="http://www.w3.org/2000/svg" role="img" font-family="JetBrains Mono, ui-monospace, Menlo, monospace">
+<circle cx="264" cy="16" r="4.5" fill="var(--green)"/>
+<text x="275" y="20" font-size="10.5" fill="var(--ink-soft)">least vulnerable to unmeasured confounding</text>
+<circle cx="599" cy="16" r="4.5" fill="var(--gold)"/>
+<text x="610" y="20" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value modest</text>
+<line x1="467.5" y1="40" x2="467.5" y2="310" stroke="var(--hair)" stroke-dasharray="3 4" stroke-width="1"/>
+<text x="322.1" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.10</text>
+<text x="394.8" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.05</text>
+<text x="467.5" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">0</text>
+<text x="540.1" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">+0.05</text>
+<text x="612.8" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">+0.10</text>
+<text x="0" y="74.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="var(--ink)">+10 HOURS PER WEEK</text>
+<g>
+<title>fatigue: 0.079 [0.035, 0.123], E-value bound 1.22</title>
+<text x="250" y="105.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">FATIGUE</text>
+<line x1="518.3" y1="102.0" x2="646.2" y2="102.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="582.3" cy="102.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="656.2" y="105.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.079 · E 1.22</text>
+</g>
+<g>
+<title>perceived physical health: -0.055 [-0.100, -0.010], E-value bound 1.10</title>
+<text x="250" y="137.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">PERCEIVED PHYSICAL HEALTH</text>
+<line x1="322.1" y1="134.0" x2="452.9" y2="134.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="387.5" cy="134.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="312.1" y="137.5" font-size="10" fill="var(--ink-faint)" text-anchor="end">-0.055 · E 1.10</text>
+</g>
+<g>
+<title>perceived support: 0.047 [0.002, 0.092], E-value bound 1.04</title>
+<text x="250" y="169.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">PERCEIVED SUPPORT</text>
+<line x1="470.4" y1="166.0" x2="601.2" y2="166.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="535.8" cy="166.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="611.2" y="169.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.047 · E 1.04</text>
+</g>
+<text x="0" y="202.0" font-size="11" font-weight="700" letter-spacing="1.5" fill="var(--ink)">−10 HOURS PER WEEK</text>
+<g>
+<title>fatigue: -0.042 [-0.069, -0.015], E-value bound 1.13</title>
+<text x="250" y="233.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">FATIGUE</text>
+<line x1="367.2" y1="230.0" x2="445.7" y2="230.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="406.4" cy="230.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="357.2" y="233.5" font-size="10" fill="var(--ink-faint)" text-anchor="end">-0.042 · E 1.13</text>
+</g>
+<g>
+<title>body mass index: -0.020 [-0.034, -0.006], E-value bound 1.08</title>
+<text x="250" y="265.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">BODY MASS INDEX</text>
+<line x1="418.1" y1="262.0" x2="458.7" y2="262.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="438.4" cy="262.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="408.1" y="265.5" font-size="10" fill="var(--ink-faint)" text-anchor="end">-0.020 · E 1.08</text>
+</g>
+<g>
+<title>perceived physical health: 0.030 [0.003, 0.057], E-value bound 1.06</title>
+<text x="250" y="297.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">PERCEIVED PHYSICAL HEALTH</text>
+<line x1="471.8" y1="294.0" x2="550.3" y2="294.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="511.1" cy="294.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="560.3" y="297.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.030 · E 1.06</text>
+</g>
+</svg>
+</div>
+<p class="fig-caption">Standardised average treatment effects with Bonferroni-corrected 95% confidence intervals, as reported in the paper's results. Green marks the effect the paper identifies as least vulnerable to unmeasured confounding under each policy; gold marks estimates whose corrected intervals exclude zero but whose E-value bounds are modest. Full 28-outcome tables appear in the paper's supplement.</p>
 </section>
 
 <section class="report-section">

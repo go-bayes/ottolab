@@ -50,7 +50,7 @@ page-layout: full
 <section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; distress and somatic health barely change.</h2>
-<p>Estimates come from the supported stochastic contrast above, fitted with a sequentially doubly robust estimator and cross-validated machine learning among baseline non-attenders.</p>
+<p>Estimates come from the supported stochastic contrast above, fitted with a sequentially doubly robust estimator and cross-validated machine learning among baseline non-attenders. Cross-sectional associations between attendance and well-being are broadly favourable across most outcomes; the causal contrast narrows this profile, and the narrowing reflects both confounding adjustment and the change in causal question.</p>
 
 <div class="duo">
   <div class="panel">
@@ -64,6 +64,80 @@ page-layout: full
     <p>Body mass index, sleep, and alcohol use, and the distress indicators — anxiety, depression, fatigue, rumination — show point estimates near zero with confidence intervals spanning the null. Social belonging and perceived social support do not meet the E-value reliability threshold.</p>
   </div>
 </div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The estimates</p>
+<div class="figure-panel">
+<svg viewBox="0 0 780 350" xmlns="http://www.w3.org/2000/svg" role="img" font-family="JetBrains Mono, ui-monospace, Menlo, monospace">
+<circle cx="264" cy="16" r="4.5" fill="var(--green)"/>
+<text x="275" y="20" font-size="10.5" fill="var(--ink-soft)">meets the E-value reliability threshold</text>
+<circle cx="578" cy="16" r="4.5" fill="var(--gold)"/>
+<text x="589" y="20" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value modest</text>
+<line x1="414.9" y1="40" x2="414.9" y2="310" stroke="var(--hair)" stroke-dasharray="3 4" stroke-width="1"/>
+<text x="331.1" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.05</text>
+<text x="414.9" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">0</text>
+<text x="498.8" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">+0.05</text>
+<text x="582.6" y="332" font-size="10" fill="var(--ink-faint)" text-anchor="middle">+0.10</text>
+<g>
+<title>sexual satisfaction: 0.086 [0.046, 0.126], E-value bound 1.25</title>
+<text x="250" y="73.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">SEXUAL SATISFACTION</text>
+<line x1="492.1" y1="70.0" x2="626.2" y2="70.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="559.1" cy="70.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="636.2" y="73.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.086 · E 1.25</text>
+</g>
+<g>
+<title>meaning and purpose: 0.085 [0.044, 0.126], E-value bound 1.25</title>
+<text x="250" y="105.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">MEANING AND PURPOSE</text>
+<line x1="488.7" y1="102.0" x2="626.2" y2="102.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="557.5" cy="102.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="636.2" y="105.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.085 · E 1.25</text>
+</g>
+<g>
+<title>forgiveness: 0.075 [0.034, 0.116], E-value bound 1.21</title>
+<text x="250" y="137.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">FORGIVENESS</text>
+<line x1="471.9" y1="134.0" x2="609.4" y2="134.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="540.7" cy="134.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="619.4" y="137.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.075 · E 1.21</text>
+</g>
+<g>
+<title>meaning and sense: 0.071 [0.025, 0.117], E-value bound 1.18</title>
+<text x="250" y="169.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">MEANING AND SENSE</text>
+<line x1="456.8" y1="166.0" x2="611.1" y2="166.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="534.0" cy="166.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="621.1" y="169.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.071 · E 1.18</text>
+</g>
+<g>
+<title>short-form health: 0.061 [0.022, 0.100], E-value bound 1.16</title>
+<text x="250" y="201.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">SHORT-FORM HEALTH</text>
+<line x1="451.8" y1="198.0" x2="582.6" y2="198.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="517.2" cy="198.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="592.6" y="201.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.061 · E 1.16</text>
+</g>
+<g>
+<title>body satisfaction: 0.058 [0.021, 0.095], E-value bound 1.16</title>
+<text x="250" y="233.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">BODY SATISFACTION</text>
+<line x1="450.1" y1="230.0" x2="574.2" y2="230.0" stroke="var(--green)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="512.2" cy="230.0" r="4.5" fill="var(--green)" stroke="var(--card)" stroke-width="2"/>
+<text x="584.2" y="233.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.058 · E 1.16</text>
+</g>
+<g>
+<title>gratitude: 0.046 [0.002, 0.090], E-value bound 1.05</title>
+<text x="250" y="265.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">GRATITUDE</text>
+<line x1="418.3" y1="262.0" x2="565.8" y2="262.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="492.1" cy="262.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="575.8" y="265.5" font-size="10" fill="var(--ink-faint)" text-anchor="start">+0.046 · E 1.05</text>
+</g>
+<g>
+<title>body mass index: -0.031 [-0.060, -0.002], E-value bound 1.05</title>
+<text x="250" y="297.5" font-size="10.5" letter-spacing="1" fill="var(--ink-soft)" text-anchor="end">BODY MASS INDEX</text>
+<line x1="314.3" y1="294.0" x2="411.6" y2="294.0" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+<circle cx="362.9" cy="294.0" r="4.5" fill="var(--gold)" stroke="var(--card)" stroke-width="2"/>
+<text x="304.3" y="297.5" font-size="10" fill="var(--ink-faint)" text-anchor="end">-0.031 · E 1.05</text>
+</g>
+</svg>
+</div>
+<p class="fig-caption">Standardised effects of the δ = 5 supported stochastic intervention among baseline non-attenders, with 95% confidence intervals, as reported in the paper. Green marks effects meeting the E-value reliability threshold; gold marks gratitude and body mass index, whose intervals exclude zero but whose E-value bounds fall short of it. The remaining outcomes cluster near zero.</p>
 </section>
 
 <section class="report-section">
