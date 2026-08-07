@@ -60,9 +60,7 @@ website:
 format:
   html:
     respect-user-color-scheme: false
-    theme:
-      dark: darkly
-      light: flatly
+    theme: flatly
     css: styles.css
     toc: true
     toc-depth: 3
