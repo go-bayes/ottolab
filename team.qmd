@@ -21,14 +21,14 @@ title: "People"
 
 OTTO Lab is based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington.
 
-Joseph Bulbulia (Joe) teaches and researches in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Victoria University of Wellington. His research investigates the complex drivers of human cooperation, conflict, and well-being, with a focus on the role of religion and values. Joseph specialises in methodologies for inferring causality from observational data. He also directs the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
+Joseph Bulbulia (Joe) teaches and researches in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Victoria University of Wellington. His research investigates the causes of human cooperation, conflict, and well-being, with a focus on the role of religion and values. Joseph specialises in methods for causal inference from observational data. He also directs the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
 
 **Research Projects**
-Joe contributes to two major longitudinal projects:
+Joe contributes to two major research projects:
 
 1. **New Zealand Attitudes and Values Study (NZAVS)**: Joe serves as a principal investigator on major NZAVS projects. He uses 15 years of repeated-measures longitudinal data from more than 76,000 New Zealanders to investigate religion, social cohesion, and trust.
 
-2. **Pulotu Database of Pacific Religions**: As a founding co-investigator, Joe uses this database of 116 Austronesian cultures to test theories about the evolution of religious beliefs and their effects on social behaviour.
+2. **Pulotu Database of Pacific Religions**: As a founding co-investigator, Joe uses this database of 116 Austronesian cultures to evaluate theories about the evolution of religious beliefs and their effects on social behaviour.
 
 #### Supervision
 
@@ -43,6 +43,10 @@ Joe supervises students in a broad range of areas, including:
 
 
 ---
+
+## Methods used in the lab
+
+The project descriptions below name several causal methods. Heterogeneous treatment effects are differences in average causal effects across groups. Causal machine learning uses flexible statistical models to estimate causal quantities under the study's assumptions. Target trial emulation organises an observational study around a specified hypothetical randomised trial. Longitudinal modified treatment policies specify how to change the exposure a person would otherwise receive at each intervention occasion, potentially using their measured history. Examples include increasing or decreasing work hours.
 
 ## PhD Students
 
@@ -91,7 +95,7 @@ Jake graduated with a Bachelor of Science in Psychology and Mathematics from Vic
 :::
 
 ::: {.column width="75%"}
-Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice. He joins the lab from Bangladesh.
+Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. He joins the lab from Bangladesh.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -147,7 +151,7 @@ Hannah is researching the causal effects of religious service attendance on pers
 :::
 
 ::: {.column width="75%"}
-Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional wellbeing, asking whether joint belief yields synergistic benefits. She joins the lab from Indonesia.
+Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. She joins the lab from Indonesia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Target Trial Emulation; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -169,7 +173,7 @@ Purti is estimating the long-term causal effects of belief in God and belief in 
 :::
 
 ::: {.column width="75%"}
-Christina is estimating heterogeneous effects of volunteering on multidimensional wellbeing using causal forests and policy trees. Originally from Austria, she brings extensive experience in government to the lab.
+Christina is estimating heterogeneous effects of volunteering: how its effects on different aspects of well-being vary across groups. She uses causal forests and policy trees. Originally from Austria, she brings extensive experience in government to the lab.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Causal Machine Learning
@@ -190,7 +194,7 @@ Christina is estimating heterogeneous effects of volunteering on multidimensiona
 :::
 
 ::: {.column width="75%"}
-Millie worked with OTTO Lab as a research assistant, investigating extensions of lab workflows to policy settings with IDI (Integrated Data Infrastructure) data.
+Millie worked with OTTO Lab as a research assistant, investigating extensions of lab workflows to policy settings with data from the Integrated Data Infrastructure (IDI).
 
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
@@ -212,16 +216,16 @@ Boyang completed his Honours research with the lab, investigating the causal eff
 :::
 ::::
 
-### Zahle Wisely
+### Zahle Stewart
 
 :::: {.columns}
 
 ::: {.column width="25%"}
-![Zahle Wisely](images/team/zahle-wisely.jpg){.team-photo}
+![Zahle Stewart](images/team/zahle-wisely.jpg){.team-photo}
 :::
 
 ::: {.column width="75%"}
-Zahle received her Master of Science from Victoria University of Wellington in June 2026. Her thesis estimated the causal effects of perceived employer gratitude on multi-dimensional well-being, and she presented her findings at the 2025 Society of Australasian Social Psychologists conference in Melbourne. Congratulations, Zahle!
+Zahle received her Master of Science from Victoria University of Wellington in June 2026. Her thesis estimated the causal effects of perceived employer gratitude on multidimensional well-being. She presented her findings at the 2025 Society of Australasian Social Psychologists conference in Melbourne. Congratulations, Zahle!
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -258,7 +262,7 @@ Dr. Inkuk Kim worked with OTTO Lab as a Research Fellow at the Centre for Applie
 :::
 
 ::: {.column width="75%"}
-John Mark received his PhD from the School of Psychology at Victoria University of Wellington in 2025. His disseration investigated application of causal methods to NZAVS time-series data. He is currently working as a Post-doctoral Fellow at the [Shaver Lab](https://anthropology.artsandsciences.baylor.edu/person/john-h-shaver)
+John Mark received his PhD from the School of Psychology at Victoria University of Wellington in 2025. His dissertation investigated the application of causal methods to time-series data from the New Zealand Attitudes and Values Study. He is working as a postdoctoral fellow at the [Shaver Lab](https://anthropology.artsandsciences.baylor.edu/person/john-h-shaver).
 
 - [ORCID Profile](https://orcid.org/0000-0001-6398-7509)
 :::
@@ -273,7 +277,7 @@ John Mark received his PhD from the School of Psychology at Victoria University 
 :::
 
 ::: {.column width="75%"}
-Bella received her Master's degree from Victoria University of Wellington in 2023. Her research investigated the causal effects of work hours on multi-dimensional well-being.
+Bella received her Master's degree from Victoria University of Wellington in 2023. Her research investigated the causal effects of work hours on multidimensional well-being.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Longitudinal Modified Treatment Policies

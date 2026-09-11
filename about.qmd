@@ -2,20 +2,20 @@
 title: "About OTTO Lab"
 ---
 
-OTTO Lab (Observational Target Trial Operations) uses causal inference to address long-standing debates and real-world problems. Rigorous causal workflows clarify what works, for whom, when, and in which context - questions that matter for science, policy, and understanding cultural diversity.
+OTTO Lab (Observational Target Trial Operations) uses causal inference to address long-standing debates and real-world problems. We ask what works, for whom, when, and in which context. Our causal workflows help us specify those questions, assess what the evidence can establish, and explain the implications for science and policy.
 
-We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington, and is affiliated with the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
+We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington, and are affiliated with the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
 
-We also maintain [Places Map](https://religionmap.org/), an open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
+We also maintain [Places Map](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
 
 ## Approach
 
 We combine causal inference workflows with domain expertise to:
 
-1. Identify and state clearly defined causal questions
-2. Design studies that answer these questions
-3. Clearly communicate findings
+1. State the causal question and the comparison it requires
+2. Design studies to address the question and assess the assumptions needed for causal interpretation
+3. Clearly communicate the findings and their limitations
 
 ## Contact
 

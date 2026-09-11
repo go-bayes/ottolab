@@ -10,23 +10,23 @@ A four-part tutorial series published in *Evolutionary Human Sciences* that prov
 
 #### Part 1: [Causal Diagrams and Confounding](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-1-causal-diagrams-and-confounding/E734F72109F1BE99836E268DF3AA0359)
 
-Beginner level covering essential concepts, DAGs, and confounding bias.
+Beginner level. Introduces causal directed acyclic graphs (DAGs), which represent assumptions about causal relationships, and confounding bias.
 
 #### Part 2: [Interaction, Mediation, and Time-Varying Treatments](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-2-interaction-mediation-and-timevarying-treatments/D7FD95D3ED64FE0FBBEC37AC6CEAFBC1)
 
-Intermediate level covering effect modification and complex causal structures.
+Intermediate level. Covers effect modification, interaction, mediation, and treatments that change over time.
 
 #### Part 3: [Measurement Error and External Validity](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F)
 
-Intermediate level focusing on measurement and cross-cultural validity.
+Intermediate level. Examines measurement error and threats to applying findings across populations and cultures.
 
 #### Part 4: [Confounding in Experiments](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-4-confounding-in-experiments/570D60A5FCCA007B55427384818C368E)
 
-Advanced level covering experimental design considerations.
+Advanced level. Examines how confounding can arise in experiments.
 
 ::: {#getting-started-with-r-and-causal-tools .callout-tip}
 ## Getting Started with R and Causal Tools
-For an interactive introduction to directed acyclic graphs, see [Introduction to Directed Acyclic Graphs](https://r-causal.github.io/ggdag/articles/intro-to-dags.html). For a visual guide to common bias structures, see [Common Structures of Bias](https://r-causal.github.io/ggdag/articles/bias-structures.html). For propensity score weighting, start with the [WeightIt documentation](https://ngreifer.github.io/WeightIt/).
+For an interactive introduction to causal DAGs, see [Introduction to Directed Acyclic Graphs](https://r-causal.github.io/ggdag/articles/intro-to-dags.html). For a visual guide to common bias structures, see [Common Structures of Bias](https://r-causal.github.io/ggdag/articles/bias-structures.html). For propensity score weighting, start with the [WeightIt documentation](https://ngreifer.github.io/WeightIt/).
 :::
 
 ---
@@ -39,15 +39,15 @@ For an interactive introduction to directed acyclic graphs, see [Introduction to
 
 #### Causal Inference
 
-**margot**
+**$\tt{margot}$**
 A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at [go-bayes.github.io/margot](https://go-bayes.github.io/margot/), and the source code is at [github.com/go-bayes/margot](https://github.com/go-bayes/margot/). Install with `devtools::install_github("go-bayes/margot")`.
 
 
 **ggdag**
-Create directed acyclic graphs for causal inference. Documentation is at [r-causal.github.io/ggdag](https://r-causal.github.io/ggdag/), and the CRAN page is [cran.r-project.org/package=ggdag](https://cran.r-project.org/package=ggdag). Install with `install.packages("ggdag")`.
+Create causal DAGs to represent a study's causal assumptions. Documentation is at [r-causal.github.io/ggdag](https://r-causal.github.io/ggdag/), and the CRAN page is [cran.r-project.org/package=ggdag](https://cran.r-project.org/package=ggdag). Install with `install.packages("ggdag")`.
 
 **WeightIt**
-Weighting for covariate balance in observational studies. Documentation is at [ngreifer.github.io/WeightIt](https://ngreifer.github.io/WeightIt/), and the CRAN page is [cran.r-project.org/package=WeightIt](https://cran.r-project.org/package=WeightIt). Install with `install.packages("WeightIt")`.
+Weighting tools for covariate balance: making exposure groups more comparable on measured characteristics in observational studies. Documentation is at [ngreifer.github.io/WeightIt](https://ngreifer.github.io/WeightIt/), and the CRAN page is [cran.r-project.org/package=WeightIt](https://cran.r-project.org/package=WeightIt). Install with `install.packages("WeightIt")`.
 
 #### Research Tools
 
@@ -62,7 +62,7 @@ Tools for generating standardised boilerplate text and documentation for reprodu
 
 ::: {.panel-tabset}
 
-### Causal Diagrams and DAGs
+### Causal Diagrams and Causal DAGs
 
 **Core Readings**
 Barrett, M. (2023). [ggdag: Analyze and Create Elegant Directed Acyclic Graphs](https://github.com/malcolmbarrett/ggdag).
@@ -82,7 +82,7 @@ VanderWeele, T.J. and Knol, M.J. (2014). [A tutorial on interaction](https://www
 **Foundational Papers**
 VanderWeele, T.J. (2007). [Four Types of Effect Modification](https://www.dropbox.com/scl/fi/drytp2ui2b8o9jplh4bm9/four_types_of_effect_modification__a.6.pdf?rlkey=mb9nl599v93m6kyyo69iv5nz1&dl=0). Intermediate level.
 
-VanderWeele, T.J. (2009). [On the Distinction Between Interaction and Effect Modification](https://www.dropbox.com/scl/fi/srpynr0dvjcndveplcydn/OutcomeWide_StatisticalScience.pdf?rlkey=h4fv32oyjegdfl3jq9u1fifc3&dl=0). Intermediate level.
+VanderWeele, T.J. (2009). [On the Distinction Between Interaction and Effect Modification](https://doi.org/10.1097/EDE.0b013e3181ba333c). Intermediate level.
 
 **Applied Methods**
 Hernan, M.A. and Robins, J.M. (2024). [Causal Inference: What If](https://www.dropbox.com/scl/fi/9hy6xw1g1o4yz94ip8cvd/hernanrobins_WhatIf_2jan24.pdf?rlkey=8eaw6lqhmes7ddepuriwk5xk9&dl=0), Chapters 4-5. Intermediate level.
@@ -121,7 +121,7 @@ VanderWeele, T.J. et al. (2020). [Outcome-Wide Longitudinal Designs](https://www
 
 ### Heterogeneous Treatment Effects
 
-**Key Papers**
+**Foundational Papers**
 Athey, S. and Wager, S. (2019). [Estimating Treatment Effects with Causal Forests: An Application](https://arxiv.org/pdf/1902.07409.pdf). Intermediate level.
 
 Wager, S. and Athey, S. (2018). [Estimation and Inference of Heterogeneous Treatment Effects using Random Forests](https://www.tandfonline.com/doi/full/10.1080/01621459.2017.1319839). Advanced level.
@@ -239,13 +239,13 @@ The [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/)
 ::: {.column width="50%"}
 **Causal Inference: What If**
 *Miguel A. Hernan and James M. Robins*
-[Free Book and Resources](https://miguelhernan.org/whatifbook). The definitive text on causal inference methods with code examples.
+[Free Book and Resources](https://miguelhernan.org/whatifbook). A textbook on causal inference methods with code examples.
 :::
 
 ::: {.column width="50%"}
 **Explanation in Causal Inference**
 *Tyler VanderWeele*
-[Link to OUP page](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870). A strong account of causal mediation analysis and interaction. The hardback is expensive, so a library copy is often the easiest option.
+[Link to OUP page](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870). A strong account of causal mediation analysis and interaction. Ask your library about access.
 :::
 
 ::::
@@ -268,10 +268,10 @@ The [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/)
 
 ::: {.callout-note}
 ## Where to Start
-If you are new to causal inference, begin with our [four-part tutorial series](#learning-pathways). If you need DAGs, the [ggdag tutorials](#getting-started-with-r-and-causal-tools) are a good first step. If you are ready to analyse data, install [margot](#r-packages) and follow the [practical guide](https://osf.io/preprints/psyarxiv/uyg3d). For cross-cultural research, start with [Part 3](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F) of the series.
+If you are new to causal inference, begin with our [four-part tutorial series](#learning-pathways). If you need causal DAGs, the [ggdag tutorials](#getting-started-with-r-and-causal-tools) are a good first step. If you are ready to analyse data, install [$\tt{margot}$](#r-packages) and follow the [practical guide](https://osf.io/preprints/psyarxiv/uyg3d). For cross-cultural research, start with [Part 3](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F) of the series.
 :::
 
 ::: {.callout-tip}
 ## Contributing
-Have a resource to suggest or a broken link to fix? Please [contact us](about.qmd) or submit an issue on our [GitHub repository](https://github.com/go-bayes/ottolab).
+Have a resource to suggest or a broken link to report? Please [contact us](about.qmd) or submit an issue on our [GitHub repository](https://github.com/go-bayes/ottolab).
 :::

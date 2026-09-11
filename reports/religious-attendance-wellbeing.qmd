@@ -1,5 +1,5 @@
 ---
-pagetitle: "Religious Attendance: Selective, Not Sweeping | OTTO Lab"
+pagetitle: "Religious Attendance and Selective Gains in Well-being | OTTO Lab"
 body-classes: report
 toc: false
 page-layout: full
@@ -9,11 +9,11 @@ page-layout: full
 <div class="report-wrap">
 
 <p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2018–2023 &nbsp;·&nbsp; Lab report</p>
-<h1 class="report-title">Religious Attendance: Selective, Not <em>Sweeping</em></h1>
+<h1 class="report-title">Religious Attendance and Selective Gains in <em>Well-being</em></h1>
 <p class="report-subtitle">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</p>
 <p class="byline"><span class="names">Joseph A. Bulbulia · Don E. Davis · Crystal Park · Kenneth G. Rice · Geoffrey Troughton · Daryl R. Van Tongeren · Chris G. Sibley</span><span class="venue">Evolutionary Human Sciences · 2026</span></p>
 
-<p class="report-lede">Religious service attendance is associated with better well-being, but observational associations do not establish causation. Across six annual waves of a national panel, we estimate the causal effects of monthly attendance on 24 well-being indicators — and the supported effects concentrate in <span class="hl">meaning, forgiveness, and intimate life</span>, with <span class="hl-gold">little change</span> in somatic health, psychological distress, or social support.</p>
+<p class="report-lede">Religious service attendance is associated with better well-being. We ask how well-being would change if monthly religious service attendance became more probable among people who were non-attenders at the start of the study. Across six annual waves of the New Zealand Attitudes and Values Study (NZAVS), we estimate effects on 24 well-being indicators. The supported effects concentrate in <span class="hl">meaning, forgiveness, and sexual satisfaction</span>. Estimates for most physical-health outcomes, psychological distress, and social support are <span class="hl-gold">near zero</span>.</p>
 
 <div class="stat-row" style="margin-top:2.5rem">
   <div class="stat"><span class="n">46,377</span><span class="lbl">participants at baseline, NZAVS</span></div>
@@ -24,44 +24,53 @@ page-layout: full
 
 <section class="report-section">
 <p class="kicker kicker-dash">The emulated trial</p>
+<p>A target trial emulation organises an observational study around the question and design of a hypothetical randomised trial.</p>
 <div class="trial-grid">
   <div class="cell">
     <p class="chip soft">What is our question?</p>
-    <p>For New Zealand adults, what are the causal effects of monthly religious service attendance on 24 well-being indicators, measured across somatic, psychological, existential, social, and relational domains?</p>
+    <p>Among baseline non-attenders, how would making monthly religious service attendance more probable affect 24 well-being indicators? We compare the probability intervention defined below with the natural course, which allows attendance to change as it ordinarily would. The intervention operates in 2019 and 2022, with outcomes measured in 2023.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What is our population?</p>
-    <p>46,377 NZAVS participants at baseline, followed across six annual waves, 2018–2023. The primary contrast concerns the 38,477 who were not attending at baseline, with censoring adjustment carrying inference to that cohort.</p>
+    <p>The attendance study follows 46,377 NZAVS participants across six annual waves, 2018–2023. The primary contrast concerns 38,477 baseline non-attenders. Censoring adjustment accounts for people leaving the study, aiming to estimate outcomes for this baseline group under complete follow-up.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What interventions do we compare?</p>
     <div class="arm">
-      <span class="chip gold">Fails positivity</span>
-      <p>Make everyone attend monthly, versus none. Only 2–3% of non-attenders initiate attendance in a given year; the data cannot identify a policy this far from what occurs.</p>
+      <span class="chip gold">Initial question · universal attendance</span>
+      <p>Among baseline non-attenders, compare monthly attendance for everyone with zero attendance for everyone.</p>
     </div>
     <div class="arm">
       <span class="chip">Adopted · δ = 5</span>
-      <p>Multiply each non-attender's chance of taking up monthly attendance fivefold, versus the natural course — the censoring-adjusted course actually observed.</p>
+      <p>In 2019 and 2022, divide each baseline non-attender's conditional probability of non-attendance by five. Here, conditional means that the probability depends on the person's measured characteristics and earlier survey responses. The parameter δ specifies this divisor. Compare that intervention with the natural course, which allows attendance to change as it ordinarily would. The contrast targets outcomes under complete follow-up.</p>
     </div>
   </div>
 </div>
 </section>
 
 <section class="report-section">
+<p class="kicker kicker-dash">Can the data support the comparison?</p>
+<h2>Many participants, few new attenders</h2>
+<p>To estimate what would happen if everyone began attending, we need evidence about people who make that change. Positivity requires that each attendance pattern assigned by an intervention has a positive probability in the observed population among people with the relevant measured history. In practice, we also need enough comparable examples in the study to reliably estimate the effects.</p>
+<p>Only 2–3% of baseline non-attenders begin monthly attendance in a given year. In this study, the universal-attendance comparison would require substantial extrapolation: using models to predict outcomes for attendance histories with very few comparable observations. This is the practical positivity failure. A large sample can still contain very few examples of the change we want to study.</p>
+<p>We therefore ask what would happen if attendance became more probable. The adopted intervention changes attendance probabilities, allowing attendance to vary across people. The study provides better empirical support for this comparison. It answers a different causal question: the effect of making attendance more likely among baseline non-attenders.</p>
+</section>
+
+<section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
-<h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; distress and somatic health barely change.</h2>
-<p>Estimates come from the supported stochastic contrast above, fitted with a sequentially doubly robust estimator and cross-validated machine learning among baseline non-attenders. Cross-sectional associations between attendance and well-being are broadly favourable across most outcomes; the causal contrast narrows this profile, and the narrowing reflects both confounding adjustment and the change in causal question.</p>
+<h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; estimates for distress and most physical-health outcomes are near zero.</h2>
+<p>When we compare people at the same survey wave, attenders generally report better well-being across most outcomes. These are cross-sectional associations. By contrast, estimated gains under the probability intervention among baseline non-attenders concentrate in fewer outcomes. This difference reflects both confounding adjustment and the change in causal question. Confounding occurs when common causes of attendance and well-being distort their apparent relationship. We describe gains as supported when they meet the study's sensitivity criterion: the E-value for the confidence limit closest to zero exceeds 1.10. Larger E-values mean that stronger unmeasured confounding would be needed to move that limit to zero.</p>
 
 <div class="duo">
   <div class="panel">
-    <p class="chip">Supported · where attendance acts</p>
-    <h3>Meaning, forgiveness, intimacy</h3>
-    <p>Meaning and purpose rises by 0.085 standard deviations (E-value 1.25), sexual satisfaction by 0.086 (1.25), and forgiveness by 0.075 (1.21). Smaller supported gains appear for meaning and sense (0.071), short-form health (0.061), and body satisfaction (0.058).</p>
+    <p class="chip">Supported gains</p>
+    <h3>Meaning, forgiveness, and sexual satisfaction</h3>
+    <p>As noted above, the attendance probability intervention yields small estimated gains in meaning and purpose, sexual satisfaction, and forgiveness. Standard deviations express changes relative to the variation in an outcome across people. Estimated increases are 0.085 standard deviations for meaning and purpose (E-value bound 1.25), 0.086 for sexual satisfaction (1.25), and 0.075 for forgiveness (1.21). Smaller supported gains appear for meaning and sense (0.071), short-form health (0.061), and body satisfaction (0.058).</p>
   </div>
   <div class="panel">
-    <p class="chip gold">Null · where it does not</p>
-    <h3>Distress and the body barely change</h3>
-    <p>Body mass index, sleep, and alcohol use, and the distress indicators — anxiety, depression, fatigue, rumination — show point estimates near zero with confidence intervals spanning the null. Social belonging and perceived social support do not meet the E-value reliability threshold.</p>
+    <p class="chip gold" style="white-space:normal">Estimates near zero or sensitive to confounding</p>
+    <h3>Small estimates for distress and most physical-health outcomes</h3>
+    <p>The attendance probability intervention yields a small estimated reduction in body mass index. Its confidence interval excludes zero, while its E-value bound falls below the study's threshold. Estimates for sleep, alcohol use, anxiety, depression, fatigue, and rumination are near zero, with intervals spanning zero. The E-value bounds for social belonging and perceived social support also fall below the study's threshold of 1.10.</p>
   </div>
 </div>
 </section>
@@ -71,9 +80,9 @@ page-layout: full
 <div class="figure-panel">
 <svg viewBox="0 0 780 372" xmlns="http://www.w3.org/2000/svg" role="img" font-family="JetBrains Mono, ui-monospace, Menlo, monospace">
 <circle cx="6" cy="16" r="4.5" fill="var(--green)"/>
-<text x="17" y="20" font-size="10.5" fill="var(--ink-soft)">meets the E-value reliability threshold</text>
+<text x="17" y="20" font-size="10.5" fill="var(--ink-soft)">exceeds the study's E-value bound threshold</text>
 <circle cx="6" cy="36" r="4.5" fill="var(--gold)"/>
-<text x="17" y="40" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value modest</text>
+<text x="17" y="40" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value bound modest</text>
 <line x1="401.1" y1="66" x2="401.1" y2="332" stroke="var(--hair)" stroke-dasharray="3 4" stroke-width="1"/>
 <text x="324.9" y="354" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.05</text>
 <text x="401.1" y="354" font-size="10" fill="var(--ink-faint)" text-anchor="middle">0</text>
@@ -137,7 +146,7 @@ page-layout: full
 </g>
 </svg>
 </div>
-<p class="fig-caption">Standardised effects of the δ = 5 supported stochastic intervention among baseline non-attenders, with 95% confidence intervals, as reported in the paper. Green marks effects meeting the E-value reliability threshold; gold marks gratitude and body mass index, whose intervals exclude zero but whose E-value bounds fall short of it. The remaining outcomes cluster near zero.</p>
+<p class="fig-caption">Estimated effects of dividing non-attendance probability by five (δ = 5), compared with the natural course among baseline non-attenders. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 24 outcomes (approximately 99.79% individual intervals). This adjustment accounts for testing several outcomes together. Source: <a href="https://doi.org/10.1017/ehs.2026.10043.sm001">Supplementary Table 25</a>. Green marks effects whose E-value bounds exceed the study's threshold of 1.10. Gold marks gratitude and body mass index, whose intervals exclude zero but whose E-value bounds fall below that threshold. E denotes the E-value for the confidence limit closest to zero. Estimates for the remaining outcomes are near zero.</p>
 </section>
 
 <section class="report-section">
@@ -145,21 +154,26 @@ page-layout: full
 <div class="numbered">
   <div class="item">
     <span class="num">01</span><h3>Estimation</h3>
-    <p>A sequentially doubly robust estimator with cross-validated machine learning adjusts for 62 baseline covariates and 32 time-varying confounders, with inverse-probability-of-censoring weights for dropout.</p>
+    <p>We estimate the attendance intervention effects with a sequentially doubly robust estimator and cross-validated machine learning. We adjust for 62 baseline covariates, characteristics measured at the start of the study, and 32 time-varying confounders, common causes of attendance and well-being measured over time. Inverse-probability-of-censoring weights account for dropout. Participants who remain in the study receive weights based on their estimated probability of remaining, given their measured histories. Causal interpretation depends on the study's identification assumptions.</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3>Sensitivity</h3>
-    <p>Each supported effect clears the study's E-value reliability threshold (E-values 1.16–1.25); an unmeasured confounder would need associations of that strength with both attendance and outcome to explain the effect away.</p>
+    <p>The six attendance effects marked green have E-values from 1.16 to 1.25 for the confidence limits closest to zero. These E-values summarise sensitivity to unmeasured confounding beyond the measured covariates, the participant characteristics included in the analysis. Larger E-values mean that stronger unmeasured confounding would be needed to move the confidence limit to zero.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3>Measurement</h3>
-    <p>Attendance is self-reported, and measurement error in self-reports would pull estimates towards zero — actual effects may be larger than we report.</p>
+    <p>Religious service attendance is self-reported. Reporting errors may bias the estimated intervention effects. The direction of bias depends on how those errors relate to attendance, outcomes, and confounders.</p>
   </div>
   <div class="item">
     <span class="num">04</span><h3>Scope</h3>
-    <p>We estimate total effects of specified changes in attendance rather than mediated pathways, and population averages rather than subgroup effects. Effects probably vary by tradition, belief strength, upbringing, and relationship status; childhood religious socialisation lies outside what adult panel data can identify.</p>
+    <p>We estimate population-average total effects of the attendance probability intervention among baseline non-attenders. Those averages may conceal variation by tradition, belief strength, upbringing, and relationship status. Moreover, the study concerns adult attendance; childhood religious socialisation requires a different causal question.</p>
   </div>
 </div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">What this means</p>
+<p>Making religious attendance more likely may bring small gains in meaning, forgiveness, and sexual satisfaction among adults who begin the study as non-attenders. Most estimated changes in physical health, distress, and social support are close to zero. These are population averages under a specified attendance intervention, and their causal interpretation depends on the study's assumptions.</p>
 </section>
 
 <div class="report-note">

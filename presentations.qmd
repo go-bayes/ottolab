@@ -16,7 +16,7 @@ title: "Presentations"
 :::
 
 ::: {.presentation-meta}
-Workshop Website | Format: Quarto site + GitHub materials
+Workshop website and downloadable materials
 :::
 
 ::: {.presentation-embed}
@@ -48,7 +48,7 @@ Workshop Website | Format: Quarto site + GitHub materials
 **Location:** University of Melbourne
 :::
 
-#### Zahle Wiseley: Does Employer Gratitude Improve Employee Well-being?
+#### Zahle Stewart: Does Employer Gratitude Improve Employee Well-being?
 
 ::: {.presentation-meta}
 Student Presentation | Format: PDF Slides
@@ -66,7 +66,7 @@ Student Presentation | Format: PDF Slides
 ```
 :::
 
-**Abstract:** Using longitudinal data from Wave 20 of the New Zealand Attitudes and Values Study (NZAVS), this presentation examines the causal effects of perceived employer gratitude on employee well-being outcomes across multiple domains including health, psychological, present-focused, life-reflective, and social well-being.
+**Abstract:** This presentation asks whether higher perceived employer gratitude improves employee well-being one year later. It uses longitudinal data from the New Zealand Attitudes and Values Study (NZAVS) to estimate effects across health, psychological, social, and life-reflective outcomes.
 
 **Keywords:** employer gratitude, employee well-being, causal inference, NZAVS, workplace appreciation
 
@@ -90,7 +90,7 @@ Student Presentation | Format: PDF Slides
 ```
 :::
 
-**Abstract:** This presentation investigates the causal relationship between religious service attendance and personality traits, moving beyond correlational findings to examine whether religious participation causally influences personality development.
+**Abstract:** This presentation investigates the causal relationship between religious service attendance and personality traits, asking whether religious participation affects personality development.
 
 **Keywords:** religion, personality, religious service attendance, causal inference, NZAVS
 :::
@@ -117,7 +117,7 @@ Conference Presentation | Duration: ~50 minutes | Format: HTML Slides
 ```{=html}
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>🎯 View Presentation</h3>
-    <p>The presentation is hosted on Dropbox. It will not render on a cellphone</p>
+    <p>The presentation is hosted on Dropbox. Use a desktop or laptop to view these slides.</p>
     <a href="https://www.dropbox.com/scl/fi/ggs8mcnhdrzt67wlcoy99/index.html?rlkey=wuf0j6vp1jvzv0nodgvxx4m62&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         Open Presentation
     </a>
@@ -169,7 +169,7 @@ leaflet() %>%
 :::
 
 ::: {.presentation-meta}
-Workshop Website | Format: Quarto site + GitHub materials
+Workshop website and downloadable materials
 :::
 
 ::: {.presentation-embed}
@@ -277,13 +277,13 @@ Workshop Presentation | Duration: ~60 minutes | Format: PDF Slides
 - Compatible with all modern browsers
 :::
 
-**Abstract:** This workshop presentation explores heterogeneous treatment effects in the context of religious attendance and well-being outcomes. Moving beyond average effects, we examine how the causal impact of church attendance varies across different population subgroups, using machine learning methods to identify systematic patterns of treatment effect heterogeneity. The presentation demonstrates methods for discovering who benefits most from religious participation.
+**Abstract:** This workshop presentation explores heterogeneous treatment effects in the context of religious attendance and well-being outcomes. We use machine learning methods to estimate how average causal effects of church attendance vary across population subgroups. These estimates address treatment effect heterogeneity under the study's causal assumptions.
 
 **Keywords:** heterogeneous treatment effects, causal inference, church attendance, well-being, cooperation, machine learning, subgroup analysis, personalised treatment effects, New Zealand
 
 #### Workshop Context
 
-These presentations were delivered as part of SPARCC Day 2, a methods workshop focusing on advanced statistical techniques for studying religion, spirituality, and social behaviour. The sessions covered practical applications of causal inference methods using real-world longitudinal data, progressing from average treatment effects to more sophisticated heterogeneous effect estimation.
+These presentations were delivered as part of SPARCC Day 2, a methods workshop focusing on advanced statistical techniques for studying religion, spirituality, and social behaviour. The sessions covered practical applications of causal inference methods using real-world longitudinal data, progressing from population-average effects to differences in average effects across groups.
 
 #### Workshop Materials
 
@@ -298,11 +298,7 @@ These presentations were delivered as part of SPARCC Day 2, a methods workshop f
 
 ---
 
-## Archive of Presentations
 
-*Coming soon...*
-
----
 
 
 
