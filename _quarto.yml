@@ -41,7 +41,7 @@ website:
           - text: "2025"
           - text: "SASP: Student Presentations"
             href: presentations.qmd#sasp-2025
-          - text: "APA-BIER: Causal Inference"
+          - text: "Bier Award Lecture"
             href: presentations.qmd#apa-bier-2025
     right:
       - icon: github

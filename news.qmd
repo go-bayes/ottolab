@@ -20,9 +20,9 @@ Version 1.4.0 makes JSON the default database format and removes RDS writing fro
 
 We are delighted to welcome two new students to OTTO Lab: Purti Pristine and Christina Cartwright.
 
-Purti joins the lab from Indonesia as a Master's student. She is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional wellbeing, asking whether joint belief yields synergistic benefits.
+Purti joins the lab from Indonesia as a Master's student. She is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits.
 
-Christina joins the lab as an Honours student. Originally from Austria, she brings extensive experience in government. She is estimating heterogeneous effects of volunteering on multidimensional wellbeing using causal forests and policy trees.
+Christina joins the lab as an Honours student. Originally from Austria, she brings extensive experience in government. She is estimating heterogeneous effects of volunteering: how its effects on different aspects of well-being vary across groups. She uses causal forests and policy trees.
 
 A warm welcome to Purti and Christina.
 
@@ -64,7 +64,7 @@ Inkuk remains a Fellow of OTTO Lab and is working on a number of projects relate
 
 **20 February 2026 | Victoria University of Wellington**
 
-The Places Map project is now live at [religionmap.org](https://religionmap.org/). Places Map is an open research infrastructure for mapping places of worship and supporting cross-cultural policy research.
+The Places Map project is now live at [religionmap.org](https://religionmap.org/). Places Map is open research infrastructure for mapping places of worship and supporting cross-cultural policy research.
 
 Project code and workflows are available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
@@ -78,7 +78,7 @@ We are delighted to welcome two new PhD students to OTTO Lab: Mekonnen Tsehay an
 
 Mekonnen joins the lab from Ethiopia. He is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand.
 
-Mohammad joins the lab from Bangladesh. He is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on outcome-wide prejudice.
+Mohammad joins the lab from Bangladesh. He is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes.
 
 A warm welcome to Mekonnen and Mohammad.
 
@@ -94,7 +94,7 @@ The lab travelled to Melbourne for the Society of Australasian Social Psychologi
 
 Two OTTO Lab students presented their research applying causal inference methods:
 
-- **Zahle Wiseley**: *Does Employer Gratitude Improve Employee Well-being?* — Using NZAVS data to examine causal effects of workplace appreciation on employee outcomes. [Slides (PDF)](https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0)
+- **Zahle Stewart**: *Does Employer Gratitude Improve Employee Well-being?* — Using New Zealand Attitudes and Values Study data to examine causal effects of workplace appreciation on employee outcomes. [Slides (PDF)](https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0)
 
 - **Hannah Robinson**: *Religion and Personality* — Investigating causal relationships between religious service attendance and personality traits. [Slides (PDF)](https://www.dropbox.com/scl/fi/awse06fy0gh3vw208qo2b/Melbourne-Presentation-Religion-and-Personality-Hannah-Robinson.pdf?rlkey=no9p11rxzr79f049zeqwo8p1l&dl=0)
 
@@ -105,7 +105,7 @@ We were also joined by collaborator **Dr Usman Afzali** (University of Otago, Mu
 
 ![Workshop participants](images/news/2025-sasp-melbourne/workshop-audience.png){group="sasp2025"}
 
-![Zahle Wiseley presenting her research](images/news/2025-sasp-melbourne/zahle-presenting.png){group="sasp2025"}
+![Zahle Stewart presenting her research](images/news/2025-sasp-melbourne/zahle-presenting.png){group="sasp2025"}
 
 ![Hannah Robinson presenting her research](images/news/2025-sasp-melbourne/hannah-presenting.png){group="sasp2025"}
 :::
@@ -123,7 +123,7 @@ We were also joined by collaborator **Dr Usman Afzali** (University of Otago, Mu
 
 ## Past Events
 
-- **[2025 August 10-13]:** Workshop on Causal Inferece at the University of San Diego [link](https://go-bayes.github.io/sparcc-day-2/)
+- **[2025 August 10-13]:** Workshop on Causal Inference at the University of California, San Diego [link](https://go-bayes.github.io/sparcc-day-2/)
 
 
 
@@ -137,12 +137,5 @@ Joseph Bulbulia delivered the William Bier Interdisciplinary Award lecture: *Who
 ![Joseph Bulbulia delivering the William Bier Interdisciplinary Award lecture](images/news/2025-bier-award/IMG_0869.jpeg){width=60% fig-align="center"}
 
 [View presentation slides](presentations.qmd#apa-bier-2025)
-
----
-
-
-## 2024
-
-*News archive coming soon...*
 
 ---

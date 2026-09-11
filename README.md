@@ -2,7 +2,7 @@
 
 Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka — Victoria University of Wellington.
 
-OTTO Lab develops and applies observational causal inference — target trial emulation and outcome-wide analysis — to questions in psychological science.
+OTTO Lab develops and applies methods for causal inference from observational data to questions in psychological science. We use target trial emulation to organise studies around hypothetical randomised trials and outcome-wide analysis to examine effects across multiple outcomes.
 
 ## Site
 

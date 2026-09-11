@@ -1,5 +1,5 @@
 ---
-pagetitle: "Work Hours: The Body, Not the Mind | OTTO Lab"
+pagetitle: "Work Hours, Fatigue, and Physical Health | OTTO Lab"
 body-classes: report
 toc: false
 page-layout: full
@@ -9,59 +9,67 @@ page-layout: full
 <div class="report-wrap">
 
 <p class="kicker kicker-dash">Target trial emulation &nbsp;·&nbsp; NZAVS 2020–2023 &nbsp;·&nbsp; Lab report</p>
-<h1 class="report-title">Work Hours: The Body, Not the <em>Mind</em></h1>
+<h1 class="report-title">Work Hours, Fatigue, and <em>Physical Health</em></h1>
 <p class="report-subtitle">How work hours affect well-being: a target trial emulation in a national New Zealand cohort</p>
 <p class="byline"><span class="names">Ballerina X. S. Chong · Chris G. Sibley · Joseph A. Bulbulia</span><span class="venue">PLOS One · 2026</span></p>
 
-<p class="report-lede">Longer work hours travel with poorer well-being, but an association cannot say what would happen if hours changed. We emulate the experiment we would like to run: among 24,579 pre-retirement New Zealanders, we estimate how 28 well-being outcomes would differ if the same cohort worked <span class="hl">ten more</span> or <span class="hl-gold">ten fewer</span> hours each week than observed.</p>
+<p class="report-lede">Work hours are associated with differences in well-being. We ask how well-being would change if weekly work hours increased or decreased. We emulate a target trial using data from 24,579 pre-retirement participants in the New Zealand Attitudes and Values Study (NZAVS). We estimate how 28 well-being outcomes would differ under interventions that shift weekly work hours <span class="hl">ten hours up</span> or <span class="hl-gold">ten hours down</span>, each compared with the natural course: work hours changing as they ordinarily would.</p>
 
 <div class="stat-row" style="margin-top:2.5rem">
   <div class="stat"><span class="n">24,579</span><span class="lbl">pre-retirement adults, NZAVS</span></div>
-  <div class="stat"><span class="n">3</span><span class="lbl">annual waves, 2020–2023</span></div>
+  <div class="stat"><span class="n">3</span><span class="lbl">annual waves, 2020/2021–2022/2023</span></div>
   <div class="stat"><span class="n">28</span><span class="lbl">well-being outcomes</span></div>
   <div class="stat"><span class="n">±10</span><span class="lbl">hours per week, the two policies</span></div>
 </div>
 
 <section class="report-section">
 <p class="kicker kicker-dash">The emulated trial</p>
+<p>A target trial emulation organises an observational study around the question and design of a hypothetical randomised trial.</p>
 <div class="trial-grid">
   <div class="cell">
     <p class="chip soft">What is our question?</p>
-    <p>For pre-retirement New Zealand adults, how would 28 well-being outcomes differ one year later if weekly work hours shifted ten hours up, or ten hours down, from what would otherwise occur?</p>
+    <p>For pre-retirement New Zealand adults, how would shifting weekly work hours by ten hours affect 28 well-being outcomes one year later? We compare each shift, upward and downward, with the natural course.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What is our population?</p>
-    <p>24,579 NZAVS participants of working age at baseline (2020/2021), followed across three annual waves to 2022/2023, with censoring adjustment carrying inference to the baseline cohort.</p>
+    <p>The work-hours analysis includes 24,579 NZAVS participants of pre-retirement age at baseline (2020/2021). Work hours are measured in 2021/2022 and outcomes in 2022/2023. Censoring adjustment accounts for people leaving the study, aiming to estimate outcomes for the baseline cohort under complete follow-up.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What interventions do we compare?</p>
     <div class="arm">
       <span class="chip">Shift up · +10 hours</span>
-      <p>Weekly hours shifted ten upward, versus the natural course — the censoring-adjusted hours actually worked.</p>
+      <p>Increase weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.</p>
     </div>
     <div class="arm">
       <span class="chip gold">Shift down · −10 hours</span>
-      <p>Weekly hours shifted ten downward, versus the same natural course.</p>
+      <p>Decrease weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.</p>
     </div>
   </div>
 </div>
 </section>
 
 <section class="report-section">
+<p class="kicker kicker-dash">Can the data support the comparison?</p>
+<h2>Some changes in hours are easier to study</h2>
+<p>To estimate the effects of changing work hours, we need evidence about comparable people working at the hours the intervention would produce. Positivity requires that any set of work-hour values given a positive chance by an intervention also has a positive chance among people with each relevant history. Here, history means the characteristics and earlier survey responses used to compare participants. In practice, we also need enough comparable observations to reliably estimate the effects.</p>
+<p>The observed work-hour distributions provide better coverage for the ten-hour reduction. Increasing hours by ten more often produces work-hour values that are rare among people with comparable measured histories. Estimating the upward shift therefore requires more extrapolation: using models to predict outcomes where comparable observations are sparse. That reliance calls for greater caution.</p>
+</section>
+
+<section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
-<h2 class="claim" style="margin-top:1rem">Shifting work hours affects recovery — fatigue, sleep, body mass — more clearly than well-being as a whole.</h2>
-<p>Under the upward shift, fatigue rises and sleep falls; body mass index and perceived physical health also worsen, though these estimates are more sensitive to residual confounding. Under the downward shift, the clearest fall is in fatigue. Most of the 28 outcomes change little under either policy, and the data better support the downward shift. Naive baseline associations are broader, larger, and sometimes reversed in sign; the causal shifts that survive adjustment concentrate in recovery and embodied health.</p>
+<h2 class="claim" style="margin-top:1rem">Increasing work hours raises estimated fatigue; decreasing hours lowers it.</h2>
+<p>Estimated effects of the ten-hour shifts concentrate in tiredness, measured as fatigue, and a small set of physical-health outcomes. Most point estimates, our best estimates of the average changes, are small under either policy. Moreover, the data provide stronger empirical support for decreasing hours than for increasing hours. The upward shift therefore warrants greater caution. Comparisons between people at the first survey suggest differences across more outcomes and sometimes point in the opposite direction. However, those associations describe differences between people. The adjusted longitudinal estimates use later outcomes to address the specified changes in work hours.</p>
 
 <div class="duo">
   <div class="panel">
-    <p class="chip">+10 hours · the cost</p>
-    <h3>Recovery erodes</h3>
-    <p>Fatigue rises by 0.08 standard deviations and nightly sleep falls by roughly 3.4 minutes. Body mass index increases by roughly 0.19 kg/m² and perceived physical health declines by roughly 0.13 points, though both estimates are more sensitive to residual confounding. Perceived support rises slightly and carries the same caution.</p>
+    <p class="chip">+10 hours · estimated changes</p>
+    <h3>Higher fatigue and less sleep</h3>
+    <p>As noted above, increasing weekly work hours by ten raises estimated fatigue by 0.08 standard deviations, a small change relative to the variation in fatigue across people. Estimated nightly sleep falls by roughly 3.4 minutes. Body mass index increases by roughly 0.19 kg/m² and perceived physical health declines by roughly 0.13 points. However, estimates for sleep, body mass index, and perceived physical health warrant greater caution about uncertainty or residual confounding, distortion from common causes of work hours and well-being that remains after adjustment. The estimated increase in perceived support is also small and sensitive to residual confounding.</p>
   </div>
   <div class="panel">
-    <p class="chip gold">−10 hours · the relief</p>
-    <h3>Fatigue lifts first</h3>
-    <p>Fatigue falls by 0.04 standard deviations — the clearest change under the downward policy. Body mass index (−0.13 kg/m²) and perceived physical health (+0.07 points) also improve, and both estimates remain sensitive to residual confounding.</p>
+    <p class="chip gold">−10 hours · estimated changes</p>
+    <h3>Lower fatigue</h3>
+    <p>As noted above, decreasing weekly work hours by ten lowers estimated fatigue by 0.04 standard deviations. Estimated body mass index falls by 0.13 kg/m², while perceived physical health increases by 0.07 points. However, both physical-health estimates remain sensitive to residual confounding.</p>
   </div>
 </div>
 </section>
@@ -73,7 +81,7 @@ page-layout: full
 <circle cx="6" cy="16" r="4.5" fill="var(--green)"/>
 <text x="17" y="20" font-size="10.5" fill="var(--ink-soft)">least vulnerable to unmeasured confounding</text>
 <circle cx="6" cy="36" r="4.5" fill="var(--gold)"/>
-<text x="17" y="40" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value modest</text>
+<text x="17" y="40" font-size="10.5" fill="var(--ink-soft)">interval excludes zero; E-value bound modest</text>
 <line x1="448.8" y1="66" x2="448.8" y2="332" stroke="var(--hair)" stroke-dasharray="3 4" stroke-width="1"/>
 <text x="316.8" y="354" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.10</text>
 <text x="382.8" y="354" font-size="10" fill="var(--ink-faint)" text-anchor="middle">-0.05</text>
@@ -126,7 +134,7 @@ page-layout: full
 </g>
 </svg>
 </div>
-<p class="fig-caption">Standardised average treatment effects with Bonferroni-corrected 95% confidence intervals, as reported in the paper's results. Green marks the effect the paper identifies as least vulnerable to unmeasured confounding under each policy; gold marks estimates whose corrected intervals exclude zero but whose E-value bounds are modest. Full 28-outcome tables appear in the paper's supplement.</p>
+<p class="fig-caption">Estimated average effects of increasing or decreasing weekly work hours by ten, each compared with the natural course. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 28 outcomes under each policy (approximately 99.82% individual intervals). This adjustment accounts for testing several outcomes together. Green marks the fatigue estimate under each policy, which the paper identifies as least vulnerable to unmeasured confounding. Gold marks estimates whose corrected intervals exclude zero but whose E-value bounds are modest. E denotes the E-value for the confidence limit closest to zero. Larger E-values mean that stronger unmeasured confounding would be needed to move that limit to zero. The paper's supplement reports all 28 outcomes.</p>
 </section>
 
 <section class="report-section">
@@ -134,21 +142,26 @@ page-layout: full
 <div class="numbered">
   <div class="item">
     <span class="num">01</span><h3>The natural course comparator</h3>
-    <p>Each policy is compared with the censoring-adjusted hours the cohort actually worked — not with a hypothetical zero-hours world, and not with each other.</p>
+    <p>As stated above, we compare each ten-hour shift in weekly work hours with the natural course, allowing work hours to change as they ordinarily would. Censoring adjustment targets both comparisons to the baseline cohort under complete follow-up.</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3>Adjustment</h3>
-    <p>Modified treatment policy estimators, implemented in the <code>lmtp</code> R package, adjust for baseline differences and for dropout using machine learning.</p>
+    <p>We estimate the work-hour intervention effects with modified treatment policy estimators in the <code>lmtp</code> R package. Machine-learning models adjust for baseline differences and dropout. Adjustment addresses confounding: common causes of work hours and well-being that can distort their apparent relationship. Residual confounding is the distortion that remains after adjustment. Causal interpretation depends on the study's assumptions about confounding, exposure support, comparable treatment versions, and missing data.</p>
   </div>
   <div class="item">
-    <span class="num">03</span><h3>Uncertainty, stated plainly</h3>
-    <p>Uncertainty remains substantial. Many point estimates attenuate towards zero after confounding control and censoring adjustment, and many Bonferroni-corrected intervals include zero.</p>
+    <span class="num">03</span><h3>Uncertainty</h3>
+    <p>Uncertainty about the work-hour effects remains substantial. Many adjusted point estimates are closer to zero than the baseline associations. Moreover, many Bonferroni-adjusted intervals include zero, leaving uncertainty about the direction of those effects.</p>
   </div>
   <div class="item">
     <span class="num">04</span><h3>Scope</h3>
-    <p>Estimates are defined for these shift policies in this population, and people gain and lose hours for many reasons. Both hours and outcomes are self-reported; random measurement error would likely attenuate true effects.</p>
+    <p>The work-hours estimates concern ten-hour shifts among pre-retirement adults. People gain and lose hours for different reasons, which may affect how the results apply to a particular workplace change. Moreover, work hours and outcomes are self-reported. Reporting errors may bias the estimates in a direction that depends on their relations with exposure, outcomes, and confounders.</p>
   </div>
 </div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">What this means</p>
+<p>Changing work hours appears to affect how tired people feel. A ten-hour increase in the working week raises estimated fatigue, while a ten-hour reduction lowers it. Most estimated changes in other aspects of well-being are small. The data provide better coverage of the work hours needed to estimate a reduction. The results describe average effects among pre-retirement adults and depend on the study's assumptions. For discussions about working time, fatigue is the clearest outcome to consider; broader benefits remain uncertain.</p>
 </section>
 
 <div class="report-note">

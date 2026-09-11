@@ -4,27 +4,28 @@ title: "Reports"
 
 ## Lab Reports
 
-One-page editorial reports on recent lab publications.
+Brief reports explain the questions, methods, findings, and limitations of recent lab publications.
 
 ::: {.card}
 <p class="chip">PLOS One · 2026</p>
-### [Work Hours: The Body, Not the Mind](reports/work-hours-wellbeing.qmd)
-Shifting work hours affects recovery — fatigue, sleep, body mass — more clearly than well-being as a whole. A target trial emulation among 24,579 pre-retirement New Zealanders.
+### [Work Hours, Fatigue, and Physical Health](reports/work-hours-wellbeing.qmd)
+A target trial emulation among 24,579 pre-retirement New Zealanders estimates the effects of increasing or decreasing weekly work hours by ten. The clearest evidence concerns fatigue, with additional estimates for sleep, body mass index, and perceived physical health.
 :::
 
 ::: {.card}
 <p class="chip">Evolutionary Human Sciences · 2026</p>
-### [Religious Attendance: Selective, Not Sweeping](reports/religious-attendance-wellbeing.qmd)
-Supported causal effects of religious attendance concentrate in meaning, forgiveness, and intimate life, with little change in somatic health or psychological distress.
+### [Religious Attendance and Selective Gains in Well-being](reports/religious-attendance-wellbeing.qmd)
+A target trial emulation examines an intervention that makes monthly religious service attendance more probable among baseline non-attenders. Supported gains concentrate in meaning, forgiveness, and sexual satisfaction. Estimates for most physical-health outcomes and psychological distress are near zero.
 :::
 
 ## Research Reports & Working Papers
 
 ::: {.callout-note}
-### General Research Reports  (Previous Reports Page)
+### General Research Reports
 **[Browse General Reports →](https://go-bayes.github.io/reports/)**
 
-Our main repository of research reports covering:
+This collection includes research reports on:
+
 - Muslim acceptance and prejudice studies
 - COVID-19 pandemic impacts
 - Climate science trust
@@ -34,10 +35,11 @@ Our main repository of research reports covering:
 :::
 
 ::: {.callout-note}
-### B-Causal: Causal Inference Resources (Previous Lab)
+### B-Causal: Causal Inference Resources
 **[Browse B-Causal Reports →](https://go-bayes.github.io/b-causal/)**
 
-Specialised resources for causal inference including:
+The B-Causal collection includes:
+
 - Causal inference tutorials
 - Methodological guides
 - Applied examples
@@ -52,7 +54,7 @@ Specialised resources for causal inference including:
 - **Muslim Acceptance Study** - How the Christchurch attacks affected attitudes toward Muslims in New Zealand
 - **COVID-19 Analysis** - Pandemic impacts on well-being and social cohesion
 - **Climate Science Trust** - Causal relationships between trust in science and environmental attitudes
-- **Religious Simpson's Paradox** - Uncovering complex patterns in religious data
+- **Religious Simpson's Paradox** - Examining differences between population trends and individual religious change
 
 ---
 

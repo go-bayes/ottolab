@@ -58,7 +58,7 @@ work = [
     dict(label="perceived physical health", est=0.030, lo=0.003, hi=0.057, colour=GOLD, ev="1.06"),
 ]
 chart(work, -0.14, 0.16, [-0.10, -0.05, 0, 0.05, 0.10],
-      [(GREEN, "least vulnerable to unmeasured confounding"), (GOLD, "interval excludes zero; E-value modest")],
+      [(GREEN, "least vulnerable to unmeasured confounding"), (GOLD, "interval excludes zero; E-value bound modest")],
       "fig-work-hours.svg")
 
 att = [
@@ -72,5 +72,5 @@ att = [
     dict(label="body mass index", est=-0.031, lo=-0.060, hi=-0.002, colour=GOLD, ev="1.05"),
 ]
 chart(att, -0.09, 0.17, [-0.05, 0, 0.05, 0.10],
-      [(GREEN, "meets the E-value reliability threshold"), (GOLD, "interval excludes zero; E-value modest")],
+      [(GREEN, "exceeds the study's E-value bound threshold"), (GOLD, "interval excludes zero; E-value bound modest")],
       "fig-attendance.svg")
