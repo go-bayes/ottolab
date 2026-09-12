@@ -67,14 +67,7 @@
     "href": "about.html",
     "title": "About OTTO Lab",
     "section": "",
-    "text": "OTTO Lab (Observational Target Trial Operations) uses causal inference to address long-standing debates and real-world problems. We ask what works, for whom, when, and in which context. Our causal workflows help us specify those questions, assess what the evidence can establish, and explain the implications for science and policy.\nWe are based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington, and are affiliated with the Centre for Applied Cross-Cultural Research (CACR).\nWe also maintain Places Map, open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at github.com/go-bayes/places-of-worship."
-  },
-  {
-    "objectID": "about.html#approach",
-    "href": "about.html#approach",
-    "title": "About OTTO Lab",
-    "section": "Approach",
-    "text": "Approach\nWe combine causal inference workflows with domain expertise to:\n\nState the causal question and the comparison it requires\nDesign studies to address the question and assess the assumptions needed for causal interpretation\nClearly communicate the findings and their limitations"
+    "text": "OTTO Lab (Observational Target Trial Operations) uses causal inference to ask and answer questions in psychological science. We are interested in real-world problems.\nWe are based in the School of Psychological Sciences at Te Herenga Waka - Victoria University of Wellington, We also work closly with the Centre for Applied Cross-Cultural Research (CACR).\nWe maintain Places Map, open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at github.com/go-bayes/places-of-worship."
   },
   {
     "objectID": "about.html#contact",
@@ -88,7 +81,7 @@
     "href": "about.html#funding",
     "title": "About OTTO Lab",
     "section": "Funding",
-    "text": "Funding\nThe OTTO Lab group gratefully acknowledges support from:\nTempleton Religion Trust\n\nTRT0418: “New Zealand Attitudes and Values Study Matching Grant”\n\nJoseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton\n\nTRT-2022-30666: “Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities”\n\nJoseph Bulbulia (Contact PI) and Joseph Watts\n\n\n\n\n\n\n\nVictoria University of Wellington\n\n\n\n\n\n\n\n\n\nTempleton Religion Trust"
+    "text": "Funding\nThe OTTO Lab group gratefully acknowledges support from:\nTempleton Religion Trust\n\nTRT-2021-0418: “New Zealand Attitudes and Values Study Matching Grant”\n\nJoseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton\n\nTRT-2022-30666: “Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities”\n\nJoseph Bulbulia (Contact PI) and Joseph Watts\n\n\n\n\n\n\n\nVictoria University of Wellington\n\n\n\n\n\n\n\n\n\nTempleton Religion Trust"
   },
   {
     "objectID": "reports.html",

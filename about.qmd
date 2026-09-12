@@ -2,20 +2,12 @@
 title: "About OTTO Lab"
 ---
 
-OTTO Lab (Observational Target Trial Operations) uses causal inference to address long-standing debates and real-world problems. We ask what works, for whom, when, and in which context. Our causal workflows help us specify those questions, assess what the evidence can establish, and explain the implications for science and policy.
+OTTO Lab (Observational Target Trial Operations) uses causal inference to ask and answer questions in psychological science. We are interested in real-world problems.
 
-We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington, and are affiliated with the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
+We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington, We also work closly with the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
 
-We also maintain [Places Map](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
+We maintain [Places Map](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
-
-## Approach
-
-We combine causal inference workflows with domain expertise to:
-
-1. State the causal question and the comparison it requires
-2. Design studies to address the question and assess the assumptions needed for causal interpretation
-3. Clearly communicate the findings and their limitations
 
 ## Contact
 
@@ -51,7 +43,7 @@ The OTTO Lab group gratefully acknowledges support from:
 
 **Templeton Religion Trust**
 
-- TRT0418: "New Zealand Attitudes and Values Study Matching Grant"
+- TRT-2021-0418: "New Zealand Attitudes and Values Study Matching Grant"
   - Joseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton
   
 - TRT-2022-30666: "Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities"
