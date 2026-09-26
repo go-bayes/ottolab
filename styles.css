@@ -1220,6 +1220,11 @@ body.report .quarto-title-block {
   display: none;
 }
 
+img.figure-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .report-wrap {
   max-width: 1120px;
   margin: 0 auto;
