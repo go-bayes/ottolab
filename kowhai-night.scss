@@ -4,11 +4,11 @@
 // start dark before styles.css applies. hex values mirror the :root
 // tokens in styles.css; change both together.
 
-$paper: #170f1f;
-$card: #22182a;
+$paper: #140f1f;
+$card: #1e182a;
 $ink: #e6e2d3;
-$ink-soft: #c2bcc8;
-$ink-faint: #9a90a2;
+$ink-soft: #c0bcc8;
+$ink-faint: #9690a2;
 $kowhai: #f2c14e;
 $kowhai-bright: #f8d67f;
 
@@ -23,7 +23,7 @@ $border-color: rgba($ink, 0.2);
 $headings-color: $ink;
 
 $primary: $kowhai;
-$secondary: #2e2338;
+$secondary: #2a2338;
 $success: #56ae90;
 $info: #8fb4d8;
 $warning: $kowhai;
