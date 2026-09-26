@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap");
 
 /* OTTO LAB WEBSITE STYLES
-   print editorial on warm cream paper, after the verdicts-not-evidence
+   print editorial on cool harbour paper, after the verdicts-not-evidence
    working-paper page: fraunces display, newsreader body, jetbrains mono
-   microlabels, hairline rules, deep te herenga waka green as the accent.
-   single light theme by design. */
+   microlabels, hairline rules, deep harbour navy as the accent and a
+   grey-teal sea-glass as the secondary. single light theme by design. */
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -40,23 +40,45 @@
 
 /* ========== TOKENS ========== */
 :root {
-  /* paper and ink */
-  --paper: #f3efe4;
-  --card: #fffdf7;
-  --ink: #1c211d;
-  --ink-soft: #4f5a52;
-  --ink-faint: #7f8a80;
+  /* paper and ink: cool near-white paper, blue-grey ink */
+  --paper: #f3f6f7;
+  --card: #fcfdfd;
+  --ink: #1a2329;
+  --ink-soft: #46525c;
+  --ink-faint: #66727b;
 
-  /* accents: deep green primary, gold secondary */
-  --green: #0d4c38;
-  --green-deep: #093827;
-  --gold: #b8893a;
-  --blue: #1a4d7c;
+  /* accents. the token names are historical: charts and reports read
+     var(--green) as "supported effect" and var(--gold) as "near zero".
+     in this palette --green holds harbour navy and --gold holds sea-glass. */
+  --green: #1f4568;
+  --green-deep: #15314d;
+  --gold: #2e7a6e;
+  --blue: #1f4568;
+
+  /* semantic aliases for the same values */
+  --harbour: var(--green);
+  --harbour-deep: var(--green-deep);
+  --seaglass: var(--gold);
+  --seaglass-on-dark: #a3d3c9;
+  --on-dark: #e4ecf2;
+  --on-dark-strong: #f7fafc;
 
   /* hairlines as translucent ink */
-  --hair: rgba(28, 33, 29, 0.2);
-  --hair-soft: rgba(28, 33, 29, 0.09);
-  --mono-bg: rgba(28, 33, 29, 0.055);
+  --hair: rgba(26, 35, 41, 0.2);
+  --hair-soft: rgba(26, 35, 41, 0.09);
+  --mono-bg: rgba(26, 35, 41, 0.055);
+  --harbour-tint: rgba(31, 69, 104, 0.07);
+
+  /* bootstrap (flatly) variables, pulled onto the palette */
+  --bs-body-bg: var(--paper);
+  --bs-body-color: var(--ink);
+  --bs-link-color: var(--green);
+  --bs-link-color-rgb: 31, 69, 104;
+  --bs-link-hover-color: var(--green-deep);
+  --bs-link-hover-color-rgb: 21, 49, 77;
+  --bs-primary: var(--green);
+  --bs-primary-rgb: 31, 69, 104;
+  --bs-border-color: var(--hair);
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -92,7 +114,7 @@ body {
 }
 
 ::selection {
-  background: rgba(13, 76, 56, 0.16);
+  background: rgba(46, 122, 110, 0.2);
 }
 
 :focus-visible {
@@ -172,7 +194,7 @@ pre, code, kbd, samp {
   color: var(--ink-soft);
 }
 
-/* presentations: filled green label */
+/* presentations: filled harbour label */
 #nav-menu-presentations {
   background-color: var(--green) !important;
   color: var(--paper) !important;
@@ -211,7 +233,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* section headings open with a short green dash, not a full-width rule */
+/* section headings open with a short accent dash, not a full-width rule */
 h2 {
   font-size: 1.9rem;
   line-height: 1.15;
@@ -341,7 +363,7 @@ a {
   color: var(--green);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(13, 76, 56, 0.35);
+  text-decoration-color: rgba(31, 69, 104, 0.35);
   text-underline-offset: 3px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
@@ -410,7 +432,7 @@ td.num, .tabular-nums {
 }
 
 /* ========== CALLOUTS ========== */
-/* note: a deep-green panel, after the paper's dark abstract band */
+/* note: a deep harbour panel, after the paper's dark abstract band */
 .callout {
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
@@ -441,22 +463,22 @@ td.num, .tabular-nums {
 
 .callout-note {
   background-color: var(--green);
-  color: #eef0e6;
+  color: var(--on-dark);
 }
 
 .callout-note h1, .callout-note h2, .callout-note h3,
 .callout-note h4, .callout-note h5,
 .callout-note .callout-title-container {
-  color: #fdfcf5;
+  color: var(--on-dark-strong);
 }
 
 .callout-note h2::before {
-  background: var(--gold);
+  background: var(--seaglass-on-dark);
 }
 
 .callout-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-dark-strong);
+  text-decoration-color: rgba(247, 250, 252, 0.5);
 }
 
 .callout-note a:hover {
@@ -465,8 +487,8 @@ td.num, .tabular-nums {
 }
 
 .callout-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: rgba(247, 250, 252, 0.14);
+  color: var(--on-dark-strong);
 }
 
 .callout-tip {
@@ -1141,14 +1163,14 @@ body.report .quarto-title-block {
 
 .report-note {
   background: var(--green);
-  color: #eef0e6;
+  color: var(--on-dark);
   border-radius: var(--radius-sm);
   padding: 1.6rem 1.85rem;
   margin: 4.5rem 0 1rem;
 }
 
 .report-note .kicker {
-  color: var(--gold);
+  color: var(--seaglass-on-dark);
 }
 
 .report-note p {
@@ -1157,8 +1179,8 @@ body.report .quarto-title-block {
 }
 
 .report-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-dark-strong);
+  text-decoration-color: rgba(247, 250, 252, 0.5);
 }
 
 .report-note a:hover {
@@ -1167,8 +1189,8 @@ body.report .quarto-title-block {
 }
 
 .report-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: rgba(247, 250, 252, 0.14);
+  color: var(--on-dark-strong);
 }
 
 @media (max-width: 768px) {
@@ -1188,6 +1210,102 @@ body.report .quarto-title-block {
   .report-lede {
     font-size: 1.12rem;
   }
+}
+
+/* ========== FLATLY OVERRIDES ========== */
+/* flatly bakes its teal link colour into the external-link icon as a
+   data uri. draw the icon as a mask instead, so it takes the link's own
+   colour: navy in prose, paper on filled buttons, ink on outline buttons. */
+a.external:after {
+  background-image: none;
+  background-color: currentColor;
+  opacity: 0.7;
+  -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / 0.62em no-repeat;
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / 0.62em no-repeat;
+}
+
+/* dropdowns: flatly fills hovered items with its own slate */
+.dropdown-menu {
+  --bs-dropdown-bg: var(--card);
+  --bs-dropdown-color: var(--ink-soft);
+  --bs-dropdown-border-color: var(--hair);
+  --bs-dropdown-divider-bg: var(--hair-soft);
+  --bs-dropdown-link-color: var(--ink-soft);
+  --bs-dropdown-link-hover-color: var(--green);
+  --bs-dropdown-link-hover-bg: var(--harbour-tint);
+  --bs-dropdown-link-active-color: var(--green-deep);
+  --bs-dropdown-link-active-bg: var(--harbour-tint);
+  --bs-dropdown-header-color: var(--ink-faint);
+  --bs-dropdown-box-shadow: 0 0.5rem 1.25rem rgba(26, 35, 41, 0.08);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: var(--green);
+  background-color: var(--harbour-tint);
+}
+
+.navbar .dropdown-header {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+}
+
+/* search: icon, result panel and selected row */
+#quarto-search.type-overlay .aa-Autocomplete .aa-Form .aa-Label svg,
+#quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon,
+.navbar #quarto-search .aa-DetachedSearchButtonIcon svg,
+.navbar .aa-DetachedSearchButtonIcon {
+  color: var(--ink-faint) !important;
+}
+
+/* phone menu toggle: flatly draws it in pale grey for a dark navbar */
+.navbar .navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2366727b' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* report panels: let the semantic chip colours through the panel's
+   ink-soft paragraph colour */
+.duo .panel p.chip { color: var(--green); }
+.duo .panel p.chip.gold { color: var(--gold); }
+
+#quarto-search-results .aa-Panel,
+.aa-DetachedOverlay .aa-Panel {
+  background-color: var(--card);
+}
+
+#quarto-search-results .aa-SourceHeader .search-result-header {
+  background-color: var(--paper);
+  color: var(--ink-faint);
+}
+
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-section,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-text,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-title-container,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item .search-result-text-container,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item.search-result-more {
+  background-color: var(--harbour-tint);
+  color: var(--ink);
+}
+
+mark,
+.mark,
+.search-match {
+  background-color: rgba(46, 122, 110, 0.22);
+  color: inherit;
+}
+
+/* code tools toggle next to page titles */
+.quarto-title-block .code-tools-button,
+#quarto-code-tools-source {
+  color: var(--ink-faint);
+}
+
+.quarto-title-block .code-tools-button:hover,
+#quarto-code-tools-source:hover {
+  color: var(--green);
 }
 
 /* ========== ACCESSIBILITY ========== */

@@ -24,10 +24,10 @@ Workshop website and downloadable materials
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>Workshop Materials</h3>
     <p>The workshop site includes logistics, notes, setup instructions, and hand-outs.</p>
-    <a href="https://go-bayes.github.io/2025-workshop-ci-sasp/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+    <a href="https://go-bayes.github.io/2025-workshop-ci-sasp/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin: 0.5rem;">
         Open Workshop Site
     </a>
-    <a href="https://github.com/go-bayes/2025-workshop-ci-sasp" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #4c4f69; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+    <a href="https://github.com/go-bayes/2025-workshop-ci-sasp" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--ink-soft); color: var(--card); text-decoration: none; border-radius: 4px; margin: 0.5rem;">
         Workshop Repository
     </a>
 </div>
@@ -59,7 +59,7 @@ Student Presentation | Format: PDF Slides
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>📖 View Presentation</h3>
     <p>The PDF presentation is hosted on Dropbox.</p>
-    <a href="https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+    <a href="https://www.dropbox.com/scl/fi/humnzsgo5blg7rrtvz3dt/Employer-Gratitude-and-Employee-Well-being.pdf?rlkey=oc4esqaip1loeaf7zt6eodx7n&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         📖 Open Presentation
     </a>
 </div>
@@ -83,7 +83,7 @@ Student Presentation | Format: PDF Slides
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>📖 View Presentation</h3>
     <p>The PDF presentation is hosted on Dropbox.</p>
-    <a href="https://www.dropbox.com/scl/fi/awse06fy0gh3vw208qo2b/Melbourne-Presentation-Religion-and-Personality-Hannah-Robinson.pdf?rlkey=no9p11rxzr79f049zeqwo8p1l&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+    <a href="https://www.dropbox.com/scl/fi/awse06fy0gh3vw208qo2b/Melbourne-Presentation-Religion-and-Personality-Hannah-Robinson.pdf?rlkey=no9p11rxzr79f049zeqwo8p1l&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         📖 Open Presentation
     </a>
 </div>
@@ -118,7 +118,7 @@ Conference Presentation | Duration: ~50 minutes | Format: HTML Slides
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>🎯 View Presentation</h3>
     <p>The presentation is hosted on Dropbox. Use a desktop or laptop to view these slides.</p>
-    <a href="https://www.dropbox.com/scl/fi/ggs8mcnhdrzt67wlcoy99/index.html?rlkey=wuf0j6vp1jvzv0nodgvxx4m62&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+    <a href="https://www.dropbox.com/scl/fi/ggs8mcnhdrzt67wlcoy99/index.html?rlkey=wuf0j6vp1jvzv0nodgvxx4m62&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         Open Presentation
     </a>
 </div>
@@ -177,10 +177,10 @@ Workshop website and downloadable materials
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>Workshop Materials</h3>
     <p>The workshop site includes setup, agenda, notes, case studies, and downloadable materials.</p>
-    <a href="https://go-bayes.github.io/sparcc-day-2/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+    <a href="https://go-bayes.github.io/sparcc-day-2/" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin: 0.5rem;">
         Open Workshop Site
     </a>
-    <a href="https://github.com/go-bayes/sparcc-day-2" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #4c4f69; color: white; text-decoration: none; border-radius: 4px; margin: 0.5rem;">
+    <a href="https://github.com/go-bayes/sparcc-day-2" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--ink-soft); color: var(--card); text-decoration: none; border-radius: 4px; margin: 0.5rem;">
         Workshop Repository
     </a>
 </div>
@@ -212,7 +212,7 @@ Workshop Presentation | Duration: ~60 minutes | Format: PDF Slides
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>📖 View Presentation</h3>
     <p>The PDF presentation is hosted on Dropbox.</p>
-    <a href="https://www.dropbox.com/scl/fo/7r6651nqozmdo8f1smqj5/AM7_oWlk9p11BGEvypojG10?rlkey=7onptof2aak3pagnzx9m0sk3a&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+    <a href="https://www.dropbox.com/scl/fo/7r6651nqozmdo8f1smqj5/AM7_oWlk9p11BGEvypojG10?rlkey=7onptof2aak3pagnzx9m0sk3a&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         📖 Open Presentation
     </a>
 </div>
@@ -257,7 +257,7 @@ Workshop Presentation | Duration: ~60 minutes | Format: PDF Slides
 <div style="text-align: center; padding: 2rem; background: var(--bg-white); border: 1px solid var(--border); border-radius: 4px;">
     <h3>📖 View Presentation</h3>
     <p>This PDF presentation is hosted on Dropbox.</p>
-    <a href="https://www.dropbox.com/scl/fi/op60chx25eypm36u30zo8/presentation.pdf?rlkey=ya244bljbj7y953p37sejgq0w&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: #0066cc; color: white; text-decoration: none; border-radius: 4px; margin-top: 1rem;">
+    <a href="https://www.dropbox.com/scl/fi/op60chx25eypm36u30zo8/presentation.pdf?rlkey=ya244bljbj7y953p37sejgq0w&dl=0" class="btn btn-primary" target="_blank" style="display: inline-block; padding: 0.75rem 1.5rem; background: var(--green); color: var(--card); text-decoration: none; border-radius: 4px; margin-top: 1rem;">
         📖 Open Presentation
     </a>
 </div>
