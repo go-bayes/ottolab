@@ -3,7 +3,7 @@
 /* OTTO LAB WEBSITE STYLES
    print editorial on warm cream paper, after the verdicts-not-evidence
    working-paper page: fraunces display, newsreader body, jetbrains mono
-   microlabels, hairline rules, deep te herenga waka green as the accent.
+   microlabels, hairline rules, te herenga waka green as the accent.
    single light theme by design. */
 
 @font-face {
@@ -39,24 +39,37 @@
 }
 
 /* ========== TOKENS ========== */
+/* refined green: a lighter, cleaner paper; a green that still reads as
+   green at microlabel size; a gold dark enough to carry text. every text
+   pairing below clears wcag aa (4.5:1) on both paper and card. */
 :root {
   /* paper and ink */
-  --paper: #f3efe4;
-  --card: #fffdf7;
-  --ink: #1c211d;
-  --ink-soft: #4f5a52;
-  --ink-faint: #7f8a80;
+  --paper: #f8f6ef;
+  --card: #fffefa;
+  --ink: #16201a;
+  --ink-soft: #465249;
+  --ink-faint: #667169;
 
-  /* accents: deep green primary, gold secondary */
-  --green: #0d4c38;
-  --green-deep: #093827;
-  --gold: #b8893a;
-  --blue: #1a4d7c;
+  /* accents: green primary, gold secondary */
+  --green: #17664a;
+  --green-deep: #0f4d37;
+  --gold: #8c6914;
+  --blue: #1f5a8f;
+
+  /* semantic aliases */
+  --green-rgb: 23, 102, 74;
+  --ink-rgb: 22, 32, 26;
+  --gold-mark: #b08418;      /* chart marks and rules: non-text, 3:1 on card */
+  --gold-on-green: #f0d08a;  /* gold text on a green panel */
+  --on-green: #eef2ea;       /* body text on a green panel */
+  --on-green-strong: #fbfcf8;
+  --link-underline: rgba(var(--green-rgb), 0.38);
+  --wash-green: rgba(var(--green-rgb), 0.07);
 
   /* hairlines as translucent ink */
-  --hair: rgba(28, 33, 29, 0.2);
-  --hair-soft: rgba(28, 33, 29, 0.09);
-  --mono-bg: rgba(28, 33, 29, 0.055);
+  --hair: rgba(var(--ink-rgb), 0.18);
+  --hair-soft: rgba(var(--ink-rgb), 0.085);
+  --mono-bg: rgba(var(--green-rgb), 0.075);
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -79,6 +92,23 @@
   --text-light: var(--ink-soft);
   --bg-light: var(--paper);
   --bg-white: var(--card);
+
+  /* bootstrap (flatly) variables, pointed at the house palette so that
+     links, dropdowns and focus rings do not fall back to flatly teal/navy */
+  --bs-body-bg: var(--paper);
+  --bs-body-color: var(--ink);
+  --bs-emphasis-color: var(--ink);
+  --bs-secondary-color: var(--ink-soft);
+  --bs-tertiary-color: var(--ink-faint);
+  --bs-link-color: var(--green);
+  --bs-link-color-rgb: var(--green-rgb);
+  --bs-link-hover-color: var(--green-deep);
+  --bs-link-hover-color-rgb: 15, 77, 55;
+  --bs-primary: var(--green);
+  --bs-primary-rgb: var(--green-rgb);
+  --bs-border-color: var(--hair);
+  --bs-highlight-bg: #f6e7c4;
+  --bs-code-color: var(--green-deep);
 }
 
 /* ========== GLOBAL ========== */
@@ -92,7 +122,8 @@ body {
 }
 
 ::selection {
-  background: rgba(13, 76, 56, 0.16);
+  background: rgba(var(--green-rgb), 0.18);
+  color: var(--ink);
 }
 
 :focus-visible {
@@ -341,7 +372,7 @@ a {
   color: var(--green);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(13, 76, 56, 0.35);
+  text-decoration-color: var(--link-underline);
   text-underline-offset: 3px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
@@ -441,22 +472,22 @@ td.num, .tabular-nums {
 
 .callout-note {
   background-color: var(--green);
-  color: #eef0e6;
+  color: var(--on-green);
 }
 
 .callout-note h1, .callout-note h2, .callout-note h3,
 .callout-note h4, .callout-note h5,
 .callout-note .callout-title-container {
-  color: #fdfcf5;
+  color: var(--on-green-strong);
 }
 
 .callout-note h2::before {
-  background: var(--gold);
+  background: var(--gold-on-green);
 }
 
 .callout-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-green-strong);
+  text-decoration-color: rgba(251, 252, 248, 0.5);
 }
 
 .callout-note a:hover {
@@ -465,8 +496,8 @@ td.num, .tabular-nums {
 }
 
 .callout-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: rgba(251, 252, 248, 0.14);
+  color: var(--on-green-strong);
 }
 
 .callout-tip {
@@ -1125,6 +1156,12 @@ body.report .quarto-title-block {
   overflow-x: auto;
 }
 
+/* charts draw near-zero estimates in var(--gold); inside the figure the
+   lighter mark gold keeps those marks distinct in lightness from green */
+.figure-panel {
+  --gold: var(--gold-mark);
+}
+
 .figure-panel svg {
   display: block;
   width: 100%;
@@ -1141,14 +1178,14 @@ body.report .quarto-title-block {
 
 .report-note {
   background: var(--green);
-  color: #eef0e6;
+  color: var(--on-green);
   border-radius: var(--radius-sm);
   padding: 1.6rem 1.85rem;
   margin: 4.5rem 0 1rem;
 }
 
 .report-note .kicker {
-  color: var(--gold);
+  color: var(--gold-on-green);
 }
 
 .report-note p {
@@ -1157,8 +1194,8 @@ body.report .quarto-title-block {
 }
 
 .report-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-green-strong);
+  text-decoration-color: rgba(251, 252, 248, 0.5);
 }
 
 .report-note a:hover {
@@ -1167,8 +1204,8 @@ body.report .quarto-title-block {
 }
 
 .report-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: rgba(251, 252, 248, 0.14);
+  color: var(--on-green-strong);
 }
 
 @media (max-width: 768px) {
@@ -1188,6 +1225,204 @@ body.report .quarto-title-block {
   .report-lede {
     font-size: 1.12rem;
   }
+}
+
+/* ========== FLATLY OVERRIDES ========== */
+/* the base theme compiles teal links, navy dropdown hovers and pale grey
+   navbar icons into its stylesheet; bring each back to the house palette */
+
+/* external-link glyph: flatly bakes teal into the svg, so draw it as a
+   mask filled with the link's own colour */
+a.external::after {
+  background-image: none !important;
+  background-color: currentColor;
+  -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / 0.62em no-repeat;
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / 0.62em no-repeat;
+  opacity: 0.7;
+}
+
+/* dropdown menu: paper tones, green text on hover rather than navy fill */
+.navbar .dropdown-menu {
+  --bs-dropdown-link-color: var(--ink-soft);
+  --bs-dropdown-link-hover-color: var(--green);
+  --bs-dropdown-link-hover-bg: var(--wash-green);
+  --bs-dropdown-link-active-color: var(--green-deep);
+  --bs-dropdown-link-active-bg: rgba(var(--green-rgb), 0.12);
+  --bs-dropdown-header-color: var(--ink-faint);
+  --bs-dropdown-divider-bg: var(--hair-soft);
+  --bs-dropdown-box-shadow: 0 0.5rem 1.25rem rgba(var(--ink-rgb), 0.08);
+  box-shadow: var(--bs-dropdown-box-shadow);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: var(--green);
+  background-color: var(--wash-green);
+}
+
+.navbar .dropdown-header {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+}
+
+/* navbar icons, search and the phone menu toggle: ink, not pale grey */
+.navbar .nav-link .bi,
+.navbar #quarto-search .aa-Autocomplete svg.aa-SubmitIcon,
+.navbar #quarto-search.type-overlay .aa-Autocomplete .aa-Form .aa-Label svg {
+  color: var(--ink-soft) !important;
+}
+
+.navbar .nav-link:hover .bi,
+.navbar #quarto-search:hover svg.aa-SubmitIcon {
+  color: var(--green) !important;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2316201a' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+/* search glyph at the same visual weight as the other navbar icons */
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon,
+.navbar #quarto-search.type-overlay .aa-Autocomplete .aa-Form .aa-Label svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* collapsed phone menu: the presentations pill keeps its own width */
+@media (max-width: 991.98px) {
+  #nav-menu-presentations {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0.35rem 0;
+  }
+}
+
+.navbar-collapse.show,
+.navbar-collapse.collapsing {
+  background-color: var(--paper);
+}
+
+/* search results panel */
+.aa-Autocomplete .aa-Form:focus-within,
+.aa-DetachedFormContainer .aa-Form:focus-within {
+  box-shadow: rgba(var(--green-rgb), 0.5) 0 0 0 1px !important;
+}
+
+.aa-DetachedOverlay .aa-Panel,
+#quarto-search-results .aa-Panel,
+.aa-DetachedFormContainer,
+.aa-DetachedContainer {
+  background-color: var(--card) !important;
+}
+
+.aa-DetachedOverlay .aa-List .aa-Item[aria-selected="true"],
+#quarto-search-results .aa-List .aa-Item[aria-selected="true"],
+.aa-DetachedOverlay .aa-List .aa-Item[aria-selected="true"] .search-result-section,
+#quarto-search-results .aa-List .aa-Item[aria-selected="true"] .search-result-section {
+  background-color: var(--wash-green) !important;
+}
+
+.search-result-title,
+.search-match {
+  color: var(--ink);
+}
+
+mark,
+.mark,
+.search-match mark {
+  background-color: var(--bs-highlight-bg);
+  color: var(--ink);
+}
+
+/* button states the base theme drives through its own variables */
+.btn-primary {
+  --bs-btn-bg: var(--green);
+  --bs-btn-border-color: var(--green);
+  --bs-btn-color: var(--paper);
+  --bs-btn-hover-bg: var(--green-deep);
+  --bs-btn-hover-border-color: var(--green-deep);
+  --bs-btn-hover-color: var(--paper);
+  --bs-btn-active-bg: var(--green-deep);
+  --bs-btn-active-border-color: var(--green-deep);
+  --bs-btn-active-color: var(--paper);
+  --bs-btn-focus-shadow-rgb: var(--green-rgb);
+}
+
+.btn-secondary {
+  --bs-btn-active-bg: var(--wash-green);
+  --bs-btn-active-color: var(--green);
+  --bs-btn-active-border-color: var(--green);
+  --bs-btn-focus-shadow-rgb: var(--green-rgb);
+}
+
+/* presentations page: its buttons carry inline flatly-era blues; restyle
+   them as house buttons (attribute selector plus !important beats inline) */
+.presentation-embed a.btn[style] {
+  background: var(--green) !important;
+  color: var(--paper) !important;
+  border: 1px solid var(--green) !important;
+  border-radius: var(--radius-pill) !important;
+  padding: 0.6rem 1.4rem !important;
+}
+
+.presentation-embed a.btn[style]:hover {
+  background: var(--green-deep) !important;
+  border-color: var(--green-deep) !important;
+}
+
+.presentation-embed a.btn[style][href*="github.com"] {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border-color: var(--hair) !important;
+}
+
+.presentation-embed a.btn[style][href*="github.com"]:hover {
+  color: var(--green) !important;
+  border-color: var(--green) !important;
+}
+
+/* code tools and folded code summaries */
+.quarto-title-meta-heading,
+#quarto-code-tools-menu,
+.code-tools-button {
+  color: var(--ink-soft) !important;
+}
+
+.code-tools-button:hover {
+  color: var(--green) !important;
+}
+
+details.code-fold > summary,
+.code-fold summary {
+  color: var(--ink-soft);
+}
+
+div.sourceCode {
+  background-color: var(--card);
+  border: 1px solid var(--hair-soft);
+}
+
+/* footnote and citation hover popups */
+.tippy-box[data-theme~="quarto"] {
+  background-color: var(--card);
+  border-color: var(--hair);
+  color: var(--ink);
 }
 
 /* ========== ACCESSIBILITY ========== */
