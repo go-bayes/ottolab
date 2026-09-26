@@ -451,8 +451,14 @@ strong, b {
   fill: var(--green);
 }
 
-/* final frame: the arrow from the natural value of treatment is gone */
-.dag-e-ay,
+/* the box marks conditioning on w0 */
+.dag-box {
+  fill: none;
+  stroke: var(--ink-soft);
+  stroke-width: 1.2;
+}
+
+/* final frame shows the intervention label */
 .dag-phase-obs {
   opacity: 0;
 }
@@ -492,32 +498,30 @@ strong, b {
   border-bottom-color: var(--green);
 }
 
-/* one 30 s cycle: arrows draw in one by one (1-10 s); the arrow out of the
-   natural value of treatment goes (11 s) and treatment splits (12 s); the
-   a -> y2(a) arrow draws (13.4 s) and y2 becomes y2(a) (15 s); hold; fade
-   out (24-25.6 s); rest; repeat. the percentages below are that timeline
-   divided by 30 s. */
+/* one 30 s cycle, in temporal order: u -> w0 (1 s) and u -> y2 (2.5 s),
+   w0 -> a1 (4.5 s), w0 -> y2 (6.6 s); w0 is boxed (9.6 s); treatment splits
+   (12 s); the a -> y2(a) arrow draws (13.4 s) and y2 becomes y2(a) (15 s);
+   hold; fade out (24-25.6 s); rest; repeat. the percentages below are that
+   timeline divided by 30 s. */
 @media (prefers-reduced-motion: no-preference) {
   .hero-dag {
     --dag-cycle: 30s;
   }
 
   .hero-dag .dag-e-la path,
-  .hero-dag .dag-e-ay path,
   .hero-dag .dag-e-ly path,
-  .hero-dag .dag-e-int path {
+  .hero-dag .dag-e-int path,
+  .hero-dag .dag-box {
     stroke-dasharray: 1 2;
   }
 
-  .dag-e-la path { animation: dag-la-line var(--dag-cycle) ease-in-out infinite both; }
-  .dag-e-la polygon { animation: dag-la-head var(--dag-cycle) ease-in-out infinite both; }
-  .dag-e-ay { opacity: 1; }
-  .dag-e-ay path { animation: dag-ay-line var(--dag-cycle) ease-in-out infinite both; }
-  .dag-e-ay polygon { animation: dag-ay-head var(--dag-cycle) ease-in-out infinite both; }
-  .dag-e-ly path { animation: dag-ly-line var(--dag-cycle) ease-in-out infinite both; }
-  .dag-e-ly polygon { animation: dag-ly-head var(--dag-cycle) ease-in-out infinite both; }
   .dag-e-ul { animation: dag-ul-fade var(--dag-cycle) ease-in-out infinite both; }
   .dag-e-uy { animation: dag-uy-fade var(--dag-cycle) ease-in-out infinite both; }
+  .dag-e-la path { animation: dag-la-line var(--dag-cycle) ease-in-out infinite both; }
+  .dag-e-la polygon { animation: dag-la-head var(--dag-cycle) ease-in-out infinite both; }
+  .dag-e-ly path { animation: dag-ly-line var(--dag-cycle) ease-in-out infinite both; }
+  .dag-e-ly polygon { animation: dag-ly-head var(--dag-cycle) ease-in-out infinite both; }
+  .dag-box { animation: dag-box var(--dag-cycle) ease-in-out infinite both; }
   .dag-e-int path { animation: dag-int-line var(--dag-cycle) ease-in-out infinite both; }
   .dag-e-int polygon { animation: dag-int-head var(--dag-cycle) ease-in-out infinite both; }
   .dag-split { animation: dag-split var(--dag-cycle) ease-in-out infinite both; }
@@ -530,45 +534,40 @@ strong, b {
   }
 }
 
-@keyframes dag-la-line {
-  0%, 3.33% { stroke-dashoffset: 1; opacity: 1; }
-  8.33%, 80.00% { stroke-dashoffset: 0; opacity: 1; }
-  85.33%, 100% { stroke-dashoffset: 0; opacity: 0; }
-}
-@keyframes dag-la-head {
-  0%, 8.00% { opacity: 0; }
-  9.33%, 80.00% { opacity: 1; }
-  85.33%, 100% { opacity: 0; }
-}
-@keyframes dag-ay-line {
-  0%, 9.33% { stroke-dashoffset: 1; opacity: 1; }
-  14.33%, 36.67% { stroke-dashoffset: 0; opacity: 1; }
-  40.00%, 100% { stroke-dashoffset: 0; opacity: 0; }
-}
-@keyframes dag-ay-head {
-  0%, 14.00% { opacity: 0; }
-  15.33%, 36.67% { opacity: 1; }
-  40.00%, 100% { opacity: 0; }
-}
-@keyframes dag-ly-line {
-  0%, 15.33% { stroke-dashoffset: 1; opacity: 1; }
-  21.33%, 80.00% { stroke-dashoffset: 0; opacity: 1; }
-  85.33%, 100% { stroke-dashoffset: 0; opacity: 0; }
-}
-@keyframes dag-ly-head {
-  0%, 21.00% { opacity: 0; }
-  22.33%, 80.00% { opacity: 1; }
-  85.33%, 100% { opacity: 0; }
-}
 @keyframes dag-ul-fade {
-  0%, 22.67% { opacity: 0; }
-  27.33%, 80.00% { opacity: 1; }
+  0%, 3.33% { opacity: 0; }
+  8.00%, 80.00% { opacity: 1; }
   85.33%, 100% { opacity: 0; }
 }
 @keyframes dag-uy-fade {
-  0%, 26.67% { opacity: 0; }
-  32.00%, 80.00% { opacity: 1; }
+  0%, 8.33% { opacity: 0; }
+  13.33%, 80.00% { opacity: 1; }
   85.33%, 100% { opacity: 0; }
+}
+@keyframes dag-la-line {
+  0%, 15.00% { stroke-dashoffset: 1; opacity: 1; }
+  20.00%, 80.00% { stroke-dashoffset: 0; opacity: 1; }
+  85.33%, 100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes dag-la-head {
+  0%, 19.67% { opacity: 0; }
+  21.00%, 80.00% { opacity: 1; }
+  85.33%, 100% { opacity: 0; }
+}
+@keyframes dag-ly-line {
+  0%, 22.00% { stroke-dashoffset: 1; opacity: 1; }
+  28.00%, 80.00% { stroke-dashoffset: 0; opacity: 1; }
+  85.33%, 100% { stroke-dashoffset: 0; opacity: 0; }
+}
+@keyframes dag-ly-head {
+  0%, 27.67% { opacity: 0; }
+  29.00%, 80.00% { opacity: 1; }
+  85.33%, 100% { opacity: 0; }
+}
+@keyframes dag-box {
+  0%, 32.00% { stroke-dashoffset: 1; opacity: 1; }
+  37.00%, 80.00% { stroke-dashoffset: 0; opacity: 1; }
+  85.33%, 100% { stroke-dashoffset: 0; opacity: 0; }
 }
 @keyframes dag-int-line {
   0%, 44.67% { stroke-dashoffset: 1; opacity: 1; }

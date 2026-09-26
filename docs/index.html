@@ -254,36 +254,36 @@ OTTO <em>Lab</em>
 Observational Target Trial Operations
 </p>
 <figure class="hero-dag figure" id="hero-dag">
-<svg class="dag" viewbox="28 0 318 216" role="img" aria-labelledby="dag-title dag-desc">
+<svg class="dag" viewbox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc">
 <title id="dag-title">Causal diagram of a target trial emulation</title>
-<desc id="dag-desc">Arrows run from baseline confounders W0 to treatment A1 and to outcome Y2, and from A1 to Y2. An unmeasured variable U affects W0 and Y2. The treatment node then splits to set treatment to a, as in a single-world intervention graph. The potential outcome Y2(a) depends on a; given W0, it is independent of the treatment received.</desc>
+<desc id="dag-desc">In temporal order: an unmeasured variable U affects baseline covariates W0 and the outcome Y2; W0 affects treatment A1 and Y2. W0 is then boxed to show conditioning. The treatment node splits to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.</desc>
 <g aria-hidden="true">
 <text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end">CAUSAL DIAGRAM</text>
 <text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end">SINGLE-WORLD INTERVENTION</text>
 <text class="dag-node dag-u" x="44" y="53" text-anchor="middle">U</text>
-<text class="dag-micro" x="33" y="16">UNMEASURED</text>
+<text class="dag-micro" x="23" y="16">UNMEASURED</text>
 <text class="dag-node" x="44" y="135" text-anchor="middle">W<tspan class="dag-sub" dy="5">0</tspan></text>
 <text class="dag-node" x="164" y="135" text-anchor="middle">A<tspan class="dag-sub" dy="5">1</tspan></text>
 <text class="dag-node" x="292" y="135" text-anchor="middle">Y<tspan class="dag-sub" dy="5">2</tspan></text>
+<rect class="dag-box" x="22" y="111" width="44" height="37" rx="2" pathlength="1"></rect>
 <g class="dag-split">
 <line class="dag-bar" x1="189" y1="106" x2="189" y2="146"></line>
 <text class="dag-node dag-fixed" x="198" y="135">a</text>
 </g>
 <text class="dag-node dag-fixed dag-po" x="308" y="135">(a)</text>
 <g class="dag-edge dag-e-la"><path d="M72.0 126.0 L140.0 126.0" pathlength="1"></path><polygon points="146.0,126.0 138.0,129.4 138.0,122.6"></polygon></g>
-<g class="dag-edge dag-e-ay"><path d="M186.0 126.0 L266.0 126.0" pathlength="1"></path><polygon points="272.0,126.0 264.0,129.4 264.0,122.6"></polygon></g>
-<g class="dag-edge dag-e-ly"><path d="M56.0 142.0 Q162.7 202.1 269.4 145.6" pathlength="1"></path><polygon points="276.0,142.0 270.7,148.9 267.4,143.0"></polygon></g>
-<g class="dag-edge dag-edge-dashed dag-e-ul"><path d="M44.0 64.0 L44.0 98.0"></path><polygon points="44.0,104.0 40.6,96.0 47.4,96.0"></polygon></g>
+<g class="dag-edge dag-e-ly"><path d="M58.0 150.0 Q162.7 205.0 269.4 145.6" pathlength="1"></path><polygon points="276.0,142.0 270.7,148.9 267.4,143.0"></polygon></g>
+<g class="dag-edge dag-edge-dashed dag-e-ul"><path d="M44.0 64.0 L44.0 101.0"></path><polygon points="44.0,109.0 40.6,101.0 47.4,101.0"></polygon></g>
 <g class="dag-edge dag-edge-dashed dag-e-uy"><path d="M60.0 58.0 Q191.9 52.2 271.1 106.6"></path><polygon points="276.0,110.0 267.5,108.1 271.5,102.6"></polygon></g>
 <g class="dag-edge dag-edge-int dag-e-int"><path d="M216.0 126.0 L266.0 126.0" pathlength="1"></path><polygon points="272.0,126.0 264.0,129.4 264.0,122.6"></polygon></g>
-<line class="dag-axis" x1="30" y1="190" x2="344" y2="190"></line>
-<text class="dag-micro" x="31" y="210">BASELINE</text>
+<line class="dag-axis" x1="22" y1="190" x2="344" y2="190"></line>
+<text class="dag-micro" x="23" y="210">BASELINE</text>
 <text class="dag-micro" x="164" y="210" text-anchor="middle">TREATMENT</text>
 <text class="dag-micro" x="292" y="210" text-anchor="middle">OUTCOME</text>
 </g>
 </svg>
 <figcaption class="hero-dag-caption">
-<span>The diagram shows the observed causal structure, then sets treatment to <i>a</i>, splitting <i>A</i><sub>1</sub>. Given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<span>The diagram draws the causal structure in temporal order and boxes <i>W</i><sub>0</sub> to show conditioning. It then sets treatment to <i>a</i>, splitting <i>A</i><sub>1</sub>. Given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
 <button type="button" class="dag-toggle" hidden="">Pause</button>
 </figcaption>
 </figure>
@@ -813,36 +813,36 @@ How do religion, values, and everyday experiences affect people’s lives? Many 
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figure class="hero-dag" id="hero-dag"&gt;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg class="dag" viewBox="28 0 318 216" role="img" aria-labelledby="dag-title dag-desc"&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg class="dag" viewBox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc"&gt;</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;title id="dag-title"&gt;Causal diagram of a target trial emulation&lt;/title&gt;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;desc id="dag-desc"&gt;Arrows run from baseline confounders W0 to treatment A1 and to outcome Y2, and from A1 to Y2. An unmeasured variable U affects W0 and Y2. The treatment node then splits to set treatment to a, as in a single-world intervention graph. The potential outcome Y2(a) depends on a; given W0, it is independent of the treatment received.&lt;/desc&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;desc id="dag-desc"&gt;In temporal order: an unmeasured variable U affects baseline covariates W0 and the outcome Y2; W0 affects treatment A1 and Y2. W0 is then boxed to show conditioning. The treatment node splits to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.&lt;/desc&gt;</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g aria-hidden="true"&gt;</span></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end"&gt;CAUSAL DIAGRAM&lt;/text&gt;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end"&gt;SINGLE-WORLD INTERVENTION&lt;/text&gt;</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node dag-u" x="44" y="53" text-anchor="middle"&gt;U&lt;/text&gt;</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="33" y="16"&gt;UNMEASURED&lt;/text&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="23" y="16"&gt;UNMEASURED&lt;/text&gt;</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node" x="44" y="135" text-anchor="middle"&gt;W&lt;tspan class="dag-sub" dy="5"&gt;0&lt;/tspan&gt;&lt;/text&gt;</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node" x="164" y="135" text-anchor="middle"&gt;A&lt;tspan class="dag-sub" dy="5"&gt;1&lt;/tspan&gt;&lt;/text&gt;</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node" x="292" y="135" text-anchor="middle"&gt;Y&lt;tspan class="dag-sub" dy="5"&gt;2&lt;/tspan&gt;&lt;/text&gt;</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-split"&gt;</span></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;line class="dag-bar" x1="189" y1="106" x2="189" y2="146"/&gt;</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node dag-fixed" x="198" y="135"&gt;a&lt;/text&gt;</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/g&gt;</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node dag-fixed dag-po" x="308" y="135"&gt;(a)&lt;/text&gt;</span></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-e-la"&gt;&lt;path d="M72.0 126.0 L140.0 126.0" pathLength="1"/&gt;&lt;polygon points="146.0,126.0 138.0,129.4 138.0,122.6"/&gt;&lt;/g&gt;</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-e-ay"&gt;&lt;path d="M186.0 126.0 L266.0 126.0" pathLength="1"/&gt;&lt;polygon points="272.0,126.0 264.0,129.4 264.0,122.6"/&gt;&lt;/g&gt;</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-e-ly"&gt;&lt;path d="M56.0 142.0 Q162.7 202.1 269.4 145.6" pathLength="1"/&gt;&lt;polygon points="276.0,142.0 270.7,148.9 267.4,143.0"/&gt;&lt;/g&gt;</span></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-edge-dashed dag-e-ul"&gt;&lt;path d="M44.0 64.0 L44.0 98.0"/&gt;&lt;polygon points="44.0,104.0 40.6,96.0 47.4,96.0"/&gt;&lt;/g&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;rect class="dag-box" x="22" y="111" width="44" height="37" rx="2" pathLength="1"/&gt;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-split"&gt;</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;line class="dag-bar" x1="189" y1="106" x2="189" y2="146"/&gt;</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node dag-fixed" x="198" y="135"&gt;a&lt;/text&gt;</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/g&gt;</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-node dag-fixed dag-po" x="308" y="135"&gt;(a)&lt;/text&gt;</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-e-la"&gt;&lt;path d="M72.0 126.0 L140.0 126.0" pathLength="1"/&gt;&lt;polygon points="146.0,126.0 138.0,129.4 138.0,122.6"/&gt;&lt;/g&gt;</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-e-ly"&gt;&lt;path d="M58.0 150.0 Q162.7 205.0 269.4 145.6" pathLength="1"/&gt;&lt;polygon points="276.0,142.0 270.7,148.9 267.4,143.0"/&gt;&lt;/g&gt;</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-edge-dashed dag-e-ul"&gt;&lt;path d="M44.0 64.0 L44.0 101.0"/&gt;&lt;polygon points="44.0,109.0 40.6,101.0 47.4,101.0"/&gt;&lt;/g&gt;</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-edge-dashed dag-e-uy"&gt;&lt;path d="M60.0 58.0 Q191.9 52.2 271.1 106.6"/&gt;&lt;polygon points="276.0,110.0 267.5,108.1 271.5,102.6"/&gt;&lt;/g&gt;</span></span>
 <span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g class="dag-edge dag-edge-int dag-e-int"&gt;&lt;path d="M216.0 126.0 L266.0 126.0" pathLength="1"/&gt;&lt;polygon points="272.0,126.0 264.0,129.4 264.0,122.6"/&gt;&lt;/g&gt;</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;line class="dag-axis" x1="30" y1="190" x2="344" y2="190"/&gt;</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="31" y="210"&gt;BASELINE&lt;/text&gt;</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;line class="dag-axis" x1="22" y1="190" x2="344" y2="190"/&gt;</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="23" y="210"&gt;BASELINE&lt;/text&gt;</span></span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="164" y="210" text-anchor="middle"&gt;TREATMENT&lt;/text&gt;</span></span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-micro" x="292" y="210" text-anchor="middle"&gt;OUTCOME&lt;/text&gt;</span></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/g&gt;</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figcaption class="hero-dag-caption"&gt;</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;span&gt;The diagram shows the observed causal structure, then sets treatment to &lt;i&gt;a&lt;/i&gt;, splitting &lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;. Given &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;, the potential outcome &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;i&gt;a&lt;/i&gt;) is independent of the treatment received.&lt;/span&gt;</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;span&gt;The diagram draws the causal structure in temporal order and boxes &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; to show conditioning. It then sets treatment to &lt;i&gt;a&lt;/i&gt;, splitting &lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;. Given &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;, the potential outcome &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;i&gt;a&lt;/i&gt;) is independent of the treatment received.&lt;/span&gt;</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;button type="button" class="dag-toggle" hidden&gt;Pause&lt;/button&gt;</span></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figcaption&gt;</span></span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figure&gt;</span></span>
