@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap");
 
 /* OTTO LAB WEBSITE STYLES
-   print editorial on warm cream paper, after the verdicts-not-evidence
-   working-paper page: fraunces display, newsreader body, jetbrains mono
-   microlabels, hairline rules, deep te herenga waka green as the accent.
-   single light theme by design. */
+   swiss-signal: a journal page in near-black ink on near-white paper,
+   greys for structure, and one signal colour (pohutukawa red) kept rare.
+   fraunces display, newsreader body, jetbrains mono microlabels, hairline
+   rules. single light theme by design. */
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -40,23 +40,32 @@
 
 /* ========== TOKENS ========== */
 :root {
-  /* paper and ink */
-  --paper: #f3efe4;
-  --card: #fffdf7;
-  --ink: #1c211d;
-  --ink-soft: #4f5a52;
-  --ink-faint: #7f8a80;
+  /* paper and ink: near-white paper, grey panels, near-black ink */
+  --paper: #fcfcfb;
+  --card: #f3f3f1;
+  --ink: #111111;
+  --ink-soft: #454545;
+  --ink-faint: #6f6f6f;
 
-  /* accents: deep green primary, gold secondary */
-  --green: #0d4c38;
-  --green-deep: #093827;
-  --gold: #b8893a;
-  --blue: #1a4d7c;
+  /* semantic accents: one signal red, one cool slate neutral (the slate
+     stays distinct from the red under simulated protan and deutan vision) */
+  --signal: #c8201e;
+  --signal-deep: #9a1a14;
+  --underline: rgba(17, 17, 17, 0.32);
+  --neutral: #69707a;
+  --on-signal: #ffffff;
+
+  /* legacy accent names kept for charts and reports: --green is the
+     primary (supported effect), --gold the secondary (near zero) */
+  --green: var(--signal);
+  --green-deep: var(--signal-deep);
+  --gold: var(--neutral);
+  --blue: #3b4654;
 
   /* hairlines as translucent ink */
-  --hair: rgba(28, 33, 29, 0.2);
-  --hair-soft: rgba(28, 33, 29, 0.09);
-  --mono-bg: rgba(28, 33, 29, 0.055);
+  --hair: rgba(17, 17, 17, 0.24);
+  --hair-soft: rgba(17, 17, 17, 0.11);
+  --mono-bg: rgba(17, 17, 17, 0.06);
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -78,7 +87,7 @@
   --border: var(--hair);
   --text-light: var(--ink-soft);
   --bg-light: var(--paper);
-  --bg-white: var(--card);
+  --bg-white: var(--paper);
 }
 
 /* ========== GLOBAL ========== */
@@ -92,7 +101,8 @@ body {
 }
 
 ::selection {
-  background: rgba(13, 76, 56, 0.16);
+  background: rgba(200, 32, 30, 0.16);
+  color: var(--ink);
 }
 
 :focus-visible {
@@ -116,7 +126,7 @@ pre, code, kbd, samp {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--ink);
 }
 
 /* ========== NAVBAR ========== */
@@ -172,9 +182,9 @@ pre, code, kbd, samp {
   color: var(--ink-soft);
 }
 
-/* presentations: filled green label */
+/* presentations: filled ink label, signal red on hover */
 #nav-menu-presentations {
-  background-color: var(--green) !important;
+  background-color: var(--ink) !important;
   color: var(--paper) !important;
   font-weight: 600;
   padding: 6px 16px;
@@ -183,8 +193,47 @@ pre, code, kbd, samp {
   transition: background-color 0.2s ease;
 }
 
-#nav-menu-presentations:hover {
-  background-color: var(--green-deep) !important;
+#nav-menu-presentations:hover,
+#nav-menu-presentations[aria-expanded="true"] {
+  background-color: var(--signal) !important;
+  color: var(--on-signal) !important;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item.active {
+  background-color: var(--mono-bg);
+  color: var(--ink);
+}
+
+.navbar .dropdown-header {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+}
+
+.navbar .dropdown-divider {
+  border-color: var(--hair-soft);
+}
+
+/* flatly leaks: search, collapsed-menu toggler, brand hover */
+.navbar #quarto-search .aa-DetachedSearchButton,
+.navbar .aa-DetachedSearchButtonIcon,
+.navbar .aa-SubmitIcon {
+  color: var(--ink-soft) !important;
+}
+
+.navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23111111' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-brand:hover {
+  color: var(--signal) !important;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -211,7 +260,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* section headings open with a short green dash, not a full-width rule */
+/* section headings open with a short signal-red dash, not a full-width rule */
 h2 {
   font-size: 1.9rem;
   line-height: 1.15;
@@ -277,7 +326,7 @@ strong, b {
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--ink-soft);
   margin: 0 0 1.75rem;
 }
 
@@ -337,18 +386,58 @@ strong, b {
 }
 
 /* ========== LINKS ========== */
+/* links: ink text on a grey hairline; the signal red appears on hover */
 a {
-  color: var(--green);
+  color: var(--ink);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(13, 76, 56, 0.35);
+  text-decoration-color: var(--underline);
   text-underline-offset: 3px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 a:hover {
-  color: var(--green-deep);
-  text-decoration-color: var(--green-deep);
+  color: var(--signal);
+  text-decoration-color: var(--signal);
+}
+
+/* external-link glyph drawn in the link's own colour, not flatly teal */
+a.external::after {
+  content: "";
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  margin-left: 0.28em;
+  padding: 0;
+  vertical-align: 0.05em;
+  background-image: none;
+  background-color: currentColor;
+  opacity: 0.45;
+  -webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3e%3cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3e%3c/svg%3e") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3e%3cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3e%3c/svg%3e") center / contain no-repeat;
+}
+
+a.external:hover::after {
+  opacity: 0.9;
+}
+
+.btn.external::after {
+  opacity: 0.7;
+}
+
+/* captions and the code-tools toggle, away from flatly's slate greys */
+figcaption,
+.figure-caption {
+  color: var(--ink-soft);
+}
+
+.code-tools-button,
+.quarto-title-block .code-tools-button {
+  color: var(--ink-faint);
+}
+
+.code-tools-button:hover {
+  color: var(--ink);
 }
 
 /* ========== CODE ========== */
@@ -366,14 +455,14 @@ code:not(pre code) {
   padding: 0.125rem 0.375rem;
   border-radius: 3px;
   font-size: 0.8em;
-  color: var(--green-deep);
+  color: var(--ink);
 }
 
 /* ========== BLOCKQUOTES ========== */
 blockquote {
   margin: 1.5rem 0;
   padding: 0.25rem 0 0.25rem 1.25rem;
-  border-left: 2px solid var(--green);
+  border-left: 2px solid var(--ink);
   font-style: italic;
   color: var(--ink-soft);
 }
@@ -410,7 +499,7 @@ td.num, .tabular-nums {
 }
 
 /* ========== CALLOUTS ========== */
-/* note: a deep-green panel, after the paper's dark abstract band */
+/* note: a grey panel under a heavy ink rule, like a journal box */
 .callout {
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
@@ -440,44 +529,27 @@ td.num, .tabular-nums {
 }
 
 .callout-note {
-  background-color: var(--green);
-  color: #eef0e6;
+  background-color: var(--card);
+  color: var(--ink);
+  border-top: 3px solid var(--ink) !important;
+  border-radius: 0;
 }
 
 .callout-note h1, .callout-note h2, .callout-note h3,
 .callout-note h4, .callout-note h5,
 .callout-note .callout-title-container {
-  color: #fdfcf5;
-}
-
-.callout-note h2::before {
-  background: var(--gold);
-}
-
-.callout-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
-}
-
-.callout-note a:hover {
-  color: #ffffff;
-  text-decoration-color: #ffffff;
-}
-
-.callout-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  color: var(--ink);
 }
 
 .callout-tip {
   background-color: var(--card);
-  border-left: 3px solid var(--green);
+  border-left: 3px solid var(--signal) !important;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
 .callout-warning {
   background-color: var(--card);
-  border-left: 3px solid var(--gold);
+  border-left: 3px solid var(--neutral) !important;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
@@ -520,7 +592,7 @@ td.num, .tabular-nums {
   font-size: 1.7rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  color: var(--green);
+  color: var(--ink);
   display: block;
 }
 
@@ -648,8 +720,18 @@ td.num, .tabular-nums {
 .sidebar nav[role="doc-toc"] a.nav-link:hover,
 .sidebar nav[role="doc-toc"] a.active,
 .sidebar nav[role="doc-toc"] a.nav-link.active {
-  color: var(--green) !important;
+  color: var(--ink) !important;
   font-weight: 600;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a {
+  border-left-color: transparent;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > ul > li > a.active {
+  border-left: 2px solid var(--signal) !important;
 }
 
 /* ========== BUTTONS ========== */
@@ -667,15 +749,17 @@ td.num, .tabular-nums {
 }
 
 .btn-primary {
-  background-color: var(--green);
-  color: var(--paper);
-  border: 1px solid var(--green);
+  background-color: var(--signal);
+  color: var(--on-signal);
+  border: 1px solid var(--signal);
 }
 
-.btn-primary:hover {
-  background-color: var(--green-deep);
-  border-color: var(--green-deep);
-  color: var(--paper);
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--signal-deep) !important;
+  border-color: var(--signal-deep) !important;
+  color: var(--on-signal) !important;
 }
 
 .btn-secondary {
@@ -684,10 +768,12 @@ td.num, .tabular-nums {
   border: 1px solid var(--hair);
 }
 
-.btn-secondary:hover {
-  color: var(--green);
-  border-color: var(--green);
-  background-color: transparent;
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  color: var(--ink) !important;
+  border-color: var(--ink) !important;
+  background-color: transparent !important;
 }
 
 /* ========== CARD GRID ========== */
@@ -805,7 +891,7 @@ td.num, .tabular-nums {
 }
 
 .team-photo:hover {
-  border-color: var(--green);
+  border-color: var(--ink);
 }
 
 .team-photo-placeholder {
@@ -1049,6 +1135,10 @@ body.report .quarto-title-block {
   color: var(--ink-soft);
 }
 
+/* panel chips keep the chart's semantics: signal for supported, neutral for near zero */
+.duo .panel p.chip { color: var(--green); }
+.duo .panel p.chip.gold { color: var(--gold); }
+
 .numbered {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1139,36 +1229,23 @@ body.report .quarto-title-block {
   margin: 1rem 0 0;
 }
 
+/* citation box: grey panel under a heavy ink rule */
 .report-note {
-  background: var(--green);
-  color: #eef0e6;
-  border-radius: var(--radius-sm);
-  padding: 1.6rem 1.85rem;
+  background: var(--card);
+  color: var(--ink);
+  border-top: 3px solid var(--ink);
+  border-radius: 0;
+  padding: 1.5rem 1.85rem 1.6rem;
   margin: 4.5rem 0 1rem;
 }
 
 .report-note .kicker {
-  color: var(--gold);
+  color: var(--ink-soft);
 }
 
 .report-note p {
   margin: 0.6rem 0 0;
   font-size: 0.98rem;
-}
-
-.report-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
-}
-
-.report-note a:hover {
-  color: #ffffff;
-  text-decoration-color: #ffffff;
-}
-
-.report-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
 }
 
 @media (max-width: 768px) {
