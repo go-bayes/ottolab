@@ -40,7 +40,7 @@ toc: false
 </g>
 </svg>
 <figcaption class="hero-dag-caption">
-<span>Setting treatment to <i>a</i> splits <i>A</i><sub>1</sub>. Given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<span>The diagram shows the observed causal structure, then sets treatment to <i>a</i>, splitting <i>A</i><sub>1</sub>. Given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
 <button type="button" class="dag-toggle" hidden>Pause</button>
 </figcaption>
 </figure>
