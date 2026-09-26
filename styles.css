@@ -45,16 +45,16 @@
 
   /* paper and ink: warm off-white on deep indigo-aubergine, about 14:1,
      short of pure white on black to limit halation in long prose */
-  --paper: #170f1f;
-  --card: #22182a;
+  --paper: #140f1f;
+  --card: #1e182a;
   --ink: #e6e2d3;
-  --ink-soft: #c2bcc8;
-  --ink-faint: #9a90a2;
+  --ink-soft: #c0bcc8;
+  --ink-faint: #9690a2;
 
   /* kōwhai: the primary accent for links, labels, buttons */
   --kowhai: #f2c14e;
   --kowhai-bright: #f8d67f;
-  --on-accent: #170f1f;
+  --on-accent: #140f1f;
 
   /* legacy accent names kept for the report charts and captions:
      --green marks supported effects, --gold marks near-zero or modest
@@ -68,7 +68,7 @@
   --accent: var(--kowhai);
   --accent-strong: var(--kowhai-bright);
   --accent-soft: var(--green);
-  --band: #342442;
+  --band: #2e2442;
   --band-ink: #ebe8dc;
   --band-ink-strong: #f7f4ea;
 
@@ -1610,7 +1610,7 @@ aside,
 /* search overlay: darken the page behind the panel instead of washing
    it with translucent ink */
 .aa-DetachedOverlay {
-  background-color: rgba(10, 6, 14, 0.72);
+  background-color: rgba(8, 6, 14, 0.72);
 }
 
 .aa-DetachedOverlay .aa-Panel,
