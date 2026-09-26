@@ -1135,7 +1135,10 @@ td.num, .tabular-nums {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
+  /* fill the grid column rather than shrink-to-fit, so a wide chart
+     scrolls inside its panel instead of widening the page */
   .content {
+    width: 100%;
     padding: 2rem 1rem;
   }
 
@@ -1488,7 +1491,11 @@ body.report .quarto-title-block {
 @media (max-width: 768px) {
   .duo,
   .numbered {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .duo .chip {
+    white-space: normal;
   }
 
   .report-wrap {
