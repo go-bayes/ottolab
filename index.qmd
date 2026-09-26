@@ -8,6 +8,59 @@ toc: false
 <p class="hero-affiliation">School of Psychological Sciences · Te Herenga Waka — Victoria University of Wellington</p>
 <h1 class="hero-title">OTTO <em>Lab</em></h1>
 <p class="hero-descriptor">Observational Target Trial Operations</p>
+
+```{=html}
+<figure class="hero-dag" id="hero-dag">
+<svg class="dag" viewBox="28 0 318 216" role="img" aria-labelledby="dag-title dag-desc">
+<title id="dag-title">Causal diagram of a target trial emulation</title>
+<desc id="dag-desc">Arrows run from baseline confounders L0 to treatment A1 and to outcome Y2, and from A1 to Y2. An unmeasured variable U affects L0 and Y2. The treatment node then splits to set treatment to a, as in a single-world intervention graph. The potential outcome Y2(a) depends on a; given L0, it is independent of the treatment received.</desc>
+<g aria-hidden="true">
+<text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end">CAUSAL DIAGRAM</text>
+<text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end">SINGLE-WORLD INTERVENTION</text>
+<text class="dag-node dag-u" x="44" y="53" text-anchor="middle">U</text>
+<text class="dag-micro" x="33" y="16">UNMEASURED</text>
+<text class="dag-node" x="44" y="135" text-anchor="middle">L<tspan class="dag-sub" dy="5">0</tspan></text>
+<text class="dag-node" x="164" y="135" text-anchor="middle">A<tspan class="dag-sub" dy="5">1</tspan></text>
+<text class="dag-node" x="292" y="135" text-anchor="middle">Y<tspan class="dag-sub" dy="5">2</tspan></text>
+<g class="dag-split">
+<line class="dag-bar" x1="189" y1="106" x2="189" y2="146"/>
+<text class="dag-node dag-fixed" x="198" y="135">a</text>
+</g>
+<text class="dag-node dag-fixed dag-po" x="308" y="135">(a)</text>
+<g class="dag-edge dag-e-la"><path d="M64.0 126.0 L140.0 126.0" pathLength="1"/><polygon points="146.0,126.0 138.0,129.4 138.0,122.6"/></g>
+<g class="dag-edge dag-e-ay"><path d="M186.0 126.0 L266.0 126.0" pathLength="1"/><polygon points="272.0,126.0 264.0,129.4 264.0,122.6"/></g>
+<g class="dag-edge dag-e-ly"><path d="M56.0 142.0 Q162.7 202.1 269.4 145.6" pathLength="1"/><polygon points="276.0,142.0 270.7,148.9 267.4,143.0"/></g>
+<g class="dag-edge dag-edge-dashed dag-e-ul"><path d="M44.0 64.0 L44.0 98.0"/><polygon points="44.0,104.0 40.6,96.0 47.4,96.0"/></g>
+<g class="dag-edge dag-edge-dashed dag-e-uy"><path d="M60.0 58.0 Q191.9 52.2 271.1 106.6"/><polygon points="276.0,110.0 267.5,108.1 271.5,102.6"/></g>
+<g class="dag-edge dag-edge-int dag-e-int"><path d="M216.0 126.0 L266.0 126.0" pathLength="1"/><polygon points="272.0,126.0 264.0,129.4 264.0,122.6"/></g>
+<line class="dag-axis" x1="30" y1="190" x2="344" y2="190"/>
+<text class="dag-micro" x="31" y="210">BASELINE</text>
+<text class="dag-micro" x="164" y="210" text-anchor="middle">TREATMENT</text>
+<text class="dag-micro" x="292" y="210" text-anchor="middle">OUTCOME</text>
+</g>
+</svg>
+<figcaption class="hero-dag-caption">
+<span>Setting treatment to <i>a</i> splits <i>A</i><sub>1</sub>. Given <i>L</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<button type="button" class="dag-toggle" hidden>Pause</button>
+</figcaption>
+</figure>
+<script>
+// pause control for the hero diagram (wcag 2.2.2); hidden when motion is reduced
+(function () {
+  var fig = document.getElementById("hero-dag");
+  var btn = fig && fig.querySelector(".dag-toggle");
+  if (!btn || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  btn.hidden = false;
+  btn.setAttribute("aria-label", "Pause diagram animation");
+  btn.addEventListener("click", function () {
+    var paused = fig.classList.toggle("is-paused");
+    btn.textContent = paused ? "Play" : "Pause";
+    btn.setAttribute("aria-label", (paused ? "Play" : "Pause") + " diagram animation");
+  });
+})();
+</script>
+```
+
 <p class="hero-lede">How do religion, values, and everyday experiences affect people's lives? Many questions in psychological science are difficult to study through experiments. At OTTO Lab, we develop and apply methods for causal inference from observational data: learning about the effects of specified changes from what people experience in their lives. Causal interpretation depends on the study design and its assumptions. We also build research tools, teach these methods, and collaborate with investigators across New Zealand and around the world.</p>
 <div class="hero-actions">
 <a href="research.qmd" class="btn btn-primary">Research</a>
