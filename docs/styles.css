@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap");
 
 /* OTTO LAB WEBSITE STYLES
-   print editorial on warm cream paper, after the verdicts-not-evidence
+   print editorial on stone paper, after the verdicts-not-evidence
    working-paper page: fraunces display, newsreader body, jetbrains mono
-   microlabels, hairline rules, deep te herenga waka green as the accent.
+   microlabels, hairline rules. archival palette: brown-black ink, oxblood
+   primary, ochre secondary.
    single light theme by design. */
 
 @font-face {
@@ -39,24 +40,41 @@
 }
 
 /* ========== TOKENS ========== */
+/* the token names --green and --gold are historical: report charts and
+   inline svgs reference them, so the names stay and the values carry the
+   archival palette. use the semantic aliases in new rules. */
 :root {
-  /* paper and ink */
-  --paper: #f3efe4;
-  --card: #fffdf7;
-  --ink: #1c211d;
-  --ink-soft: #4f5a52;
-  --ink-faint: #7f8a80;
+  /* paper and ink: stone paper, brown-black ink */
+  --paper: #ebe8e2;
+  --card: #f7f5f1;
+  --ink: #221a17;
+  --ink-soft: #52463e;
+  --ink-faint: #716459;
 
-  /* accents: deep green primary, gold secondary */
-  --green: #0d4c38;
-  --green-deep: #093827;
-  --gold: #b8893a;
-  --blue: #1a4d7c;
+  /* accents: oxblood primary, ochre secondary, slate reserve */
+  --green: #7a2331;
+  --green-deep: #5a1823;
+  --gold: #8c5f16;
+  --gold-light: #d9b36a;
+  --blue: #3e5566;
+
+  /* semantic aliases */
+  --accent: var(--green);
+  --accent-deep: var(--green-deep);
+  --secondary: var(--gold);
+  --on-accent: #f1ece6;
 
   /* hairlines as translucent ink */
-  --hair: rgba(28, 33, 29, 0.2);
-  --hair-soft: rgba(28, 33, 29, 0.09);
-  --mono-bg: rgba(28, 33, 29, 0.055);
+  --hair: rgba(34, 26, 23, 0.2);
+  --hair-soft: rgba(34, 26, 23, 0.09);
+  --mono-bg: rgba(34, 26, 23, 0.055);
+
+  /* accent tints */
+  --accent-underline: rgba(122, 35, 49, 0.35);
+  --accent-wash: rgba(122, 35, 49, 0.14);
+  --secondary-wash: rgba(140, 95, 22, 0.2);
+  --on-accent-underline: rgba(241, 236, 230, 0.5);
+  --on-accent-wash: rgba(241, 236, 230, 0.14);
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -79,6 +97,23 @@
   --text-light: var(--ink-soft);
   --bg-light: var(--paper);
   --bg-white: var(--card);
+
+  /* bootstrap (flatly) variables, so theme defaults follow the palette */
+  --bs-body-bg: var(--paper);
+  --bs-body-color: var(--ink);
+  --bs-link-color: var(--green);
+  --bs-link-color-rgb: 122, 35, 49;
+  --bs-link-hover-color: var(--green-deep);
+  --bs-link-hover-color-rgb: 90, 24, 35;
+  --bs-primary: var(--green);
+  --bs-primary-rgb: 122, 35, 49;
+  --bs-border-color: var(--hair);
+  --bs-secondary-color: var(--ink-soft);
+  --bs-emphasis-color: var(--ink);
+  --quarto-body-bg: var(--paper);
+  --quarto-body-color: var(--ink);
+  --quarto-text-muted: var(--ink-soft);
+  --quarto-border-color: var(--hair);
 }
 
 /* ========== GLOBAL ========== */
@@ -92,7 +127,7 @@ body {
 }
 
 ::selection {
-  background: rgba(13, 76, 56, 0.16);
+  background: var(--secondary-wash);
 }
 
 :focus-visible {
@@ -172,7 +207,7 @@ pre, code, kbd, samp {
   color: var(--ink-soft);
 }
 
-/* presentations: filled green label */
+/* presentations: filled oxblood label */
 #nav-menu-presentations {
   background-color: var(--green) !important;
   color: var(--paper) !important;
@@ -211,7 +246,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* section headings open with a short green dash, not a full-width rule */
+/* section headings open with a short oxblood dash, not a full-width rule */
 h2 {
   font-size: 1.9rem;
   line-height: 1.15;
@@ -341,7 +376,7 @@ a {
   color: var(--green);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-decoration-color: rgba(13, 76, 56, 0.35);
+  text-decoration-color: var(--accent-underline);
   text-underline-offset: 3px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
@@ -410,7 +445,7 @@ td.num, .tabular-nums {
 }
 
 /* ========== CALLOUTS ========== */
-/* note: a deep-green panel, after the paper's dark abstract band */
+/* note: a deep oxblood panel, like a cloth-bound cover */
 .callout {
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
@@ -440,23 +475,23 @@ td.num, .tabular-nums {
 }
 
 .callout-note {
-  background-color: var(--green);
-  color: #eef0e6;
+  background-color: var(--green-deep);
+  color: var(--on-accent);
 }
 
 .callout-note h1, .callout-note h2, .callout-note h3,
 .callout-note h4, .callout-note h5,
 .callout-note .callout-title-container {
-  color: #fdfcf5;
+  color: var(--on-accent);
 }
 
 .callout-note h2::before {
-  background: var(--gold);
+  background: var(--gold-light);
 }
 
 .callout-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-accent);
+  text-decoration-color: var(--on-accent-underline);
 }
 
 .callout-note a:hover {
@@ -465,8 +500,8 @@ td.num, .tabular-nums {
 }
 
 .callout-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: var(--on-accent-wash);
+  color: var(--on-accent);
 }
 
 .callout-tip {
@@ -1140,15 +1175,15 @@ body.report .quarto-title-block {
 }
 
 .report-note {
-  background: var(--green);
-  color: #eef0e6;
+  background: var(--green-deep);
+  color: var(--on-accent);
   border-radius: var(--radius-sm);
   padding: 1.6rem 1.85rem;
   margin: 4.5rem 0 1rem;
 }
 
 .report-note .kicker {
-  color: var(--gold);
+  color: var(--gold-light);
 }
 
 .report-note p {
@@ -1157,8 +1192,8 @@ body.report .quarto-title-block {
 }
 
 .report-note a {
-  color: #fdfcf5;
-  text-decoration-color: rgba(253, 252, 245, 0.5);
+  color: var(--on-accent);
+  text-decoration-color: var(--on-accent-underline);
 }
 
 .report-note a:hover {
@@ -1167,8 +1202,8 @@ body.report .quarto-title-block {
 }
 
 .report-note code:not(pre code) {
-  background-color: rgba(253, 252, 245, 0.14);
-  color: #fdfcf5;
+  background-color: var(--on-accent-wash);
+  color: var(--on-accent);
 }
 
 @media (max-width: 768px) {
@@ -1188,6 +1223,192 @@ body.report .quarto-title-block {
   .report-lede {
     font-size: 1.12rem;
   }
+}
+
+/* ========== THEME OVERRIDES ========== */
+/* flatly defaults that otherwise leak through the palette */
+
+/* external-link glyph: drawn as a mask so it takes the link colour */
+a.external::after {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  padding: 0;
+  margin-left: 0.22em;
+  vertical-align: 0.02em;
+  background-image: none;
+  background-color: currentColor;
+  opacity: 0.55;
+  -webkit-mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / contain no-repeat;
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/></svg>') center / contain no-repeat;
+}
+
+.btn.external::after,
+.navbar a.external::after {
+  opacity: 0.7;
+}
+
+/* navbar toggler, search and tool icons in ink rather than flatly grey */
+.navbar .navbar-toggler {
+  color: var(--ink-soft);
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2352463e' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 2px var(--accent-wash);
+}
+
+.aa-Autocomplete svg.aa-SubmitIcon,
+.aa-DetachedSearchButton .aa-DetachedSearchButtonIcon,
+.navbar #quarto-search .aa-Autocomplete .aa-Form .aa-Label svg,
+.navbar .quarto-navbar-tools .quarto-navigation-tool:hover {
+  color: var(--ink-soft) !important;
+}
+
+.aa-DetachedSearchButton:hover .aa-DetachedSearchButtonIcon {
+  color: var(--green) !important;
+}
+
+/* search panel and results */
+.aa-Autocomplete .aa-Form,
+.aa-DetachedFormContainer .aa-Form,
+#quarto-search-results .aa-Panel,
+.aa-DetachedOverlay .aa-Panel,
+.aa-DetachedContainer .aa-Panel,
+.aa-DetachedOverlay li.aa-Item[aria-selected=false] .search-item,
+#quarto-search-results li.aa-Item[aria-selected=false] .search-item,
+.aa-DetachedOverlay .aa-Item .search-item,
+#quarto-search-results .aa-Item .search-item,
+.aa-DetachedOverlay .aa-Item .search-result-doc:not(.document-selectable) .search-result-title-container,
+#quarto-search-results .aa-Item .search-result-doc:not(.document-selectable) .search-result-title-container,
+.aa-DetachedContainer {
+  background-color: var(--card) !important;
+  border-color: var(--hair) !important;
+  color: var(--ink) !important;
+}
+
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item,
+.aa-DetachedOverlay li.aa-Item[aria-selected=true] .search-item *,
+#quarto-search-results li.aa-Item[aria-selected=true] .search-item * {
+  background-color: var(--green-deep) !important;
+  color: var(--on-accent) !important;
+}
+
+.aa-DetachedOverlay {
+  background-color: rgba(34, 26, 23, 0.4);
+}
+
+.aa-DetachedOverlay .aa-SourceHeader .search-result-header,
+#quarto-search-results .aa-SourceHeader .search-result-header {
+  background-color: var(--paper);
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.aa-DetachedCancelButton {
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.aa-DetachedCancelButton:hover,
+.aa-DetachedCancelButton:focus {
+  color: var(--green);
+  box-shadow: 0 0 0 1px var(--green);
+}
+
+.search-match,
+mark {
+  background-color: var(--secondary-wash);
+  color: inherit;
+}
+
+.aa-Autocomplete .aa-Form:focus-within,
+.aa-DetachedFormContainer .aa-Form:focus-within {
+  box-shadow: 0 0 0 1px var(--green) !important;
+}
+
+/* dropdown menus: paper tints, not flatly navy */
+.dropdown-menu {
+  --bs-dropdown-bg: var(--card);
+  --bs-dropdown-color: var(--ink);
+  --bs-dropdown-border-color: var(--hair);
+  --bs-dropdown-link-color: var(--ink-soft);
+  --bs-dropdown-link-hover-color: var(--green-deep);
+  --bs-dropdown-link-hover-bg: var(--mono-bg);
+  --bs-dropdown-link-active-color: var(--on-accent);
+  --bs-dropdown-link-active-bg: var(--green);
+  --bs-dropdown-header-color: var(--ink-faint);
+  --bs-dropdown-divider-bg: var(--hair-soft);
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  color: var(--green);
+  background-color: var(--mono-bg);
+}
+
+.navbar .dropdown-header {
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+}
+
+/* buttons: bootstrap state variables follow the palette */
+.btn-primary {
+  --bs-btn-bg: var(--green);
+  --bs-btn-border-color: var(--green);
+  --bs-btn-color: var(--paper);
+  --bs-btn-hover-bg: var(--green-deep);
+  --bs-btn-hover-border-color: var(--green-deep);
+  --bs-btn-hover-color: var(--paper);
+  --bs-btn-active-bg: var(--green-deep);
+  --bs-btn-active-border-color: var(--green-deep);
+  --bs-btn-active-color: var(--paper);
+  --bs-btn-focus-shadow-rgb: 122, 35, 49;
+}
+
+.btn-secondary {
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-color: var(--green);
+  --bs-btn-active-border-color: var(--green);
+  --bs-btn-focus-shadow-rgb: 122, 35, 49;
+}
+
+/* code tools, copy buttons and code-fold summaries */
+.quarto-title-meta-heading,
+.code-tools-button,
+.code-copy-button,
+details.code-fold > summary,
+.quarto-code-tools {
+  color: var(--ink-soft) !important;
+}
+
+.code-tools-button:hover,
+.code-copy-button:hover {
+  color: var(--green) !important;
+}
+
+/* anchor links on headings */
+.anchorjs-link {
+  color: var(--ink-faint) !important;
+  text-decoration: none;
+}
+
+/* footnote and citation popups */
+.tippy-box[data-theme~=quarto] {
+  background-color: var(--card);
+  border-color: var(--hair);
+  color: var(--ink);
 }
 
 /* ========== ACCESSIBILITY ========== */
