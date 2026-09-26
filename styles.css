@@ -1414,6 +1414,9 @@ body.report .quarto-title-block {
 }
 
 .figure-panel {
+  /* inside charts, the modest-evidence marks take a muted violet-grey so
+     that the brightest colour does not fall on the least robust estimates */
+  --gold: #766c89;
   background: var(--card);
   border: 1px solid var(--hair-soft);
   border-radius: var(--radius-sm);

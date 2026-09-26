@@ -146,7 +146,7 @@ page-layout: full
 </g>
 </svg>
 </div>
-<p class="fig-caption">Estimated effects of dividing non-attendance probability by five (δ = 5), compared with the natural course among baseline non-attenders. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 24 outcomes (approximately 99.79% individual intervals). This adjustment accounts for testing several outcomes together. Source: <a href="https://doi.org/10.1017/ehs.2026.10043.sm001">Supplementary Table 25</a>. Green marks effects whose E-value bounds exceed the study's threshold of 1.10. Gold marks gratitude and body mass index, whose intervals exclude zero but whose E-value bounds fall below that threshold. E denotes the E-value for the confidence limit closest to zero. Estimates for the remaining outcomes are near zero.</p>
+<p class="fig-caption">Estimated effects of dividing non-attendance probability by five (δ = 5), compared with the natural course among baseline non-attenders. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 24 outcomes (approximately 99.79% individual intervals). This adjustment accounts for testing several outcomes together. Source: <a href="https://doi.org/10.1017/ehs.2026.10043.sm001">Supplementary Table 25</a>. The legend separates effects whose E-value bounds exceed the study's threshold of 1.10 from those for gratitude and body mass index, whose intervals exclude zero but whose E-value bounds fall below that threshold. E denotes the E-value for the confidence limit closest to zero. Estimates for the remaining outcomes are near zero.</p>
 </section>
 
 <section class="report-section">
@@ -158,7 +158,7 @@ page-layout: full
   </div>
   <div class="item">
     <span class="num">02</span><h3>Sensitivity</h3>
-    <p>The six attendance effects marked green have E-values from 1.16 to 1.25 for the confidence limits closest to zero. These E-values summarise sensitivity to unmeasured confounding beyond the measured covariates, the participant characteristics included in the analysis. Larger E-values mean that stronger unmeasured confounding would be needed to move the confidence limit to zero.</p>
+    <p>The six supported attendance effects have E-values from 1.16 to 1.25 for the confidence limits closest to zero. These E-values summarise sensitivity to unmeasured confounding beyond the measured covariates, the participant characteristics included in the analysis. Larger E-values mean that stronger unmeasured confounding would be needed to move the confidence limit to zero.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3>Measurement</h3>
