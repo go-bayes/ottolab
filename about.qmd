@@ -58,7 +58,7 @@ The OTTO Lab group gratefully acknowledges support from:
 
 :::: {.columns}
 ::: {.column width="50%"}
-![Templeton Religion Trust](images/logos/trt-logo.png.pdf){height="201px"}
+![Templeton Religion Trust](images/logos/trt-logo.png){height="201px"}
 :::
 ::::
 

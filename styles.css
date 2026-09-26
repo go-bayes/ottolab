@@ -633,6 +633,20 @@ strong, b {
   }
 }
 
+/* phones: the diagram follows the lede and buttons, so the opening text
+   stays on the first screen */
+@media (max-width: 767.98px) {
+  .home .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home .hero > .hero-dag {
+    order: 1;
+    margin-top: 2.25rem;
+  }
+}
+
 /* ========== LINKS ========== */
 a {
   color: var(--accent);
@@ -1121,7 +1135,10 @@ td.num, .tabular-nums {
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
+  /* fill the grid column rather than shrink-to-fit, so a wide chart
+     scrolls inside its panel instead of widening the page */
   .content {
+    width: 100%;
     padding: 2rem 1rem;
   }
 
@@ -1201,6 +1218,11 @@ td.num, .tabular-nums {
 /* one-page editorial reports for single publications */
 body.report .quarto-title-block {
   display: none;
+}
+
+img.figure-img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .report-wrap {
@@ -1414,6 +1436,9 @@ body.report .quarto-title-block {
 }
 
 .figure-panel {
+  /* inside charts, the modest-evidence marks take a muted violet-grey so
+     that the brightest colour does not fall on the least robust estimates */
+  --gold: #766c89;
   background: var(--card);
   border: 1px solid var(--hair-soft);
   border-radius: var(--radius-sm);
@@ -1471,7 +1496,11 @@ body.report .quarto-title-block {
 @media (max-width: 768px) {
   .duo,
   .numbered {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .duo .chip {
+    white-space: normal;
   }
 
   .report-wrap {
