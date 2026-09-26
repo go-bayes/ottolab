@@ -60,7 +60,8 @@ website:
 format:
   html:
     respect-user-color-scheme: false
-    theme: flatly
+    theme: [darkly, kowhai-night.scss]
+    highlight-style: gruvbox
     css: styles.css
     toc: true
     toc-depth: 3

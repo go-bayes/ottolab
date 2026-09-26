@@ -1,0 +1,77 @@
+/*-- scss:defaults --*/
+// kōwhai night: bootstrap defaults layered over darkly so that navbar,
+// dropdowns, modals, search, form controls and the external-link icon
+// start dark before styles.css applies. hex values mirror the :root
+// tokens in styles.css; change both together.
+
+$paper: #111a16;
+$card: #18231e;
+$ink: #e6e2d3;
+$ink-soft: #b9bcaf;
+$ink-faint: #8e998f;
+$kowhai: #f2c14e;
+$kowhai-bright: #f8d67f;
+
+$body-bg: $paper;
+$body-color: $ink;
+$body-secondary-color: $ink-soft;
+$body-tertiary-color: $ink-faint;
+$body-emphasis-color: $ink;
+$secondary-bg: $card;
+$tertiary-bg: $card;
+$border-color: rgba($ink, 0.2);
+$headings-color: $ink;
+
+$primary: $kowhai;
+$secondary: #2a3731;
+$success: #56ae90;
+$info: #8fb4d8;
+$warning: $kowhai;
+$light: $card;
+$dark: $paper;
+
+$link-color: $kowhai;
+$link-hover-color: $kowhai-bright;
+$link-color-dark: $kowhai;
+$link-hover-color-dark: $kowhai-bright;
+
+$code-color: $kowhai-bright;
+$code-block-bg: $card;
+$kbd-bg: $card;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink-soft;
+$navbar-hl: $kowhai;
+$footer-bg: $paper;
+$footer-fg: $ink-faint;
+
+$dropdown-bg: $card;
+$dropdown-color: $ink-soft;
+$dropdown-link-color: $ink-soft;
+$dropdown-link-hover-color: $kowhai;
+$dropdown-link-hover-bg: rgba($kowhai, 0.08);
+$dropdown-link-active-color: $paper;
+$dropdown-link-active-bg: $kowhai;
+$dropdown-header-color: $ink-faint;
+$dropdown-divider-bg: rgba($ink, 0.12);
+$dropdown-border-color: rgba($ink, 0.2);
+
+$input-bg: $card;
+$input-color: $ink;
+$input-border-color: rgba($ink, 0.2);
+$input-placeholder-color: $ink-faint;
+
+$modal-content-bg: $card;
+$popover-bg: $card;
+$tooltip-bg: $ink;
+$tooltip-color: $paper;
+$table-color: $ink;
+$table-bg: transparent;
+$list-group-bg: $card;
+$card-bg: $card;
+
+$callout-color-note: #8fb4d8;
+$callout-color-tip: #56ae90;
+$callout-color-warning: $kowhai;
+$callout-color-important: $kowhai;
+$callout-color-caution: #e08a5c;
