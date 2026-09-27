@@ -7,6 +7,12 @@ title: "Reports"
 Brief reports explain the questions, methods, findings, and limitations of recent lab publications.
 
 ::: {.card}
+<p class="chip">Zenodo · 2026</p>
+### [Causal Questions Before Statistical Models](reports/nzavs-lmtp-workflow.qmd)
+Version 1 of the lab's registered workflow for longitudinal causal studies in the New Zealand Attitudes and Values Study. Each study registers its causal question, the alternatives it would accept, and its required reports before outcome data enter the analysis.
+:::
+
+::: {.card}
 <p class="chip">PLOS One · 2026</p>
 ### [Work Hours, Fatigue, and Physical Health](reports/work-hours-wellbeing.qmd)
 A target trial emulation among 24,579 pre-retirement New Zealanders estimates the effects of increasing or decreasing weekly work hours by ten. The clearest evidence concerns fatigue, with additional estimates for sleep, body mass index, and perceived physical health.

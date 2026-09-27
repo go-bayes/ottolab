@@ -1,0 +1,219 @@
+---
+pagetitle: "NZAVS-LMTP Workflow, Version 1 | OTTO Lab"
+body-classes: report
+toc: false
+page-layout: full
+---
+
+```{=html}
+<div class="report-wrap">
+
+<p class="kicker kicker-dash">Methods protocol &nbsp;·&nbsp; NZAVS &nbsp;·&nbsp; Lab report</p>
+<h1 class="report-title">Causal Questions Before Statistical <em>Models</em></h1>
+<p class="report-subtitle">Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</p>
+<p class="byline"><span class="names">Joseph A. Bulbulia</span><span class="venue">Zenodo · 2026</span></p>
+
+<p class="report-lede">Longitudinal data record one exposure history for each person. A causal question compares the average outcomes a population would have under two or more exposure policies. We call the mismatch between those comparisons and the single observed history <span class="hl">the causal gap</span>. Version 1 of our workflow for the New Zealand Attitudes and Values Study (NZAVS) asks each study to state its question, assumptions, decision rules, and required reports in a public contract before analysis. <span class="hl-gold">The workflow cannot make causal assumptions true or close the causal gap.</span> It makes clear what we assume, what we do, and what remains uncertain.</p>
+
+<div class="stat-row" style="margin-top:2.5rem">
+  <div class="stat"><span class="n">4</span><span class="lbl">requirements per study</span></div>
+  <div class="stat"><span class="n">2</span><span class="lbl">application modes</span></div>
+  <div class="stat"><span class="n">3</span><span class="lbl">workflow phases</span></div>
+  <div class="stat"><span class="n">1</span><span class="lbl">public contract per study</span></div>
+</div>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The four requirements</p>
+<p>Every study that follows Version 1 meets four requirements, in order.</p>
+<div class="numbered">
+  <div class="item">
+    <span class="num">01</span><h3>Specify the target trial</h3>
+    <p>We specify the hypothetical randomised trial that would answer the question: eligibility, time zero, exposure policies, assignment, follow-up, outcomes, causal contrasts, and analysis. We then map every component to NZAVS waves and measures.</p>
+  </div>
+  <div class="item">
+    <span class="num">02</span><h3>Register every acceptable question</h3>
+    <p>We register the preferred causal question, every complete acceptable alternative, and the rule that chooses among them. Investigators set the preference order before anyone evaluates whether the data can support each candidate.</p>
+  </div>
+  <div class="item">
+    <span class="num">03</span><h3>Defend identification</h3>
+    <p>We defend the assumptions that link the recorded histories to every candidate's policy-specific means: assumptions about exposure assignment, complete observation, eligibility, and projection from the realised sample to the target population.</p>
+  </div>
+  <div class="item">
+    <span class="num">04</span><h3>Report what occurred</h3>
+    <p>We report the realised causal analysis or the reason that outcome estimation did not begin or failed. When a study stops, its stopping report is the result.</p>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">Our running example</p>
+<h2>A three-arm volunteering trial</h2>
+<p>We illustrate each requirement in the registration with a hypothetical study of volunteering and purpose in life. The example is a specification exercise; executing it would require a complete study contract, implementation evidence, and authorisation.</p>
+<div class="trial-grid">
+  <div class="cell">
+    <p class="chip soft">What is our question?</p>
+    <p>How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question. The study realises or stops them together.</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What is our population?</p>
+    <p>New Zealand adults at the 2018/2019 NZAVS wave who meet the eligibility criteria and whose baseline volunteering is observed. The following wave records pre-intervention history, volunteering is assigned at the next three annual waves, and purpose in life is measured one year after the final assigned wave. Each mean includes an intervention under which every baseline member remains in the study and provides the outcome.</p>
+  </div>
+  <div class="cell">
+    <p class="chip soft">What interventions do we compare?</p>
+    <div class="arm">
+      <span class="chip">Bounded increase · +1 hour</span>
+      <p>Add one hour to the weekly volunteering each person would otherwise report, at each assigned wave, up to a maximum of 168 hours.</p>
+    </div>
+    <div class="arm">
+      <span class="chip">Natural course</span>
+      <p>Volunteering changes as it ordinarily would. The first contrast compares the bounded increase with this arm.</p>
+    </div>
+    <div class="arm">
+      <span class="chip">All zero · 0 hours</span>
+      <p>Assign zero hours of volunteering at each assigned wave. The second contrast compares the bounded increase with this arm.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">The three phases</p>
+<h2 class="claim" style="margin-top:1rem">Outcome data enter the analysis only after the question is registered.</h2>
+<p>In Phase 1, investigators resolve the complete specification and publicly deposit it as a machine-readable contract. In Phase 2, software verifies the contract, data, and software environment, then evaluates each registered candidate in order while the study's final outcome values remain withheld. Only a registered exposure-support result can advance a study from its preferred candidate to a shorter-schedule alternative. In Phase 3, software receives outcomes only for the realised candidate and returns one of three statuses: estimated, estimated with stability concerns, or estimation failed. A stopped question goes directly to a report of why it stopped.</p>
+
+<div class="duo">
+  <div class="panel">
+    <p class="chip">Registered before analysis</p>
+    <h3>Questions, rules, and reports</h3>
+    <p>The contract records every acceptable causal question, the order in which software evaluates them, the estimator and its settings, and the reports each outcome requires, including reports of failure. The Version 1 starting defaults are sequentially doubly robust estimation, five cross-validation folds, and seed 42; each contract records the settings it adopts.</p>
+  </div>
+  <div class="panel">
+    <p class="chip gold">Left to scientific judgement</p>
+    <h3>Whether the assumptions hold</h3>
+    <p>Software verifies that each identification argument exists and was approved before execution. Investigators remain responsible for whether consistency, exchangeability, positivity, and projection hold. Quantitative bias analysis lies outside Version 1; E-values serve as a limited reporting companion.</p>
+  </div>
+</div>
+
+<div class="figure-panel">
+<svg viewBox="0 0 780 344" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="phases-title" font-family="JetBrains Mono, ui-monospace, Menlo, monospace">
+<title id="phases-title">Three workflow phases, with the volunteering example's registered candidate sequence in Phase 2</title>
+<defs>
+<marker id="arr-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--ink-faint)"/></marker>
+<marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--green)"/></marker>
+<marker id="arr-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--gold)"/></marker>
+</defs>
+
+<text x="0" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="var(--ink)">PHASE 1 · SPECIFY</text>
+<text x="250" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="var(--ink)">PHASE 2 · EVALUATE</text>
+<text x="575" y="24" font-size="11" font-weight="700" letter-spacing="1.5" fill="var(--ink)">PHASE 3 · ESTIMATE</text>
+
+<line x1="225" y1="10" x2="225" y2="314" stroke="var(--ink-faint)" stroke-dasharray="4 4" stroke-width="1"/>
+<line x1="548" y1="10" x2="548" y2="314" stroke="var(--ink-faint)" stroke-dasharray="4 4" stroke-width="1"/>
+<text x="225" y="334" font-size="9" letter-spacing="1" fill="var(--ink-faint)" text-anchor="middle">CONTRACT DEPOSITED</text>
+<text x="548" y="334" font-size="9" letter-spacing="1" fill="var(--ink-faint)" text-anchor="middle">OUTCOME ACCESS</text>
+
+<g>
+<title>Phase 1: investigators resolve the complete specification and deposit it as a public contract</title>
+<rect x="0.5" y="50.5" width="199" height="183" rx="4" fill="var(--card)" stroke="var(--ink-faint)" stroke-width="1"/>
+<text x="14" y="74" font-size="10.5" fill="var(--ink)">Target trial</text>
+<text x="14" y="90" font-size="10" fill="var(--ink-soft)">and NZAVS mapping</text>
+<text x="14" y="118" font-size="10.5" fill="var(--ink)">Ordered candidates</text>
+<text x="14" y="134" font-size="10" fill="var(--ink-soft)">and decision rule</text>
+<text x="14" y="162" font-size="10.5" fill="var(--ink)">Identification</text>
+<text x="14" y="178" font-size="10" fill="var(--ink-soft)">arguments</text>
+<text x="14" y="206" font-size="10.5" fill="var(--ink)">Reporting</text>
+<text x="14" y="222" font-size="10" fill="var(--ink-soft)">commitments</text>
+</g>
+<line x1="200" y1="68" x2="248" y2="68" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+
+<g>
+<title>Preflight: software verifies the contract, data, and software environment before any candidate is evaluated</title>
+<rect x="250.5" y="50.5" width="269" height="35" rx="4" fill="var(--card)" stroke="var(--ink-faint)" stroke-width="1"/>
+<text x="385" y="72" font-size="10.5" fill="var(--ink)" text-anchor="middle">Preflight</text>
+</g>
+<line x1="385" y1="86" x2="385" y2="108" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+
+<g>
+<title>Preferred candidate: bounded increase assigned at three annual waves</title>
+<rect x="250.5" y="110.5" width="269" height="43" rx="4" fill="var(--card)" stroke="var(--ink-faint)" stroke-width="1"/>
+<text x="264" y="129" font-size="10.5" fill="var(--ink)">Three-wave candidate</text>
+<text x="264" y="145" font-size="10" fill="var(--ink-soft)">assign at three annual waves</text>
+</g>
+<line x1="385" y1="154" x2="385" y2="188" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+<text x="395" y="175" font-size="9" fill="var(--ink-faint)">exposure_unsupported</text>
+
+<g>
+<title>Registered alternative: bounded increase assigned at the last two waves</title>
+<rect x="250.5" y="190.5" width="269" height="43" rx="4" fill="var(--card)" stroke="var(--ink-faint)" stroke-width="1"/>
+<text x="264" y="209" font-size="10.5" fill="var(--ink)">Two-wave candidate</text>
+<text x="264" y="225" font-size="10" fill="var(--ink-soft)">assign at the last two waves</text>
+</g>
+<line x1="385" y1="234" x2="385" y2="268" stroke="var(--ink-faint)" stroke-width="1.5" marker-end="url(#arr-ink)"/>
+<text x="395" y="255" font-size="9" fill="var(--ink-faint)">exposure_unsupported</text>
+
+<g>
+<title>Registered stop: the question stops for lack of practical exposure support</title>
+<rect x="250.5" y="270.5" width="269" height="35" rx="4" fill="var(--card)" stroke="var(--gold)" stroke-width="1.5"/>
+<text x="385" y="292" font-size="10.5" fill="var(--ink)" text-anchor="middle">Registered stop</text>
+</g>
+
+<line x1="520" y1="132" x2="573" y2="132" stroke="var(--green)" stroke-width="2" marker-end="url(#arr-green)"/>
+<line x1="520" y1="212" x2="573" y2="212" stroke="var(--green)" stroke-width="2" marker-end="url(#arr-green)"/>
+<line x1="520" y1="288" x2="573" y2="288" stroke="var(--gold)" stroke-width="2" marker-end="url(#arr-gold)"/>
+
+<g>
+<title>Phase 3: software fits the registered outcome model for the realised target and returns one of three statuses</title>
+<rect x="575.5" y="110.5" width="204" height="123" rx="4" fill="var(--card)" stroke="var(--green)" stroke-width="1.5"/>
+<text x="588" y="131" font-size="10.5" fill="var(--ink)">Outcome model for</text>
+<text x="588" y="147" font-size="10" fill="var(--ink-soft)">the realised target</text>
+<text x="588" y="175" font-size="9" fill="var(--ink-faint)">estimated</text>
+<text x="588" y="191" font-size="9" fill="var(--ink-faint)">estimated_with_</text>
+<text x="588" y="203" font-size="9" fill="var(--ink-faint)">  stability_concerns</text>
+<text x="588" y="219" font-size="9" fill="var(--ink-faint)">estimation_failed</text>
+</g>
+
+<g>
+<title>Stopping report: the stopped question is reported without an outcome model</title>
+<rect x="575.5" y="270.5" width="204" height="35" rx="4" fill="var(--card)" stroke="var(--gold)" stroke-width="1.5"/>
+<text x="677" y="292" font-size="10.5" fill="var(--ink)" text-anchor="middle">Stopping report</text>
+</g>
+</svg>
+</div>
+<p class="fig-caption">The three workflow phases, with the volunteering example's registered candidate sequence in Phase 2. Green arrows mark the <code>exposure_supported</code> result, which realises the current candidate and sends it to outcome estimation. Grey arrows marked <code>exposure_unsupported</code> advance the sequence to the next registered candidate. When the last candidate returns <code>exposure_unsupported</code>, the question stops, and software reports it directly, skipping the outcome model. A shorter schedule asks a different causal question, which investigators register in advance. The illustrative contract ends at the two-wave candidate; the Version 1 default sequence continues to a one-wave candidate. Preflight can also stop a study before any candidate is evaluated.</p>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">Scope &amp; limits</p>
+<div class="numbered">
+  <div class="item">
+    <span class="num">01</span><h3>Two application modes</h3>
+    <p>A prospective study deposits its contract before investigators examine terminal outcomes and may call the contract a preregistration. A retrospective reanalysis discloses earlier access to outcomes, fitted models, and results, and is reported as retrospective.</p>
+  </div>
+  <div class="item">
+    <span class="num">02</span><h3>Practical exposure support</h3>
+    <p>For bounded shift policies, the Version 1 default passes a candidate when, at every assigned wave, at most 20 per cent of uncapped cumulative exposure-density ratios among reached, uncensored histories fall outside [0.1, 10]. Static policies, such as all zero, require a scientific support appraisal; a numerical support rule for them is optional.</p>
+  </div>
+  <div class="item">
+    <span class="num">03</span><h3>Exposures in scope</h3>
+    <p>Version 1 requires an exposure with a defensible ordered numerical representation, such as hours, counts, ordered categories, or a binary indicator. An unordered categorical exposure requires a different method, or a binary or ordered transformation registered as a different exposure.</p>
+  </div>
+  <div class="item">
+    <span class="num">04</span><h3>Versions</h3>
+    <p>Each workflow version receives its own DOI under a common Concept DOI. A study cites the Version DOI it follows and lists every departure. Later versions apply to future studies.</p>
+  </div>
+</div>
+</section>
+
+<section class="report-section">
+<p class="kicker kicker-dash">What this means</p>
+<p>Our earlier target trial emulations, including the <a href="work-hours-wellbeing.html">work-hours</a> and <a href="religious-attendance-wellbeing.html">religious-attendance</a> studies, followed the TARGET reporting framework. Version 1 extends the design and registration process used in those studies. Each study now states its causal question, the alternatives it would accept, and the assumptions that identify them before outcome data enter the analysis. Each study then reports what happened under that contract, including a stop or a failure. The causal gap remains. The assumptions that bridge it remain scientific claims open to challenge.</p>
+</section>
+
+<div class="report-note">
+  <p class="kicker">Citation</p>
+  <p>Bulbulia, J. A. (2026). <i>Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</i> [Workflow]. Zenodo. <a href="https://doi.org/10.5281/zenodo.21932992">doi:10.5281/zenodo.21932992</a></p>
+  <p>Cite the Version DOI when a study follows Version 1. The Concept DOI, <a href="https://doi.org/10.5281/zenodo.21932991">10.5281/zenodo.21932991</a>, refers to the workflow across versions. The release contains methods text and non-identifying figures only. Estimation: the <code>lmtp</code> R package, ordinarily called through <a href="https://go-bayes.github.io/margot/"><code>margot</code></a>.</p>
+</div>
+
+</div>
+```
