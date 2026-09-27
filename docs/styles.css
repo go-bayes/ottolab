@@ -1219,6 +1219,21 @@ body.report .quarto-title-block {
   display: none;
 }
 
+/* below 992px quarto's grid holds the body column at 500px or more, which
+   overflows report pages; use quarto's single-column phone grid instead.
+   the auto margins on .content stop the grid stretching main, so set its
+   width; wide figures then scroll inside their panel */
+body.report main.content {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 991.98px) {
+  body.report .page-columns {
+    grid-template-columns: [screen-start] 1.5em [screen-start-inset page-start page-start-inset body-start-outset body-start body-content-start] minmax(0px, 1fr) [body-content-end body-end body-end-outset page-end-inset page-end screen-end-inset] 1.5em [screen-end];
+  }
+}
+
 img.figure-img {
   max-width: 100%;
   object-fit: contain;
@@ -1356,7 +1371,7 @@ img.figure-img {
 
 .duo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin: 2.25rem 0 0;
 }
@@ -1366,6 +1381,10 @@ img.figure-img {
   border: 1px solid var(--hair-soft);
   border-radius: var(--radius-sm);
   padding: 1.6rem 1.75rem;
+}
+
+.duo .chip {
+  white-space: normal;
 }
 
 .duo .panel h3 {
@@ -1508,10 +1527,6 @@ img.figure-img {
   .duo,
   .numbered {
     grid-template-columns: minmax(0, 1fr);
-  }
-
-  .duo .chip {
-    white-space: normal;
   }
 
   .report-wrap {
