@@ -8,7 +8,7 @@ title: "News"
 
 **17 August 2026 | Zenodo**
 
-Joseph Bulbulia has published Version 1 of the *Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study* on Zenodo. The workflow sets a registration standard for OTTO Lab's longitudinal causal studies using New Zealand Attitudes and Values Study (NZAVS) data. Each study states its causal question, assumptions, decision rules, and required reports before analysis begins. [DOI](https://doi.org/10.5281/zenodo.21932992)
+OTTO Lab has published Version 1 of the *Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study* on Zenodo. The workflow sets a registration standard for the lab's longitudinal causal studies using New Zealand Attitudes and Values Study (NZAVS) data. Each study states its causal question, assumptions, decision rules, and required reports before analysis begins. [DOI](https://doi.org/10.5281/zenodo.21932992)
 
 The workflow has four requirements. First, each study specifies a target trial and maps every component to NZAVS data. Second, each study registers its preferred causal question, every acceptable alternative, and the rule for choosing among them. Third, each study defends the assumptions needed to identify every candidate causal contrast. Fourth, each study reports its realised causal analysis or the reason that estimation did not begin or failed.
 

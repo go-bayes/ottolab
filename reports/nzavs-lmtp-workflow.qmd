@@ -11,7 +11,7 @@ page-layout: full
 <p class="kicker kicker-dash">Methods protocol &nbsp;·&nbsp; NZAVS &nbsp;·&nbsp; Lab report</p>
 <h1 class="report-title">Causal Questions Before Statistical <em>Models</em></h1>
 <p class="report-subtitle">Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</p>
-<p class="byline"><span class="names">Joseph A. Bulbulia</span><span class="venue">Zenodo · 2026</span></p>
+<p class="byline"><span class="names">OTTO Lab</span><span class="venue">Zenodo · 2026</span></p>
 
 <p class="report-lede">Longitudinal data record one exposure history for each person. A causal question compares the average outcomes a population would have under two or more exposure policies. We call the mismatch between those comparisons and the single observed history <span class="hl">the causal gap</span>. Version 1 of our workflow for the New Zealand Attitudes and Values Study (NZAVS) asks each study to state its question, assumptions, decision rules, and required reports in a public contract before analysis. The contract shows readers what each study assumes, what it does, and <span class="hl-gold">what remains uncertain</span>.</p>
 
