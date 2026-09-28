@@ -3,7 +3,7 @@
 /* OTTO LAB WEBSITE STYLES
    kōwhai night: the print-editorial grammar (fraunces display, newsreader
    body, jetbrains mono microlabels, hairline rules) set on deep
-   indigo-aubergine paper, with kōwhai yellow as the accent and a pounamu
+   charcoal-green paper, with kōwhai yellow as the accent and a pounamu
    green as the soft secondary. single dark theme by design; bootstrap
    defaults are set in kowhai-night.scss. */
 
@@ -43,18 +43,18 @@
 :root {
   color-scheme: dark;
 
-  /* paper and ink: warm off-white on deep indigo-aubergine, about 14:1,
+  /* paper and ink: warm off-white on charcoal-green, about 13.7:1,
      short of pure white on black to limit halation in long prose */
-  --paper: #140f1f;
-  --card: #1e182a;
+  --paper: #111a16;
+  --card: #18231e;
   --ink: #e6e2d3;
-  --ink-soft: #c0bcc8;
-  --ink-faint: #9690a2;
+  --ink-soft: #b9bcaf;
+  --ink-faint: #8e998f;
 
   /* kōwhai: the primary accent for links, labels, buttons */
   --kowhai: #f2c14e;
   --kowhai-bright: #f8d67f;
-  --on-accent: #140f1f;
+  --on-accent: #111a16;
 
   /* legacy accent names kept for the report charts and captions:
      --green marks supported effects, --gold marks near-zero or modest
@@ -68,7 +68,7 @@
   --accent: var(--kowhai);
   --accent-strong: var(--kowhai-bright);
   --accent-soft: var(--green);
-  --band: #2e2442;
+  --band: var(--green-deep);
   --band-ink: #ebe8dc;
   --band-ink-strong: #f7f4ea;
 
@@ -720,7 +720,7 @@ td.num, .tabular-nums {
 }
 
 /* ========== CALLOUTS ========== */
-/* note: a raised plum panel, after the paper's dark abstract band */
+/* note: a deep-green panel, after the paper's dark abstract band */
 .callout {
   margin: 2rem 0;
   padding: 1.25rem 1.5rem;
@@ -1636,7 +1636,7 @@ aside,
 /* search overlay: darken the page behind the panel instead of washing
    it with translucent ink */
 .aa-DetachedOverlay {
-  background-color: rgba(8, 6, 14, 0.72);
+  background-color: rgba(6, 10, 8, 0.72);
 }
 
 .aa-DetachedOverlay .aa-Panel,
