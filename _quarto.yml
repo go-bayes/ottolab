@@ -25,7 +25,7 @@ website:
         href: team.qmd
       - text: "Research"
         href: research.qmd
-      - text: "Places Map"
+      - text: "religionmap.org"
         href: https://religionmap.org/
       - text: "Resources"
         href: resources.qmd

@@ -97,11 +97,11 @@ Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). *Journal of Personality*
 
 [All publications](research.qmd)
 
-## Places Map
+## `religionmap.org`
 
-[Places Map](https://religionmap.org/) maps places of worship worldwide for reproducible spatial and cultural analysis.
+[`religionmap.org`](https://religionmap.org/) maps places of worship worldwide for reproducible spatial and cultural analysis.
 
-[Visit Places Map](https://religionmap.org/) · [Code](https://github.com/go-bayes/places-of-worship)
+[Visit `religionmap.org`](https://religionmap.org/) · [Code](https://github.com/go-bayes/places-of-worship)
 
 ## Collaboration and teaching
 

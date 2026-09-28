@@ -6,7 +6,7 @@ OTTO Lab (Observational Target Trial Operations) uses causal inference to ask an
 
 We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington, We also work closly with the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
 
-We maintain [Places Map](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
+We maintain [`religionmap.org`](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
 
 ## Contact

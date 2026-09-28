@@ -4,9 +4,9 @@ title: "Research"
 
 ## Featured Infrastructure
 
-### Places Map
+### `religionmap.org`
 
-[Places Map](https://religionmap.org/) is a core OTTO Lab research infrastructure project. It supports mapping, curation, and analysis of places of worship and related cultural data for open science and policy targeting. Project code and workflows are available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
+[`religionmap.org`](https://religionmap.org/) is a core OTTO Lab research infrastructure project. It supports mapping, curation, and analysis of places of worship and related cultural data for open science and policy targeting. Project code and workflows are available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
 ## Complete Publication List
 
