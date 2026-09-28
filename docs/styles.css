@@ -169,6 +169,12 @@ pre, code, kbd, samp {
   text-transform: uppercase;
 }
 
+/* religionmap.org is a domain name, so it keeps its lower case */
+.navbar-nav .nav-link[href^="https://religionmap.org"] {
+  text-transform: none;
+  letter-spacing: 0.04em;
+}
+
 .navbar-nav .nav-link:hover,
 .navbar-nav .dropdown-toggle:hover,
 .navbar-nav .nav-link.active {
