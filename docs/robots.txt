@@ -1,1 +1,1 @@
-Sitemap: https://go-bayes.github.io/ottolab/sitemap.xml
+Sitemap: https://ottolab.nz/sitemap.xml

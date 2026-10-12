@@ -7,7 +7,7 @@ OTTO Lab develops and applies methods for causal inference from observational da
 ## Site
 
 - Quarto source lives in this repository.
-- Published at <https://go-bayes.github.io/ottolab/> (the canonical domain <https://ottolab.org> is pending DNS configuration).
+- Published at <https://ottolab.nz/>; <https://www.ottolab.nz/> redirects to the canonical domain.
 
 ## Build
 

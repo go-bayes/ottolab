@@ -4,10 +4,11 @@ project:
   resources:
     - fonts
     - .nojekyll
+    - CNAME
 
 website:
   title: "OTTO Lab"
-  site-url: https://go-bayes.github.io/ottolab/
+  site-url: https://ottolab.nz/
   repo-url: https://github.com/go-bayes/ottolab
   description: "Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington"
   open-graph:
