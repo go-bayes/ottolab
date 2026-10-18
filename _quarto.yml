@@ -19,6 +19,7 @@ website:
     site: "@prof_joe_"
     card-style: summary_large_image
   navbar:
+    collapse-below: xl
     left:
       - text: "About"
         href: about.qmd

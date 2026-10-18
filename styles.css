@@ -169,6 +169,21 @@ pre, code, kbd, samp {
   text-transform: uppercase;
 }
 
+/* the bar collapses below xl (_quarto.yml); keep the link padding quarto gives navbar-expand-lg */
+.navbar-expand-xl .navbar-nav .nav-link {
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+/* quarto moves search to the end of an expanded bar from lg up; while the bar is
+   still collapsed (lg to xl) keep the collapsed layout used below lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar #quarto-search {
+    order: 4;
+    margin-left: auto;
+  }
+}
+
 /* religionmap.org is a domain name, so it keeps its lower case */
 .navbar-nav .nav-link[href^="https://religionmap.org"] {
   text-transform: none;
