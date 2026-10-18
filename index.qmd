@@ -9,11 +9,19 @@ toc: false
 <h1 class="hero-title">OTTO <em>Lab</em></h1>
 <p class="hero-descriptor">Observational Target Trial Operations</p>
 
+<p class="hero-lede">How can investigators estimate causal effects in psychology when experiments are impractical or unethical? Investigators can rarely assign people at random to attend religious services or to work longer hours. At OTTO Lab, we develop and apply methods for estimating causal effects from observational data. We specify the randomised trial we would run if we could, the <em>target trial</em>, then emulate that trial with longitudinal studies such as the New Zealand Attitudes and Values Study.</p>
+<div class="hero-actions">
+<a href="research.qmd" class="btn btn-primary">Research</a>
+<a href="resources.qmd" class="btn btn-secondary">Resources</a>
+<a href="mailto:joseph.bulbulia@vuw.ac.nz" class="btn btn-secondary">Email Joseph Bulbulia</a>
+</div>
+<p class="hero-text">An estimate from observational data has a causal interpretation only under assumptions, chiefly that the baseline measures we adjust for account for all common causes of treatment and outcome. In each study, we state these assumptions and assess how far our conclusions depend on them.</p>
+
 ```{=html}
 <figure class="hero-dag" id="hero-dag">
 <svg class="dag" viewBox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc">
 <title id="dag-title">Causal diagram of a target trial emulation</title>
-<desc id="dag-desc">In temporal order: an unmeasured variable U affects baseline covariates W0 and the outcome Y2; W0 affects treatment A1 and Y2. W0 is then boxed to show conditioning. The treatment node splits to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.</desc>
+<desc id="dag-desc">An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, and reaches treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 marks conditioning. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.</desc>
 <g aria-hidden="true">
 <text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end">CAUSAL DIAGRAM</text>
 <text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end">SINGLE-WORLD INTERVENTION</text>
@@ -40,7 +48,7 @@ toc: false
 </g>
 </svg>
 <figcaption class="hero-dag-caption">
-<span>The diagram draws the causal structure in temporal order and boxes <i>W</i><sub>0</sub> to show conditioning. It then sets treatment to <i>a</i>, splitting <i>A</i><sub>1</sub>. Given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<span>The diagram shows an assumed causal structure in temporal order. The unmeasured <i>U</i> affects the baseline covariates <i>W</i><sub>0</sub> and the outcome <i>Y</i><sub>2</sub>, but reaches treatment <i>A</i><sub>1</sub> only through <i>W</i><sub>0</sub>. The box marks conditioning on <i>W</i><sub>0</sub>, and the split at <i>A</i><sub>1</sub> sets treatment to <i>a</i>, as in a single-world intervention graph. Under this structure, given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
 <button type="button" class="dag-toggle" hidden>Pause</button>
 </figcaption>
 </figure>
@@ -61,38 +69,32 @@ toc: false
 </script>
 ```
 
-<p class="hero-lede">How can investigators estimate causal effects in psychology when experiments are impractical or unethical? We can rarely assign people at random to attend religious services or to work longer hours, so experiments can answer few questions about the effects of religious practice or working life. At OTTO Lab, we develop and apply methods for answering such questions from observational data. We specify the randomised trial we would run if we could, then emulate that trial with longitudinal data such as the New Zealand Attitudes and Values Study. Our estimates are causal only under stated assumptions, chiefly that we have measured the common causes of exposure and outcome, so we state those assumptions and assess how sensitive our conclusions are to them. We also build software, including the <code>margot</code> R package, teach these methods, and collaborate with investigators in New Zealand and internationally.</p>
-<div class="hero-actions">
-<a href="research.qmd" class="btn btn-primary">Research</a>
-<a href="resources.qmd" class="btn btn-secondary">Methods & resources</a>
-<a href="mailto:joseph.bulbulia@vuw.ac.nz" class="btn btn-secondary">joseph.bulbulia@vuw.ac.nz</a>
-</div>
 :::
 
 ## Selected work
 
-[Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)
+[Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)\
 Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043)
 
-[Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims](https://doi.org/10.1080/2153599X.2026.2645568)
+[Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims](https://doi.org/10.1080/2153599X.2026.2645568)\
 Bulbulia, Afzali, Rasheed, Troughton, Yogeeswaran & Sibley (2026). *Religion, Brain & Behavior*, in press. [DOI](https://doi.org/10.1080/2153599X.2026.2645568)
 
-[Religion, cooperation, and prosocial behavior: Methods and evidence for causality](https://doi.org/10.1080/2153599X.2026.2695639)
+[Religion, cooperation, and prosocial behavior: Methods and evidence for causality](https://doi.org/10.1080/2153599X.2026.2695639)\
 McCullough, Davis & Bulbulia (2026). *Religion, Brain & Behavior*, in press. [DOI](https://doi.org/10.1080/2153599X.2026.2695639)
 
-[Long-term causal effects of far-right terrorism in New Zealand](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)
+[Long-term causal effects of far-right terrorism in New Zealand](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)\
 Bulbulia, Afzali, Yogeeswaran & Sibley (2023). *PNAS Nexus*
 
-[Life loses some meaning after leaving religion](https://psycnet.apa.org/record/2026-71076-001)
+[Life loses some meaning after leaving religion](https://psycnet.apa.org/record/2026-71076-001)\
 Van Tongeren, Davis, Sibley & Bulbulia (2025). *Psychology of Religion and Spirituality*
 
-[The causal effects of religious service attendance on prosocial behaviours in New Zealand](https://openaccess.wgtn.ac.nz/articles/journal_contribution/The_causal_effects_of_religious_service_attendance_on_prosocial_behaviours_in_New_Zealand_A_national_longitudinal_study/28386350)
+[The causal effects of religious service attendance on prosocial behaviours in New Zealand](https://openaccess.wgtn.ac.nz/articles/journal_contribution/The_causal_effects_of_religious_service_attendance_on_prosocial_behaviours_in_New_Zealand_A_national_longitudinal_study/28386350)\
 Bulbulia, Davis, Rice, Sibley & Troughton (2024). *Archive for the Psychology of Religion*
 
-[Methods in causal inference: a four-part tutorial series](resources.qmd#start-here-methods-in-causal-inference-series)
+[Methods in causal inference: a four-part tutorial series](resources.qmd#start-here-methods-in-causal-inference-series)\
 Bulbulia (2024). *Evolutionary Human Sciences*
 
-[Causal effect of psychopathy on partner well-being](https://doi.org/10.1111/jopy.70042)
+[Causal effect of psychopathy on partner well-being](https://doi.org/10.1111/jopy.70042)\
 Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). *Journal of Personality*
 
 [All publications](research.qmd)
@@ -105,7 +107,7 @@ Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). *Journal of Personality*
 
 ## Collaboration and teaching
 
-The lab supports graduate supervision, methods teaching in causal inference, and applied collaboration. We welcome enquiries.
+We supervise graduate students, teach methods for causal inference, and collaborate with investigators in New Zealand and internationally. We also build software, including the [`margot`](resources.qmd#r-packages) R package. To discuss supervision or collaboration, email Joseph Bulbulia at [joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz).
 
 ::: {.home-links}
 [Meet the lab](team.qmd) · [Presentations](presentations.qmd) · [News](news.qmd) · [Reports](reports.qmd)

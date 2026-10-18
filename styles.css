@@ -163,9 +163,9 @@ pre, code, kbd, samp {
 .navbar-nav .dropdown-toggle {
   color: var(--ink-soft) !important;
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -193,25 +193,10 @@ pre, code, kbd, samp {
 
 .navbar .dropdown-item {
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-soft);
-}
-
-/* presentations: filled green label */
-#nav-menu-presentations {
-  background-color: var(--accent) !important;
-  color: var(--on-accent) !important;
-  font-weight: 600;
-  padding: 6px 16px;
-  border-radius: var(--radius-pill);
-  margin: 0 8px;
-  transition: background-color 0.2s ease;
-}
-
-#nav-menu-presentations:hover {
-  background-color: var(--accent-strong) !important;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -300,9 +285,9 @@ strong, b {
 
 .hero-affiliation {
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
   margin: 0 0 1.75rem;
@@ -318,7 +303,7 @@ strong, b {
   color: var(--ink);
 }
 
-/* the italic accent word, after "Not Evidence" */
+/* the italic accent word in the title */
 .hero-title em {
   font-style: italic;
   font-weight: 600;
@@ -345,7 +330,7 @@ strong, b {
 }
 
 .hero-text {
-  margin: 1rem 0 0;
+  margin: 1.75rem 0 0;
   max-width: var(--prose-max-width);
 }
 
@@ -410,9 +395,9 @@ strong, b {
 .dag-micro,
 .dag-phase {
   font-family: var(--mono);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
 }
 
 .dag-micro {
@@ -491,9 +476,9 @@ strong, b {
   border-bottom: 1px solid var(--hair);
   background: none;
   font-family: var(--mono);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-soft);
   cursor: pointer;
@@ -607,19 +592,19 @@ strong, b {
 }
 
 /* wide screens: the diagram sits beside the title block and hangs into the
-   right margin, so the title column keeps its width. below 1200px it stacks
-   under the descriptor. */
+   right margin, so the title column keeps its width. */
 @media (min-width: 1200px) {
   .home .hero {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 21rem;
-    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr auto auto;
     grid-template-areas:
       "aff dag"
       "title dag"
       "desc dag"
       "lede dag"
-      "actions actions";
+      "actions actions"
+      "text .";
     column-gap: 3rem;
     margin-right: -13rem;
   }
@@ -629,6 +614,7 @@ strong, b {
   .home .hero > .hero-descriptor { grid-area: desc; }
   .home .hero > .hero-lede { grid-area: lede; }
   .home .hero > .hero-actions { grid-area: actions; }
+  .home .hero > .hero-text { grid-area: text; }
 
   .home .hero > .hero-dag {
     grid-area: dag;
@@ -638,16 +624,10 @@ strong, b {
   }
 }
 
-/* phones: the diagram follows the lede and buttons, so the opening text
-   stays on the first screen */
-@media (max-width: 767.98px) {
-  .home .hero {
-    display: flex;
-    flex-direction: column;
-  }
-
+/* below 1200px the diagram follows the text and buttons in source order,
+   so screen readers and keyboard users meet the hero in the order shown */
+@media (max-width: 1199.98px) {
   .home .hero > .hero-dag {
-    order: 1;
     margin-top: 2.25rem;
   }
 }
@@ -973,9 +953,9 @@ td.num, .tabular-nums {
   padding: 0.55rem 1.3rem;
   border-radius: var(--radius-pill);
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   transition: all 0.2s ease;
   text-decoration: none;
@@ -994,10 +974,12 @@ td.num, .tabular-nums {
   color: var(--on-accent);
 }
 
+/* the outline is ink at 0.45 alpha, about 3.7:1 against the paper,
+   above the 3:1 that wcag 1.4.11 asks of a control's edge */
 .btn-secondary {
   background-color: transparent;
   color: var(--ink);
-  border: 1px solid var(--hair);
+  border: 1px solid rgba(230, 226, 211, 0.45);
 }
 
 .btn-secondary:hover {
@@ -1029,8 +1011,8 @@ td.num, .tabular-nums {
   padding-top: 1.25rem;
   border-top: 1px solid var(--hair-soft);
   font-family: var(--mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
   color: var(--ink-faint);
 }
 
@@ -1160,8 +1142,8 @@ td.num, .tabular-nums {
   }
 
   .hero-affiliation {
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
   }
 
   .hero-descriptor {
