@@ -112,7 +112,7 @@ Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Soc
 :::
 
 ::: {.column width="75%"}
-Mekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. We welcomed Mekonnen to the lab from Ethiopia.
+Mekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. Mekonnen joins the lab from Ethiopia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
