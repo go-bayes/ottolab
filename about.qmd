@@ -9,6 +9,16 @@ We are based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/ps
 We maintain [`religionmap.org`](https://religionmap.org/), open research infrastructure for mapping places of worship and supporting cross-cultural policy research. The underlying codebase is available at [github.com/go-bayes/places-of-worship](https://github.com/go-bayes/places-of-worship).
 
 
+::: {#fig-otto layout-ncol=2}
+
+![*A* = 1: ball](images/ottos/web/otto-dog-ball.jpg){fig-alt="A dog leaps for a ball, in silhouette against a setting sun."}
+
+![*A* = 0: no ball](images/ottos/web/otto-dog-no-ball.jpg){fig-alt="A dog leaps in a misty field at dusk, in silhouette. No ball is visible."}
+
+Left: Otto with the ball. Right: Otto without the ball. At any one moment we can observe Otto under only one of the two conditions; the outcome under the other condition is counterfactual. Most of what the lab does follows from that inconvenience. Readers will notice that Otto has jumped in both photographs. We are investigating.
+:::
+
+
 ## Contact
 
 **Email:** joseph.bulbulia@vuw.ac.nz  

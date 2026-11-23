@@ -1,0 +1,23 @@
+---
+title: "Lost to follow-up"
+toc: false
+code-tools: false
+---
+
+:::: {.columns .otto-404}
+
+::: {.column width="38%"}
+![](images/ottos/web/otto-cat-404.jpg){.otto-plate fig-alt="A tabby cat asleep with one white paw over its eyes."}
+:::
+
+::: {.column width="58%"}
+This page has been lost to follow-up. We do not impute missing pages.
+
+Otto has been informed and has taken the news as shown.
+
+The address you followed does not match a page on this site (error 404). The page may have moved, or the link may contain a typing error.
+
+[Return to the landing page](index.qmd){.btn .btn-primary .no-external}
+:::
+
+::::

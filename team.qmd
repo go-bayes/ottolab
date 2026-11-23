@@ -95,7 +95,7 @@ Jake graduated with a Bachelor of Science in Psychology and Mathematics from Vic
 :::
 
 ::: {.column width="75%"}
-Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. He joins the lab from Bangladesh.
+Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. Mohammad comes to us from Bangladesh.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -112,7 +112,7 @@ Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Soc
 :::
 
 ::: {.column width="75%"}
-Mekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. He joins the lab from Ethiopia.
+Mekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. We welcomed Mekonnen to the lab from Ethiopia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -151,7 +151,7 @@ Hannah is researching the causal effects of religious service attendance on pers
 :::
 
 ::: {.column width="75%"}
-Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. She joins the lab from Indonesia.
+Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. Purti is with us from Indonesia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Target Trial Emulation; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -284,6 +284,70 @@ Bella received her Master's degree from Victoria University of Wellington in 202
 - [ORCID Profile](https://orcid.org/0000-0002-0206-0782)
 :::
 ::::
+
+---
+
+## The Ottos
+
+### Otto Lilienthal
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![Otto Lilienthal](images/ottos/web/otto-lilienthal-portrait.jpg){.team-photo fig-alt="Otto Lilienthal in flight beneath a glider, above a sandy hillside, in 1891."}
+:::
+
+::: {.column width="75%"}
+**Honorary Fellow, Direct Experimentation**
+
+Otto (1848–1896) measured the flight of storks before he left the ground, and published the measurements in 1889. He then made more than two thousand glider flights between 1891 and 1896. The lab follows the first half of his method. Otto is not currently accepting students.
+
+- **Project:** *Der Vogelflug als Grundlage der Fliegekunst* (1889)
+- **Methods:** Observation, followed by experiment
+- **Photograph:** Carl Kassner, 1891 (public domain)
+:::
+
+::::
+
+### Otto (dog)
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![Otto the dog](images/ottos/web/otto-dog-portrait.jpg){.team-photo fig-alt="A golden-brown dog looks over the back seat of a car."}
+:::
+
+::: {.column width="75%"}
+**Research Fellow, Outcome Ascertainment**
+
+Otto investigates the effect of a thrown ball on altitude. He serves as the study's only participant, and his adherence to treatment is complete. He joins the lab from Britain.
+
+- **Project:** The ball
+- **Methods:** Repeated measures
+:::
+
+::::
+
+### Otto (cat)
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![Otto the cat](images/ottos/web/otto-cat-portrait.jpg){.team-photo fig-alt="A tabby and white cat lies stretched out asleep on a sunlit wooden deck."}
+:::
+
+::: {.column width="75%"}
+**Senior Fellow Emeritus, Control Condition**
+
+Otto (2000–2015) served in the control arm for fifteen years, in New Zealand. He received no treatment and reported no complaints. Otto declined co-authorship on every paper, in advance.
+
+- **Project:** None
+- **Methods:** Remained at baseline
+:::
+
+::::
+
+[New members of the lab are not required to be called Otto, although it would avoid confusion.]{.otto-note}
 
 ---
 

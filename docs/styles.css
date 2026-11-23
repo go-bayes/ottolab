@@ -1677,3 +1677,58 @@ div.callout-tip.callout {
 div.callout-warning.callout {
   border-left-color: var(--gold);
 }
+
+
+/* ========== OTTOS ========== */
+/* the potential-outcomes figure on the about page (quarto drops classes
+   from a figure div, so the figure is styled by its id), the note that closes
+   the ottos on the people page, and the plate on the error page */
+#fig-otto img,
+img.otto-plate {
+  border: 1px solid var(--hair);
+  border-radius: var(--radius-sm);
+}
+
+#fig-otto > figure > figcaption {
+  font-size: 0.85rem;
+  max-width: var(--prose-max-width);
+  margin: 1rem 0 0;
+  text-align: left;
+}
+
+/* keep the two photographs side by side on phones: the caption says
+   left and right, and the comparison is the point of the figure */
+#fig-otto .quarto-layout-row {
+  flex-direction: row;
+}
+
+.otto-note {
+  display: block;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+/* quarto resets .columns in a later inline style, so the selector is
+   doubled to win on specificity */
+.columns.otto-404 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.otto-404 img.otto-plate {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .columns.otto-404 {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .otto-404 .column {
+    width: 100% !important;
+  }
+}
