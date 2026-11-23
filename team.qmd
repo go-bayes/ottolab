@@ -95,7 +95,7 @@ Jake graduated with a Bachelor of Science in Psychology and Mathematics from Vic
 :::
 
 ::: {.column width="75%"}
-Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. Mohammad comes to us from Bangladesh.
+Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. Mohammad joins the lab from Bangladesh.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
@@ -151,7 +151,7 @@ Hannah is researching the causal effects of religious service attendance on pers
 :::
 
 ::: {.column width="75%"}
-Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. Purti is with us from Indonesia.
+Purti is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. Purti joins the lab from Indonesia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
 - **Methods:** Target Trial Emulation; Longitudinal Modified Treatment Policies; Causal Machine Learning
