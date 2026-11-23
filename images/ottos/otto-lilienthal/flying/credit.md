@@ -1,0 +1,1 @@
+By Carl Kassner - reproduction of the photograph, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1537307
