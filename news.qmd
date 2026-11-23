@@ -34,13 +34,13 @@ Version 1.4.0 makes JSON the default database format and removes RDS writing fro
 
 **July 2026 | Victoria University of Wellington**
 
-We are delighted to welcome two new students to OTTO Lab: Purti Pristine and Christina Cartwright.
+We are delighted to welcome two new students to OTTO Lab: Putri Pristine and Christina Cartwright.
 
-Purti joins the lab from Indonesia as a Master's student. She is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits.
+Putri joins the lab from Indonesia as a Master's student. She is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits.
 
 Christina joins the lab as an Honours student. Originally from Austria, she brings extensive experience in government. She is estimating heterogeneous effects of volunteering: how its effects on different aspects of well-being vary across groups. She uses causal forests and policy trees.
 
-A warm welcome to Purti and Christina.
+A warm welcome to Putri and Christina.
 
 ---
 
