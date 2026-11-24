@@ -79,11 +79,11 @@ Despite the ubiquity of "predict" language, most psychological scientists are in
 
 ::: {#fig-otto layout-ncol=2}
 
-![*a* = 0: ball not in mouth](images/ottos/web/otto-dog-ball.jpg){fig-alt="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout."}
+![*a* = 0: ball not in mouth](images/ottos/web/otto-dog-ball.jpg){fig-alt="A dog rears up on his hind legs in silhouette against a setting sun, jaws open as a ball hovers just above his snout."}
 
 ![*a* = 1: ball in mouth](images/ottos/web/otto-dog-no-ball.jpg){fig-alt="A dog leaps in a misty field at dusk, in silhouette, with a ball held in his mouth."}
 
-Left: ball not in mouth (*a* = 0). Right: ball in mouth (*a* = 1; look closely). At any one moment we can observe Otto under only one of the two conditions; the other is counterfactual. Most of what the lab does follows from that inconvenience. Readers will notice that Otto appears equally airborne either way. We are investigating.
+Left: ball not in mouth (*a* = 0). Right: ball in mouth (*a* = 1; look closely). At any one moment we can observe Otto under only one of the two conditions; the other is counterfactual. Most of what the lab does follows from that inconvenience.
 :::
 
 ## Selected work
