@@ -13,7 +13,7 @@ page-layout: full
 <p class="report-subtitle">Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</p>
 <p class="byline"><span class="names">OTTO Lab</span><span class="venue">Zenodo · 2026</span></p>
 
-<p class="report-lede">Longitudinal data only ever show us one history per person. A causal question asks how average outcomes would differ under two or more exposure policies. We call that mismatch <span class="hl">the causal gap</span>. Version 1 of our NZAVS workflow requires every study to deposit its question, assumptions, fallback rules, and code in a public contract before outcomes enter the analysis. Readers can see what each study assumes, what it did, and <span class="hl-gold">what remains uncertain</span>.</p>
+<p class="report-lede">Longitudinal data only ever show us one history per person. A causal question compares average outcomes under two or more exposure policies. We call that mismatch <span class="hl"><em>the causal gap</em></span>. Under Version 1 of our NZAVS workflow, we register the causal question, assumptions, and fallback rules before estimation.</p>
 
 <div class="stat-row" style="margin-top:2.5rem">
   <div class="stat"><span class="n">4</span><span class="lbl">requirements per study</span></div>
@@ -32,7 +32,7 @@ page-layout: full
   </div>
   <div class="item">
     <span class="num">02</span><h3>Register every acceptable question</h3>
-    <p>We register the preferred causal question, every complete acceptable alternative, and the rule that chooses among them. Investigators set the preference order before anyone evaluates whether the data can support each candidate.</p>
+    <p>We register the preferred causal question, every complete acceptable alternative, and the rule for choosing among them. Investigators set the preference order before anyone checks whether the data can support each candidate.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3>Defend identification</h3>
@@ -52,7 +52,7 @@ page-layout: full
 <div class="trial-grid">
   <div class="cell">
     <p class="chip soft">What is our question?</p>
-    <p>How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question. The study realises or stops them together.</p>
+    <p>How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question, so we estimate or stop them together.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What is our population?</p>
@@ -205,8 +205,8 @@ page-layout: full
 </section>
 
 <section class="report-section">
-<p class="kicker kicker-dash">What this means</p>
-<p>Our earlier target trial emulations, including the <a href="work-hours-wellbeing.html">work-hours</a> and <a href="religious-attendance-wellbeing.html">religious-attendance</a> studies, followed the TARGET reporting framework. Version 1 extends the design and registration process used in those studies. Each study now states its causal question, the alternatives it would accept, and the assumptions that identify them before outcome data enter the analysis. Each study then reports what happened under that contract, including a stop or a failure. The causal gap remains. The assumptions that bridge it remain scientific claims open to challenge.</p>
+<p class="kicker kicker-dash">So what?</p>
+<p>Our earlier target trial emulations, including the <a href="work-hours-wellbeing.html">work-hours</a> and <a href="religious-attendance-wellbeing.html">religious-attendance</a> studies, followed the TARGET reporting framework. Version 1 sharpens that design and registration process: we commit in code to our causal question, acceptable alternatives, and identification assumptions before outcome data enter estimation, and we report whatever happens under that contract, including a stop or failure. The causal gap does not go away. The assumptions that bridge it remain scientific claims open to challenge.</p>
 </section>
 
 <div class="report-note">

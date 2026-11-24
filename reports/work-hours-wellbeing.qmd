@@ -51,7 +51,7 @@ page-layout: full
 <section class="report-section">
 <p class="kicker kicker-dash">Can the data support the comparison?</p>
 <h2>Some changes in hours are easier to study</h2>
-<p>To estimate what happens when work hours change, we need comparable people in the data who actually work the shifted hours. That is the positivity requirement: any work-hour shift the policy proposes has to occur among people with similar baseline histories. In practice, we also need enough of those observations to avoid leaning too hard on model extrapolation.</p>
+<p>To estimate what happens when work hours change, we need comparable people in the data who actually work the shifted hours. That is the positivity requirement: any work-hour value produced by the shift has to occur among people with similar baseline histories. In practice, we also need enough of those observations to avoid leaning too hard on model extrapolation.</p>
 <p>The data give much better coverage for cutting ten hours than for adding ten. Pushing work hours up by ten often lands in territory that is rare among people with comparable histories, so the upward shift relies more on extrapolation and calls for extra caution.</p>
 </section>
 
@@ -64,7 +64,7 @@ page-layout: full
   <div class="panel">
     <p class="chip">+10 hours · estimated changes</p>
     <h3>Higher fatigue and less sleep</h3>
-    <p>Adding ten hours a week raises estimated fatigue by 0.08 standard deviations. That is small relative to how much fatigue varies across people, yet it is the clearest signal in the study. Estimated nightly sleep drops by roughly 3.4 minutes, body mass index rises by roughly 0.19 kg/m², and perceived physical health dips by roughly 0.13 points. Those three physical-health estimates (and a small bump in perceived support) are more fragile to uncertainty and unmeasured confounding.</p>
+    <p>Adding ten hours a week raises estimated fatigue by 0.08 standard deviations. That is small relative to variation in fatigue across people, and it is the clearest signal in the study. Estimated nightly sleep drops by roughly 3.4 minutes, body mass index rises by roughly 0.19 kg/m², and perceived physical health dips by roughly 0.13 points. Those three physical-health estimates (and a small bump in perceived support) are more fragile to uncertainty and unmeasured confounding.</p>
   </div>
   <div class="panel">
     <p class="chip gold">−10 hours · estimated changes</p>
@@ -134,7 +134,7 @@ page-layout: full
 </g>
 </svg>
 </div>
-<p class="fig-caption">Estimated average effects of increasing or decreasing weekly work hours by ten, each compared with the natural course. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 28 outcomes under each policy (approximately 99.82% individual intervals). This adjustment accounts for testing several outcomes together. The legend separates the fatigue estimate under each policy, which the paper identifies as least vulnerable to unmeasured confounding, from estimates whose corrected intervals exclude zero but whose E-value bounds are modest. E denotes the E-value for the confidence limit closest to zero. Larger E-values mean that stronger unmeasured confounding would be needed to move that limit to zero. The paper's supplement reports all 28 outcomes.</p>
+<p class="fig-caption">Estimated average effects of increasing or decreasing weekly work hours by ten, each compared with the natural course. Effects are in standard-deviation units, which express each change relative to the variation in that outcome across people. Bonferroni-adjusted intervals control family-wise error at 5% across 28 outcomes under each policy (approximately 99.82% individual intervals). This adjustment accounts for testing several outcomes together. The legend separates the fatigue estimate under each policy (least vulnerable to unmeasured confounding) from estimates whose corrected intervals exclude zero but whose E-value bounds are modest. E denotes the E-value for the confidence limit closest to zero. Larger E-values mean that stronger unmeasured confounding would be needed to move that limit to zero. The paper's supplement reports all 28 outcomes.</p>
 </section>
 
 <section class="report-section">
@@ -160,8 +160,8 @@ page-layout: full
 </section>
 
 <section class="report-section">
-<p class="kicker kicker-dash">What this means</p>
-<p>Changing work hours appears to affect how tired people feel. A ten-hour increase in the working week raises estimated fatigue, while a ten-hour reduction lowers it. Most estimated changes in other aspects of well-being are small. The data provide better coverage of the work hours needed to estimate a reduction. The results describe average effects among pre-retirement adults and depend on the study's assumptions. For discussions about working time, fatigue is the clearest outcome to consider; broader benefits remain uncertain.</p>
+<p class="kicker kicker-dash">So what?</p>
+<p>Changing work hours affects how tired people feel. Adding ten hours to the working week raises estimated fatigue; cutting ten hours lowers it. Most estimated changes across the other 27 well-being outcomes are small, and the data support a reduction much better than an increase. These are average effects among pre-retirement adults and depend on the study's assumptions. For debates over working time, fatigue is the clearest outcome to focus on; broader well-being effects remain uncertain.</p>
 </section>
 
 <div class="report-note">

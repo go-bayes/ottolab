@@ -229,7 +229,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p class="report-subtitle">Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</p>
 <p class="byline"><span class="names">OTTO Lab</span><span class="venue">Zenodo · 2026</span></p>
 
-<p class="report-lede">Longitudinal data only ever show us one history per person. A causal question asks how average outcomes would differ under two or more exposure policies. We call that mismatch <span class="hl">the causal gap</span>. Version 1 of our NZAVS workflow requires every study to deposit its question, assumptions, fallback rules, and code in a public contract before outcomes enter the analysis. Readers can see what each study assumes, what it did, and <span class="hl-gold">what remains uncertain</span>.</p>
+<p class="report-lede">Longitudinal data only ever show us one history per person. A causal question compares average outcomes under two or more exposure policies. We call that mismatch <span class="hl"><em>the causal gap</em></span>. Under Version 1 of our NZAVS workflow, we register the causal question, assumptions, and fallback rules before estimation.</p>
 
 <div class="stat-row" style="margin-top:2.5rem">
   <div class="stat"><span class="n">4</span><span class="lbl">requirements per study</span></div>
@@ -248,7 +248,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   <div class="item">
     <span class="num">02</span><h3 class="anchored">Register every acceptable question</h3>
-    <p>We register the preferred causal question, every complete acceptable alternative, and the rule that chooses among them. Investigators set the preference order before anyone evaluates whether the data can support each candidate.</p>
+    <p>We register the preferred causal question, every complete acceptable alternative, and the rule for choosing among them. Investigators set the preference order before anyone checks whether the data can support each candidate.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3 class="anchored">Defend identification</h3>
@@ -268,7 +268,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="trial-grid">
   <div class="cell">
     <p class="chip soft">What is our question?</p>
-    <p>How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question. The study realises or stops them together.</p>
+    <p>How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question, so we estimate or stop them together.</p>
   </div>
   <div class="cell">
     <p class="chip soft">What is our population?</p>
@@ -421,8 +421,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 
 <section class="report-section">
-<p class="kicker kicker-dash">What this means</p>
-<p>Our earlier target trial emulations, including the <a href="work-hours-wellbeing.html">work-hours</a> and <a href="religious-attendance-wellbeing.html">religious-attendance</a> studies, followed the TARGET reporting framework. Version 1 extends the design and registration process used in those studies. Each study now states its causal question, the alternatives it would accept, and the assumptions that identify them before outcome data enter the analysis. Each study then reports what happened under that contract, including a stop or a failure. The causal gap remains. The assumptions that bridge it remain scientific claims open to challenge.</p>
+<p class="kicker kicker-dash">So what?</p>
+<p>Our earlier target trial emulations, including the <a href="work-hours-wellbeing.html">work-hours</a> and <a href="religious-attendance-wellbeing.html">religious-attendance</a> studies, followed the TARGET reporting framework. Version 1 sharpens that design and registration process: we commit in code to our causal question, acceptable alternatives, and identification assumptions before outcome data enter estimation, and we report whatever happens under that contract, including a stop or failure. The causal gap does not go away. The assumptions that bridge it remain scientific claims open to challenge.</p>
 </section>
 
 <div class="report-note">
@@ -1006,7 +1006,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="report-subtitle"&gt;Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1&lt;/p&gt;</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="byline"&gt;&lt;span class="names"&gt;OTTO Lab&lt;/span&gt;&lt;span class="venue"&gt;Zenodo · 2026&lt;/span&gt;&lt;/p&gt;</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="report-lede"&gt;Longitudinal data only ever show us one history per person. A causal question asks how average outcomes would differ under two or more exposure policies. We call that mismatch &lt;span class="hl"&gt;the causal gap&lt;/span&gt;. Version 1 of our NZAVS workflow requires every study to deposit its question, assumptions, fallback rules, and code in a public contract before outcomes enter the analysis. Readers can see what each study assumes, what it did, and &lt;span class="hl-gold"&gt;what remains uncertain&lt;/span&gt;.&lt;/p&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="report-lede"&gt;Longitudinal data only ever show us one history per person. A causal question compares average outcomes under two or more exposure policies. We call that mismatch &lt;span class="hl"&gt;&lt;em&gt;the causal gap&lt;/em&gt;&lt;/span&gt;. Under Version 1 of our NZAVS workflow, we register the causal question, assumptions, and fallback rules before estimation.&lt;/p&gt;</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="stat-row" style="margin-top:2.5rem"&gt;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="stat"&gt;&lt;span class="n"&gt;4&lt;/span&gt;&lt;span class="lbl"&gt;requirements per study&lt;/span&gt;&lt;/div&gt;</span></span>
@@ -1025,7 +1025,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;02&lt;/span&gt;&lt;h3&gt;Register every acceptable question&lt;/h3&gt;</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;We register the preferred causal question, every complete acceptable alternative, and the rule that chooses among them. Investigators set the preference order before anyone evaluates whether the data can support each candidate.&lt;/p&gt;</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;We register the preferred causal question, every complete acceptable alternative, and the rule for choosing among them. Investigators set the preference order before anyone checks whether the data can support each candidate.&lt;/p&gt;</span></span>
 <span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;03&lt;/span&gt;&lt;h3&gt;Defend identification&lt;/h3&gt;</span></span>
@@ -1045,7 +1045,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="trial-grid"&gt;</span></span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="cell"&gt;</span></span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p class="chip soft"&gt;What is our question?&lt;/p&gt;</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question. The study realises or stops them together.&lt;/p&gt;</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;How would purpose in life differ if New Zealand adults volunteered one more hour each week at each of three annual waves? We compare that bounded increase with the natural course and with zero volunteering. Both contrasts form a joint question, so we estimate or stop them together.&lt;/p&gt;</span></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="cell"&gt;</span></span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p class="chip soft"&gt;What is our population?&lt;/p&gt;</span></span>
@@ -1198,8 +1198,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/section&gt;</span></span>
 <span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;section class="report-section"&gt;</span></span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="kicker kicker-dash"&gt;What this means&lt;/p&gt;</span></span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;Our earlier target trial emulations, including the &lt;a href="work-hours-wellbeing.html"&gt;work-hours&lt;/a&gt; and &lt;a href="religious-attendance-wellbeing.html"&gt;religious-attendance&lt;/a&gt; studies, followed the TARGET reporting framework. Version 1 extends the design and registration process used in those studies. Each study now states its causal question, the alternatives it would accept, and the assumptions that identify them before outcome data enter the analysis. Each study then reports what happened under that contract, including a stop or a failure. The causal gap remains. The assumptions that bridge it remain scientific claims open to challenge.&lt;/p&gt;</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="kicker kicker-dash"&gt;So what?&lt;/p&gt;</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;Our earlier target trial emulations, including the &lt;a href="work-hours-wellbeing.html"&gt;work-hours&lt;/a&gt; and &lt;a href="religious-attendance-wellbeing.html"&gt;religious-attendance&lt;/a&gt; studies, followed the TARGET reporting framework. Version 1 sharpens that design and registration process: we commit in code to our causal question, acceptable alternatives, and identification assumptions before outcome data enter estimation, and we report whatever happens under that contract, including a stop or failure. The causal gap does not go away. The assumptions that bridge it remain scientific claims open to challenge.&lt;/p&gt;</span></span>
 <span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/section&gt;</span></span>
 <span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="report-note"&gt;</span></span>

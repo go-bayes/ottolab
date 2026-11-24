@@ -53,7 +53,7 @@ page-layout: full
 <h2>Many participants, few new attenders</h2>
 <p>To estimate what would happen if everyone began attending, we need evidence about people who make that change. Positivity requires that each attendance pattern assigned by an intervention has a positive probability in the observed population among people with the relevant measured history. In practice, we also need enough comparable examples in the study to reliably estimate the effects.</p>
 <p>Only 2–3% of baseline non-attenders begin monthly attendance in a given year. In this study, the universal-attendance comparison would require substantial extrapolation: using models to predict outcomes for attendance histories with very few comparable observations. This is the practical positivity failure. A large sample can still contain very few examples of the change we want to study.</p>
-<p>We therefore ask what would happen if attendance became more probable. The adopted intervention changes attendance probabilities, allowing attendance to vary across people. The study provides better empirical support for this comparison. It answers a different causal question: the effect of making attendance more likely among baseline non-attenders.</p>
+<p>We therefore ask what would happen if attendance became more probable. The adopted intervention shifts attendance probabilities rather than forcing everyone to attend. The data give much better support for this comparison, though it addresses a different causal question: the effect of making attendance more likely among baseline non-attenders.</p>
 </section>
 
 <section class="report-section">
@@ -172,8 +172,8 @@ page-layout: full
 </section>
 
 <section class="report-section">
-<p class="kicker kicker-dash">What this means</p>
-<p>Making religious attendance more likely may bring small gains in meaning, forgiveness, and sexual satisfaction among adults who begin the study as non-attenders. Most estimated changes in physical health, distress, and social support are close to zero. These are population averages under a specified attendance intervention, and their causal interpretation depends on the study's assumptions.</p>
+<p class="kicker kicker-dash">So what?</p>
+<p>Making monthly attendance more likely among adult non-attenders yields small estimated gains in meaning and purpose, forgiveness, and (surprisingly) sexual satisfaction. In one way or another, we suspect these outcomes have to do with coordination. Most estimated effects on physical health, psychological distress, and social support are near zero, suggesting that many cross-sectional associations in the literature reflect confounding rather than a short-term effect of starting to attend. These are population averages under a specified intervention, and their causal interpretation depends on the study's assumptions.</p>
 </section>
 
 <div class="report-note">
