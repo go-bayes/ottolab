@@ -12,14 +12,13 @@ title: "People"
 ![Joseph Bulbulia](images/team/joseph-bulbulia.jpg){.team-photo}
 :::
 
-::: {.column width="65%"}
-**Director, OTTO Lab**: 📧 joseph.bulbulia@vuw.ac.nz  
-🔗 [University Profile](https://people.wgtn.ac.nz/joseph.bulbulia) [Full CV](https://www.dropbox.com/scl/fi/jtlekxwxf05rfu1dw5hw9/bulbulia-j-a-cv.pdf?rlkey=4mink1sq6hftvje39t4y53s46&dl=0)
-::::
+::: {.column width="75%"}
+**Director, OTTO Lab**  
+[joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz) · [University Profile](https://people.wgtn.ac.nz/joseph.bulbulia) · [Full CV](https://www.dropbox.com/scl/fi/jtlekxwxf05rfu1dw5hw9/bulbulia-j-a-cv.pdf?rlkey=4mink1sq6hftvje39t4y53s46&dl=0)
 
-**About** 
+**About**
 
-OTTO Lab is based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka - Victoria University of Wellington.
+OTTO Lab is based in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Te Herenga Waka — Victoria University of Wellington.
 
 Joseph Bulbulia teaches and researches in the [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc) at Victoria University of Wellington. His research investigates the causes of human cooperation, conflict, and well-being, with a focus on the role of religion and values. Joseph specialises in methods for causal inference from observational data. He also directs the [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr).
 
@@ -34,19 +33,17 @@ Joseph contributes to two major research projects:
 
 Joseph supervises students in a broad range of areas, including:
 
--   Personality and individual differences
--   Political psychology
--   Well-being/Flourishing
--   Religion (his primary interest)
+- Personality and individual differences
+- Political psychology
+- Well-being and flourishing
+- Religion (his primary interest)
 :::
+
+::::
 
 
 
 ---
-
-## Methods used in the lab
-
-The project descriptions below name several causal methods. Heterogeneous treatment effects are differences in average causal effects across groups. Causal machine learning uses flexible statistical models to estimate causal quantities under the study's assumptions. Target trial emulation organises an observational study around a specified hypothetical randomised trial. Longitudinal modified treatment policies specify how to change the exposure a person would otherwise receive at each intervention occasion, potentially using their measured history. Examples include increasing or decreasing work hours.
 
 ## PhD Students
 
@@ -59,16 +56,14 @@ The project descriptions below name several causal methods. Heterogeneous treatm
 :::
 
 ::: {.column width="75%"}
-Jessie is investigating individual differences in personal resilience related to deprivation. 
+Jessie is investigating individual differences in personal resilience related to deprivation.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
 
 ### Jake Ireland
-
 
 :::: {.columns}
 
@@ -77,7 +72,7 @@ Jessie is investigating individual differences in personal resilience related to
 :::
 
 ::: {.column width="75%"}
-Jake graduated with a Bachelor of Science in Psychology and Mathematics from Victoria University of Wellington in 2020.  During his studies, he contributed to research on cross-cultural psychology, drug abuse, and face perception.  Since graduating, he has worked in cyber security and, since 2022, has been researching cultural evolution with the Causal Lab at Victoria University.  He completed his Honours in 2024 and began his PhD in 2025. Jake is investigating the co-evolution of religious and political culture in the Pacific.
+Jake graduated with a BSc in Psychology and Mathematics from Victoria University of Wellington in 2020, worked in cybersecurity, completed his Honours in 2024, and began his PhD in 2025. He is investigating the co-evolution of religious and political culture in the Pacific.
 
 - **Project:** Pulotu
 - **Methods:** Causal Machine Learning
@@ -95,10 +90,9 @@ Jake graduated with a Bachelor of Science in Psychology and Mathematics from Vic
 :::
 
 ::: {.column width="75%"}
-Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on a range of prejudice outcomes. Mohammad joins the lab from Bangladesh.
+Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Social Dominance Orientation on prejudice. He is from Bangladesh.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
@@ -112,10 +106,9 @@ Mohammad is estimating the causal effects of Right-Wing Authoritarianism and Soc
 :::
 
 ::: {.column width="75%"}
-Mekonnen is estimating the causal effects of religious ritual behaviours on health and wellbeing among religiously identified people in New Zealand. Mekonnen joins the lab from Ethiopia.
+Mekonnen is estimating the causal effects of religious ritual behaviours on health and well-being among religiously identified people in New Zealand. He is from Ethiopia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
@@ -136,7 +129,6 @@ Mekonnen is estimating the causal effects of religious ritual behaviours on heal
 Hannah is researching the causal effects of religious service attendance on personality.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
@@ -151,10 +143,9 @@ Hannah is researching the causal effects of religious service attendance on pers
 :::
 
 ::: {.column width="75%"}
-Putri is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. Putri joins the lab from Indonesia.
+Putri is estimating the long-term causal effects of belief in God and belief in a spirit or life force on multidimensional well-being, asking whether joint belief yields synergistic benefits. She is from Indonesia.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Target Trial Emulation; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
@@ -173,10 +164,10 @@ Putri is estimating the long-term causal effects of belief in God and belief in 
 :::
 
 ::: {.column width="75%"}
-Christina is estimating heterogeneous effects of volunteering: how its effects on different aspects of well-being vary across groups. She uses causal forests and policy trees. Originally from Austria, she brings extensive experience in government to the lab.
+Christina is using causal forests and policy trees to estimate how the effects of volunteering on well-being vary across groups. She is from Austria and previously worked in government.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Causal Machine Learning
+- **Methods:** Causal forests and policy trees
 :::
 
 ::::
@@ -195,8 +186,6 @@ Christina is estimating heterogeneous effects of volunteering: how its effects o
 
 ::: {.column width="75%"}
 Millie worked with OTTO Lab as a research assistant, investigating extensions of lab workflows to policy settings with data from the Integrated Data Infrastructure (IDI).
-
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 ::::
 
@@ -212,7 +201,6 @@ Millie worked with OTTO Lab as a research assistant, investigating extensions of
 Boyang completed his Honours research with the lab, investigating the causal effects of prejudice on personality.
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 ::::
 
@@ -225,10 +213,9 @@ Boyang completed his Honours research with the lab, investigating the causal eff
 :::
 
 ::: {.column width="75%"}
-Zahle received her Master of Science from Victoria University of Wellington in June 2026. Her thesis estimated the causal effects of perceived employer gratitude on multidimensional well-being. She presented her findings at the 2025 Society of Australasian Social Psychologists conference in Melbourne. Congratulations, Zahle!
+Zahle received her Master of Science from Victoria University of Wellington in June 2026. Her thesis estimated the causal effects of perceived employer gratitude on multidimensional well-being, and she presented her findings at the 2025 SASP conference in Melbourne. Congratulations, Zahle!
 
 - **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Heterogeneous Treatment Effects; Longitudinal Modified Treatment Policies; Causal Machine Learning
 :::
 
 ::::
@@ -242,13 +229,9 @@ Zahle received her Master of Science from Victoria University of Wellington in J
 :::
 
 ::: {.column width="75%"}
-Dr. Inkuk Kim worked with OTTO Lab as a Research Fellow at the Centre for Applied Cross-cultural Research and the School of Psychological Sciences at Victoria University of Wellington. He has moved to take up a postdoctoral fellowship at the HAPPI Lab at Georgia State University (GSU), working with [Don E. Davis](https://news.gsu.edu/coronavirus-expert/don-davis-jr/). Inkuk remains a Fellow of OTTO Lab and is working on projects related to environmental psychology, trust in science, and character formation over the adult lifespan.
+Dr. Inkuk Kim worked with OTTO Lab as a Research Fellow at the Centre for Applied Cross-Cultural Research and the School of Psychological Sciences at Victoria University of Wellington. He has since moved to a postdoctoral fellowship at the HAPPI Lab at Georgia State University (GSU), working with [Don E. Davis](https://news.gsu.edu/coronavirus-expert/don-davis-jr/). Inkuk remains a Fellow of OTTO Lab, working on environmental psychology, trust in science, and character formation across adulthood.
 
-- **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Longitudinal Modified Treatment Policies; Causal Machine Learning
-- [ORCID Profile](https://orcid.org/0000-0002-7694-6295)
-- [University Profile](https://people.wgtn.ac.nz/inkuk.kim)
-- [GitHub](https://github.com/Inkuk-Kim)
+- [ORCID Profile](https://orcid.org/0000-0002-7694-6295) · [University Profile](https://people.wgtn.ac.nz/inkuk.kim) · [GitHub](https://github.com/Inkuk-Kim)
 :::
 
 ::::
@@ -258,11 +241,11 @@ Dr. Inkuk Kim worked with OTTO Lab as a Research Fellow at the Centre for Applie
 :::: {.columns}
 
 ::: {.column width="25%"}
-![Dr. JohnMark Kempthorne](images/team/johnmarkkempthorne.png){.team-photo}
+![Dr. John Mark Kempthorne](images/team/johnmarkkempthorne.png){.team-photo}
 :::
 
 ::: {.column width="75%"}
-John Mark received his PhD from the School of Psychology at Victoria University of Wellington in 2025. His dissertation investigated the application of causal methods to time-series data from the New Zealand Attitudes and Values Study. He is working as a postdoctoral fellow at the [Shaver Lab](https://anthropology.artsandsciences.baylor.edu/person/john-h-shaver).
+John Mark received his PhD from the School of Psychological Sciences at Victoria University of Wellington in 2025. His dissertation applied causal methods to time-series data from the New Zealand Attitudes and Values Study. He is now a postdoctoral fellow at the [Shaver Lab](https://anthropology.artsandsciences.baylor.edu/person/john-h-shaver).
 
 - [ORCID Profile](https://orcid.org/0000-0001-6398-7509)
 :::
@@ -277,10 +260,8 @@ John Mark received his PhD from the School of Psychology at Victoria University 
 :::
 
 ::: {.column width="75%"}
-Bella received her Master's degree from Victoria University of Wellington in 2023. Her research investigated the causal effects of work hours on multidimensional well-being.
+Bella received her Master's degree from Victoria University of Wellington in 2023. Her research investigated the causal effects of work hours on multidimensional well-being (published in *PLOS One*, 2026).
 
-- **Project:** New Zealand Attitudes and Values Study (NZAVS)
-- **Methods:** Longitudinal Modified Treatment Policies
 - [ORCID Profile](https://orcid.org/0000-0002-0206-0782)
 :::
 ::::
@@ -351,14 +332,6 @@ Otto (2000–2015) served in the control arm for fifteen years, in New Zealand. 
 
 ---
 
-<!-- ## Collaborators -->
-
-<!-- We work with researchers and institutions worldwide to advance causal inference methods and applications. -->
-
----
-
 ## Join the lab
 
-If you're interested in joining the lab, please contact:
-
-📧 **joseph.bulbulia@vuw.ac.nz**
+Interested in joining the lab? Email Joseph Bulbulia at [joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz).

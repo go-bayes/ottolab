@@ -2,11 +2,11 @@
 title: "Resources"
 ---
 
-## Learning Pathways
+## Tutorials
 
 ### Start Here: Methods in Causal Inference Series
 
-A four-part tutorial series published in *Evolutionary Human Sciences* that provides a systematic introduction to causal inference methods.
+A four-part series in *Evolutionary Human Sciences* introducing causal inference for the human sciences.
 
 #### Part 1: [Causal Diagrams and Confounding](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-1-causal-diagrams-and-confounding/E734F72109F1BE99836E268DF3AA0359)
 
@@ -25,8 +25,8 @@ Intermediate level. Examines measurement error and threats to applying findings 
 Advanced level. Examines how confounding can arise in experiments.
 
 ::: {#getting-started-with-r-and-causal-tools .callout-tip}
-## Getting Started with R and Causal Tools
-For an interactive introduction to causal DAGs, see [Introduction to Directed Acyclic Graphs](https://r-causal.github.io/ggdag/articles/intro-to-dags.html). For a visual guide to common bias structures, see [Common Structures of Bias](https://r-causal.github.io/ggdag/articles/bias-structures.html). For propensity score weighting, start with the [WeightIt documentation](https://ngreifer.github.io/WeightIt/).
+## R Tutorials for Causal Tools
+For drawing DAGs in R, see `ggdag`'s [Introduction to Directed Acyclic Graphs](https://r-causal.github.io/ggdag/articles/intro-to-dags.html) and [Common Structures of Bias](https://r-causal.github.io/ggdag/articles/bias-structures.html). For propensity score weighting, see the [WeightIt documentation](https://ngreifer.github.io/WeightIt/).
 :::
 
 ---
@@ -39,7 +39,7 @@ For an interactive introduction to causal DAGs, see [Introduction to Directed Ac
 
 #### Causal Inference
 
-**$\tt{margot}$**
+**`margot`**
 A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at [go-bayes.github.io/margot](https://go-bayes.github.io/margot/), and the source code is at [github.com/go-bayes/margot](https://github.com/go-bayes/margot/). Install with `devtools::install_github("go-bayes/margot")`.
 
 
@@ -223,11 +223,9 @@ Athey, S. and Imbens, G.W. (2016). [Recursive Partitioning for Heterogeneous Cau
 
 ---
 
-## Educational Materials
+## Course and Workshop Materials
 
-### Workshop Materials
-
-The [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/) offers a concise, practical entry point. For a full course sequence, see [PSYC 434: Conducting Research Across Cultures](https://go-bayes.github.io/psych-434-2025/).
+Notes and exercises from the [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/) and the graduate course [PSYC 434: Conducting Research Across Cultures](https://go-bayes.github.io/psych-434-2025/).
 
 ---
 
@@ -239,13 +237,13 @@ The [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/)
 ::: {.column width="50%"}
 **Causal Inference: What If**
 *Miguel A. Hernan and James M. Robins*
-[Free Book and Resources](https://miguelhernan.org/whatifbook). A textbook on causal inference methods with code examples.
+[Free Book and Resources](https://miguelhernan.org/whatifbook). The textbook we assign first, with R, Stata, and Python code.
 :::
 
 ::: {.column width="50%"}
 **Explanation in Causal Inference**
 *Tyler VanderWeele*
-[Link to OUP page](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870). A strong account of causal mediation analysis and interaction. Ask your library about access.
+[Link to OUP page](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870). Mediation and interaction, done properly. Worth borrowing from your library before fitting a mediation model.
 :::
 
 ::::
@@ -254,24 +252,14 @@ The [SPARCC Causal Inference Workshop](https://go-bayes.github.io/sparcc-day-2/)
 ::: {.column width="50%"}
 **The Effect**
 *Nick Huntington-Klein*
-[Free Online](https://theeffectbook.net/). A practical guide with clear visualisations.
+[Free Online](https://theeffectbook.net/). A readable introduction with diagrams and worked examples.
 :::
 ::::
 
-### Additional Resources
+### Additional Texts
 
-**Statistical Rethinking** by Richard McElreath provides a Bayesian approach to causal inference. **Counterfactuals and Causal Inference** by Morgan and Winship focuses on social science applications. **Targeted Learning** by van der Laan and Rose offers a machine learning perspective on causal inference.
+**Statistical Rethinking** by Richard McElreath pairs Bayesian modelling with causal graphs (and does not mince words about mindless regression). **Counterfactuals and Causal Inference** by Morgan and Winship covers social-science designs. **Targeted Learning** by van der Laan and Rose covers semi-parametric estimation and causal machine learning -- not light bedtime reading.
 
 ---
 
-## Quick Reference
-
-::: {.callout-note}
-## Where to Start
-If you are new to causal inference, begin with our [four-part tutorial series](#learning-pathways). If you need causal DAGs, the [ggdag tutorials](#getting-started-with-r-and-causal-tools) are a good first step. If you are ready to analyse data, install [$\tt{margot}$](#r-packages) and follow the [practical guide](https://osf.io/preprints/psyarxiv/uyg3d). For cross-cultural research, start with [Part 3](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F) of the series.
-:::
-
-::: {.callout-tip}
-## Contributing
-Have a resource to suggest or a broken link to report? Please [contact us](about.qmd) or submit an issue on our [GitHub repository](https://github.com/go-bayes/ottolab).
-:::
+Broken link or a reference we missed? [Email us](index.qmd#contact) or open an issue on [GitHub](https://github.com/go-bayes/ottolab).

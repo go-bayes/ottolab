@@ -59,18 +59,18 @@ page-layout: full
 <section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim" style="margin-top:1rem">Small, supported gains appear in meaning and purpose, forgiveness, and sexual satisfaction; estimates for distress and most physical-health outcomes are near zero.</h2>
-<p>When we compare people at the same survey wave, attenders generally report better well-being across most outcomes. These are cross-sectional associations. By contrast, estimated gains under the probability intervention among baseline non-attenders concentrate in fewer outcomes. This difference reflects both confounding adjustment and the change in causal question. Confounding occurs when common causes of attendance and well-being distort their apparent relationship. We describe gains as supported when they meet the study's sensitivity criterion: the E-value for the confidence limit closest to zero exceeds 1.10. Larger E-values mean that stronger unmeasured confounding would be needed to move that limit to zero.</p>
+<p>In a single-wave snapshot, regular attenders look better off on almost every outcome. Under our probability intervention among baseline non-attenders, the gains narrow to a much smaller set of outcomes, reflecting both confounding adjustment and a more realistic causal question. We count an effect as supported when its E-value bound (for the confidence limit closest to zero) exceeds 1.10, meaning stronger unmeasured confounding would be required to push that bound to zero.</p>
 
 <div class="duo">
   <div class="panel">
     <p class="chip">Supported gains</p>
     <h3>Meaning, forgiveness, and sexual satisfaction</h3>
-    <p>As noted above, the attendance probability intervention yields small estimated gains in meaning and purpose, sexual satisfaction, and forgiveness. Standard deviations express changes relative to the variation in an outcome across people. Estimated increases are 0.085 standard deviations for meaning and purpose (E-value bound 1.25), 0.086 for sexual satisfaction (1.25), and 0.075 for forgiveness (1.21). Smaller supported gains appear for meaning and sense (0.071), short-form health (0.061), and body satisfaction (0.058).</p>
+    <p>Making monthly attendance more probable yields small estimated gains in meaning and purpose (+0.085 SD, E-value bound 1.25), sexual satisfaction (+0.086 SD, 1.25), and forgiveness (+0.075 SD, 1.21). Smaller supported gains appear for meaning and sense (+0.071), short-form health (+0.061), and body satisfaction (+0.058).</p>
   </div>
   <div class="panel">
     <p class="chip gold" style="white-space:normal">Estimates near zero or sensitive to confounding</p>
     <h3>Small estimates for distress and most physical-health outcomes</h3>
-    <p>The attendance probability intervention yields a small estimated reduction in body mass index. Its confidence interval excludes zero, while its E-value bound falls below the study's threshold. Estimates for sleep, alcohol use, anxiety, depression, fatigue, and rumination are near zero, with intervals spanning zero. The E-value bounds for social belonging and perceived social support also fall below the study's threshold of 1.10.</p>
+    <p>Body mass index shows a small estimated drop whose interval excludes zero, but its E-value bound falls below 1.10. Estimates for sleep, alcohol use, anxiety, depression, fatigue, and rumination sit near zero with intervals spanning zero, and E-value bounds for social belonging and perceived social support also fall below 1.10.</p>
   </div>
 </div>
 </section>
@@ -154,19 +154,19 @@ page-layout: full
 <div class="numbered">
   <div class="item">
     <span class="num">01</span><h3>Estimation</h3>
-    <p>We estimate the attendance intervention effects with a sequentially doubly robust estimator and cross-validated machine learning. We adjust for 62 baseline covariates, characteristics measured at the start of the study, and 32 time-varying confounders, common causes of attendance and well-being measured over time. Inverse-probability-of-censoring weights account for dropout. Participants who remain in the study receive weights based on their estimated probability of remaining, given their measured histories. Causal interpretation depends on the study's identification assumptions.</p>
+    <p>We estimate effects with a sequentially doubly robust estimator and cross-validated machine learning, adjusting for 62 baseline covariates and 32 time-varying confounders. Inverse-probability-of-censoring weights account for dropout based on each participant's measured history. Causal interpretation still depends on the study's identification assumptions.</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3>Sensitivity</h3>
-    <p>The six supported attendance effects have E-values from 1.16 to 1.25 for the confidence limits closest to zero. These E-values summarise sensitivity to unmeasured confounding beyond the measured covariates, the participant characteristics included in the analysis. Larger E-values mean that stronger unmeasured confounding would be needed to move the confidence limit to zero.</p>
+    <p>The six supported effects have E-value bounds from 1.16 to 1.25 for the confidence limit closest to zero. Together they summarise how much unmeasured confounding beyond our measured covariates would be needed to explain each bound away.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3>Measurement</h3>
-    <p>Religious service attendance is self-reported. Reporting errors may bias the estimated intervention effects. The direction of bias depends on how those errors relate to attendance, outcomes, and confounders.</p>
+    <p>Religious service attendance is self-reported. Reporting errors may bias the estimates in a direction that depends on how those errors relate to attendance, outcomes, and confounders.</p>
   </div>
   <div class="item">
     <span class="num">04</span><h3>Scope</h3>
-    <p>We estimate population-average total effects of the attendance probability intervention among baseline non-attenders. Those averages may conceal variation by tradition, belief strength, upbringing, and relationship status. Moreover, the study concerns adult attendance; childhood religious socialisation requires a different causal question.</p>
+    <p>These are population-average total effects among baseline non-attenders. Averages can hide real variation by tradition, belief strength, upbringing, and relationship status. Adult attendance is also a different causal question from childhood religious socialisation.</p>
   </div>
 </div>
 </section>

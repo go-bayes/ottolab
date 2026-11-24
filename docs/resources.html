@@ -111,41 +111,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Resources – OTTO Lab">
+<meta property="og:description" content="Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington">
 <meta property="og:site_name" content="OTTO Lab">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:title" content="Resources – OTTO Lab">
+<meta name="twitter:description" content="Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington">
 <meta name="twitter:creator" content="@prof_joe_">
 <meta name="twitter:site" content="@prof_joe_">
 <meta name="twitter:card" content="summary_large_image">
@@ -167,10 +140,6 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./team.html"> 
 <span class="menu-text">People</span></a>
@@ -253,7 +222,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#learning-pathways" id="toc-learning-pathways" class="nav-link active" data-scroll-target="#learning-pathways">Learning Pathways</a>
+  <li><a href="#tutorials" id="toc-tutorials" class="nav-link active" data-scroll-target="#tutorials">Tutorials</a>
   <ul class="collapse">
   <li><a href="#start-here-methods-in-causal-inference-series" id="toc-start-here-methods-in-causal-inference-series" class="nav-link" data-scroll-target="#start-here-methods-in-causal-inference-series">Start Here: Methods in Causal Inference Series</a></li>
   </ul></li>
@@ -268,16 +237,12 @@ window.Quarto = {
   <li><a href="#how-traditional-statistical-mediation-analysis-fails" id="toc-how-traditional-statistical-mediation-analysis-fails" class="nav-link" data-scroll-target="#how-traditional-statistical-mediation-analysis-fails">How Traditional Statistical Mediation Analysis Fails</a></li>
   <li><a href="#design" id="toc-design" class="nav-link" data-scroll-target="#design">Design</a></li>
   </ul></li>
-  <li><a href="#educational-materials" id="toc-educational-materials" class="nav-link" data-scroll-target="#educational-materials">Educational Materials</a>
-  <ul class="collapse">
-  <li><a href="#workshop-materials" id="toc-workshop-materials" class="nav-link" data-scroll-target="#workshop-materials">Workshop Materials</a></li>
-  </ul></li>
+  <li><a href="#course-and-workshop-materials" id="toc-course-and-workshop-materials" class="nav-link" data-scroll-target="#course-and-workshop-materials">Course and Workshop Materials</a></li>
   <li><a href="#reference-texts" id="toc-reference-texts" class="nav-link" data-scroll-target="#reference-texts">Reference Texts</a>
   <ul class="collapse">
   <li><a href="#core-textbooks" id="toc-core-textbooks" class="nav-link" data-scroll-target="#core-textbooks">Core Textbooks</a></li>
-  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
+  <li><a href="#additional-texts" id="toc-additional-texts" class="nav-link" data-scroll-target="#additional-texts">Additional Texts</a></li>
   </ul></li>
-  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
   </ul>
 </nav>
     </div>
@@ -303,11 +268,11 @@ window.Quarto = {
 </header>
 
 
-<section id="learning-pathways" class="level2">
-<h2 class="anchored" data-anchor-id="learning-pathways">Learning Pathways</h2>
+<section id="tutorials" class="level2">
+<h2 class="anchored" data-anchor-id="tutorials">Tutorials</h2>
 <section id="start-here-methods-in-causal-inference-series" class="level3">
 <h3 class="anchored" data-anchor-id="start-here-methods-in-causal-inference-series">Start Here: Methods in Causal Inference Series</h3>
-<p>A four-part tutorial series published in <em>Evolutionary Human Sciences</em> that provides a systematic introduction to causal inference methods.</p>
+<p>A four-part series in <em>Evolutionary Human Sciences</em> introducing causal inference for the human sciences.</p>
 <section id="part-1-causal-diagrams-and-confounding" class="level4">
 <h4 class="anchored" data-anchor-id="part-1-causal-diagrams-and-confounding">Part 1: <a href="https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-1-causal-diagrams-and-confounding/E734F72109F1BE99836E268DF3AA0359">Causal Diagrams and Confounding</a></h4>
 <p>Beginner level. Introduces causal directed acyclic graphs (DAGs), which represent assumptions about causal relationships, and confounding bias.</p>
@@ -329,11 +294,11 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Getting Started with R and Causal Tools
+<span class="screen-reader-only">Tip</span>R Tutorials for Causal Tools
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>For an interactive introduction to causal DAGs, see <a href="https://r-causal.github.io/ggdag/articles/intro-to-dags.html">Introduction to Directed Acyclic Graphs</a>. For a visual guide to common bias structures, see <a href="https://r-causal.github.io/ggdag/articles/bias-structures.html">Common Structures of Bias</a>. For propensity score weighting, start with the <a href="https://ngreifer.github.io/WeightIt/">WeightIt documentation</a>.</p>
+<p>For drawing DAGs in R, see <code>ggdag</code>’s <a href="https://r-causal.github.io/ggdag/articles/intro-to-dags.html">Introduction to Directed Acyclic Graphs</a> and <a href="https://r-causal.github.io/ggdag/articles/bias-structures.html">Common Structures of Bias</a>. For propensity score weighting, see the <a href="https://ngreifer.github.io/WeightIt/">WeightIt documentation</a>.</p>
 </div>
 </div>
 <hr>
@@ -348,7 +313,7 @@ window.Quarto = {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Causal Inference</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Research Tools</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p><strong><span class="math inline">\(\tt{margot}\)</span></strong> A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at <a href="https://go-bayes.github.io/margot/">go-bayes.github.io/margot</a>, and the source code is at <a href="https://github.com/go-bayes/margot/">github.com/go-bayes/margot</a>. Install with <code>devtools::install_github("go-bayes/margot")</code>.</p>
+<p><strong><code>margot</code></strong> A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at <a href="https://go-bayes.github.io/margot/">go-bayes.github.io/margot</a>, and the source code is at <a href="https://github.com/go-bayes/margot/">github.com/go-bayes/margot</a>. Install with <code>devtools::install_github("go-bayes/margot")</code>.</p>
 <p><strong>ggdag</strong> Create causal DAGs to represent a study’s causal assumptions. Documentation is at <a href="https://r-causal.github.io/ggdag/">r-causal.github.io/ggdag</a>, and the CRAN page is <a href="https://cran.r-project.org/package=ggdag">cran.r-project.org/package=ggdag</a>. Install with <code>install.packages("ggdag")</code>.</p>
 <p><strong>WeightIt</strong> Weighting tools for covariate balance: making exposure groups more comparable on measured characteristics in observational studies. Documentation is at <a href="https://ngreifer.github.io/WeightIt/">ngreifer.github.io/WeightIt</a>, and the CRAN page is <a href="https://cran.r-project.org/package=WeightIt">cran.r-project.org/package=WeightIt</a>. Install with <code>install.packages("WeightIt")</code>.</p>
 </div>
@@ -488,13 +453,10 @@ window.Quarto = {
 </section>
 </section>
 </section>
-<section id="educational-materials" class="level2">
-<h2 class="anchored" data-anchor-id="educational-materials">Educational Materials</h2>
-<section id="workshop-materials" class="level3">
-<h3 class="anchored" data-anchor-id="workshop-materials">Workshop Materials</h3>
-<p>The <a href="https://go-bayes.github.io/sparcc-day-2/">SPARCC Causal Inference Workshop</a> offers a concise, practical entry point. For a full course sequence, see <a href="https://go-bayes.github.io/psych-434-2025/">PSYC 434: Conducting Research Across Cultures</a>.</p>
+<section id="course-and-workshop-materials" class="level2">
+<h2 class="anchored" data-anchor-id="course-and-workshop-materials">Course and Workshop Materials</h2>
+<p>Notes and exercises from the <a href="https://go-bayes.github.io/sparcc-day-2/">SPARCC Causal Inference Workshop</a> and the graduate course <a href="https://go-bayes.github.io/psych-434-2025/">PSYC 434: Conducting Research Across Cultures</a>.</p>
 <hr>
-</section>
 </section>
 <section id="reference-texts" class="level2">
 <h2 class="anchored" data-anchor-id="reference-texts">Reference Texts</h2>
@@ -502,55 +464,27 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="core-textbooks">Core Textbooks</h3>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Causal Inference: What If</strong> <em>Miguel A. Hernan and James M. Robins</em> <a href="https://miguelhernan.org/whatifbook">Free Book and Resources</a>. A textbook on causal inference methods with code examples.</p>
+<p><strong>Causal Inference: What If</strong> <em>Miguel A. Hernan and James M. Robins</em> <a href="https://miguelhernan.org/whatifbook">Free Book and Resources</a>. The textbook we assign first, with R, Stata, and Python code.</p>
 </div><div class="column" style="width:50%;">
-<p><strong>Explanation in Causal Inference</strong> <em>Tyler VanderWeele</em> <a href="https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870">Link to OUP page</a>. A strong account of causal mediation analysis and interaction. Ask your library about access.</p>
+<p><strong>Explanation in Causal Inference</strong> <em>Tyler VanderWeele</em> <a href="https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870">Link to OUP page</a>. Mediation and interaction, done properly. Worth borrowing from your library before fitting a mediation model.</p>
 </div>
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>The Effect</strong> <em>Nick Huntington-Klein</em> <a href="https://theeffectbook.net/">Free Online</a>. A practical guide with clear visualisations.</p>
+<p><strong>The Effect</strong> <em>Nick Huntington-Klein</em> <a href="https://theeffectbook.net/">Free Online</a>. A readable introduction with diagrams and worked examples.</p>
 </div>
 </div>
 </section>
-<section id="additional-resources" class="level3">
-<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
-<p><strong>Statistical Rethinking</strong> by Richard McElreath provides a Bayesian approach to causal inference. <strong>Counterfactuals and Causal Inference</strong> by Morgan and Winship focuses on social science applications. <strong>Targeted Learning</strong> by van der Laan and Rose offers a machine learning perspective on causal inference.</p>
+<section id="additional-texts" class="level3">
+<h3 class="anchored" data-anchor-id="additional-texts">Additional Texts</h3>
+<p><strong>Statistical Rethinking</strong> by Richard McElreath pairs Bayesian modelling with causal graphs (and does not mince words about mindless regression). <strong>Counterfactuals and Causal Inference</strong> by Morgan and Winship covers social-science designs. <strong>Targeted Learning</strong> by van der Laan and Rose covers semi-parametric estimation and causal machine learning – not light bedtime reading.</p>
 <hr>
-</section>
-</section>
-<section id="quick-reference" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Where to Start
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If you are new to causal inference, begin with our <a href="#learning-pathways">four-part tutorial series</a>. If you need causal DAGs, the <a href="#getting-started-with-r-and-causal-tools">ggdag tutorials</a> are a good first step. If you are ready to analyse data, install <a href="#r-packages"><span class="math inline">\(\tt{margot}\)</span></a> and follow the <a href="https://osf.io/preprints/psyarxiv/uyg3d">practical guide</a>. For cross-cultural research, start with <a href="https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F">Part 3</a> of the series.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Contributing
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Have a resource to suggest or a broken link to report? Please <a href="./about.html">contact us</a> or submit an issue on our <a href="https://github.com/go-bayes/ottolab">GitHub repository</a>.</p>
-</div>
-</div>
+<p>Broken link or a reference we missed? <a href="./index.html#contact">Email us</a> or open an issue on <a href="https://github.com/go-bayes/ottolab">GitHub</a>.</p>
 
 
 <!-- -->
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1111,11 +1045,11 @@ window.Quarto = {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resources"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Pathways</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tutorials</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### Start Here: Methods in Causal Inference Series</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>A four-part tutorial series published in *Evolutionary Human Sciences* that provides a systematic introduction to causal inference methods.</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>A four-part series in *Evolutionary Human Sciences* introducing causal inference for the human sciences.</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Part 1: [Causal Diagrams and Confounding](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-1-causal-diagrams-and-confounding/E734F72109F1BE99836E268DF3AA0359)</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
@@ -1134,8 +1068,8 @@ window.Quarto = {
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Advanced level. Examines how confounding can arise in experiments.</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>::: {#getting-started-with-r-and-causal-tools .callout-tip}</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Getting Started with R and Causal Tools</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>For an interactive introduction to causal DAGs, see <span class="co">[</span><span class="ot">Introduction to Directed Acyclic Graphs</span><span class="co">](https://r-causal.github.io/ggdag/articles/intro-to-dags.html)</span>. For a visual guide to common bias structures, see <span class="co">[</span><span class="ot">Common Structures of Bias</span><span class="co">](https://r-causal.github.io/ggdag/articles/bias-structures.html)</span>. For propensity score weighting, start with the <span class="co">[</span><span class="ot">WeightIt documentation</span><span class="co">](https://ngreifer.github.io/WeightIt/)</span>.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## R Tutorials for Causal Tools</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>For drawing DAGs in R, see <span class="in">`ggdag`</span>'s <span class="co">[</span><span class="ot">Introduction to Directed Acyclic Graphs</span><span class="co">](https://r-causal.github.io/ggdag/articles/intro-to-dags.html)</span> and <span class="co">[</span><span class="ot">Common Structures of Bias</span><span class="co">](https://r-causal.github.io/ggdag/articles/bias-structures.html)</span>. For propensity score weighting, see the <span class="co">[</span><span class="ot">WeightIt documentation</span><span class="co">](https://ngreifer.github.io/WeightIt/)</span>.</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>---</span>
@@ -1148,7 +1082,7 @@ window.Quarto = {
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Causal Inference</span></span>
 <span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>**$\tt{margot}$**</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>**`margot`**</span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>A framework for causal inference with panel data, supporting doubly robust estimation and sensitivity analyses. Documentation is at <span class="co">[</span><span class="ot">go-bayes.github.io/margot</span><span class="co">](https://go-bayes.github.io/margot/)</span>, and the source code is at <span class="co">[</span><span class="ot">github.com/go-bayes/margot</span><span class="co">](https://github.com/go-bayes/margot/)</span>. Install with <span class="in">`devtools::install_github("go-bayes/margot")`</span>.</span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
@@ -1332,58 +1266,46 @@ window.Quarto = {
 <span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="fu">## Educational Materials</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a><span class="fu">## Course and Workshop Materials</span></span>
 <span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a><span class="fu">### Workshop Materials</span></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>Notes and exercises from the <span class="co">[</span><span class="ot">SPARCC Causal Inference Workshop</span><span class="co">](https://go-bayes.github.io/sparcc-day-2/)</span> and the graduate course <span class="co">[</span><span class="ot">PSYC 434: Conducting Research Across Cultures</span><span class="co">](https://go-bayes.github.io/psych-434-2025/)</span>.</span>
 <span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>The <span class="co">[</span><span class="ot">SPARCC Causal Inference Workshop</span><span class="co">](https://go-bayes.github.io/sparcc-day-2/)</span> offers a concise, practical entry point. For a full course sequence, see <span class="co">[</span><span class="ot">PSYC 434: Conducting Research Across Cultures</span><span class="co">](https://go-bayes.github.io/psych-434-2025/)</span>.</span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reference Texts</span></span>
 <span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reference Texts</span></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### Core Textbooks</span></span>
 <span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="fu">### Core Textbooks</span></span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>**Causal Inference: What If**</span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>*Miguel A. Hernan and James M. Robins*</span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Free Book and Resources</span><span class="co">](https://miguelhernan.org/whatifbook)</span>. A textbook on causal inference methods with code examples.</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>**Explanation in Causal Inference**</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>*Tyler VanderWeele*</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link to OUP page</span><span class="co">](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870)</span>. A strong account of causal mediation analysis and interaction. Ask your library about access.</span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>**Causal Inference: What If**</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>*Miguel A. Hernan and James M. Robins*</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Free Book and Resources</span><span class="co">](https://miguelhernan.org/whatifbook)</span>. The textbook we assign first, with R, Stata, and Python code.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>**Explanation in Causal Inference**</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>*Tyler VanderWeele*</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Link to OUP page</span><span class="co">](https://global.oup.com/academic/product/explanation-in-causal-inference-9780199325870)</span>. Mediation and interaction, done properly. Worth borrowing from your library before fitting a mediation model.</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>::::</span>
 <span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>::::</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>**The Effect**</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>*Nick Huntington-Klein*</span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Free Online</span><span class="co">](https://theeffectbook.net/)</span>. A practical guide with clear visualisations.</span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>::: {.column width="50%"}</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>**The Effect**</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>*Nick Huntington-Klein*</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Free Online</span><span class="co">](https://theeffectbook.net/)</span>. A readable introduction with diagrams and worked examples.</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Additional Texts</span></span>
 <span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="fu">### Additional Resources</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>**Statistical Rethinking** by Richard McElreath pairs Bayesian modelling with causal graphs (and does not mince words about mindless regression). **Counterfactuals and Causal Inference** by Morgan and Winship covers social-science designs. **Targeted Learning** by van der Laan and Rose covers semi-parametric estimation and causal machine learning -- not light bedtime reading.</span>
 <span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>**Statistical Rethinking** by Richard McElreath provides a Bayesian approach to causal inference. **Counterfactuals and Causal Inference** by Morgan and Winship focuses on social science applications. **Targeted Learning** by van der Laan and Rose offers a machine learning perspective on causal inference.</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>---</span>
 <span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="fu">## Quick Reference</span></span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="fu">## Where to Start</span></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>If you are new to causal inference, begin with our <span class="co">[</span><span class="ot">four-part tutorial series</span><span class="co">](#learning-pathways)</span>. If you need causal DAGs, the <span class="co">[</span><span class="ot">ggdag tutorials</span><span class="co">](#getting-started-with-r-and-causal-tools)</span> are a good first step. If you are ready to analyse data, install <span class="co">[</span><span class="ot">$\tt{margot}$</span><span class="co">](#r-packages)</span> and follow the <span class="co">[</span><span class="ot">practical guide</span><span class="co">](https://osf.io/preprints/psyarxiv/uyg3d)</span>. For cross-cultural research, start with <span class="co">[</span><span class="ot">Part 3</span><span class="co">](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/methods-in-causal-inference-part-3-measurement-error-and-external-validity-threats/4D35FFDECF32B2EFF7557EC26075175F)</span> of the series.</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contributing</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>Have a resource to suggest or a broken link to report? Please <span class="co">[</span><span class="ot">contact us</span><span class="co">](about.qmd)</span> or submit an issue on our <span class="co">[</span><span class="ot">GitHub repository</span><span class="co">](https://github.com/go-bayes/ottolab)</span>.</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>Broken link or a reference we missed? <span class="co">[</span><span class="ot">Email us</span><span class="co">](index.qmd#contact)</span> or open an issue on <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/go-bayes/ottolab)</span>.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

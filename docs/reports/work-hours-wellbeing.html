@@ -139,10 +139,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../team.html"> 
 <span class="menu-text">People</span></a>
   </li>  
@@ -258,11 +254,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <p class="chip soft">What interventions do we compare?</p>
     <div class="arm">
       <span class="chip">Shift up · +10 hours</span>
-      <p>Increase weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.</p>
+      <p>Add ten hours to each person's weekly work hours, compared with the natural course (hours changing as they ordinarily would).</p>
     </div>
     <div class="arm">
       <span class="chip gold">Shift down · −10 hours</span>
-      <p>Decrease weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.</p>
+      <p>Subtract ten hours from each person's weekly work hours, compared with the same natural course.</p>
     </div>
   </div>
 </div>
@@ -271,25 +267,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section class="report-section">
 <p class="kicker kicker-dash">Can the data support the comparison?</p>
 <h2 class="anchored">Some changes in hours are easier to study</h2>
-<p>To estimate the effects of changing work hours, we need evidence about comparable people working at the hours the intervention would produce. Positivity requires that any set of work-hour values given a positive chance by an intervention also has a positive chance among people with each relevant history. Here, history means the characteristics and earlier survey responses used to compare participants. In practice, we also need enough comparable observations to reliably estimate the effects.</p>
-<p>The observed work-hour distributions provide better coverage for the ten-hour reduction. Increasing hours by ten more often produces work-hour values that are rare among people with comparable measured histories. Estimating the upward shift therefore requires more extrapolation: using models to predict outcomes where comparable observations are sparse. That reliance calls for greater caution.</p>
+<p>To estimate what happens when work hours change, we need comparable people in the data who actually work the shifted hours. That is the positivity requirement: any work-hour shift the policy proposes has to occur among people with similar baseline histories. In practice, we also need enough of those observations to avoid leaning too hard on model extrapolation.</p>
+<p>The data give much better coverage for cutting ten hours than for adding ten. Pushing work hours up by ten often lands in territory that is rare among people with comparable histories, so the upward shift relies more on extrapolation and calls for extra caution.</p>
 </section>
 
 <section class="report-section">
 <p class="kicker kicker-dash">The central result</p>
 <h2 class="claim anchored" style="margin-top:1rem">Increasing work hours raises estimated fatigue; decreasing hours lowers it.</h2>
-<p>Estimated effects of the ten-hour shifts concentrate in tiredness, measured as fatigue, and a small set of physical-health outcomes. Most point estimates, our best estimates of the average changes, are small under either policy. Moreover, the data provide stronger empirical support for decreasing hours than for increasing hours. The upward shift therefore warrants greater caution. Comparisons between people at the first survey suggest differences across more outcomes and sometimes point in the opposite direction. However, those associations describe differences between people. The adjusted longitudinal estimates use later outcomes to address the specified changes in work hours.</p>
+<p>Estimated effects concentrate in fatigue and a handful of physical-health outcomes, and most point estimates are small under either policy. Because the data support cutting hours better than adding them, the upward-shift estimates warrant greater caution. Baseline snapshots across people show wider differences (sometimes even in the opposite direction), because they compare different kinds of people who already work longer or shorter weeks rather than tracking what happens when a person's hours change.</p>
 
 <div class="duo">
   <div class="panel">
     <p class="chip">+10 hours · estimated changes</p>
     <h3 class="anchored">Higher fatigue and less sleep</h3>
-    <p>As noted above, increasing weekly work hours by ten raises estimated fatigue by 0.08 standard deviations, a small change relative to the variation in fatigue across people. Estimated nightly sleep falls by roughly 3.4 minutes. Body mass index increases by roughly 0.19 kg/m² and perceived physical health declines by roughly 0.13 points. However, estimates for sleep, body mass index, and perceived physical health warrant greater caution about uncertainty or residual confounding, distortion from common causes of work hours and well-being that remains after adjustment. The estimated increase in perceived support is also small and sensitive to residual confounding.</p>
+    <p>Adding ten hours a week raises estimated fatigue by 0.08 standard deviations. That is small relative to how much fatigue varies across people, yet it is the clearest signal in the study. Estimated nightly sleep drops by roughly 3.4 minutes, body mass index rises by roughly 0.19 kg/m², and perceived physical health dips by roughly 0.13 points. Those three physical-health estimates (and a small bump in perceived support) are more fragile to uncertainty and unmeasured confounding.</p>
   </div>
   <div class="panel">
     <p class="chip gold">−10 hours · estimated changes</p>
     <h3 class="anchored">Lower fatigue</h3>
-    <p>As noted above, decreasing weekly work hours by ten lowers estimated fatigue by 0.04 standard deviations. Estimated body mass index falls by 0.13 kg/m², while perceived physical health increases by 0.07 points. However, both physical-health estimates remain sensitive to residual confounding.</p>
+    <p>Cutting ten hours a week lowers estimated fatigue by 0.04 standard deviations. Estimated body mass index falls by 0.13 kg/m² and perceived physical health rises by 0.07 points, though both physical-health estimates remain sensitive to unmeasured confounding.</p>
   </div>
 </div>
 </section>
@@ -362,19 +358,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="numbered">
   <div class="item">
     <span class="num">01</span><h3 class="anchored">The natural course comparator</h3>
-    <p>As stated above, we compare each ten-hour shift in weekly work hours with the natural course, allowing work hours to change as they ordinarily would. Censoring adjustment targets both comparisons to the baseline cohort under complete follow-up.</p>
+    <p>Both ten-hour shifts are compared against the natural course (letting work hours evolve as they ordinarily would). Censoring weights target both comparisons to the baseline cohort under complete follow-up.</p>
   </div>
   <div class="item">
     <span class="num">02</span><h3 class="anchored">Adjustment</h3>
-    <p>We estimate the work-hour intervention effects with modified treatment policy estimators in the <code>lmtp</code> R package. Machine-learning models adjust for baseline differences and dropout. Adjustment addresses confounding: common causes of work hours and well-being that can distort their apparent relationship. Residual confounding is the distortion that remains after adjustment. Causal interpretation depends on the study's assumptions about confounding, exposure support, comparable treatment versions, and missing data.</p>
+    <p>We estimate the intervention effects with modified treatment policy estimators in the <code>lmtp</code> R package, using machine-learning models to adjust for baseline confounders and dropout. Any causal interpretation still depends on our assumptions about unmeasured confounding, exposure support, comparable treatment versions, and missing data.</p>
   </div>
   <div class="item">
     <span class="num">03</span><h3 class="anchored">Uncertainty</h3>
-    <p>Uncertainty about the work-hour effects remains substantial. Many adjusted point estimates are closer to zero than the baseline associations. Moreover, many Bonferroni-adjusted intervals include zero, leaving uncertainty about the direction of those effects.</p>
+    <p>Substantial uncertainty remains. Most adjusted estimates shrink toward zero compared with cross-sectional associations, and most Bonferroni-adjusted intervals span zero.</p>
   </div>
   <div class="item">
     <span class="num">04</span><h3 class="anchored">Scope</h3>
-    <p>The work-hours estimates concern ten-hour shifts among pre-retirement adults. People gain and lose hours for different reasons, which may affect how the results apply to a particular workplace change. Moreover, work hours and outcomes are self-reported. Reporting errors may bias the estimates in a direction that depends on their relations with exposure, outcomes, and confounders.</p>
+    <p>These estimates describe ten-hour shifts among pre-retirement adults. People gain and lose hours for very different reasons, which matters when translating average effects to a specific workplace policy. Work hours and outcomes are also self-reported, and reporting error can bias estimates in either direction depending on how it relates to exposure, outcomes, and confounders.</p>
   </div>
 </div>
 </section>
@@ -990,11 +986,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p class="chip soft"&gt;What interventions do we compare?&lt;/p&gt;</span></span>
 <span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="arm"&gt;</span></span>
 <span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;span class="chip"&gt;Shift up · +10 hours&lt;/span&gt;</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;p&gt;Increase weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.&lt;/p&gt;</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;p&gt;Add ten hours to each person's weekly work hours, compared with the natural course (hours changing as they ordinarily would).&lt;/p&gt;</span></span>
 <span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/div&gt;</span></span>
 <span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;div class="arm"&gt;</span></span>
 <span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;span class="chip gold"&gt;Shift down · −10 hours&lt;/span&gt;</span></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;p&gt;Decrease weekly work hours by ten, compared with the natural course, which allows work hours to change as they ordinarily would.&lt;/p&gt;</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="in">      &lt;p&gt;Subtract ten hours from each person's weekly work hours, compared with the same natural course.&lt;/p&gt;</span></span>
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;/div&gt;</span></span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
@@ -1003,25 +999,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;section class="report-section"&gt;</span></span>
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="kicker kicker-dash"&gt;Can the data support the comparison?&lt;/p&gt;</span></span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;h2&gt;Some changes in hours are easier to study&lt;/h2&gt;</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;To estimate the effects of changing work hours, we need evidence about comparable people working at the hours the intervention would produce. Positivity requires that any set of work-hour values given a positive chance by an intervention also has a positive chance among people with each relevant history. Here, history means the characteristics and earlier survey responses used to compare participants. In practice, we also need enough comparable observations to reliably estimate the effects.&lt;/p&gt;</span></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;The observed work-hour distributions provide better coverage for the ten-hour reduction. Increasing hours by ten more often produces work-hour values that are rare among people with comparable measured histories. Estimating the upward shift therefore requires more extrapolation: using models to predict outcomes where comparable observations are sparse. That reliance calls for greater caution.&lt;/p&gt;</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;To estimate what happens when work hours change, we need comparable people in the data who actually work the shifted hours. That is the positivity requirement: any work-hour shift the policy proposes has to occur among people with similar baseline histories. In practice, we also need enough of those observations to avoid leaning too hard on model extrapolation.&lt;/p&gt;</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;The data give much better coverage for cutting ten hours than for adding ten. Pushing work hours up by ten often lands in territory that is rare among people with comparable histories, so the upward shift relies more on extrapolation and calls for extra caution.&lt;/p&gt;</span></span>
 <span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/section&gt;</span></span>
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;section class="report-section"&gt;</span></span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p class="kicker kicker-dash"&gt;The central result&lt;/p&gt;</span></span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;h2 class="claim" style="margin-top:1rem"&gt;Increasing work hours raises estimated fatigue; decreasing hours lowers it.&lt;/h2&gt;</span></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;Estimated effects of the ten-hour shifts concentrate in tiredness, measured as fatigue, and a small set of physical-health outcomes. Most point estimates, our best estimates of the average changes, are small under either policy. Moreover, the data provide stronger empirical support for decreasing hours than for increasing hours. The upward shift therefore warrants greater caution. Comparisons between people at the first survey suggest differences across more outcomes and sometimes point in the opposite direction. However, those associations describe differences between people. The adjusted longitudinal estimates use later outcomes to address the specified changes in work hours.&lt;/p&gt;</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;p&gt;Estimated effects concentrate in fatigue and a handful of physical-health outcomes, and most point estimates are small under either policy. Because the data support cutting hours better than adding them, the upward-shift estimates warrant greater caution. Baseline snapshots across people show wider differences (sometimes even in the opposite direction), because they compare different kinds of people who already work longer or shorter weeks rather than tracking what happens when a person's hours change.&lt;/p&gt;</span></span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="duo"&gt;</span></span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="panel"&gt;</span></span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p class="chip"&gt;+10 hours · estimated changes&lt;/p&gt;</span></span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;h3&gt;Higher fatigue and less sleep&lt;/h3&gt;</span></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;As noted above, increasing weekly work hours by ten raises estimated fatigue by 0.08 standard deviations, a small change relative to the variation in fatigue across people. Estimated nightly sleep falls by roughly 3.4 minutes. Body mass index increases by roughly 0.19 kg/m² and perceived physical health declines by roughly 0.13 points. However, estimates for sleep, body mass index, and perceived physical health warrant greater caution about uncertainty or residual confounding, distortion from common causes of work hours and well-being that remains after adjustment. The estimated increase in perceived support is also small and sensitive to residual confounding.&lt;/p&gt;</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;Adding ten hours a week raises estimated fatigue by 0.08 standard deviations. That is small relative to how much fatigue varies across people, yet it is the clearest signal in the study. Estimated nightly sleep drops by roughly 3.4 minutes, body mass index rises by roughly 0.19 kg/m², and perceived physical health dips by roughly 0.13 points. Those three physical-health estimates (and a small bump in perceived support) are more fragile to uncertainty and unmeasured confounding.&lt;/p&gt;</span></span>
 <span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="panel"&gt;</span></span>
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p class="chip gold"&gt;−10 hours · estimated changes&lt;/p&gt;</span></span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;h3&gt;Lower fatigue&lt;/h3&gt;</span></span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;As noted above, decreasing weekly work hours by ten lowers estimated fatigue by 0.04 standard deviations. Estimated body mass index falls by 0.13 kg/m², while perceived physical health increases by 0.07 points. However, both physical-health estimates remain sensitive to residual confounding.&lt;/p&gt;</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;Cutting ten hours a week lowers estimated fatigue by 0.04 standard deviations. Estimated body mass index falls by 0.13 kg/m² and perceived physical health rises by 0.07 points, though both physical-health estimates remain sensitive to unmeasured confounding.&lt;/p&gt;</span></span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
 <span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/section&gt;</span></span>
@@ -1094,19 +1090,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="numbered"&gt;</span></span>
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;01&lt;/span&gt;&lt;h3&gt;The natural course comparator&lt;/h3&gt;</span></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;As stated above, we compare each ten-hour shift in weekly work hours with the natural course, allowing work hours to change as they ordinarily would. Censoring adjustment targets both comparisons to the baseline cohort under complete follow-up.&lt;/p&gt;</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;Both ten-hour shifts are compared against the natural course (letting work hours evolve as they ordinarily would). Censoring weights target both comparisons to the baseline cohort under complete follow-up.&lt;/p&gt;</span></span>
 <span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;02&lt;/span&gt;&lt;h3&gt;Adjustment&lt;/h3&gt;</span></span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;We estimate the work-hour intervention effects with modified treatment policy estimators in the &lt;code&gt;lmtp&lt;/code&gt; R package. Machine-learning models adjust for baseline differences and dropout. Adjustment addresses confounding: common causes of work hours and well-being that can distort their apparent relationship. Residual confounding is the distortion that remains after adjustment. Causal interpretation depends on the study's assumptions about confounding, exposure support, comparable treatment versions, and missing data.&lt;/p&gt;</span></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;We estimate the intervention effects with modified treatment policy estimators in the &lt;code&gt;lmtp&lt;/code&gt; R package, using machine-learning models to adjust for baseline confounders and dropout. Any causal interpretation still depends on our assumptions about unmeasured confounding, exposure support, comparable treatment versions, and missing data.&lt;/p&gt;</span></span>
 <span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;03&lt;/span&gt;&lt;h3&gt;Uncertainty&lt;/h3&gt;</span></span>
-<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;Uncertainty about the work-hour effects remains substantial. Many adjusted point estimates are closer to zero than the baseline associations. Moreover, many Bonferroni-adjusted intervals include zero, leaving uncertainty about the direction of those effects.&lt;/p&gt;</span></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;Substantial uncertainty remains. Most adjusted estimates shrink toward zero compared with cross-sectional associations, and most Bonferroni-adjusted intervals span zero.&lt;/p&gt;</span></span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="item"&gt;</span></span>
 <span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="num"&gt;04&lt;/span&gt;&lt;h3&gt;Scope&lt;/h3&gt;</span></span>
-<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;The work-hours estimates concern ten-hour shifts among pre-retirement adults. People gain and lose hours for different reasons, which may affect how the results apply to a particular workplace change. Moreover, work hours and outcomes are self-reported. Reporting errors may bias the estimates in a direction that depends on their relations with exposure, outcomes, and confounders.&lt;/p&gt;</span></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;p&gt;These estimates describe ten-hour shifts among pre-retirement adults. People gain and lose hours for very different reasons, which matters when translating average effects to a specific workplace policy. Work hours and outcomes are also self-reported, and reporting error can bias estimates in either direction depending on how it relates to exposure, outcomes, and confounders.&lt;/p&gt;</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
 <span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
 <span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/section&gt;</span></span>

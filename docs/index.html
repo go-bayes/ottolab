@@ -115,13 +115,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="OTTO Lab">
 <meta property="og:description" content="Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington">
+<meta property="og:image" content="https://ottolab.nz/images/ottos/web/otto-dog-ball.jpg">
 <meta property="og:site_name" content="OTTO Lab">
 <meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout.">
+<meta property="og:image:height" content="1440">
+<meta property="og:image:width" content="900">
 <meta name="twitter:title" content="OTTO Lab">
 <meta name="twitter:description" content="Observational Target Trial Operations (OTTO), School of Psychological Sciences, Te Herenga Waka - Victoria University of Wellington">
+<meta name="twitter:image" content="https://ottolab.nz/images/ottos/web/otto-dog-ball.jpg">
 <meta name="twitter:creator" content="@prof_joe_">
 <meta name="twitter:site" content="@prof_joe_">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image:alt" content="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout.">
 </head>
 
 <body class="nav-fixed home fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -140,10 +146,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./team.html"> 
 <span class="menu-text">People</span></a>
@@ -255,18 +257,18 @@ OTTO <em>Lab</em>
 Observational Target Trial Operations
 </p>
 <p class="hero-lede">
-How can investigators estimate causal effects in psychology when experiments are impractical or unethical? Investigators can rarely assign people at random to attend religious services or to work longer hours. At OTTO Lab, we develop and apply methods for estimating causal effects from observational data. We specify the randomised trial we would run if we could, the <em>target trial</em>, then emulate that trial with longitudinal studies such as the New Zealand Attitudes and Values Study.
+How do we study cause and effect in psychology when we can’t run an experiment? We specify the randomised trial we <em>would</em> run if we could, the <em>target trial</em>, and emulate it using longitudinal data.
 </p>
 <div class="hero-actions">
 <p><a href="./research.html" class="btn btn-primary">Research</a> <a href="./resources.html" class="btn btn-secondary">Resources</a> <a href="mailto:joseph.bulbulia@vuw.ac.nz" class="btn btn-secondary">Email Joseph Bulbulia</a></p>
 </div>
 <p class="hero-text">
-An estimate from observational data has a causal interpretation only under assumptions, chiefly that the baseline measures we adjust for account for all common causes of treatment and outcome. In each study, we state these assumptions and assess how far our conclusions depend on them.
+Causal inference from observational data requires assumptions. One of these is the assumption of no unmeasured confounding, also called the exchangeability assumption. To treat an observed assignment as “as good as random”, there must be no residual association between the treatment and potential outcome after we have included a set of measured covariates. Because this assumption cannot be tested, we run sensitivity analyses.
 </p>
 <figure class="hero-dag figure" id="hero-dag">
 <svg class="dag" viewbox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc">
 <title id="dag-title">Causal diagram of a target trial emulation</title>
-<desc id="dag-desc">An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, and reaches treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 marks conditioning. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.</desc>
+<desc id="dag-desc">An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, affecting treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 indicates adjustment. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Conditional on W0, the potential outcome Y2(a) is independent of the treatment received.</desc>
 <g aria-hidden="true">
 <text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end">CAUSAL DIAGRAM</text>
 <text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end">SINGLE-WORLD INTERVENTION</text>
@@ -293,7 +295,7 @@ An estimate from observational data has a causal interpretation only under assum
 </g>
 </svg>
 <figcaption class="hero-dag-caption">
-<span>The diagram shows an assumed causal structure in temporal order. The unmeasured <i>U</i> affects the baseline covariates <i>W</i><sub>0</sub> and the outcome <i>Y</i><sub>2</sub>, but reaches treatment <i>A</i><sub>1</sub> only through <i>W</i><sub>0</sub>. The box marks conditioning on <i>W</i><sub>0</sub>, and the split at <i>A</i><sub>1</sub> sets treatment to <i>a</i>, as in a single-world intervention graph. Under this structure, given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<span>Read left to right in time: baseline covariates (<i>W</i><sub>0</sub>), treatment (<i>A</i><sub>1</sub>), outcome (<i>Y</i><sub>2</sub>). An unmeasured variable <i>U</i> affects <i>W</i><sub>0</sub> and <i>Y</i><sub>2</sub>, affecting treatment only through <i>W</i><sub>0</sub>. We use the convention of boxing <i>W</i><sub>0</sub> to indicate adjustment; splitting <i>A</i><sub>1</sub> sets treatment to <i>a</i> (a single-world intervention graph). Under this structure, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received conditional on the covariates <i>W</i><sub>0</sub>. Note: a causal graph makes our assumptions explicit. We generally cannot verify these assumptions from the data alone.</span>
 <button type="button" class="dag-toggle" hidden="">Pause</button>
 </figcaption>
 </figure>
@@ -313,10 +315,44 @@ An estimate from observational data has a causal interpretation only under assum
 })();
 </script>
 </div>
+<section id="why-causal-inference" class="level2">
+<h2 class="anchored" data-anchor-id="why-causal-inference">Why causal inference?</h2>
+<p>Having yellow fingers predicts lung cancer but does not cause it. A smoker who scrubs their fingers to remove the stains will not reduce their risk. Similarly, ice cream consumption predicts shark attacks but does not cause them. Sunshine causes people both to seek the refreshing snack and to seek out the beaches where shark attacks occur.</p>
+<p>Despite the ubiquity of “predict” language, most psychological scientists are interested in causality.</p>
+<div id="fig-otto" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-otto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ottos/web/otto-dog-ball.jpg" class="img-fluid figure-img" alt="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout."></p>
+<figcaption><em>a</em> = 0: ball not in mouth</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/ottos/web/otto-dog-no-ball.jpg" class="img-fluid figure-img" alt="A dog leaps in a misty field at dusk, in silhouette, with a ball held in his mouth."></p>
+<figcaption><em>a</em> = 1: ball in mouth</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-otto-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Left: ball not in mouth (<em>a</em> = 0). Right: ball in mouth (<em>a</em> = 1; look closely). At any one moment we can observe Otto under only one of the two conditions; the other is counterfactual. Most of what the lab does follows from that inconvenience. Readers will notice that Otto appears equally airborne either way. We are investigating.
+</figcaption>
+</figure>
+</div>
+</section>
 <section id="selected-work" class="level2">
 <h2 class="anchored" data-anchor-id="selected-work">Selected work</h2>
 <p><a href="https://doi.org/10.1017/ehs.2026.10043">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</a><br>
-Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren &amp; Sibley (2026). <em>Evolutionary Human Sciences</em>, 8. <a href="https://doi.org/10.1017/ehs.2026.10043">DOI</a></p>
+Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren &amp; Sibley (2026). <em>Evolutionary Human Sciences</em>, 8. <a href="https://doi.org/10.1017/ehs.2026.10043">DOI</a> · <a href="./reports/religious-attendance-wellbeing.html">Report</a></p>
+<p><a href="https://doi.org/10.1371/journal.pone.0350816">How work hours affect well-being: A target trial emulation</a><br>
+Chong, Sibley &amp; Bulbulia (2026). <em>PLOS One</em>, 21(6), e0350816. <a href="https://doi.org/10.1371/journal.pone.0350816">DOI</a> · <a href="./reports/work-hours-wellbeing.html">Report</a></p>
 <p><a href="https://doi.org/10.1080/2153599X.2026.2645568">Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims</a><br>
 Afzali, Rasheed, Troughton, Yogeeswaran, Sibley &amp; Bulbulia (2026). <em>Religion, Brain &amp; Behavior</em>, published online 18 November 2026. <a href="https://doi.org/10.1080/2153599X.2026.2645568">DOI</a></p>
 <p><a href="https://doi.org/10.1080/2153599X.2026.2695639">Religion, cooperation, and prosocial behavior: Methods and evidence for causality</a><br>
@@ -335,12 +371,54 @@ Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). <em>Journal of Person
 </section>
 <section id="religionmap.org" class="level2">
 <h2 class="anchored" data-anchor-id="religionmap.org"><code>religionmap.org</code></h2>
-<p><a href="https://religionmap.org/"><code>religionmap.org</code></a> maps places of worship worldwide for reproducible spatial and cultural analysis.</p>
+<p>When we’re not doing causal inference, we maintain <a href="https://religionmap.org/"><code>religionmap.org</code></a>, which maps places of worship worldwide for spatial and cultural research.</p>
 <p><a href="https://religionmap.org/">Visit <code>religionmap.org</code></a> · <a href="https://github.com/go-bayes/places-of-worship">Code</a></p>
 </section>
 <section id="collaboration-and-teaching" class="level2">
 <h2 class="anchored" data-anchor-id="collaboration-and-teaching">Collaboration and teaching</h2>
-<p>We supervise graduate students, teach methods for causal inference, and collaborate with investigators in New Zealand and internationally. We also build software, including the <a href="./resources.html#r-packages"><code>margot</code></a> R package. To discuss supervision or collaboration, email Joseph Bulbulia at <a href="mailto:joseph.bulbulia@vuw.ac.nz">joseph.bulbulia@vuw.ac.nz</a>.</p>
+<p>We welcome MA and PhD students interested in causal inference, longitudinal methods, religion, or social psychology, and we collaborate with researchers in New Zealand and abroad. We also teach causal inference and maintain open-source R packages including <a href="./resources.html#r-packages"><code>margot</code></a> and <a href="./research.html#software"><code>boilerplate</code></a>. To discuss supervision or collaboration, email Joseph Bulbulia at <a href="mailto:joseph.bulbulia@vuw.ac.nz">joseph.bulbulia@vuw.ac.nz</a>. You can also meet our <a href="./team.html#the-ottos">inspiring Ottos</a>.</p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<p><strong>Email:</strong> <a href="mailto:joseph.bulbulia@vuw.ac.nz">joseph.bulbulia@vuw.ac.nz</a><br>
+<strong>School:</strong> <a href="https://www.wgtn.ac.nz/psyc">School of Psychological Sciences</a><br>
+<strong>Centre affiliation:</strong> <a href="https://www.wgtn.ac.nz/cacr">Centre for Applied Cross-Cultural Research (CACR)</a><br>
+<strong>Institution:</strong> Te Herenga Waka — Victoria University of Wellington, New Zealand<br>
+<strong>Location:</strong> <a href="https://www.openstreetmap.org/?mlat=-41.2889&amp;mlon=174.7681#map=17/-41.2889/174.7681">Easterfield Building, Room EA 324, Kelburn Campus</a><br>
+<strong>X (Twitter):</strong> <a href="https://x.com/prof_joe_"><span class="citation" data-cites="prof_joe_">@prof_joe_</span></a></p>
+</section>
+<section id="funding" class="level2">
+<h2 class="anchored" data-anchor-id="funding">Funding</h2>
+<p>Our work is supported by:</p>
+<p><strong>Templeton Religion Trust</strong></p>
+<ul>
+<li>TRT-2021-0418: “New Zealand Attitudes and Values Study Matching Grant”
+<ul>
+<li>Joseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton</li>
+</ul></li>
+<li>TRT-2022-30666: “Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities”
+<ul>
+<li>Joseph Bulbulia (Contact PI) and Joseph Watts</li>
+</ul></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:55%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/logos/vuw-logo.jpg" height="140" class="figure-img"></p>
+<figcaption>Victoria University of Wellington</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:45%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/logos/trt-logo.png" height="140" class="figure-img"></p>
+<figcaption>Templeton Religion Trust</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The funders do not play any role in the design or interpretation of our research.</p>
 <div class="home-links">
 <p><a href="./team.html">Meet the lab</a> · <a href="./presentations.html">Presentations</a> · <a href="./news.html">News</a> · <a href="./reports.html">Reports</a></p>
 </div>
@@ -918,19 +996,19 @@ Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). <em>Journal of Person
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">h1</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-title"</span><span class="dt">&gt;</span>OTTO <span class="dt">&lt;</span><span class="kw">em</span><span class="dt">&gt;</span>Lab<span class="dt">&lt;/</span><span class="kw">em</span><span class="dt">&gt;&lt;/</span><span class="kw">h1</span><span class="dt">&gt;</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-descriptor"</span><span class="dt">&gt;</span>Observational Target Trial Operations<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-lede"</span><span class="dt">&gt;</span>How can investigators estimate causal effects in psychology when experiments are impractical or unethical? Investigators can rarely assign people at random to attend religious services or to work longer hours. At OTTO Lab, we develop and apply methods for estimating causal effects from observational data. We specify the randomised trial we would run if we could, the <span class="dt">&lt;</span><span class="kw">em</span><span class="dt">&gt;</span>target trial<span class="dt">&lt;/</span><span class="kw">em</span><span class="dt">&gt;</span>, then emulate that trial with longitudinal studies such as the New Zealand Attitudes and Values Study.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-lede"</span><span class="dt">&gt;</span>How do we study cause and effect in psychology when we can't run an experiment? We specify the randomised trial we <span class="dt">&lt;</span><span class="kw">em</span><span class="dt">&gt;</span>would<span class="dt">&lt;/</span><span class="kw">em</span><span class="dt">&gt;</span> run if we could, the <span class="dt">&lt;</span><span class="kw">em</span><span class="dt">&gt;</span>target trial<span class="dt">&lt;/</span><span class="kw">em</span><span class="dt">&gt;</span>, and emulate it using longitudinal data.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-actions"</span><span class="dt">&gt;</span></span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"research.qmd"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"btn btn-primary"</span><span class="dt">&gt;</span>Research<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"resources.qmd"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"btn btn-secondary"</span><span class="dt">&gt;</span>Resources<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"mailto:joseph.bulbulia@vuw.ac.nz"</span><span class="ot"> class</span><span class="op">=</span><span class="st">"btn btn-secondary"</span><span class="dt">&gt;</span>Email Joseph Bulbulia<span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-text"</span><span class="dt">&gt;</span>An estimate from observational data has a causal interpretation only under assumptions, chiefly that the baseline measures we adjust for account for all common causes of treatment and outcome. In each study, we state these assumptions and assess how far our conclusions depend on them.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> class</span><span class="op">=</span><span class="st">"hero-text"</span><span class="dt">&gt;</span>Causal inference from observational data requires assumptions. One of these is the assumption of no unmeasured confounding, also called the exchangeability assumption. To treat an observed assignment as "as good as random", there must be no residual association between the treatment and potential outcome after we have included a set of measured covariates. Because this assumption cannot be tested, we run sensitivity analyses.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figure class="hero-dag" id="hero-dag"&gt;</span></span>
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;svg class="dag" viewBox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc"&gt;</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;title id="dag-title"&gt;Causal diagram of a target trial emulation&lt;/title&gt;</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;desc id="dag-desc"&gt;An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, and reaches treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 marks conditioning. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.&lt;/desc&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;desc id="dag-desc"&gt;An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, affecting treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 indicates adjustment. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Conditional on W0, the potential outcome Y2(a) is independent of the treatment received.&lt;/desc&gt;</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;g aria-hidden="true"&gt;</span></span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end"&gt;CAUSAL DIAGRAM&lt;/text&gt;</span></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end"&gt;SINGLE-WORLD INTERVENTION&lt;/text&gt;</span></span>
@@ -957,7 +1035,7 @@ Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). <em>Journal of Person
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/g&gt;</span></span>
 <span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/svg&gt;</span></span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;figcaption class="hero-dag-caption"&gt;</span></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;span&gt;The diagram shows an assumed causal structure in temporal order. The unmeasured &lt;i&gt;U&lt;/i&gt; affects the baseline covariates &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; and the outcome &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;, but reaches treatment &lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt; only through &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;. The box marks conditioning on &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;, and the split at &lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt; sets treatment to &lt;i&gt;a&lt;/i&gt;, as in a single-world intervention graph. Under this structure, given &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;, the potential outcome &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;i&gt;a&lt;/i&gt;) is independent of the treatment received.&lt;/span&gt;</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;span&gt;Read left to right in time: baseline covariates (&lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;), treatment (&lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt;), outcome (&lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;). An unmeasured variable &lt;i&gt;U&lt;/i&gt; affects &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; and &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;, affecting treatment only through &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;. We use the convention of boxing &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt; to indicate adjustment; splitting &lt;i&gt;A&lt;/i&gt;&lt;sub&gt;1&lt;/sub&gt; sets treatment to &lt;i&gt;a&lt;/i&gt; (a single-world intervention graph). Under this structure, the potential outcome &lt;i&gt;Y&lt;/i&gt;&lt;sub&gt;2&lt;/sub&gt;(&lt;i&gt;a&lt;/i&gt;) is independent of the treatment received conditional on the covariates &lt;i&gt;W&lt;/i&gt;&lt;sub&gt;0&lt;/sub&gt;. Note: a causal graph makes our assumptions explicit. We generally cannot verify these assumptions from the data alone.&lt;/span&gt;</span></span>
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;button type="button" class="dag-toggle" hidden&gt;Pause&lt;/button&gt;</span></span>
 <span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figcaption&gt;</span></span>
 <span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/figure&gt;</span></span>
@@ -980,51 +1058,100 @@ Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). <em>Journal of Person
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Selected work</span></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## Why causal inference?</span></span>
 <span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</span><span class="co">](https://doi.org/10.1017/ehs.2026.10043)</span>\</span>
-<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren &amp; Sibley (2026). *Evolutionary Human Sciences*, 8. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1017/ehs.2026.10043)</span></span>
-<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2645568)</span>\</span>
-<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Afzali, Rasheed, Troughton, Yogeeswaran, Sibley &amp; Bulbulia (2026). *Religion, Brain &amp; Behavior*, published online 18 November 2026. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2645568)</span></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>Having yellow fingers predicts lung cancer but does not cause it. A smoker who scrubs their fingers to remove the stains will not reduce their risk. Similarly, ice cream consumption predicts shark attacks but does not cause them. Sunshine causes people both to seek the refreshing snack and to seek out the beaches where shark attacks occur.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>Despite the ubiquity of "predict" language, most psychological scientists are interested in causality.</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>::: {#fig-otto layout-ncol=2}</span>
 <span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Religion, cooperation, and prosocial behavior: Methods and evidence for causality</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2695639)</span>\</span>
-<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a>McCullough, Davis &amp; Bulbulia (2026). *Religion, Brain &amp; Behavior*, in press. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2695639)</span></span>
-<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Long-term causal effects of far-right terrorism in New Zealand</span><span class="co">](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)</span>\</span>
-<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Bulbulia, Afzali, Yogeeswaran &amp; Sibley (2023). *PNAS Nexus*</span>
-<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Life loses some meaning after leaving religion</span><span class="co">](https://psycnet.apa.org/record/2026-71076-001)</span>\</span>
-<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a>Van Tongeren, Davis, Sibley &amp; Bulbulia (2025). *Psychology of Religion and Spirituality*</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="al">![*a* = 0: ball not in mouth](images/ottos/web/otto-dog-ball.jpg)</span>{fig-alt="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout."}</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a><span class="al">![*a* = 1: ball in mouth](images/ottos/web/otto-dog-no-ball.jpg)</span>{fig-alt="A dog leaps in a misty field at dusk, in silhouette, with a ball held in his mouth."}</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Left: ball not in mouth (*a* = 0). Right: ball in mouth (*a* = 1; look closely). At any one moment we can observe Otto under only one of the two conditions; the other is counterfactual. Most of what the lab does follows from that inconvenience. Readers will notice that Otto appears equally airborne either way. We are investigating.</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="fu">## Selected work</span></span>
 <span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">The causal effects of religious service attendance on prosocial behaviours in New Zealand</span><span class="co">](https://openaccess.wgtn.ac.nz/articles/journal_contribution/The_causal_effects_of_religious_service_attendance_on_prosocial_behaviours_in_New_Zealand_A_national_longitudinal_study/28386350)</span>\</span>
-<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Bulbulia, Davis, Rice, Sibley &amp; Troughton (2024). *Archive for the Psychology of Religion*</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Target trial emulation shows that supported causal effects of religious attendance on well-being are selective</span><span class="co">](https://doi.org/10.1017/ehs.2026.10043)</span>\</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren &amp; Sibley (2026). *Evolutionary Human Sciences*, 8. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1017/ehs.2026.10043)</span> · <span class="co">[</span><span class="ot">Report</span><span class="co">](reports/religious-attendance-wellbeing.qmd)</span></span>
 <span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Methods in causal inference: a four-part tutorial series</span><span class="co">](resources.qmd#start-here-methods-in-causal-inference-series)</span>\</span>
-<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Bulbulia (2024). *Evolutionary Human Sciences*</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">How work hours affect well-being: A target trial emulation</span><span class="co">](https://doi.org/10.1371/journal.pone.0350816)</span>\</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Chong, Sibley &amp; Bulbulia (2026). *PLOS One*, 21(6), e0350816. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1371/journal.pone.0350816)</span> · <span class="co">[</span><span class="ot">Report</span><span class="co">](reports/work-hours-wellbeing.qmd)</span></span>
 <span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Causal effect of psychopathy on partner well-being</span><span class="co">](https://doi.org/10.1111/jopy.70042)</span>\</span>
-<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). *Journal of Personality*</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2645568)</span>\</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>Afzali, Rasheed, Troughton, Yogeeswaran, Sibley &amp; Bulbulia (2026). *Religion, Brain &amp; Behavior*, published online 18 November 2026. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2645568)</span></span>
 <span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">All publications</span><span class="co">](research.qmd)</span></span>
-<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="fu">## `religionmap.org`</span></span>
-<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">`religionmap.org`</span><span class="co">](https://religionmap.org/)</span> maps places of worship worldwide for reproducible spatial and cultural analysis.</span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Religion, cooperation, and prosocial behavior: Methods and evidence for causality</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2695639)</span>\</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>McCullough, Davis &amp; Bulbulia (2026). *Religion, Brain &amp; Behavior*, in press. <span class="co">[</span><span class="ot">DOI</span><span class="co">](https://doi.org/10.1080/2153599X.2026.2695639)</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Long-term causal effects of far-right terrorism in New Zealand</span><span class="co">](https://academic.oup.com/pnasnexus/article/2/8/pgad242/7244773)</span>\</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>Bulbulia, Afzali, Yogeeswaran &amp; Sibley (2023). *PNAS Nexus*</span>
 <span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Visit `religionmap.org`</span><span class="co">](https://religionmap.org/)</span> · <span class="co">[</span><span class="ot">Code</span><span class="co">](https://github.com/go-bayes/places-of-worship)</span></span>
-<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="fu">## Collaboration and teaching</span></span>
-<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>We supervise graduate students, teach methods for causal inference, and collaborate with investigators in New Zealand and internationally. We also build software, including the <span class="co">[</span><span class="ot">`margot`</span><span class="co">](resources.qmd#r-packages)</span> R package. To discuss supervision or collaboration, email Joseph Bulbulia at <span class="co">[</span><span class="ot">joseph.bulbulia@vuw.ac.nz</span><span class="co">](mailto:joseph.bulbulia@vuw.ac.nz)</span>.</span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Life loses some meaning after leaving religion</span><span class="co">](https://psycnet.apa.org/record/2026-71076-001)</span>\</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a>Van Tongeren, Davis, Sibley &amp; Bulbulia (2025). *Psychology of Religion and Spirituality*</span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">The causal effects of religious service attendance on prosocial behaviours in New Zealand</span><span class="co">](https://openaccess.wgtn.ac.nz/articles/journal_contribution/The_causal_effects_of_religious_service_attendance_on_prosocial_behaviours_in_New_Zealand_A_national_longitudinal_study/28386350)</span>\</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>Bulbulia, Davis, Rice, Sibley &amp; Troughton (2024). *Archive for the Psychology of Religion*</span>
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>::: {.home-links}</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Meet the lab</span><span class="co">](team.qmd)</span> · <span class="co">[</span><span class="ot">Presentations</span><span class="co">](presentations.qmd)</span> · <span class="co">[</span><span class="ot">News</span><span class="co">](news.qmd)</span> · <span class="co">[</span><span class="ot">Reports</span><span class="co">](reports.qmd)</span></span>
-<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>::: {.home-affiliation-line}</span>
-<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Affiliated with the <span class="co">[</span><span class="ot">Centre for Applied Cross-Cultural Research</span><span class="co">](https://www.wgtn.ac.nz/cacr)</span> · <span class="co">[</span><span class="ot">School of Psychological Sciences</span><span class="co">](https://www.wgtn.ac.nz/psyc)</span> · <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/go-bayes)</span></span>
-<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Methods in causal inference: a four-part tutorial series</span><span class="co">](resources.qmd#start-here-methods-in-causal-inference-series)</span>\</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>Bulbulia (2024). *Evolutionary Human Sciences*</span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Causal effect of psychopathy on partner well-being</span><span class="co">](https://doi.org/10.1111/jopy.70042)</span>\</span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>Hissey, Eisenbarth, Hammond, Sibley &amp; Bulbulia (2025). *Journal of Personality*</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">All publications</span><span class="co">](research.qmd)</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a><span class="fu">## `religionmap.org`</span></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>When we're not doing causal inference, we maintain <span class="co">[</span><span class="ot">`religionmap.org`</span><span class="co">](https://religionmap.org/)</span>, which maps places of worship worldwide for spatial and cultural research.</span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Visit `religionmap.org`</span><span class="co">](https://religionmap.org/)</span> · <span class="co">[</span><span class="ot">Code</span><span class="co">](https://github.com/go-bayes/places-of-worship)</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="fu">## Collaboration and teaching</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a>We welcome MA and PhD students interested in causal inference, longitudinal methods, religion, or social psychology, and we collaborate with researchers in New Zealand and abroad. We also teach causal inference and maintain open-source R packages including <span class="co">[</span><span class="ot">`margot`</span><span class="co">](resources.qmd#r-packages)</span> and <span class="co">[</span><span class="ot">`boilerplate`</span><span class="co">](research.qmd#software)</span>. To discuss supervision or collaboration, email Joseph Bulbulia at <span class="co">[</span><span class="ot">joseph.bulbulia@vuw.ac.nz</span><span class="co">](mailto:joseph.bulbulia@vuw.ac.nz)</span>. You can also meet our <span class="co">[</span><span class="ot">inspiring Ottos</span><span class="co">](team.qmd#the-ottos)</span>.</span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contact</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a>**Email:** <span class="co">[</span><span class="ot">joseph.bulbulia@vuw.ac.nz</span><span class="co">](mailto:joseph.bulbulia@vuw.ac.nz)</span>  </span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a>**School:** <span class="co">[</span><span class="ot">School of Psychological Sciences</span><span class="co">](https://www.wgtn.ac.nz/psyc)</span>  </span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>**Centre affiliation:** <span class="co">[</span><span class="ot">Centre for Applied Cross-Cultural Research (CACR)</span><span class="co">](https://www.wgtn.ac.nz/cacr)</span>  </span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>**Institution:** Te Herenga Waka — Victoria University of Wellington, New Zealand  </span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>**Location:** <span class="co">[</span><span class="ot">Easterfield Building, Room EA 324, Kelburn Campus</span><span class="co">](https://www.openstreetmap.org/?mlat=-41.2889&amp;mlon=174.7681#map=17/-41.2889/174.7681)</span>  </span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>**X (Twitter):** <span class="co">[</span><span class="ot">@prof_joe_</span><span class="co">](https://x.com/prof_joe_)</span></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a><span class="fu">## Funding</span></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>Our work is supported by:</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>**Templeton Religion Trust**</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TRT-2021-0418: "New Zealand Attitudes and Values Study Matching Grant"</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Joseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>TRT-2022-30666: "Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities"</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a><span class="ss">  - </span>Joseph Bulbulia (Contact PI) and Joseph Watts</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>:::: {.columns}</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>::: {.column width="55%"}</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="al">![Victoria University of Wellington](images/logos/vuw-logo.jpg)</span>{height="140px"}</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>::: {.column width="45%"}</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="al">![Templeton Religion Trust](images/logos/trt-logo.png)</span>{height="140px"}</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>::::</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>The funders do not play any role in the design or interpretation of our research.</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>::: {.home-links}</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Meet the lab</span><span class="co">](team.qmd)</span> · <span class="co">[</span><span class="ot">Presentations</span><span class="co">](presentations.qmd)</span> · <span class="co">[</span><span class="ot">News</span><span class="co">](news.qmd)</span> · <span class="co">[</span><span class="ot">Reports</span><span class="co">](reports.qmd)</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>::: {.home-affiliation-line}</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>Affiliated with the <span class="co">[</span><span class="ot">Centre for Applied Cross-Cultural Research</span><span class="co">](https://www.wgtn.ac.nz/cacr)</span> · <span class="co">[</span><span class="ot">School of Psychological Sciences</span><span class="co">](https://www.wgtn.ac.nz/psyc)</span> · <span class="co">[</span><span class="ot">GitHub</span><span class="co">](https://github.com/go-bayes)</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

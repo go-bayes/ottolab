@@ -9,19 +9,19 @@ toc: false
 <h1 class="hero-title">OTTO <em>Lab</em></h1>
 <p class="hero-descriptor">Observational Target Trial Operations</p>
 
-<p class="hero-lede">How can investigators estimate causal effects in psychology when experiments are impractical or unethical? Investigators can rarely assign people at random to attend religious services or to work longer hours. At OTTO Lab, we develop and apply methods for estimating causal effects from observational data. We specify the randomised trial we would run if we could, the <em>target trial</em>, then emulate that trial with longitudinal studies such as the New Zealand Attitudes and Values Study.</p>
+<p class="hero-lede">How do we study cause and effect in psychology when we can't run an experiment? We specify the randomised trial we <em>would</em> run if we could, the <em>target trial</em>, and emulate it using longitudinal data.</p>
 <div class="hero-actions">
 <a href="research.qmd" class="btn btn-primary">Research</a>
 <a href="resources.qmd" class="btn btn-secondary">Resources</a>
 <a href="mailto:joseph.bulbulia@vuw.ac.nz" class="btn btn-secondary">Email Joseph Bulbulia</a>
 </div>
-<p class="hero-text">An estimate from observational data has a causal interpretation only under assumptions, chiefly that the baseline measures we adjust for account for all common causes of treatment and outcome. In each study, we state these assumptions and assess how far our conclusions depend on them.</p>
+<p class="hero-text">Causal inference from observational data requires assumptions. One of these is the assumption of no unmeasured confounding, also called the exchangeability assumption. To treat an observed assignment as "as good as random", there must be no residual association between the treatment and potential outcome after we have included a set of measured covariates. Because this assumption cannot be tested, we run sensitivity analyses.</p>
 
 ```{=html}
 <figure class="hero-dag" id="hero-dag">
 <svg class="dag" viewBox="18 0 328 216" role="img" aria-labelledby="dag-title dag-desc">
 <title id="dag-title">Causal diagram of a target trial emulation</title>
-<desc id="dag-desc">An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, and reaches treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 marks conditioning. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Given W0, Y2(a) is independent of the treatment received.</desc>
+<desc id="dag-desc">An assumed causal structure in temporal order. An unmeasured variable U affects baseline covariates W0 and the outcome Y2, affecting treatment A1 only through W0. W0 affects A1 and Y2. A box around W0 indicates adjustment. The treatment node is split to set treatment to a, as in a single-world intervention graph, and an arrow runs from a to the potential outcome Y2(a). Conditional on W0, the potential outcome Y2(a) is independent of the treatment received.</desc>
 <g aria-hidden="true">
 <text class="dag-phase dag-phase-obs" x="340" y="16" text-anchor="end">CAUSAL DIAGRAM</text>
 <text class="dag-phase dag-phase-int" x="340" y="16" text-anchor="end">SINGLE-WORLD INTERVENTION</text>
@@ -48,7 +48,7 @@ toc: false
 </g>
 </svg>
 <figcaption class="hero-dag-caption">
-<span>The diagram shows an assumed causal structure in temporal order. The unmeasured <i>U</i> affects the baseline covariates <i>W</i><sub>0</sub> and the outcome <i>Y</i><sub>2</sub>, but reaches treatment <i>A</i><sub>1</sub> only through <i>W</i><sub>0</sub>. The box marks conditioning on <i>W</i><sub>0</sub>, and the split at <i>A</i><sub>1</sub> sets treatment to <i>a</i>, as in a single-world intervention graph. Under this structure, given <i>W</i><sub>0</sub>, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received.</span>
+<span>Read left to right in time: baseline covariates (<i>W</i><sub>0</sub>), treatment (<i>A</i><sub>1</sub>), outcome (<i>Y</i><sub>2</sub>). An unmeasured variable <i>U</i> affects <i>W</i><sub>0</sub> and <i>Y</i><sub>2</sub>, affecting treatment only through <i>W</i><sub>0</sub>. We use the convention of boxing <i>W</i><sub>0</sub> to indicate adjustment; splitting <i>A</i><sub>1</sub> sets treatment to <i>a</i> (a single-world intervention graph). Under this structure, the potential outcome <i>Y</i><sub>2</sub>(<i>a</i>) is independent of the treatment received conditional on the covariates <i>W</i><sub>0</sub>. Note: a causal graph makes our assumptions explicit. We generally cannot verify these assumptions from the data alone.</span>
 <button type="button" class="dag-toggle" hidden>Pause</button>
 </figcaption>
 </figure>
@@ -71,10 +71,28 @@ toc: false
 
 :::
 
+## Why causal inference?
+
+Having yellow fingers predicts lung cancer but does not cause it. A smoker who scrubs their fingers to remove the stains will not reduce their risk. Similarly, ice cream consumption predicts shark attacks but does not cause them. Sunshine causes people both to seek the refreshing snack and to seek out the beaches where shark attacks occur.
+
+Despite the ubiquity of "predict" language, most psychological scientists are interested in causality.
+
+::: {#fig-otto layout-ncol=2}
+
+![*a* = 0: ball not in mouth](images/ottos/web/otto-dog-ball.jpg){fig-alt="A dog leaps in silhouette against a setting sun, jaws open as a ball hovers just above his snout."}
+
+![*a* = 1: ball in mouth](images/ottos/web/otto-dog-no-ball.jpg){fig-alt="A dog leaps in a misty field at dusk, in silhouette, with a ball held in his mouth."}
+
+Left: ball not in mouth (*a* = 0). Right: ball in mouth (*a* = 1; look closely). At any one moment we can observe Otto under only one of the two conditions; the other is counterfactual. Most of what the lab does follows from that inconvenience. Readers will notice that Otto appears equally airborne either way. We are investigating.
+:::
+
 ## Selected work
 
 [Target trial emulation shows that supported causal effects of religious attendance on well-being are selective](https://doi.org/10.1017/ehs.2026.10043)\
-Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043)
+Bulbulia, Davis, Park, Rice, Troughton, Van Tongeren & Sibley (2026). *Evolutionary Human Sciences*, 8. [DOI](https://doi.org/10.1017/ehs.2026.10043) · [Report](reports/religious-attendance-wellbeing.qmd)
+
+[How work hours affect well-being: A target trial emulation](https://doi.org/10.1371/journal.pone.0350816)\
+Chong, Sibley & Bulbulia (2026). *PLOS One*, 21(6), e0350816. [DOI](https://doi.org/10.1371/journal.pone.0350816) · [Report](reports/work-hours-wellbeing.qmd)
 
 [Beyond deficit narratives: Religious practice, meaning, and resilience in a national sample of New Zealand Muslims](https://doi.org/10.1080/2153599X.2026.2645568)\
 Afzali, Rasheed, Troughton, Yogeeswaran, Sibley & Bulbulia (2026). *Religion, Brain & Behavior*, published online 18 November 2026. [DOI](https://doi.org/10.1080/2153599X.2026.2645568)
@@ -101,13 +119,44 @@ Hissey, Eisenbarth, Hammond, Sibley & Bulbulia (2025). *Journal of Personality*
 
 ## `religionmap.org`
 
-[`religionmap.org`](https://religionmap.org/) maps places of worship worldwide for reproducible spatial and cultural analysis.
+When we're not doing causal inference, we maintain [`religionmap.org`](https://religionmap.org/), which maps places of worship worldwide for spatial and cultural research.
 
 [Visit `religionmap.org`](https://religionmap.org/) · [Code](https://github.com/go-bayes/places-of-worship)
 
 ## Collaboration and teaching
 
-We supervise graduate students, teach methods for causal inference, and collaborate with investigators in New Zealand and internationally. We also build software, including the [`margot`](resources.qmd#r-packages) R package. To discuss supervision or collaboration, email Joseph Bulbulia at [joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz).
+We welcome MA and PhD students interested in causal inference, longitudinal methods, religion, or social psychology, and we collaborate with researchers in New Zealand and abroad. We also teach causal inference and maintain open-source R packages including [`margot`](resources.qmd#r-packages) and [`boilerplate`](research.qmd#software). To discuss supervision or collaboration, email Joseph Bulbulia at [joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz). You can also meet our [inspiring Ottos](team.qmd#the-ottos).
+
+## Contact
+
+**Email:** [joseph.bulbulia@vuw.ac.nz](mailto:joseph.bulbulia@vuw.ac.nz)  
+**School:** [School of Psychological Sciences](https://www.wgtn.ac.nz/psyc)  
+**Centre affiliation:** [Centre for Applied Cross-Cultural Research (CACR)](https://www.wgtn.ac.nz/cacr)  
+**Institution:** Te Herenga Waka — Victoria University of Wellington, New Zealand  
+**Location:** [Easterfield Building, Room EA 324, Kelburn Campus](https://www.openstreetmap.org/?mlat=-41.2889&mlon=174.7681#map=17/-41.2889/174.7681)  
+**X (Twitter):** [@prof_joe_](https://x.com/prof_joe_)
+
+## Funding
+
+Our work is supported by:
+
+**Templeton Religion Trust**
+
+- TRT-2021-0418: "New Zealand Attitudes and Values Study Matching Grant"
+  - Joseph Bulbulia (Contact PI) and Donnie Davis, Ken Rice, Chris G Sibley, Geoffrey Troughton
+- TRT-2022-30666: "Mapping Places of Worship: A Tool for Efficient Global Data Collection on Religious Communities"
+  - Joseph Bulbulia (Contact PI) and Joseph Watts
+
+:::: {.columns}
+::: {.column width="55%"}
+![Victoria University of Wellington](images/logos/vuw-logo.jpg){height="140px"}
+:::
+::: {.column width="45%"}
+![Templeton Religion Trust](images/logos/trt-logo.png){height="140px"}
+:::
+::::
+
+The funders do not play any role in the design or interpretation of our research.
 
 ::: {.home-links}
 [Meet the lab](team.qmd) · [Presentations](presentations.qmd) · [News](news.qmd) · [Reports](reports.qmd)

@@ -21,8 +21,6 @@ website:
   navbar:
     collapse-below: xl
     left:
-      - text: "About"
-        href: about.qmd
       - text: "People"
         href: team.qmd
       - text: "Research"

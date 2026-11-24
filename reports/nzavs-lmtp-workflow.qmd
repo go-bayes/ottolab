@@ -13,7 +13,7 @@ page-layout: full
 <p class="report-subtitle">Longitudinal Modified Treatment Policy Workflow for the New Zealand Attitudes and Values Study: Version 1</p>
 <p class="byline"><span class="names">OTTO Lab</span><span class="venue">Zenodo · 2026</span></p>
 
-<p class="report-lede">Longitudinal data record one exposure history for each person. A causal question compares the average outcomes a population would have under two or more exposure policies. We call the mismatch between those comparisons and the single observed history <span class="hl">the causal gap</span>. Version 1 of our workflow for the New Zealand Attitudes and Values Study (NZAVS) asks each study to state its question, assumptions, decision rules, and required reports in a public contract before analysis. The contract shows readers what each study assumes, what it does, and <span class="hl-gold">what remains uncertain</span>.</p>
+<p class="report-lede">Longitudinal data only ever show us one history per person. A causal question asks how average outcomes would differ under two or more exposure policies. We call that mismatch <span class="hl">the causal gap</span>. Version 1 of our NZAVS workflow requires every study to deposit its question, assumptions, fallback rules, and code in a public contract before outcomes enter the analysis. Readers can see what each study assumes, what it did, and <span class="hl-gold">what remains uncertain</span>.</p>
 
 <div class="stat-row" style="margin-top:2.5rem">
   <div class="stat"><span class="n">4</span><span class="lbl">requirements per study</span></div>
