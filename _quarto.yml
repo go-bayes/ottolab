@@ -59,9 +59,13 @@ website:
 
 format:
   html:
-    respect-user-color-scheme: false
-    theme: [darkly, kowhai-night.scss]
-    highlight-style: gruvbox
+    respect-user-color-scheme: true
+    theme:
+      dark: [darkly, kowhai-night.scss]
+      light: [flatly, kowhai-day.scss]
+    highlight-style:
+      light: a11y
+      dark: gruvbox
     css: styles.css
     toc: true
     toc-depth: 3

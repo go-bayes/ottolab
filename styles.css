@@ -4,8 +4,10 @@
    kōwhai night: the print-editorial grammar (fraunces display, newsreader
    body, jetbrains mono microlabels, hairline rules) set on
    deep night-blue paper, with kōwhai yellow as the accent and a pounamu
-   green as the soft secondary. single dark theme by design; bootstrap
-   defaults are set in kowhai-night.scss. */
+   green as the soft secondary. kōwhai day is its light counterpart: the
+   same grammar on cool white paper with night-blue ink. the page follows
+   the reader's system setting and the navbar switch changes it. bootstrap
+   defaults are set in kowhai-night.scss and kowhai-day.scss. */
 
 @font-face {
   font-family: "JetBrains Mono";
@@ -68,6 +70,11 @@
   --accent: var(--kowhai);
   --accent-strong: var(--kowhai-bright);
   --accent-soft: var(--green);
+  /* fills and rules, named apart from --accent because the light palette
+     keeps kōwhai for surfaces and sets text in indigo */
+  --accent-fill: var(--kowhai);
+  --accent-fill-hover: var(--kowhai-bright);
+  --dash: var(--kowhai);
   --band: #1a2346;
   --band-ink: #ebe8dc;
   --band-ink-strong: #f7f4ea;
@@ -77,6 +84,13 @@
   --hair-soft: rgba(230, 226, 211, 0.1);
   --mono-bg: rgba(230, 226, 211, 0.07);
   --accent-tint: rgba(242, 193, 78, 0.4);
+  --btn-outline: rgba(230, 226, 211, 0.45);
+  --selection: rgba(242, 193, 78, 0.28);
+  --overlay: rgba(6, 6, 16, 0.72);
+
+  /* inside charts, the modest-evidence marks take a muted violet-grey so
+     that the brightest colour does not fall on the least robust estimates */
+  --chart-muted: #766c89;
 
   /* type */
   --display: "Fraunces", Georgia, serif;
@@ -101,6 +115,80 @@
   --bg-white: var(--card);
 }
 
+/* kōwhai day: the light palette. quarto sets quarto-light or quarto-dark
+   on body from the reader's system setting or the navbar switch. the
+   aliases are restated because a custom property that refers to another
+   is resolved where it is declared. hex values mirror kowhai-day.scss;
+   change both together. */
+:root:has(body.quarto-light) {
+  color-scheme: light;
+}
+
+body.quarto-light {
+  /* night-blue ink on cool white paper, about 17:1 */
+  --paper: #f6f7fb;
+  --card: #ffffff;
+  --ink: #0b1230;
+  --ink-soft: #3d4666;
+  --ink-faint: #5d6684;
+
+  /* kōwhai is about 1.6:1 on this paper, too low for text, so indigo
+     carries links and labels and kōwhai keeps the fills and rules */
+  --kowhai: #f2c14e;
+  --kowhai-bright: #e7ae2b;
+  --on-accent: #0b1230;
+
+  --green: #1a6e52;
+  --green-deep: #d9ece4;
+  --gold: #8a5f00;
+  --blue: #2b5c92;
+
+  --accent: #2b3aa0;
+  --accent-strong: #141d5c;
+  --accent-soft: var(--green);
+  --accent-fill: var(--kowhai);
+  --accent-fill-hover: var(--kowhai-bright);
+  --dash: #e0a81c;
+  --chart-muted: #6f6585;
+
+  /* the note band stays night blue: a patch of kōwhai night on each page */
+  --band: #131a3a;
+  --band-ink: #ebe8dc;
+  --band-ink-strong: #f7f4ea;
+
+  --hair: rgba(11, 18, 48, 0.22);
+  --hair-soft: rgba(11, 18, 48, 0.11);
+  --mono-bg: rgba(11, 18, 48, 0.055);
+  --accent-tint: rgba(43, 58, 160, 0.45);
+  --btn-outline: rgba(11, 18, 48, 0.5);
+  --selection: rgba(242, 193, 78, 0.5);
+  --overlay: rgba(11, 18, 48, 0.4);
+
+  --accent-primary: var(--accent);
+  --accent-hover: var(--accent-strong);
+  --border: var(--hair);
+  --text-light: var(--ink-soft);
+  --bg-light: var(--paper);
+  --bg-white: var(--card);
+}
+
+/* inside the band the night palette applies, so its text, links, labels
+   and rules keep their contrast on night blue */
+body.quarto-light .callout-note,
+body.quarto-light .report-note {
+  --ink: #e6e2d3;
+  --ink-soft: #b9bdcc;
+  --ink-faint: #8f95ab;
+  --accent: #f2c14e;
+  --accent-strong: #f8d67f;
+  --accent-tint: rgba(242, 193, 78, 0.4);
+  --gold: #f2c14e;
+  --green: #56ae90;
+  --dash: #f2c14e;
+  --hair: rgba(230, 226, 211, 0.2);
+  --hair-soft: rgba(230, 226, 211, 0.1);
+}
+
 /* ========== GLOBAL ========== */
 body {
   font-family: var(--body);
@@ -112,7 +200,7 @@ body {
 }
 
 ::selection {
-  background: rgba(242, 193, 78, 0.28);
+  background: var(--selection);
   color: var(--ink);
 }
 
@@ -252,7 +340,7 @@ h2::before {
   display: block;
   width: 2.25rem;
   height: 2px;
-  background: var(--accent);
+  background: var(--dash);
   margin-bottom: 1.1rem;
 }
 
@@ -684,7 +772,7 @@ code:not(pre code) {
 blockquote {
   margin: 1.5rem 0;
   padding: 0.25rem 0 0.25rem 1.25rem;
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--dash);
   font-style: italic;
   color: var(--ink-soft);
 }
@@ -978,23 +1066,24 @@ td.num, .tabular-nums {
 }
 
 .btn-primary {
-  background-color: var(--accent);
+  background-color: var(--accent-fill);
   color: var(--on-accent);
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-fill);
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-strong);
-  border-color: var(--accent-strong);
+  background-color: var(--accent-fill-hover);
+  border-color: var(--accent-fill-hover);
   color: var(--on-accent);
 }
 
-/* the outline is ink at 0.45 alpha, about 3.7:1 against the paper,
-   above the 3:1 that wcag 1.4.11 asks of a control's edge */
+/* the outline is ink at 0.45 alpha on night paper and 0.5 on day paper,
+   about 3.7:1 against either, above the 3:1 that wcag 1.4.11 asks of a
+   control's edge */
 .btn-secondary {
   background-color: transparent;
   color: var(--ink);
-  border: 1px solid rgba(230, 226, 211, 0.45);
+  border: 1px solid var(--btn-outline);
 }
 
 .btn-secondary:hover {
@@ -1275,7 +1364,7 @@ img.figure-img {
   content: "";
   width: 2.25rem;
   height: 2px;
-  background: var(--accent);
+  background: var(--dash);
   flex: none;
 }
 
@@ -1469,9 +1558,7 @@ img.figure-img {
 }
 
 .figure-panel {
-  /* inside charts, the modest-evidence marks take a muted violet-grey so
-     that the brightest colour does not fall on the least robust estimates */
-  --gold: #766c89;
+  --gold: var(--chart-muted);
   background: var(--card);
   border: 1px solid var(--hair-soft);
   border-radius: var(--radius-sm);
@@ -1555,7 +1642,7 @@ img.figure-img {
   }
 }
 
-/* ========== DARK THEME DETAILS ========== */
+/* ========== THEME DETAILS ========== */
 /* code blocks sit on card, not the highlight theme's own background */
 div.sourceCode,
 pre.sourceCode {
@@ -1564,8 +1651,8 @@ pre.sourceCode {
 }
 
 /* photos with white studio backgrounds glare on dark paper */
-.team-photo,
-.quarto-figure img[src*="images/team/"] {
+body.quarto-dark .team-photo,
+body.quarto-dark .quarto-figure img[src*="images/team/"] {
   filter: brightness(0.94);
 }
 
@@ -1578,18 +1665,29 @@ img[src*="images/logos/"],
   opacity: 1;
 }
 
+/* quarto's grey for the page-source button is under 4.5:1 on either paper */
+.code-tools-button {
+  color: var(--ink-soft);
+}
+
+/* on day paper the white plate needs an edge */
+body.quarto-light img[src*="images/logos/"],
+body.quarto-light .logos-section img {
+  border: 1px solid var(--hair-soft);
+}
+
 /* inline-styled buttons in presentations.qmd carry old blue and slate
    fills; bring them into the palette without editing page content */
 a.btn.btn-primary[style] {
-  background: var(--accent) !important;
+  background: var(--accent-fill) !important;
   color: var(--on-accent) !important;
-  border: 1px solid var(--accent) !important;
+  border: 1px solid var(--accent-fill) !important;
   border-radius: var(--radius-pill) !important;
 }
 
 a.btn.btn-primary[style]:hover {
-  background: var(--accent-strong) !important;
-  border-color: var(--accent-strong) !important;
+  background: var(--accent-fill-hover) !important;
+  border-color: var(--accent-fill-hover) !important;
 }
 
 a.btn.btn-primary[style*="#4c4f69"] {
@@ -1605,7 +1703,7 @@ a.btn.btn-primary[style*="#4c4f69"]:hover {
 }
 
 /* external-link icon drawn as a mask so it takes the link's own colour:
-   kōwhai in prose, ink on filled kōwhai buttons, brighter on hover */
+   the accent in prose, ink on filled kōwhai buttons, stronger on hover */
 a.external::after {
   background-image: none !important;
   background-color: currentColor;
@@ -1639,7 +1737,7 @@ aside,
 /* search overlay: darken the page behind the panel instead of washing
    it with translucent ink */
 .aa-DetachedOverlay {
-  background-color: rgba(6, 6, 16, 0.72);
+  background-color: var(--overlay);
 }
 
 .aa-DetachedOverlay .aa-Panel,
@@ -1654,7 +1752,7 @@ aside,
   background-color: var(--card);
 }
 
-.leaflet-tile-pane {
+body.quarto-dark .leaflet-tile-pane {
   filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(0.9) saturate(0.6);
 }
 

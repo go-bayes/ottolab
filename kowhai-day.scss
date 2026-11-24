@@ -1,0 +1,77 @@
+/*-- scss:defaults --*/
+// kōwhai day: the light counterpart of kōwhai night. bootstrap defaults
+// layered over flatly so that navbar, dropdowns, modals, search and form
+// controls start light before styles.css applies. hex values mirror the
+// body.quarto-light tokens in styles.css; change both together.
+
+$paper: #f6f7fb;
+$card: #ffffff;
+$ink: #0b1230;
+$ink-soft: #3d4666;
+$ink-faint: #5d6684;
+$indigo: #2b3aa0;
+$indigo-deep: #141d5c;
+$kowhai: #f2c14e;
+
+$body-bg: $paper;
+$body-color: $ink;
+$body-secondary-color: $ink-soft;
+$body-tertiary-color: $ink-faint;
+$body-emphasis-color: $ink;
+$secondary-bg: $card;
+$tertiary-bg: $card;
+$border-color: rgba($ink, 0.22);
+$headings-color: $ink;
+
+$primary: $indigo;
+$secondary: #e6e9f3;
+$success: #1a6e52;
+$info: #2b5c92;
+$warning: #8a5f00;
+$light: $card;
+$dark: $ink;
+
+$link-color: $indigo;
+$link-hover-color: $indigo-deep;
+
+$code-color: $indigo-deep;
+$code-bg: rgba($ink, 0.055);
+$code-block-bg: $card;
+$kbd-bg: $ink;
+
+$navbar-bg: $paper;
+$navbar-fg: $ink-soft;
+$navbar-hl: $indigo;
+$footer-bg: $paper;
+$footer-fg: $ink-faint;
+
+$dropdown-bg: $card;
+$dropdown-color: $ink-soft;
+$dropdown-link-color: $ink-soft;
+$dropdown-link-hover-color: $indigo;
+$dropdown-link-hover-bg: rgba($ink, 0.055);
+$dropdown-link-active-color: $ink;
+$dropdown-link-active-bg: $kowhai;
+$dropdown-header-color: $ink-faint;
+$dropdown-divider-bg: rgba($ink, 0.11);
+$dropdown-border-color: rgba($ink, 0.22);
+
+$input-bg: $card;
+$input-color: $ink;
+$input-border-color: rgba($ink, 0.22);
+$input-placeholder-color: $ink-faint;
+
+$modal-content-bg: $card;
+$popover-bg: $card;
+$tooltip-bg: $ink;
+$tooltip-color: $paper;
+$table-color: $ink;
+$table-bg: transparent;
+$list-group-bg: $card;
+$card-bg: $card;
+
+$callout-color-note: #2b5c92;
+$callout-color-tip: #1a6e52;
+$callout-color-warning: #8a5f00;
+$callout-color-important: #8a5f00;
+$callout-color-caution: #a04a1c;
